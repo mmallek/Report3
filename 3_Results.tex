@@ -1,0 +1,98 @@
+\chapter{Results}
+
+\section{Historic Range of Variability}
+
+\subsection{Disturbance Regime}
+
+This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire (KEEP?). In the sections below, we briefly describe the simulated disturbance regime (i.e., spatial extent and distribution, frequency and temporal variability). In this subsection, we refrain from describing variations among vegetation types - this will be accomplished in the section on (TITLE?) Vegetation Patterns and Dynamics. Finally, it is important to realize that while the information below is presented as ``results,'' it could have easily been presented in the methods section as ``model calibration.'' Key spatial and temporal aspects of the disturbance regime were evaluated during preliminary ``calibration'' runs, and subsequent adjustments were made to model parameters to effect desired changes. Thus, while the information presented below does in fact represent results (output) of the simulation, it also represents a set of targets used to calibrate the model (i.e., adjust model parameters to achieve desired results). While this may seem a bit circular, it was a necessary process for a complex model such as RMLANDS. Moreoever, our real emphasis was on quantifying the vegetation patterns and dynamics resulting from these disturbance processes.
+
+\paragraph{Disturbed Area}
+
+% 174830 eligible hectares
+% 181550 hectares in core
+Approximately 96\% of the landscape was eligible for wildfire disturbance (all cover types except Barren and Water). As expected, the frequency and extent of simulated wildfires varied across timesteps. Remarkably, given the rotation interval and percent mortality expected over time on this landscape, large proportions of the project area burned each (5-year) timestep. On average, at least 10\% of the landscape burned at some combination of low and high mortality every decade. Fires covering at least 25\% of the landscape burned approximately every 25 years, and half or more of the landscape burned at a 200 year interval. The smallest area disturbed over the course of the simulation was 0.26\%, while the largest was 66.2\% (of which 22.91\% was high mortality). About a third of the disturbed area burned as high mortality (which does include the burning of early development vegetation, including chaparral). 
+
+\begin{verbatim}
+       summary statistic mort.low mort.high mort.any
+1 minimum darea/timestep     0.22      0.03     0.26
+2 maximum darea/timestep    43.27     22.91     66.2
+3  median darea/timestep     9.24      3.98    13.12
+4    mean darea/timestep    11.58      5.17    16.75
+\end{verbatim}
+
+\begin{figure}
+\includegraphics[]{darea.png}
+\caption{}
+\label{darea}
+\end{figure}
+
+\paragraph{Disturbance Size}
+\begin{verbatim}
+$`Wildfire disturbance size`$`run number 1`
+        bin obs.freq obs.proportion target.freq target.proportion
+[1,]      5   135327   0.7797220526        8464      0.8801996672
+[2,]     25    21339   0.1229502529         378      0.0393094842
+[3,]    125     5366   0.0309176183         316      0.0328618968
+[4,]    625     5011   0.0288721926         293      0.0304700499
+[5,]   3125     4803   0.0276737460         111      0.0115432612
+[6,]  15625     1503   0.0086599292          48      0.0049916805
+[7,]  78125      130   0.0007490291           6      0.0006239601
+[8,] 133828       79   0.0004551792           0      0.0000000000
+\end{verbatim}
+
+\begin{figure}
+\includegraphics[]{Darea_s016.png}
+\caption{}
+\label{darea}
+\end{figure}
+
+\paragraph{Fire Rotation}
+Show all cover types or only those \greater 1000 ha?
+
+\begin{verbatim}
+$`Wildfire Rotation Periods (yrs)`$`By Cover Type`
+                                       cov.name area.ha low.mort high.mort any.mort
+1                                   Agriculture      16     2035        73       71
+2                                        Barren    2665      Inf       Inf      Inf
+3                   Curl-leaf Mountain Mahogany      18      121        91       52
+4                                     Grassland    1379      598        68       61
+5                                Lodgepole Pine     837       67       294       55
+6                     Lodgepole Pine with Aspen       8       56       228       45
+7                                        Meadow    1201     1372        59       57
+8                       Mixed Evergreen - Mesic    7273       63       534       57
+9                  Mixed Evergreen - Ultramafic     604      149      1270      133
+10                      Mixed Evergreen - Xeric    6768       51       472       46
+11                             Montane Riparian     732       97       114       52
+12                                 Oak Woodland      19       41       130       31
+13              Oak-Conifer Forest and Woodland   23279       33       100       25
+14 Oak-Conifer Forest and Woodland - Ultramafic    1060       48      1192       46
+15                              Red Fir - Mesic    8563      101       164       62
+16                         Red Fir - Ultramafic     294      142       280       94
+17                              Red Fir - Xeric    7493       59       117       39
+18                           Red Fir with Aspen      31       86       182       58
+19                Sierran Mixed Conifer - Mesic   57853       39       115       29
+20           Sierran Mixed Conifer - Ultramafic    4124      106       196       69
+21                Sierran Mixed Conifer - Xeric   52198       40        62       24
+22             Sierran Mixed Conifer with Aspen      58       43       128       32
+23                            Subalpine Conifer     638      890       233      184
+24                                        Urban     114     1770        86       82
+25                                        Water    4058      Inf       Inf      Inf
+26                           Western White Pine     273      101       550       85
+27                                        Total  181553       45       100       31
+\end{verbatim}
+
+
+\begin{verbatim}
+$`Wildfire Rotation Periods (yrs)`$`By Cover Type`
+                                       cov.name area.ha low.mort high.mort any.mort
+8                       Mixed Evergreen - Mesic    7273       63       534       57
+10                      Mixed Evergreen - Xeric    6768       51       472       46
+13              Oak-Conifer Forest and Woodland   23279       33       100       25
+14 Oak-Conifer Forest and Woodland - Ultramafic    1060       48      1192       46
+15                              Red Fir - Mesic    8563      101       164       62
+17                              Red Fir - Xeric    7493       59       117       39
+19                Sierran Mixed Conifer - Mesic   57853       39       115       29
+20           Sierran Mixed Conifer - Ultramafic    4124      106       196       69
+21                Sierran Mixed Conifer - Xeric   52198       40        62       24
+27                                        Total  181553       45       100       31
+\end{verbatim}
