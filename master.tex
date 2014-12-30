@@ -5,6 +5,13 @@
 \lstset{breaklines=true, language=Python, showspaces=false, showstringspaces=false}
 \usepackage{wrapfig,subfig,graphicx}
 \usepackage{textcomp}
+\usepackage{sidecap}
+\usepackage{booktabs, colortbl}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\usepackage{changepage}
+\usepackage{amsmath}
+\usepackage[textwidth=1in]{todonotes}
 
 \begin{document}
 
@@ -13,7 +20,7 @@
 \date{December 2014}
 
 \section*{Outline}
-\subsection{Spatial Data Preparation}
+\subsection*{Spatial Data Preparation}
 Xeric/Mesic Gradient preparation\\
 YHR Type Selection\\
 Eveg Layer Selection\\
@@ -22,35 +29,21 @@ Scripts and tools used for spatial data prep\\
 some of this will be redundant with the rmlands spatial data pdf\\
 Age
 
-\subsection{landcover type descriptions and models}
-Primary sources for text (e.g. landfire, whr, feis, Cal veg book)\\
-Primary sources for model values (e.g. landfire, expert opinion)\\
-generation of succession probabilities\\
-
-\subsection{general notes}
+\subsection*{general notes}
 may be worth it to include general description of how and when we involved FS folks\\
 District vs. Ecology Group vs. Hugh vs. other advisors\\
 
-\subsection{original goal list}
-
-The original set of work to be done was:
-\begin{enumerate}
-\item{Create state transition models for each Yuba River cover type. Hopefully they can be based largely on the LandFire cover types.}
-\item{Analyze existing cover types and LandFire cover types}
-\item{Evaluate the quality of the data: for example, conduct a compositional analysis in GIS and determine the relative similarity between the EVeg, PNV, and Wieslander vegetation layers.}
-\item{Do a lit review to collate data on the pertinent disturbance regimes.}
-\end{enumerate}
 
 %\frontmatter 
-%\tableofcontents 
+\tableofcontents 
 \include{preface} 
 
 \mainmatter 
 %\include{1_InputLayerPrep} 
 \include{2_Methods} 
-%\include{3_Geoprocessing} 
-%\include{4_RMLandsParameterDevelopment} 
-%\include{5_ModelCalibration} 
+\include{3_Results} 
+\include{4_Discussion} 
+%\include{5_ModelCalibration}  
 
 \backmatter 
 \include{glossary} 

@@ -1,131 +1,178 @@
 \chapter{Methods}
-II. Methods
-	A. Study Area
-	B. Modeling Framework- RMLands (Kevin will write this)
-	i. HRV
-		1. Data prep
-			B. Common Input Layers
-				1. Input Layers: source, processing, purpose
-		C. Model Parameterization
-				1. State and Transition Models
-				2. Disturbance parameters
-					a. Climate
-					b. Susceptibility
-					c. Initiation
-					d. Spread
-					e. Mortality
-		D. Model Calibration
-		E. Model Execution
-			3. Run parameters
-				f. length/timesteps
-		F. Data analysis
-			1. Disturbance regime
-			2. Vegetation response 
-				a. Landscape composition (covcond plots)
-				b. Landscape Structure/Patterns
-	ii. Future Veg Treatments (match this to HRV header styles)
-		1. Data prep
-			B. Common Input Layers
-				1. Input Layers: source, processing, purpose
-		C. Model Parameterization
-				1. State and Transition Models
-				2. Disturbance parameters
-					a. Climate
-					b. Susceptibility
-					c. Initiation
-					d. Spread
-					e. Mortality
-		D. Model Calibration
-		E. Model Execution
-			3. Run parameters
-				f. length/timesteps
-			2. Post-processing (rescale, clip)
-		F. Data analysis
-			1. Disturbance regime
-			2. Vegetation response 
-				a. Landscape composition (covcond plots)
-				b. Landscape Structure/Patterns
-
 \section{Study Area}
 \begin{figure}
-\includegraphics[]{ecoregionprojectarea.jpg}
-\caption{The Sierra Nevada Ecoregion is highlighted in brown. The project landscape is located in the northern extent of the Sierra Nevada on the Tahoe National Forest, comprising the Yuba River watershed.}
+\includegraphics[width=\textwidth]{images/ecoregionprojectarea.jpg}
+\caption{The Sierra Nevada Ecoregion is outlined in brown. The project landscape (outlined in green) is located in the northern extent of the Sierra Nevada on the Tahoe National Forest, comprising the Yuba River watershed.}
 \label{projectarea}
 \end{figure}
-The Sierra Nevada is a major North American mountain range, located east of California's Central Valley and extending from Fredonyer Pass in the north to southern Kern County in the south. Much of the Sierra Nevada is reserved as federally-held public land, managed by the U.S. Forest Service, Bureau of Land Management, and the National Park Service. The Plumas and Tahoe National Forests are located in the northern portion of the Sierra Nevada. The project landscape (see \ref{projectarea}) is located on the northern part of the Tahoe National Forest, on the Yuba River and Sierraville Ranger Districts, and comprises about 181,550 hectares. It is composed of a set of three HUC-5 watersheds, the Upper North Yuba River, the Middle Yuba River, and the Lower North Yuba River, referred to in this document as the Upper Yuba River watershed. 
+The Sierra Nevada is a major North American mountain range, located east of California's Central Valley and extending from Fredonyer Pass in the north to southern Kern County in the south. Much of the Sierra Nevada is reserved as federally-held public land, managed by the U.S. Forest Service, Bureau of Land Management, and the National Park Service. The Plumas and Tahoe National Forests are located in the northern portion of the Sierra Nevada. The project landscape (see \ref{projectarea}) is located on the northern part of the Tahoe National Forest, on the Yuba River and Sierraville Ranger Districts, and comprises about 181,550 hectares. It is composed of a set of three HUC-5 watersheds, the Upper North Yuba River, the Middle Yuba River, and the Lower North Yuba River, collectively referred to in this document as the Upper Yuba River watershed. 
 
-The topography of the project landscape consists of rugged mountains incised by two major and a few minor river drainages. Elevation ranges from about 350 to 2500 meters. The area receives 30-260 cm of precipitation annually, most of which falls as snow in the mid to upper elevations (Storer and Usinger 1963). Some areas in the mid-elevation band receive high precipitation compared to the region, resulting in patches of exceptionally productive forest (Alan Doerr, pers. comm.). Vegetation is tremendously diverse and changes slowly along an elevational gradient and in response to local changes in drainage, aspect, and soil structure. Grasslands, chaparral, oak woodlands, mixed conifer forests, and subalpine forests are all found within the study area. Many species exhibit fire-adapted traits, such as resprouting from roots post-fire (e.g. tanoak), fire-induced germination (e.g. manzanita), or thick bark (e.g. ponderosa pine). 
+The topography of the project landscape consists of rugged mountains incised by two major and a few minor river drainages. Elevation ranges from about 350 to 2500 meters. The area receives 30--260 cm of precipitation annually, most of which falls as snow in the middle to upper elevations (Storer and Usinger 1963). Some areas in the mid-elevation band receive high precipitation compared to the region, resulting in patches of exceptionally productive forest (Alan Doerr, pers. comm.). Vegetation is tremendously diverse and changes slowly along an elevational gradient and in response to local changes in drainage, aspect, and soil structure. Grasslands, chaparral, oak woodlands, mixed conifer forests, and subalpine forests are all found within the study area. Many species exhibit fire-adapted traits, such as resprouting from roots after a fire (e.g. tanoak), fire-induced germination (e.g. manzanita), or thick bark (e.g. ponderosa pine). 
 
-Prior to European settlement, wildfire was a major source of disturbance on the landscape, shaping the composition and configuration of vegetation in the Forest. Fires were primarily lightning-caused, although indigenous peoples are thought to have set fires for vegetation management, especially in the lower elevations. In general, fire was frequent, with a mean rotation as short as 20 years in Ponderosa Pine dominated forests. Wetter mixed conifer areas are predicted to have had a mean fire rotation of 30 years. Fire rotation is thought to increase gradually with elevation, and mesic Red Fir had a mean fire rotation of 60 years. Variance around these means can be significant, as some parts of the forest experience fire much more frequently, while other escape fire for long periods. In general, regardless of vegetation type, high mortality fires were thought to be rare, with the vast majority of fires killing under 70\% of overstory trees. Under this disturbance regime, stand-replacing fire initiated early development conditions on the landscape. Low mortality fire tended to open forest canopies, while vegetation succession closed them again. The rarity of high mortality fire allowed large forest stands to succeed into late development and old growth conditions.
+Prior to European settlement, wildfire was a major source of disturbance on the landscape, shaping the composition and configuration of vegetation in the Forest. Fires were primarily lightning-caused, although indigenous peoples are thought to have set fires for vegetation management, especially in the lower elevations. In general, fire was frequent, with a mean rotation as short as 20 years in Ponderosa Pine-dominated forests. Wetter mixed conifer areas are predicted to have had a mean fire rotation of 30 years. Fire rotation is thought to increase gradually with elevation. For example, mesic Red Fir forests, which exist around 2,000 feet higher in elevation than Ponderosa Pine forests, had a mean fire rotation of 60 years. Variance around these means can be significant, as some parts of the forest experience fire much more frequently, while other escape fire for long periods. In general, regardless of vegetation type, high mortality fires were thought to be rare, with the vast majority of fires killing under 70\% of overstory trees. Under this disturbance regime, stand-replacing fire initiated early development conditions on the landscape. Low mortality fire tended to open forest canopies, especially in more xeric parts of the forest, while vegetation succession closed them again. The rarity of high mortality fire allowed large forest stands to succeed into late development and old growth conditions. \todo{How to cite this? At the end of the paragraph or repeatedly in it?}
 
-fire maintained open canopies in more xeric parts of the forest, while closed canopies were more persistent on more mesic, north and east-facing slopes. 
+The arrival of Europeans in the 1850s sparked a transformation of this landscape as people harvested timber, extracted gold using hydraulic mining techniques, and suppressed wildfires (Storer and Usinger 1963). Forestry, mining, grazing, and dozens of recreational activities, including hunting, mountain biking, and hiking continue to take place on the Tahoe National Forest. Fifteen allotments exist within the project area for both cattle and sheep grazing. In addition, 231,368 hectares inside of the project area have non-Forest Service ownership. Many of these lands were privately held, often by timber companies, before the Forest was created. In addition, many public lands were given to the Central Pacific Railroad in the late 19th century, and this ``checkerboard'' ownership pattern persists today (Figure \ref{ownership}). Mining of gold and other minerals also continues. These activities affect and interact with ongoing vegetation succession and disturbance processes in the area. \todo{info easily found on forest website - need to cite?}
 
-The arrival of Europeans in the 1850s sparked a transformation of this landscape as people harvested timber, extracted gold using hydraulic mining techniques, and suppressed wildfires (Storer and Usinger 1963). Forestry, mining, grazing, and dozens of recreational activities, including hunting, mountain biking, and hiking continue to take place on the Tahoe National Forest. Fifteen allotments exist within the project area for both cattle and sheep grazing. In addition, 231,368 hectares inside of the project area have non-Forest Service ownership. Many of these lands were privately held, often by timber companies, before the Forest was created. In addition, many public lands were given to the Central Pacific Railroad in the late 19th century, and this ``checkerboard'' ownership pattern persists today ADD FIGURE HERE. Mining of gold and other minerals also continues. These activities affect and interact with ongoing vegetation succession and disturbance processes in the area.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/ownership.png}
+\caption{Map distinguishing between National Forest lands and lands held by other entities (including private, industry, and other public land).} 
+\label{ownership}
+\end{figure}
 
 The Tahoe National Forest has an active fire management program, and maintains a cooperative agreement with the State of California to help fight wildfires on the non-Forest Service lands located with the Forest boundary. In the recent history of the forest, very few acres have burned, with the exception of 1960, when approximately 100,000 acres burned on the Forest. The low burned acreage corresponds with fairly high fire starts (both human- and lightning-caused) [Forest Plan]. Fire suppression has lead to an increase in the amount of dead and downed fuels in the forest (SNFramework).
 
-Logging has been a major human impact on the Forest since European settlement. Clearcutting, shelterwood, salvage cutting, and plantation management have been major components of timber management on the TNF for several decades. More recently, group cut strategies replaced clearcutting as a management alternative. Together with fire suppression, timber management on the Forest has effected changes in forest composition. In general, shade intolerant species such as ponderosa pine, sugar pine, and Douglas fir have become less common, while shade tolderant species, especially white fir, have become more predominant [1990 Forest Plan]. In the last 20 years, timber sales in the Sierra Nevada have dropped drastically, but on the Tahoe National Forests timber sale levels have fluctuated both up and down (although annual sawtimber sold has decreased similarly to other Sierran Forests).
+Logging has been a major human impact on the Forest since European settlement. Clearcutting, shelterwood, salvage cutting, and plantation management have been major components of timber management on the TNF for several decades. More recently, group cut strategies replaced clearcutting as a management alternative. Together with fire suppression, timber management on the Forest has effected changes in forest composition. In general, shade intolerant species such as ponderosa pine, sugar pine, and Douglas fir have become less common, while shade tolerant species, especially white fir, have become more predominant [1990 Forest Plan]. In the last 20 years, timber sales in the Sierra Nevada have dropped drastically, but on the Tahoe National Forests timber sale levels have fluctuated both up and down (although annual sawtimber sold has decreased similarly to other Sierran Forests).
 
 
 \section{Modeling Framework}
 
 \section{Historic Range of Variability}
 
-\paragraph{Data Structure} RMLANDS uses raster GeoTiffs (.tif files) as its data structure. Rasters are based on uniform square units called cells (or pixels). Each cell represents an actual portion of geographic space, where each cell has a defined X and Y value that corresponds to the coordinates defined by the projection. For example, in the Universal Transverse Mercator (UTM) projection, the grid that covers the entire Tahoe and Plumas National Forests project area is in UTM zone 10 N and covers an area defined by a range of X and Y values (minimum and maximum). In the Yuba River watershed landscape, each grid cell is 30 meters on a side (i.e., 900 m2 or 0.09 ha), and the input grid measures 2910 by 2245 pixels. All grids must be single-attribute, signed integer grids. Each cell is assigned a single class value, where valid class values are positive or negative whole numbers. All grids are created in ArcMap and saved as GeoTitff files before being input to the model. 
+\subsection{Input Layers}
 
-\paragraph{Raster layer alignment} RMLANDS requires that all grids are perfectly aligned. This means that not only must all grids have the same cell size and the same numbers of rows and columns, but the cells need to occupy the exact same geographic space (out to six decimal places) and have the same number of total cells. RMLands requires that all input grids are perfectly aligned. We accomplished this by setting the Extent and Snap Raster to the same parameters whenever we manipulated the layers in ArcMap. This ``base'' spatial layer was created by taking the primary elevation layer used on the Tahoe National Forest, resampling it to a 30 meter grid, and clipping its extent to match that of the buffered project area (2910 x 2245 grid size).
+\paragraph{Data Structure} RMLands uses raster GeoTiffs (.tif files) as its data structure. Rasters are based on uniform square units called cells (or pixels). Each cell represents an actual portion of geographic space, where each cell has a defined X and Y value that corresponds to the coordinates defined by the projection. For example, in the Universal Transverse Mercator (UTM) projection, the grid that covers the entire Tahoe and Plumas National Forests project area is in UTM Zone 10 North and covers an area defined by a range of X and Y values (minimum and maximum). In the Yuba River watershed landscape, each grid cell is 30 meters on a side (i.e., 900 m$^2$ or 0.09 ha), and the input grid measures 2910 by 2245 pixels. All grids must be single-attribute, signed integer grids. In other words, each cell is assigned a single class value, where valid class values are positive or negative whole numbers. All grids are created in ArcMap and saved as GeoTitff files before being input to the model. 
+
+\paragraph{Raster layer alignment} RMLands requires that all grids are perfectly aligned. This means that not only must all grids have the same cell size and the same numbers of rows and columns, but the cells need to occupy the exact same geographic space and have the same number of total cells. RMLands requires that all input grids are perfectly aligned. We accomplished this by setting the Extent and Snap Raster to the same parameters whenever we manipulated the layers in ArcMap. This ``base'' spatial layer was created by taking the primary elevation layer used on the Tahoe National Forest, resampling it to a 30 meter grid, and clipping its extent to match that of the buffered project area.
 
 The input layers are: cover, condition, age, aspect, slope, elevation, streams, roads, and condition-age.
 
-\subsection{Cover}
-The \emph{cover} layer represents land cover type, which is often but not always the vegetation type (i.e. cover types include not only Lodgepole Pine, but also Barren, and Agriculture). The \emph{cover} does not change over time, and is used to define potential disturbance and succession transitions undergone by cells within a particular cover type.
+\todo{Could also put all the maps of these layers on one page, as part of 1 large figure. Either 4 or 6 to a page.}
 
-Cover represents land cover type. Typically, cover type is based on the potential or current natural vegetation of a site and may include both natural and anthropogenic cover types. For example, cover types include not only Lodgepole Pine, Sierran Mixed Conifer, and Red Fir, but also Barren and Agriculture. Cover affects virtually every process in RMLANDS. Succession pathways are defined uniquely for each cover type, susceptibility to natural disturbances varies among cover types, and suitability or eligibility for various vegetation treatments varies among cover types. Cover is a ``static'' grid. Specifically, cover provides a fixed template upon which disturbance and succession processes play out over time. The cover type of a cell does not change over time; it is constant. All cells within the project boundary must be assigned a cover type; i.e., there can be no missing data or “background” within the project boundary. NODATA is reserved for all cells outside the project boundary.
+\subsubsection{Cover} The \emph{cover} layer represents land cover type, which is often but not always the vegetation type (i.e. cover types include not only Lodgepole Pine, but also Barren, and Agriculture). \emph{Cover} does not change over time, and is used to define several model parameters, including susceptibility to disturbance initiation or spread, and potential transitions between \emph{condition} classes undergone by cells within a particular cover type.
 
-The source for the cover layer is the Region 5 Existing Vegetation Layer, mapped to the CALVEG classification developed by the Region's Ecology Program in 1978. The CALVEG types in the project area are specific to the North Sierra mapping Zone. Within the project area, the Existing Vegetation Layer was developed based on three separate efforts: a satellite-based imagery analysis in 2000, and two orthoimagery analysis completed by contracting firms in 2005. Generally, specific cover type names were derived from the California Fire Return Interval Departure (FRID) report by Safford et al. (YEAR).
+Cover represents land cover type. Typically, cover type is based on the potential or current natural vegetation of a site and may include both natural and anthropogenic cover types. For example, cover types include not only Lodgepole Pine, Sierran Mixed Conifer, and Red Fir, but also Barren and Agriculture. Cover affects virtually every process in RMLands. Succession pathways are defined uniquely for each cover type, susceptibility to natural disturbances varies among cover types, and suitability or eligibility for various vegetation treatments varies among cover types. Cover is a ``static'' grid. Specifically, cover provides a fixed template upon which disturbance and succession processes play out over time. The cover type of a cell does not change over time; it is constant. All cells within the project boundary must be assigned a cover type; i.e., there can be no missing data or “background” within the project boundary. NODATA is reserved for all cells outside the project boundary.
 
-Geoprocessing for this layer was complex. Beyond converting the vector data to a raster format, further analysis was required to distinguish east- and west-side areas from one another, and generate the cover type modifications that the team agreed on. Aspen types were created by overlaying an aspen layer onto the vegetation layer and creating combined types (``type-aspen'')where appropriate. Areas mapped as a vegetation type characteristic of early seral (e.g. chaparral) were analyzed and assigned an appropriate forested cover type. Ultramafic types were created by overlaying a geology layer onto the vegetation layer and performing a similar processing step to create ``type-ultramafic''. Finally, for the Sierran Mixed Conifer and Red Fir cover types, which cover broad swaths of land across elevation and aspect, a xeric to mesic gradient was developed in conjunction with local experts and applied, creating ``type-mesic'' and ``type-xeric''.
+The source for the cover layer is the Region 5 Existing Vegetation Layer (``EVeg''), mapped to the CALVEG classification developed by the Region's Ecology Program in 1978. The CALVEG types in the project area are specific to the North Sierra mapping Zone. Within the project area, the EVeg layer was developed based on three separate efforts: a satellite-based imagery analysis in 2000, and two orthoimagery analysis completed by contracting firms in 2005. Generally, specific cover type names were derived from the California Fire Return Interval Departure (FRID) report by Safford et al. \todo{Citation}
 
-Ultimately, 31 cover types were generated for the buffered project area:
-\begin{verbatim}
-YHR	Count	Landcover3
-1	60173	AGR
-2	97233	BAR
-3	454		CMM
-4	51302	GRASS
-5	31289	LPN
-6	349		LPN_ASP
-7	50		LSG
-8	38171	MED
-9	150520	MEG_M
-10	18388	MEG_U
-11	153011	MEG_X
-12	24627	MRIP
-13	46514	OAK
-14	632677	OCFW
-15	24275	OCFW_U
-16	381		RFR_ASP
-17	218070	RFR_M
-18	3564	RFR_U
-19	110989	RFR_X
-20	17773	SAGE
-21	139365	SCN
-22	69		SCN_ASP
-23	1341	SMC_ASP
-24	1488003	SMC_M
-25	108605	SMC_U
-26	1016037	SMC_X
-27	8693	URB
-28	91245	WAT
-29	5668	WWP
-30 	116653	YPN
-31	34		YPN_ASP
-\end{verbatim}
+\paragraph{Alternative Cover Layers}
+The original intent of our team was to utilize two separate cover layers: one for the historical reference period, and one for the current period to be used in projections of future scenarios. Two layers were identified as potentially suitable for the historic analysis: a map created from forest survey and inventory efforts under Albert Wieslander conducted between 1928 and 1940 (``Wieslander'') \todo{cite CEC}, and a map of Potential Natural Vegetation created by a Forest Service Enterprise Team for the Tahoe National Forest in the 2000s (``PNV''). Our intent was to use the PNV, Wieslander, or a combination thereof to derive the land cover layer for the HRV phase of the project. 
 
-A thorough description of geoprocessing steps necessary to recreate this data layer are available HERE.
+In order to validate the historical maps, we needed to develop a crosswalk between the vegetation type methodologies for the EVeg, PNV, and Wieslander maps. We also examined the spatial consistency in cover types across the maps. With significant assistance from the Tahoe National Forest, we attempted to create a crosswalk from these maps to the set of land cover types to be used in the project. However, we were unable to develop a consistent and comprehensive set of rules for this purpose. A major reason for this is that both the PNV and Wieslander maps used species lists, rather than assemblages (like in CalVeg and LandFire). For example, Sierran mixed conifer forests do not appear as a dominant ``cover type'' in the PNV map. The Wieslander maps do contain an internal crosswalk to a mixed conifer alliance, but only rarely. 
 
-\subsection{condition}
-Condition (or stand condition) represents the structural condition of vegetation for cover types that undergo succession. They represent discrete seral stages of stand development - as identified by experts, which may vary considerably among cover types. Condition can be used to affect virtually every process in RMLANDS. In particular, transitions among condition classes during stand development define the succession pathways for each cover type. In addition, condition can be specified as a factor affecting susceptibility to natural disturbances and suitability (or eligibility) for vegetation treatments. Condition is a “dynamic” grid; cell values change over time during the simulation in response to disturbance and succession processes. Ultimately, the combination of condition and cover defines the categorical classification of the landscape that provides the framework for characterizing vegetation patterns and dynamics.
+In addition, the PNV map contained a more significant error: we learned that, for the purposes of the modeling used to create the PNV map, ``potential natural vegetation'' meant the so-called ``climax'' community that would develop in the complete absence of disturbance, regardless of whether that disturbance was human-caused or natural. Since we are seeking to mimic the natural historic range of variability, we decided to discard this layer. The Wieslander map had its own issues. Most problematic was the non-systematic spatial error of up to 300 meters, which meant it would not be suitable for comparing specific locations. In addition, crosswalking precisely was impossible because coded vegetation was not necessarily in order of most prevalent vegetation, but instead prioritized tree species of shrubs, and commercially important trees over others. As an example from the handbook states, a plot consisting of 75\% \emph{Quercus kelloggi} (black oak), 15\% \emph{Pinus ponderosa} (ponderosa pine), and 10\% \emph{Pinus lambertiana} (grey pine) would be coded as ponderosa pine, grey pine, black oak. Consequently, the Wieslander map is also not a reliable predictor of land cover type without extensive review of the original data and maps, which would be beyond the scope of this project. 
+
+To confirm these problmes, we examined the overlap in land cover types between different maps in ArcGIS. In general, the overlap between EVeg and either the PNV or the Wieslander layers was no better than random, and in many cases it was worse. We decided, in conjunction with Tahoe National Forest staff, to proceed using only the EVeg map, and omit the calibration period of the model from our analysis of the characteristics of the HRV. This ensured that our analysis of future management scenarios and comparison of spatial metrics between those results and the HRV results was credible.
+% in retrospect I wonder if we should have analyzed the configuration more. in the end the biggest problem was probably the lack of crosswalk, since a precise spatial equivalence wasn't assumed.
+
+\paragraph{Selection of Specific Cover Types}
+In the early stages of this project, the team created a suite of land cover types based roughly on the Wildlife Habitat Relationships (WHR) types used in California and by Forest Service managers and planners. These consisted of the WHR types with a few additional types where additional specificity or refinement was desired. For example, Red Fir was split up into two subtypes. The original concept was to begin with the WHR types and modify them as needed based on other attributes in the EVeg layer. However, creating a crosswalk from WHR to the project-specific types also proved problematic. First, we realized that the WHR values were actually derived from the CalVeg species alliances included in the EVeg layer, but the methodlogy used was unavailable or missing. The crosswalks we did find \todo{cite} were not mutually exclusive and all-inclusive, and do not always make ecological sense. This is probably due in part to the fact that WHR is not a mapping classification. It is always derived secondarily. So, we were unable to create consistent rules for mapping from WHR to other types. Others have encountered similar issues:
+
+\begin{quote}
+WHR has been less successful in differentiating between vegetation types. Because the habitat types are inconsistently defined, a broad familiarity with its detailed descriptions is needed to differentiate among types of similar structure. Although mappers have constructed rules for discriminating among types, difficulties still remain because species dominance varies substantially within some types and broad overlaps in dominant plants occur among types. Other problems arise due to the small number of classes and the inconsistencies in scale among them \todo{(T. Veg of Cal)}
+\end{quote}
+
+With Tahoe National Forest staff we decided to instead base our land cover types on, at the first order, Presettlement Fire Regime (PFR) types as defined in the Fire Return Interval Departure (FRID)report by Safford et al. \todo{cite}. The PFR types, as part of the FRID, were developed through the scientific process and underwent peer review. We used the methodology from the FRID rather than using the second-order WHR classification and trying to reverse-engineer it to fit into our custom land cover types. Thus we created a new structure of cover types in a nested regime, moving from PFR (the coarsest aggregation of CalVeg types, which included a direct crosswalk from them to PFR types), to Biophysical Settings from LandFire (which were also crosswalked to PFR types in the FRID report), and finally to various local types not otherwise represented, such as xeric and mesic variants of cover types like Montane Hardwood, and aspen variants, such as Red Fir - Aspen. A mutually exclusive and all-inclusive crosswalk for each land cover type used in this analysis to a single LandFire Biophysical Setting and Presettlement Fire Regime type thus exists.
+
+Complex geoprocessing was required to prepare the EVeg layer for use in RMLands. Beyond converting the vector data to a raster format, further analysis was required to distinguish east- and west-side areas from one another, and generate the cover type modifications that the team agreed on. Aspen types were created by overlaying an aspen layer onto the vegetation layer and creating combined types (``type-aspen'')where appropriate. Areas mapped as a vegetation type characteristic of early seral (e.g. chaparral) were analyzed and assigned an appropriate forested cover type. Ultramafic types were created by overlaying a geology layer onto the vegetation layer and performing a similar processing step to create ``type-ultramafic''. Finally, for the Sierran Mixed Conifer and Red Fir cover types, which cover broad swaths of land across elevation and aspect, a xeric to mesic gradient was developed in conjunction with local experts and applied, creating ``type-mesic'' and ``type-xeric''.
+
+Ultimately, 31 cover types were generated for the buffered project area, as listed in Table \ref{covertable}.
+%%%%%%%%%%%%%%%%%%%%%%
+%%% COVER TABLE %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[!htbp]
+\caption{List of land cover types developed for this project. Included are the cover type abbreviation, full cover type name, and total area in the buffered project landscape in both acres and hectares.}
+\label{covertable}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Land Cover \\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Land Cover \\ Abbreviation\end{tabular}} & \textbf{Land Cover Name}                              & \textbf{\begin{tabular}[c]{@{}l@{}}Area \\ (Acres)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Area \\ (Hectares)\end{tabular}} \\ \midrule
+\rowcolor[HTML]{CAD6BA} 
+1                                                           & AGR                                                                & Agriculture                                  & 13,382                                                  & 5,416                                                      \\
+2                                                           & BAR                                                                & Barren                                       & 21,624                                                  & 8,751                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+3                                                           & CMM                                                                & Curl-leaf Mountain Mahogany                  & 101                                                     & 41                                                         \\
+4                                                           & GRASS                                                              & Grassland                                    & 11,409                                                  & 4,617                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+5                                                           & LPN                                                                & Lodgepole Pine                               & 6,959                                                   & 2,816                                                      \\
+6                                                           & LPN\_ASP                                                           & Lodgepole Pine with Aspen                    & 78                                                      & 31                                                         \\
+\rowcolor[HTML]{CAD6BA} 
+7                                                           & LSG                                                                & Black and Low Sagebrush                      & 11                                                      & 5                                                          \\
+8                                                           & MED                                                                & Meadow                                       & 8,489                                                   & 3,435                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+9                                                           & MEG\_M                                                             & Mixed Evergreen - Mesic                      & 33,475                                                  & 13,547                                                     \\
+10                                                          & MEG\_U                                                             & Mixed Evergreen - Ultramafic                 & 4,089                                                   & 1,655                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+11                                                          & MEG\_X                                                             & Mixed Evergreen - Xeric                      & 34,029                                                  & 13,771                                                     \\
+12                                                          & MRIP                                                               & Montane Riparian                             & 5,477                                                   & 2,216                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+13                                                          & OAK                                                                & Oak Woodland                                 & 10,344                                                  & 4,186                                                      \\
+14                                                          & OCFW                                                               & Oak-Conifer Forest and Woodland              & 140,704                                                 & 56,941                                                     \\
+\rowcolor[HTML]{CAD6BA} 
+15                                                          & OCFW\_U                                                            & \begin{tabular}[c]{@{}l@{}}Oak-Conifer Forest and Woodland - \\ Ultramafic\end{tabular} & 5,399                                                   & 2,185                                                      \\
+16                                                          & RFR\_ASP                                                           & Red Fir with Aspen                           & 85                                                      & 34                                                         \\
+\rowcolor[HTML]{CAD6BA} 
+17                                                          & RFR\_M                                                             & Red Fir - Mesic                              & 48,498                                                  & 19,626                                                     \\
+18                                                          & RFR\_U                                                             & Red Fir - Ultramafic                         & 793                                                     & 321                                                        \\
+\rowcolor[HTML]{CAD6BA} 
+19                                                          & RFR\_X                                                             & Red Fir - Xeric                              & 24,683                                                  & 9,989                                                      \\
+20                                                          & SAGE                                                               & Big Safebrush                                & 3,953                                                   & 1,600                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+21                                                          & SCN                                                                & Subalpine Conifer                            & 30,994                                                  & 12,543                                                     \\
+22                                                          & SCN\_ASP                                                           & Subalpine Conifer with Aspen                 & 15                                                      & 6                                                          \\
+\rowcolor[HTML]{CAD6BA} 
+23                                                          & SMC\_ASP                                                           & Sierran Mixed Conifer with Aspen             & 298                                                     & 121                                                        \\
+24                                                          & SMC\_M                                                             & Sierran Mixed Conifer - Mesic                & 330,924                                                 & 133,920                                                    \\
+\rowcolor[HTML]{CAD6BA} 
+25                                                          & SMC\_U                                                             & Sierran Mixed Conifer - Ultramafic           & 24,153                                                  & 9,774                                                      \\
+26                                                          & SMC\_X                                                             & Sierran Mixed Conifer - Xeric                & 225,961                                                 & 91,443                                                     \\
+\rowcolor[HTML]{CAD6BA} 
+27                                                          & URB                                                                & Urban                                        & 1,933                                                   & 782                                                        \\
+28                                                          & WAT                                                                & Water                                        & 20,292                                                  & 8,212                                                      \\
+\rowcolor[HTML]{CAD6BA} 
+29                                                          & WWP                                                                & Western White Pine                           & 1261                                                    & 510                                                        \\
+30                                                          & YPN                                                                & Yellow Pine                                  & 25,943                                                  & 10,499                                                     \\
+\rowcolor[HTML]{CAD6BA} 
+31                                                          & YPN\_ASP                                                           & Yellow Pine with Aspen                       & 8                                                       & 3                                                          \\ \bottomrule
+\end{tabular}
+\end{table}
+
+%\begin{verbatim}
+%YHR	CellCount	Landcover3
+%1	60173		AGR
+%2	97233		BAR
+%3	454			CMM
+%4	51302		GRASS
+%5	31289		LPN
+%6	349			LPN_ASP
+%7	50			LSG
+%8	38171		MED
+%9	150520		MEG_M
+%10	18388		MEG_U
+%11	153011		MEG_X
+%12	24627		MRIP
+%13	46514		OAK
+%14	632677		OCFW
+%15	24275		OCFW_U
+%16	381			RFR_ASP
+%17	218070		RFR_M
+%18	3564		RFR_U
+%19	110989		RFR_X
+%20	17773		SAGE
+%21	139365		SCN
+%22	69			SCN_ASP
+%23	1341		SMC_ASP
+%24	1488003		SMC_M
+%25	108605		SMC_U
+%26	1016037		SMC_X
+%27	8693		URB
+%28	91245		WAT
+%29	5668		WWP
+%30 	116653		YPN
+%31	34			YPN_ASP
+%\end{verbatim}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/cover.png}
+\caption{Cover Type Map for the project area. Also shows the 10 km buffer from the project area boundary. See Table \ref{covertable} for full land cover type names.} 
+\label{covermap}
+\end{figure}
+
+A thorough description of geoprocessing steps necessary to recreate this data layer is available \todo{in forthcoming document?}.
+
+\subsubsection{Condition}
+Condition (or stand condition) class represents the structural condition of vegetation for cover types that undergo succession. They represent discrete seral stages of stand development - as identified by experts, which may vary considerably among cover types. Condition can be used to affect virtually every process in RMLands. In particular, transitions among condition classes during stand development define the succession pathways for each cover type. In addition, condition can be specified as a factor affecting susceptibility to natural disturbances and suitability (or eligibility) for vegetation treatments. Condition is a “dynamic” grid; cell values change over time during the simulation in response to disturbance and succession processes. Ultimately, the combination of condition and cover defines the categorical classification of the landscape that provides the framework for characterizing vegetation patterns and dynamics.
 
 All cells within the project boundary are assigned a condition class; i.e., there is no missing data or ``background'' within the project boundary. However, some cover types (e.g., roads, urban, agriculture, barren, water, mountain grassland, etc.) may not have multiple condition classes and can be assigned a common value. In addition, all condition classes do not need to exist for each cover type. 
 
@@ -133,93 +180,548 @@ The source for the condition layer is the Region 5 Existing Vegetation Layer, ma
 
 Geoprocessing for this layer was complex. Beyond converting the vector data to a raster format, further analysis was required to update the layer to a year 2010 condition. Spatial data on wildfire and timber management history was used to provide a more accurate assessment of condition based on estimated stand age. In addition, areas currently mapped as chaparral in the Existing Vegetation Layer were assigned to the early development stage.
 
-\begin{verbatim}
-Code	Count_	Condition
-0		312508	Non-Seral
-10		469764	Early All
-20		790472	Mid Closed
-21		919861	Mid Moderate
-22		783077	Mid Open
-30		598140	Late Closed
-31		525793	Late Moderate
-32		147522	Late Open
-40		8		Early Aspen
-41		380		Mid Aspen
-42		1412	Mid Aspen Conifer
-43		92		Late Conifer Aspen
-\end{verbatim}
+%%%%%%%%%%%%%%%%%%%%%%
+%%% CONDITION TABLE %%
+%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Age}
+\begin{table}[!htbp]
+\caption{List of condition classes developed for this project. Condition classes describe developmental stage (e.g. "early") and canopy closure (e.g. "open"). Included are the condition class codes, abbreviations, and full names.}
+\label{condtable}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Condition Class Value} & \textbf{Condition Class Abbreviation} & \textbf{Condition Class Name} \\ \midrule
+\rowcolor[HTML]{CAD6BA} 
+0                              & NS                                    & Non-Seral                     \\
+10                             & EARLY\_ALL                            & Early All                     \\
+\rowcolor[HTML]{CAD6BA} 
+20                             & MID\_CL                               & Mid Closed                    \\
+21                             & MID\_MOD                              & Mid Moderate                  \\
+\rowcolor[HTML]{CAD6BA} 
+22                             & MID\_OP                               & Mid Open                      \\
+30                             & LATE\_CL                              & Late Closed                   \\
+\rowcolor[HTML]{CAD6BA} 
+31                             & LATE\_MOD                             & Late Moderate                 \\
+32                             & LATE\_CL                              & Late Open                     \\
+\rowcolor[HTML]{CAD6BA} 
+40                             & EARLY\_ASP                            & Early Aspen                   \\
+41                             & MID\_ASP                              & Mid Aspen                     \\
+\rowcolor[HTML]{CAD6BA} 
+42                             & MID\_AC                               & Mid Aspen Conifer             \\
+43                             & LATE\_CA                              & Late Conifer Aspen            \\ \bottomrule
+\end{tabular}
+\end{table}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/condition.png}
+\caption{Condition Class Map for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{conditionmap}
+\end{figure}
+
+\subsubsection{Age}
 Age represents the number of years since stand origin (i.e., the number of years since the last
-stand-replacing disturbance), not necessarily the age of the oldest plant individuals in the stand. In some circumstances the age since stand origin can greatly exceed the age of the oldest individual plants (e.g., old-growth stands). Age can be derived in any manner. Typically, however, it is estimated in the field by direct observation or estimated through a process of interpolation based on ecological and/or geographic distance to stands with known age. Age affects a variety of processes in RMLANDS, including succession transitions and susceptibility to disturbance. Age is a ``dynamic'' grid; cell values change over time during the simulation in response to disturbance and succession processes.
+stand-replacing disturbance), not necessarily the age of the oldest plant individuals in the stand. In some circumstances the age since stand origin can greatly exceed the age of the oldest individual plants (e.g., old-growth stands). Age can be derived in any manner. Typically, however, it is estimated in the field by direct observation or estimated through a process of interpolation based on ecological and/or geographic distance to stands with known age. Age affects a variety of processes in RMLands, including succession transitions and susceptibility to disturbance. Age is a ``dynamic'' grid; cell values change over time during the simulation in response to disturbance and succession processes.
 
 Age values can be any positive whole number, although any precision less than the length of the model time step (5 years) is inconsequential. A “no age” value (99998) is assigned to all non-vegetated and non-seral cover types.
 
-It is important to note that while age is potentially an important variable in RMLANDS——for example, it is typically the principal factor influencing succession transitions and can provide a basis for summarizing the range of variability in vegetation conditions––the ``initial'' age condition is a transient state that gets modified quickly during the simulation in response to disturbance and successsion processes. Therefore, the initial age structure of the landscape may be of little importance in a long-term simulation, as long as the model equilibration period (i.e., the period it takes the age structure of the landscape to stabilize given the disturbance regime) is properly accounted for.
+It is important to note that while age is potentially an important variable in RMLands——for example, it is typically the principal factor influencing succession transitions and can provide a basis for summarizing the range of variability in vegetation conditions––the ``initial'' age condition is a transient state that gets modified quickly during the simulation in response to disturbance and successsion processes. Therefore, the initial age structure of the landscape may be of little importance in a long-term simulation, as long as the model equilibration period (i.e., the period it takes the age structure of the landscape to stabilize given the disturbance regime) is properly accounted for.
 
 In this application, we used data from stand exams dating to the 1960s and recent Ecology group survey plots to estimate stand age across the buffered project area. We then interpolated that information across the landscape. Due to insufficient data, we were unable to disaggregate the data below the landscape scale. We also acknowledge that the stand exam and modern veg plots do not constitute a true sample and were conducted almost exclusively in mid-mature and mature stands of commercially viable trees, thus skewing the results to some unquantifiable degree.
 
 We updated the interpolated data with wildfire and timber management history, and assigned ages to types coded as chaparral in the Existing Vegetation layer to the midpoint of the age spread of early development for the forest cover type to which it was converted. Remaining ages out of compliance with allowed ages for the corresponding condition of a given cell were modified to be in compliance, based on the assumption that the condition class assignment was more accurate that the interpolated age information.
 
-\subsection{Condition-Age}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/age.png}
+\caption{Age map at Timestep 0 for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{agemap}
+\end{figure}
+
+\subsubsection{Condition-Age}
 Condition-Age represents the age since transitioning to the current condition. After creating both the condition and age layers, we used a Python function to derive condition-age based on the youngest possible age for a cell of that cover and condition. For example, if a pixel is Lodgepole Pine, Mid Development Closed, and 50 years old, we take the minimum age for that cover-condition combination (10 years old), and subtract it from the current to arrive at a condition-age of 40. 
 
-\subsection{Topographic Position Index}
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/age.png}
+\caption{Condition-Age map at Timestep 0 for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{condagemap}
+\end{figure}
+
+\subsubsection{Topographic Position Index}
 Our topographic position index combines slope position with heat load (itself based on aspect and slope). High values for TPI represent locations on upper slopes, tending toward south and west-facing aspects, and are relatively steep. Low values represent locations in valley bottoms, tending toward north and east-facing aspects, and are more gentle in slope. Values around zero represent locations tending towards the center of these extremes. We use TPI to adjust vegetation susceptibility and mortality because we expect susceptibility and mortality to be higher when TPI is high.
 
-\subsection{Elevation} 
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/tpi.png}
+\caption{Topographic Position Index for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{tpimap}
+\end{figure}
+
+\subsubsection{Elevation} 
 Elevation represents the height above sea level in meters. Elevation is typically derived from an existing digital elevation model (DEM). Elevation can be used to affect a variety of processes in RMLands, including succession transitions and susceptibility to disturbance. Elevation is a ``static'' grid; cell values remain constant over time. All cells within the project boundary must contain a real value; there can be no missing data (or nodata) cells. The elevation grid used in this analysis was provided by the Tahoe National Forest GIS staff and rescaled from 10m pixels.
 
-\subsection{Slope} 
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/elevation.png}
+\caption{Elevation for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{elevationmap}
+\end{figure}
+
+\subsubsection{Slope} 
 Slope represents the steepness of a cell as measured in percent. Slope is derived from elevation. Slope is used to affect a variety of processes in RMLands, including succession transitions, disturbance severity and eligibility for various vegetation treatments. Slope is a ``static'' grid; cell values remain constant over time. All cells within the project boundary contain a real value; there are no missing data (or nodata) cells. 
 
-\subsection{Aspect} Aspect represents the direction that a cell faces. Aspect is derived from elevation. Aspect can be used to affect a variety of processes in RMLands, including succession transitions and disturbance susceptibility and severity. Aspect is a ``static'' grid; cell values remain constant over time. Grid values represent categorical values assigned to the eight cardinal directions, plus a value for flat areas with no aspect. All cells within the project boundary  contain a real value; there are no missing data (or nodata) cells. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/slope.png}
+\caption{Slope for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{slopemap}
+\end{figure}
 
-\subsection{Streams} 
+\subsubsection{Aspect} Aspect represents the direction that a cell faces. Aspect is derived from elevation. Aspect can be used to affect a variety of processes in RMLands, including succession transitions and disturbance susceptibility and severity. Aspect is a ``static'' grid; cell values remain constant over time. Grid values represent categorical values assigned to the eight cardinal directions, plus a value for flat areas with no aspect. All cells within the project boundary  contain a real value; there are no missing data (or nodata) cells. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/aspect.png}
+\caption{Aspect for the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{aspectmap}
+\end{figure}
+
+\subsubsection{Streams} 
 Streams represents aquatic communities classified as small, medium or large based on
-stream order. In this application, the streams layer was created from a line coverage containing hydrography data, including an attribute for stream size or order, by converting to a grid based on the stream size attribute. Streams are used to affect disturbance spread in RMLANDS; i.e., streams function as an impediment to spread. 
+stream order. In this application, the streams layer was created from a line coverage containing hydrography data, including an attribute for stream size or order, by converting to a grid based on the stream size attribute. Streams are used to affect disturbance spread in RMLands; i.e., streams function as an impediment to spread. 
 
 We employed the orthogonal neighbor rule when converting a line to a raster of like-valued cells. That is, the final grid contains stream cells that connect along a cell side, as opposed to diagonally. This is required because diagonal neighbors, while touching, will not provide an impediment to disturbance spread (which happens diagonally as well as orthogonally). In addition, streams do not have to be in a contiguous network (i.e., no breaks in the streams) as long as the implications in terms of disturbance spread and/or logical treatment boundaries are acceptable. 
 
 Streams is a ``static'' grid; cell values remain constant over time. Note, streams are integrated into the cover type classification scheme only insofar as they are classified as type 'Water' in the Existing Vegetation Layer. Regardless, they also exist as a single layer. Grid values represent categorical values assigned to the three stream size classes, plus a value for background. All non-stream cells within the project boundary must be assigned a background value. NODATA is reserved for cells outside the project boundary. 
 
-\subsection{Roads} 
-Roads represents all transportation corridors classified as small, medium or large based on road size and/or intensity of use. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/streams.png}
+\caption{Streams in the project area. Also shows the 10 km buffer from the project area boundary.} 
+\label{streamsmap}
+\end{figure}
 
-In this application, the roads layer was created from a line coverage containing transportation data, including an attribute for roads size or order, by converting to a grid based on the roads size attribute. Roads are used to affect disturbance spread in RMLANDS; i.e., roads function as an impediment to spread. We employed the orthogonal neighbor rule when converting a line to a raster of like-valued cells. That is, the final grid contains stream cells that connect along a cell side, as opposed to diagonally. This is required because diagonal neighbors, while touching, will not provide an impediment to disturbance spread (which happens diagonally as well as orthogonally). In addition, road proximity - which is derived from roads - can be used to constrain and/or prioritize areas for vegetation treatments. 
+\subsubsection{Buffer/Core} 
+Buffer represents the ``core'' project area and a user-specified ``buffer'' around the core area. The ``core'' area is the project area of interest (the watersheds), whereas the ``buffer'' is an arbitrarily-defined area around the core designed to eliminate the boundary (or edge) effect associated with disturbance spread. This allows disturbances to spread on to and off of the landscape without impediment. Without a buffer there is a substantial bias in the probability of disturbance for cells within a certain distance of the edge of the landscape because of the reduced likelihood that disturbances will spread to that location from outside the designated landscape. We use a 10-km buffer is generally sufficient to offset any boundary effects when simulating large wildfires and insect outbreaks. It is important to note that if a buffer grid is specified, then all other input grids must be classified within the full extent of the buffer area as well as the core. All succession and disturbance processes operate seamlessly across the buffer and core, and thus the presence of a buffer does not affect the simulation in any way. However, if a buffer is present, all statistic reporting is restricted to the behavior in the core only. Buffer is a ``static'' grid; cell values remain constant over time. The original polygon layer for this was generated by creating at 10km buffer around the project area watersheds. It was then converted to raster using the same procedure as for other layers. 
+
+
+
+\subsection{Model Parameterization}
+
+\subsubsection{State and Transition Models}
+We have created a detailed cover type description document for each cover type in the simulated landscape that experiences transitions between cover class. These documents describe crosswalks to other data layers, detailed accounts of the multiple species characteristic of the cover type, cover type distribution, relationship and response to wildfire, predicted fire return intervals, plus descriptions of each condition class present within the cover type and their succession and wildfire transition conditions and rates. (APPENDIX?) Each detailed document can be summarized as a state and transition model for a particular cover type, which is implemented in the model by specifying susceptibility to wildfire, rules for vegetational succession, and rules for transitions after a fire event. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/STModel_PowerPoint.pdf}
+\caption{Generic state and transition model for cover types with 7 condition classes (all non-shrub seral types), showing transitions due to vegetation succession and both high and low mortality fire.} 
+\label{transmodel}
+\end{figure}
+
+As an example, we present here the model for Sierran Mixed Conifer - Mesic. The target fire return interval (FRI) for this cover type is 29 years. Specific FRIs and probabilities of high mortality fire are specified for each condition class (Table \ref{smcm_fri_phm}). In addition, transition probabilities are specified for natural succession between the early, middle, and late stages of development, as well as between closed, moderate, and open canopy cover (Table \ref{smcm_vegtrans}). Finally, probabilities are specified for vegetation transitions after wildfire (Table \ref{smcm_firetrans}). We calculated these values using the VDDT models associated with the LandFire project, modifying some based on local expert opinion. From the VDDT models, we took the probabilities of a transition to early seral conditions, a more open canopy condition, or of no transition. We ignored the classified type of fire (as replacement, mixed, or low severity), focusing instead of the outcome.
+
+Transitions between Early and Middle Development, and between Middle and Late Development are governed by the time in the Early or Middle stage (canopy cover usually does not affect these probabilties). These transitions may begin at the minimum time in a developmental \emph{stage} specified, and proceed at rates that vary across cover types. We show here the average stage-age of transition. If a cell reaches the maximum stage-age listed, its probability of transitioning goes to 1. Transitions between the canopy cover types occur within one developmental stage: e.g., between Middle Development Open and Middle Development Moderate, but not between Middle Development Open and Late Development Moderate. These transitions are governed by the time in the full condition class specification since the last disturbance. The time count may be affected by a low mortality fire, a transition between developmental stages, or a transition between canopy cover levels. Similarly to the developmental transitions, the shift from, for example, Middle Development Open to Middle Development Closed may begin when the minimum time is reached, and also proceeds at rates that vary across cover types. We show here the average condition-age of transition. However, no maximum age is specified for this type of transition.
+
+\begin{table}[htbp]
+\small
+\centering
+\caption{Fire return interval and percent high mortality fire probabilities for Sierran Mixed Conifer - Mesic.}
+\label{smcm_fri_phm}
+\begin{tabular}{lcc}
+\hline
+\textbf{Condition Class}    & \textbf{FRI (yrs)} & \textbf{\% High Mortality} \\ \hline
+\emph{Target}    			& \emph{29}&                   \\
+Early All     				& 44        & 1                 \\
+Mid Closed    				& 19        & 0.23              \\
+Mid Moderate  				& 13        & 0.17              \\
+Mid Open      				& 10        & 0.14              \\
+Late Closed   				& 34        & 0.37              \\
+Late Moderate 				& 13        & 0.14              \\
+Late Open     				& 8         & 0.09              \\ \hline
+\end{tabular}
+
+\end{table}
+
+\begin{table}[htbp]
+\small
+\centering
+\caption{Timeframes for transitions between condition classes in RMLands for Sierran Mixed Conifer - Mesic. ``Early to Mid'' and ``Mid to Late'' times are based on the time in a developmental stage, regardless of disturbance history. ``Open to Moderate'' and ``Moderate to Closed'' times are based on the time in a condition class since a disturbance.}
+\label{smcm_vegtrans}
+\begin{tabular}{cccc}
+\hline
+\textbf{Condition Class Transition} & \textbf{Minimum (years)} & \textbf{Average (years)} & \textbf{Maximum (years)} \\ \hline
+Early to Mid 	& 20      & 26      & 40      \\
+Mid to Late 	& 100     & 113     & 150     \\
+\begin{tabular}[c]{@{}c@{}}Open to Moderate or\\ Moderate to Closed\end{tabular}  & 15      & 21      &         \\ \hline
+\end{tabular}
+
+\end{table}
+
+
+\begin{table}[htbp]
+\small
+\centering
+\caption{Transition probabilities for Sierran Mixed Conifer - Mesic following low mortality fire.}
+\label{smcm_firetrans}
+\begin{tabular}{lcc}
+\hline
+\textbf{Condition Class Transition} & \textbf{Probability}\\
+\hline
+Mid Closed to Mid Moderate     	& 0.5263   	\\
+Mid Moderate to Mid Open    	& 0.357		\\
+Late Closed to Late Moderate	& 0.5435    \\
+Late Moderate to Late Open     	& 0.2442    \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Disturbance Parameters} 
+
+%\begin{adjustwidth}{5ex}{0pt}
+\begin{itemize}
+\item \emph{Climate:} The climate parameters are based on a rescaling of the Palmer Drought Severity Index (PDSI). PDSI is a long-term measure of drought, on the scale of months to years. It is based on precipitation and temperature and incorporates soil moisture. Resconstructed PDSI values for summer months during the historic period of this project (1550-1850) are available from Zhang 2004, Zhang 2009, and Cook 2004. These data are summarized at large scales; for example, the Cook 2004 data are calculated for a grid with points spaced at 2.5\textdegree. We selected the 5 closest points to the center of the project area from the Cook and Zhang datasets and calculated the inverse distance-weighted mean of the values. We then converted the yearly data into 5-year averages because the timestep used in RMLands is 5 years. By recentering the mean value around 1 and then taking the inverse, we create a dataset in which a value of 1 is neither wetter nor dryer than average, values between 0 and 1 represent wetter-than-normal timesteps, and values greater than 1 represent dryer-than-normal timesteps (Figure \ref{pdsi}). Climate interacts with other disturbance parameters in RMLands, including initiation, susceptibility, and spread.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=0.3\textheight]{/Users/mmallek/Tahoe/Report2/images/pdsi.png}
+\caption{Palmer Drought Severity Index, rescaled, inverted, and presented as a 5-year average for the ``historic'' period in this study (1550-1850).} 
+\label{pdsi}
+\end{figure}
+
+%\medskip
+
+%\noindent 
+\item \emph{Susceptibility:} Cover and condition are both inputs to susceptibility. The effect of topographic position is tied to cover: the susceptibility of certain cover types (Table \ref{covtpi}) is affected by cover. The magnitude of this effect is estimated as a potential reduction in susceptibility of 30\% between the minimum and maximum TPI values used in the model. This is specified as part of a 4-parameter logistic function in which the left value is 0.7, right value is 1, slope is 1, and inflection point is 0. 
+
+\begin{table}[htbp]
+\small
+\centering
+\caption{Cover types whose susceptibility is modified by Topographic Position Index.}
+\label{covtpi}
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{c}{\textbf{Cover Types with TPI Adjustment}} \\
+\hline
+Grassland     									& Red Fir - Mesic   					\\
+Lodgepole Pine    								& Red Fir - Ultramafic					\\
+Mixed Evergreen - Mesic							& Red Fir - Xeric    					\\
+Mixed Evergreen - Ultramafic     				& Sierran Mixed Conifer - Mesic    		\\
+Mixed Evergreen - Xeric 						& Sierran Mixed Conifer - Ultramafic 	\\
+Montane Riparian								& Sierran Mixed Conifer - Xeric 		\\
+Oak Woodland 									& Western White Pine					\\
+Oak-Conifer Forest and Woodland 				& Yellow Pine 							\\
+Oak-Conifer Forest and Woodland - Ultramafic 	&										\\
+\hline
+\end{tabular}
+
+\end{table}
+
+Condition class further modifies susceptibility. The Weibull cumulative distribution function is used and we specify a scale parameter (mean return interval), shape parameter, and the reset point for the function (age since high mortality disturbance or age since any disturbance). The mean return interval for the condition class is used as a calibration parameter and was initially set as equal to the values provided in analogous LandFire Biophysical Setting types. Some modifications were made based on local knowledge. All mean return intervals within a cover type are modified as a group and kept relative to one another even as the magnitude of the return intervals is adjusted. The shape parameter is 3 for all cover types and condition classes. We selected between ``age since high mortality disturbance'' and ``age since any disturbance'' based on whether wildfires in that cover type are climate-driven (in which case we select the former) or fuels-driven (in which case we select the latter) (Figure \ref{howdriven}). A detailed description of the specific parameters chosen is available HERE (in some sort of appendix type file, or perhaps in cover type description doc.
+
+Include this?
+\begin{table}[htbp]
+\small
+\centering
+\caption{Cover types sorted by whether wildfire disturbance in them is characterized by fuels present or overarching climatic conditions.}
+\label{howdriven}
+\begin{tabular}{ll}
+\hline
+\textbf{Fuel-Driven Cover Types} 				& \textbf{Climate-Driven Cover Types}	\\
+\hline
+Curl-leaf Mountain Mahogany 					& Agriculture   						\\
+Grassland     									& Big Sagebrush 						\\
+Lodgepole Pine    								& Black and Low Sagebrush				\\
+Meadow											& Lodgepole Pine with Aspen 			\\
+Mixed Evergreen - Mesic							& Montane Riparian						\\
+Mixed Evergreen - Ultramafic     				& Red Fir with Aspen   					\\
+Mixed Evergreen - Xeric 						& Red Fir - Mesic    					\\
+Oak Woodland 									& Red Fir - Ultramafic 					\\
+Oak-Conifer Forest and Woodland 				& Red Fir - Xeric 						\\ 	
+Oak-Conifer Forest and Woodland - Ultramafic 	& Subalpine Conifer 					\\
+Sierran Mixed Conifer - Ultramafic 				& Subalpine Conifer with Aspen 			\\
+Sierran Mixed Conifer - Xeric 					& Sierran Mixed Conifer with Aspen 		\\
+Urban 											& Sierran Mixed Conifer - Mesic 		\\
+Yellow Pine 									& Western White Pine 					\\
+												& Yellow Pine with Aspen 				\\
+\hline
+\end{tabular}
+\end{table}
+
+
+%\medskip
+
+%\noindent 
+\item \emph{Initiation:} In RMLands, parameters for initiation are used as calibration parameters. The probability of wildfire initiation is a function of its susceptibility to wildfire and the climate modifier value for that timestep, and is applied at the cell level. The ignition calibration coefficient refers to the number of ignitions per 100,000 ha per year. For the HRV simulation, we set this coefficient at 38. We applied the coefficient evenly across the landscape based on local expert knowledge of lighting strike locations in the area (Alan Doerr and Marilyn Tierney, personal communication). Fires may be initiated anywhere within the project area or the 10 km buffer around it. The total area cover within that boundary is 409,410.7 ha, so up to 777 fire starts were possible during each timestep in our simulation (not all potential ignitions result in fire). Climate also influences initiation.
+
+%\medskip
+
+%\noindent 
+\item \emph{Spread:} The probability of fire spread in RMLands is a function of climate, susceptibility to wildfire, potential wildfire size, wind, spotting, relative elevation, and presence of streams. The first two are described above. The disturbance size distribution that regulates potential fire size was created by analyzing the size distribution of all mapped fires in the Northern Sierra CalVeg mapping zone and west of the Sierran crest, available from the Forest Service and the California Department of Forestry and Fire Protection, which goes back to approximately 1900. 
+
+Wind is incorporated in two parts. First, a prevailing wind direction for the fire is selected probabilistically from the eight cardinal directions. To compute the wind distribution values, we first consulted local experts to determine the dates of fire season (May 15 to October 15) and burning period times (1000 hours to 1800 hours). We then downloaded wind direction data from 6 local weather stations (Rice Canyon, Saddleback, Downieville, White Cloud, Emigrant Gap, and Blue Canyon, Figure \ref{weather}). Data from all weather stations was weighted equally.
+
+Rate of fire spread is also influenced by relative wind. After the wind direction is selected, fires are able to grow in all directions, but are relatively more likely to spread with wind than against it. We parameterized the influence of wind as a reduction in spread likelihood. Thus, spread in the same direction as wind has a neutral effect, spread at 45\textdegree  angles is reduced by 30\%, spread at 90\textdegree  angles is reduced by 70\%, spread at 135\textdegree  angles is reduced by 90\%, and spread opposite wind direction is reduced by 95\%. Relative elevation also modifies spreading potential. We parameterized the model such that spread downhill is extremely unlikely.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/weather.png}
+\caption{Weather stations used to inform wind direction parameters.}
+\label{weather}
+\end{figure}
+
+Spotting and the extent to which streams act as barriers to spread are affected by the fire size. As fires become larger, their probability of spotting and spotting distance increases. Similarly, streams function as a barrier to smaller fires, but large fires, which we characterize as wind- and climate-driven events, are able to spread past streams regardless of size. Stream size does impact smaller fires; the largest streams and rivers are usually an effective barrier to smaller fires, although even fairly small fires often spread past intermittent and small perennial streams. 
+
+For complete precise parameterization of the model, see ??? model file? a set of tables?
+
+%\medskip
+
+%\noindent 
+\item \emph{Mortality:} Cover and condition are both inputs to mortality. The effect of topographic position is tied to cover: the mortality of certain cover types (Table \ref{covtpi}) is affected by cover. The magnitude of this effect is estimated as a potential reduction in mortality of 30\% between the minimum and maximum TPI values used in the model. This is specified as part of a 4-parameter logistic function in which the left value is 0.7, right value is 1, slope is 1, and inflection point is 0. 
+
+\begin{table}[htbp]
+\small
+\centering
+\caption{Cover types whose mortality is modified by Topographic Position Index.}
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{c}{\textbf{Cover Types with TPI Adjustment}} \\
+\hline
+Grassland     									& Red Fir - Mesic   					\\
+Lodgepole Pine    								& Red Fir - Ultramafic					\\
+Mixed Evergreen - Mesic							& Red Fir - Xeric    					\\
+Mixed Evergreen - Ultramafic     				& Sierran Mixed Conifer - Mesic    		\\
+Mixed Evergreen - Xeric 						& Sierran Mixed Conifer - Ultramafic 	\\
+Montane Riparian								& Sierran Mixed Conifer - Xeric 		\\
+Oak Woodland 									& Western White Pine					\\
+Oak-Conifer Forest and Woodland 				& Yellow Pine 							\\
+Oak-Conifer Forest and Woodland - Ultramafic 	&										\\
+\hline
+\end{tabular}
+\end{table}
+
+Condition class further modifies mortality. We examined the VDDT models built during the LandFire project to extract the values used in that process. However, our accounting method differs slightly. VDDT focuses on a type of fire (e.g. mixed) that leads to a particular outcome (e.g. resetting to early seral conditions). VDDT includes 'mixed severity' fire, a construct that we do not include in our model. Instead, we have two types of fire, judged based on their outcomes: high mortality events, and low mortality events. We define low mortality fires are those in which less than 70\% of overstory trees are killed, while high mortality fires are those in which more that 70\% of overstory trees are killed. To interpret the VDDT models, we analyzed not only the fire type (replacement, mixed, or surface), but also the condition transitions that occurred as a consequence of that fire. I sorted the probabilities in the VDDT model into 3 bins. High mortality fires are those that result in conversion to early seral, regardless of whether they are called ``replacement'' or ``mixed.'' All other fires are considered low mortality. The probability of a high mortality outcome from fire was calculated by dividing the summed probabilities of high mortality fires as defined above by the summed probabilities of all fires. As an example, these probabilities for Sierran Mixed Conifer - Mesic are provided in Table \ref{smcm_fri_phm}.
+
+\end{itemize}
+%\end{adjustwidth}
+
+\subsection{Model Calibration}
+Calibrating the model was done by manipulating the ignition calibration coefficient and the relative magnitude of the specified scale parameter (mean fire return interval) in the Weibull cumulative distribution function under Susceptibility. We first manipulated the ignition calibration coefficient and reran the simulation until the output cover type rotation values were in a range near their target. We then modified the fire return interval values as groups of condition classes under a given cover type to achieve our target rotations. For example, the target rotation for Sierran Mixed Conifer - Mesic was 29 years. As part of calibration, we adjusted the input condition class-based mean fire return interval up or down, eventually arriving at an increase by a factor of 3. That is, each scale parameter value was multiplied by 3 in order to modify the susceptibility of Sierran Mixed Conifer - Mesic to fire without changing the relative susceptibility among Sierran Mixed Conifer - Mesic condition classes. We came very close to achieving our target cover type rotation values through several iterations of this method, and the final step was to make a final small modification to the ignitition calibration coefficient.
+
+\subsection{Model Execution}
+During the calibration phase of the model, a typical simulation would be three runs of 200 timesteps each. The equilibration period of 40 timesteps was chosen based on visual analysis of the disturbed area and rotation plots from the combined runs. Once calibration was complete, we conducted one 500 timestep-long run in order to capture mutliple disturbance and succession cycles across the most common cover types. Each timestep represents five years. The five-year timestep was chosen based on the short fire return intervals recorded from dendrochronology analysis in the literature and our desire to capture these very short return intervals in the simulation.
+
+\subsection{Data Analysis}
+
+\paragraph{Disturbance Regime} We quantified the following overall temporal and spatial characteristics of the wildfire disturbance regime:
+\begin{itemize}
+	\item \emph{Disturbed Area:} We calculate disturbed area for each timestep, divided into low mortality and high mortality disturbance, and summed to produce an ``any mortality'' statistic. We summarize the results for minimum, maximum, mean, and median area disturbed for the full simulation excluding the equilibration period (460 timesteps, or 2300 years). We also present maps of the landscape illustrating the minimum and maximum area burned during the simulation, and a 4-timestep sequence illustrating a time series of wildfire disturbance. Finally, we present the distribution of wildfire extents during the simulation, excluding the equilibration period as a barplot.
+	\item \emph{Disturbance Frequency:} We calcuate the number of years between disturbances exceeding a particular threshold in total disturbed area. We report the frequency of timesteps during which at least 10\%, 25\%, or 50\% of the landscape experienced wildfire.
+	\item \emph{Climate Effect:} \textbf{would be good to somehow illustrate some effect of climate, whether through old method or new one}
+	\item \emph{Rotation Period:} We calculate the rotation period - number of years required to burn an area equivalent ot the total eligible area - for each cover type within the project area. It is based on the census, not a sample, of the population of cells within the project area, and is therefore equivalent to the cell-specific grant mean return interval for a given cover type across the landscape. We report the rotation values for low mortality fire, high mortality fire, and any fire. We also report this data for the full landscape.
+	\item \emph{Return Interval:} We summarize the cell-specific population mean return interval - average number of years between disturbances at a single cell - and present it as the distribution of the percentage of eligible cells that experienced each possible mean return interval. We present histograms for low mortality fire, high mortality fire, and any fire, along with their median values. As with the rotation period, this method uses the census, not a sample, of the population of cells within the project area, and is therefore equivalent to the cell-specific grant mean return interval for a given cover type across the landscape. We also report this data for the full landscape.
+\end{itemize}
+
+\paragraph{Vegetation Response} 
+
+\begin{itemize}
+\item \emph{Landscape Composition:} We quantified the distribution and dynamics of landscape composition by cover type. For our single 2500 year simulation (with 200 year equilibration period), we summarize the results in a table and in stacked bar plots. For the tabular results, we present the mean, median, minimum, maximum, 5th, 25th, 75th and 95th percentiles of the distribution. We compared the current landscape condition (i.e., proportion of cover type in each condition class) to this simulated historic range of variability to determine whether the current landscape deviates, and to what degree, from the HRV. Due to rarity on the landscape, the results for several cover types are unreliable. In the body of this report we present results for the cover types that occur over at least 1000 ha on the project landscape; others are available in A PLACE (Appendix??). For the graphic results, we present the proportion of the total area of a given cover type occuring as each condition class, for each timestep in the model. In addition, we show a simple plot of current conditions, allowing a visual comparison between current conditions and the historic range of variability in the distribution of the condition classes.
+
+\item \emph{Landscape Structure and Patterns:} We used Fragstats to compute several landscape-level and class-level metrics that summarize landscape structure over the course of the simulation. We present the results in tabular and graphic formats.
+	\begin{itemize}
+		\item Percentage of Landscape (PLAND)\\
+		\emph{Landscape}-level: not computed\\
+		\emph{Class}-level: the percentage of the landscape comprised of a particular patch type\\
+		
+		\item Core Area Percentage of Landscape (CPLAND)\\
+		\emph{Landscape}-level: not computed\\
+		\emph{Class}-level: the sum of all core areas in a given patch type divided by the total landscape area; reported as a percentage\\
+
+		\item Patch Density (PD)\\
+		\emph{Landscape}-level: number of patches of all cover types and condition classes divided by the total landscape area for one timestep; reported as the number of patches per 100 hecatres.\\
+		\emph{Class}-level: number of patches of a give cover type and condition class divided by the total area occupied by that cover-condition type for one timestep; reported as the number of patches per 100 hecatres.\\
+		
+		\item Edge Density (ED) \\
+		\emph{Landscape}-level: the sume of the lengths of all edge segments divided by the total landscape area; reported as the average length of edge in meters per hectare\\	
+		\emph{Class}-level: the sum of the lengths of all edge segments for a given patch type divided by the total area occuring as that patch type, per timestep; reported as the average length of edge in meters per hectare\\
+
+		\item Total Edge Contrast Index (TECI) \\
+		\emph{Landscape}-level: the sum of the lengths of all edge segments in the landscape multiplied by the appropriate contrast weight, divided by the total length of edge in the landscape\\
+		\emph{Class}-level: the sum of the products of the lengths of all edge segments for a given patch type and the appropriate contrast weight,  divided by the sum of the lengths of all edge segments for a given patch type \\
+		
+		\item Mean Area (AREA\_MN)\\
+		\emph{Landscape}-level:  mean patch area across all cover types and condition classes\\
+		\emph{Class}-level:  mean patch area across all condition classes for a given cover type\\
+		
+		\item Area-Weighted Mean Area (AREA\_AM)\\
+		\emph{Landscape}-level: area-weighted mean patch area\\ across all cover types and condition classes
+		\emph{Class}-level: area-weighted mean patch \\area across all condition classes for a given cover type.
+		
+		\item Area-Weighted Mean Radius of Gyration (GYRATE\_AM)\\
+		\emph{Landscape}-level: measure of the area-weight mean length across the landscape a patch extends its reach\\
+		\emph{Class}-level: for a given cover type and condition class, the area-weighted mean average length of a patch on the landscape\\
+		
+		\item Mean Shape (SHAPE\_MN) measures the complexity of patch shape compared to a square of the same size\\
+		\emph{Landscape}-level: length of patch perimeter for all patch type on the landscape divided by the area of the landscape, adjusted to a square standard, and averaged across all patch types\\
+		\emph{Class}-level: length of patch perimeter for each patch type on the landscape divided by the square root of the area in that patch type, adjusted to a square standard \\
+		
+		\item Area-Weighted Mean Shape (SHAPE\_AM)\\
+		\emph{Landscape}-level: length of patch perimeter for all patch type on the landscape divided by the area of the landscape, adjusted to a square standard, and converted to an area-weighted mean across all patch types \\
+		\emph{Class}-level: length of patch perimeter for each patch type on the landscape divided by the square root of the area in that patch type, adjusted to a square standard\\
+		
+		\item Mean Core Area (CORE\_MN)\\
+		\emph{Landscape}-level: total core area on the landscape, divided by landscape area\\
+		\emph{Class}-level: total core area within each patch type on the landscape, divided by the total area in the same patch type\\
+		
+		\item Area-Weighted Mean Core Area (CORE\_AM)\\
+		\emph{Landscape}-level: total core area within each patch type on the landscape, divided by the total area in the same patch type, and adjusted to reflect the mean CORE value for a cell selected at random on the landscape	\\
+		\emph{Class}-level: total core area within each patch type on the landscape, divided by the total area in the same patch type, and adjusted to reflect the mean CORE value for a cell selected at random from the cells in that patch type	\\
+		
+		\item Area-Weighted Mean Core Area Index (CAI\_AM)\\
+		\emph{Landscape}-level: core area of a patch divided by total area of a patch, multiplied by the area of that patch divided by the area of the landscape; reported as a percentage	\\
+		\emph{Class}-level: core area of a patch divided by total area of a patch, multiplied by the area of that patch divided by the total area of that patch type; reported as a percentage	\\
+		
+		\item Mean Similarity Index (SIMI\_MN)\\
+		\emph{Landscape}-level: the average sum over all neighboring patches with edges within a specified distance of the focal patch, of: neighboring patch area times a similarity coefficient between the focal patch type and the class of the neighboring patch, divided by the nearest edge-to-edge distance squared between the focal patch and the neighboring patch	\\
+		\emph{Class}-level: the average sum over all neighboring patches with edges within a specified distance of the focal patch, of: neighboring patch area times a similarity coefficient between the focal patch type and the class of the neighboring patch, divided by the nearest edge-to-edge distance squared between the focal patch and the neighboring patch; reported for each patch type separately	\\
+		
+		\item Contrast-Weighted Edge Density (CWED)\\
+		\emph{Landscape}-level: Edge Density multiplied by a contrast weight, which expresses the relative dissimilarity between two cover-condition class patches; reported in meters per hectare	\\
+		\emph{Class}-level: Edge Density multiplied by a contrast weight, which expresses the relative dissimilarity between two cover-condition class patches; reported in meters per hectare\\
+
+		\item Contagion (CONTAG)\\
+		\emph{Landscape}-level: 1 minus the sum of the proportional abundance of each patch type multiplied by the proportion of adjacencies between cells of that patch type and another patch type, multiplied by the logarithm of the same quantity, summed over each unique adjacency type and each patch type; divided by 2 times the logarithm of the number of patch types; reported as a percent; inversely related to edge density\\
+		\emph{Class}-level: not computed\ \ 	
+		
+		\textbf{not sure how to fix Clumpy explanation}		
+		\item Clumpiness Index (CLUMPY)\\
+		\emph{Landscape}-level: not computed  	\\
+		\emph{Class}-level: the proportional deviation of the proportion of like adjacencies involving the corresponding class from that expected under a spatially random distribution. If the proportion of like adjacencies ($G_i$) is $\geq$ the proportion of the landscape comprised of the focal class ($P_i$), then $\text{CLUMPY} = \frac{G_i - P_i}{1 - P_i}$. If $G_i < P_i \text{and} P_i \geq 0.5, \text{then CLUMPY} = \frac{G_i - Pi}{1 - P_i}$. If $G_i < Pi \text{and} P_i < 0.5, \text{then CLUMPY} = \frac{P_i - G_i}{-P_i}$.	\\
+		
+		\item Interspersion and Juxtoposition Index(IJI) - the observed interspersion over the maximum possible interspersion\\
+		\emph{Landscape}-level: -1 times the sum of the length of each unique edge type divided by the total landscape edge, multiple by the logarithm of the same quantity, summed over each unique edge type;  divided by the logarithm of the number of patch types times the number of patch types minus 1 divided by 2 	\\
+		\emph{Class}-level: -1 times the sum of the length of each unique edge type involving the corresponding patch type divided by the total length of edge involving the same type, multiplied by the logarithm of the same quantity, summed over each unique edge type; divided by the logarithm of the number of patch types minus 1; reported as a percentage	\\
+		
+		\item Patch Richness (PR)\\
+		\emph{Landscape}-level: the number of patch types present in the landscape	\\
+		\emph{Class}-level: not computed \\
+		
+		\item Simpson's Diversity Index (SIDI) - the probability that any 2 pixels selected at random would be different patch types\\
+		\emph{Landscape}-level: 1 minus the sum of the squared proportional abundance of each patch type; reported as a value between 0 and 1	\\
+		\emph{Class}-level: not computed\\
+		
+		\item Simpson's Evenness Index (SIEI) - measure of whether the areal distribution of patches is more even or more dominated by a few patch types\\
+		\emph{Landscape}-level: Simpson's Diversity Index divided by 1 - the inverse of Patch Richness; reported as a value between 0 and 1. 	\\
+		\emph{Class}-level: not computed\\
+		
+		\item Aggregation Index (AI) - an area-weighted mean class aggregation index \\
+		\emph{Landscape}-level: the number of cells of the same cover and condition (patch type) adjecent to one another, multiplied by the proportion of the landscape comprised of that that patch type, summed over all classes; reported as a percentage	\\
+		\emph{Class}-level: the number of cells of the same cover and condition (patch type) adjacent to one another divided by the maximum possible number of cells in that patch type; reported as a percentage	\\
+	\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Future Management Scenarios}
+
+\subsection{Roads} 
+Roads represents all transportation corridors classified as small, medium or large based on road size and/or intensity of use. It is only used during future scenarios simulations
+
+In this application, the roads layer was created from a line coverage containing transportation data, including an attribute for roads size or order, by converting to a grid based on the roads size attribute. Roads are used to affect disturbance spread in RMLands; i.e., roads function as an impediment to spread. We employed the orthogonal neighbor rule when converting a line to a raster of like-valued cells. That is, the final grid contains stream cells that connect along a cell side, as opposed to diagonally. This is required because diagonal neighbors, while touching, will not provide an impediment to disturbance spread (which happens diagonally as well as orthogonally). In addition, road proximity - which is derived from roads - can be used to constrain and/or prioritize areas for vegetation treatments. 
 
 It is extremely important that the rasterization process employ the orthogonal neighbor rule when converting a line to a string of like-valued cells. Specifically, the final grid should contain road cells that connect along a cell side (i.e., orthogonally) as opposed to diagonally. The diagonal neighbors, while touching, will not provide an impediment to disturbance spread (which happens diagonally as well as orthogonally). In addition, roads do not have to be in a contiguous network (i.e., no breaks in the roads) as long as the implications in terms of disturbance spread and/or logical treatment boundaries are understood and accepted. 
 
-Roads is a “static” grid; cell values remain constant over time. Note, roads can also be integrated into the cover type classification scheme and represented in the cover grid depending on the application. However, in the current version of RMLANDS it is necessary to include a separate roads grid regardless of whether road features are integrated into the cover grid or not.
+Roads is a “static” grid; cell values remain constant over time. Note, roads can also be integrated into the cover type classification scheme and represented in the cover grid depending on the application. However, in the current version of RMLands it is necessary to include a separate roads grid regardless of whether road features are integrated into the cover grid or not.
 
 Grid values represent categorical values assigned to the three road size classes, plus a value for background. All non-road cells within the project boundary must be assigned a background value (99999). NODATA is reserved for cells outside the project boundary.
 
-\subsection{Buffer/Core} 
-Buffer represents the ``core'' project area and a user-specified ``buffer'' around the core area. The ``core'' area is the project area of interest (the watersheds), whereas the ``buffer'' is an arbitrarily-defined area around the core designed to eliminate the boundary (or edge) effect associated with disturbance spread. This allows disturbances to spread on to and off of the landscape without impediment. Without a buffer there is a substantial bias in the probability of disturbance for cells within a certain distance of the edge of the landscape because of the reduced likelihood that disturbances will spread to that location from outside the designated landscape. We use a 10-km buffer is generally sufficient to offset any boundary effects when simulating large wildfires and insect outbreaks. It is important to note that if a buffer grid is specified, then all other input grids must be classified within the full extent of the buffer area as well as the core. All succession and disturbance processes operate seamlessly across the buffer and core, and thus the presence of a buffer does not affect the simulation in any way. However, if a buffer is present, all statistic reporting is restricted to the behavior in the core only. Buffer is a ``static'' grid; cell values remain constant over time.
+\subsection{Vegetation Treatment Layers}
 
-The original polygon layer for this was generated by creating at 10km buffer around the project area watersheds. It was then converted to raster using the same procedure as for other layers. 
+When simulating future scenarios, RMLands accepts parameterization for vegetation treatments across the landscape. We identified four classes of vegetation treatments, and created a \textbf{static suitability layer} for each. These treatment priority layers were created through a series of geoprocessing steps that included developing several input layers, assigning probabilities to each, and computing the geometric mean of the layer set. We incorporated the following layers into treatment priorities:
+\begin{itemize}
+	\item Wildland Urban Interface: composed of urban core, defense zone, and threat zone
+	\item Goshawk and Spotted Owl Protected Activity Centers
+	\item Slope
+	\item Riparian Conservation Areas: 300 ft along each side of perennial streams, and 150 ft from each side of intermittent and ephemeral streams
+	\item Topographic Position Index (rescaled according to a logistic function)
+	\item Roadless areas
+	\item Road Proximity: Euclidean distance from the closest road
+\end{itemize}
 
-	i. HRV
-		1. Data prep
-			B. Common Input Layers
-				1. Input Layers: source, processing, purpose
-		C. Model Parameterization
-				1. State and Transition Models
-				2. Disturbance parameters
-					a. Climate
-					b. Susceptibility
-					c. Initiation
-					d. Spread
-					e. Mortality
-		D. Model Calibration
-		E. Model Execution
-			3. Run parameters
-				f. length/timesteps
-		F. Data analysis
-			1. Disturbance regime
-			2. Vegetation response 
-				a. Landscape composition (covcond plots)
-				b. Landscape Structure/Patterns
+
+\begin{table}[ht]
+\small
+\centering
+\caption{Values for individual input layers to treatment priority grids in RMLands. To create the grid for each treatment class (e.g. 'Understory Mechanical'), the geometric mean of the 11 inputs was computed, allowing 0 values to be preserved. Each output grid is scaled from 0-1 and acts as a probability surface for the generation of treatment units in RMLands.}
+\label{treatpri_table}
+\begin{tabular}{@{}llllll@{}} 
+    & \multicolumn{4}{c}{Treatment Priority Grids} &  \\ 
+    \cmidrule(r){2-6}
+    
+    & \begin{tabular}[c]{@{}l@{}}Understory 	\\ 
+    
+    Mechanical\end{tabular}		& \begin{tabular}[c]{@{}l@{}}Prescribed \\ 
+    
+    Fire\end{tabular} 			& Thinning 	& \begin{tabular}[c]{@{}l@{}}Matrix Thin \\ \& Group Cut\end{tabular} 	& \begin{tabular}[c]{@{}l@{}}Methods/\\ Algorithm\end{tabular} \\ 
+    \cmidrule(r){1-6}
+	
+	\multicolumn{1}{l}{WUI + PAC}  	& \multicolumn{1}{l}{0.6} 	& \multicolumn{1}{l}{0.6} 	& \multicolumn{1}{l}{0.4} 	& \multicolumn{1}{l}{0.2} 	& classified        \\ 
+	
+	\rowcolor[HTML]{EFEFEF} \multicolumn{1}{l}{nonWUI PAC} 	& \multicolumn{1}{l}{0}  	& \multicolumn{1}{l}{0.4} 	& \multicolumn{1}{l}{0}	& \multicolumn{1}{l}{0} 	& classified  	\\ 	
+	
+	\multicolumn{1}{l}{NonWUI, nonPAC} 	& \multicolumn{1}{l}{0.6} 	& \multicolumn{1}{l}{0.8} 	& \multicolumn{1}{l}{0.8} 	& \multicolumn{1}{l}{0.8} 	& classified  	\\ 
+
+	\rowcolor[HTML]{EFEFEF} \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}WUI Threat Zone \\ excluding PAC\end{tabular}}     & \multicolumn{1}{l}{0.8}        & \multicolumn{1}{l}{0.8}        & \multicolumn{1}{l}{0.8}        & \multicolumn{1}{l}{0.8}        & classified        \\ 
+
+	\multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}WUI Defense Zone \\ excluding PAC\end{tabular}}    & \multicolumn{1}{l}{1}          & \multicolumn{1}{l}{1}          & \multicolumn{1}{l}{1}          & \multicolumn{1}{l}{1}          & classified        \\ 
+
+	\rowcolor[HTML]{EFEFEF} \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}WUI Urban Core Zone \\ excluding PAC\end{tabular}} & \multicolumn{1}{l}{1}          & \multicolumn{1}{l}{1}          & \multicolumn{1}{l}{1}          & \multicolumn{1}{l}{1}          & classified        \\ 
+
+	\multicolumn{1}{l}{Riparian}                          & \multicolumn{1}{l}{0}          & \multicolumn{1}{l}{0}          & \multicolumn{1}{l}{0}          & \multicolumn{1}{l}{0}          & classified        \\ 
+
+	\rowcolor[HTML]{EFEFEF} \multicolumn{1}{l}{Slope}  	& \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & logistic function \\ 
+
+	\multicolumn{1}{l}{TPI}  	& \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & linear 	\\ 	
+
+	\rowcolor[HTML]{EFEFEF} \multicolumn{1}{l}{Road Proximity} 	& \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & \multicolumn{1}{l}{calculated} & linear 	\\ 
+
+	\multicolumn{1}{l}{Roadless} 	& 0 	& 0 	& 0  	 & 0 	 & 	\\ \cmidrule(r){1-6}
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[height=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/treatpri_rxfire.png}
+\caption{Treatment Priority grid for Prescribed Fire treatment class.} 
+\label{treatpri_rxfire}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[height=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/treatpri_undermech.png}
+\caption{Treatment Priority grid for Understory Mechanical treatment class.} 
+\label{treatpri_undermech}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[height=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/treatpri_thin.png}
+\caption{Treatment Priority grid for Thinning treatment class.} 
+\label{treatpri_thin}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[height=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/treatpri_matgroup.png}
+\caption{Treatment Priority grid for Matrix Thin \& Group Cut treatment class.} 
+\label{treatpri_matgroup}
+\end{figure}
+
+
 
 
 
