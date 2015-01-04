@@ -4,64 +4,83 @@
 
 \subsection{Disturbance Regime}
 
-This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire (KEEP?). In the sections below, we briefly describe the simulated disturbance regime (i.e., spatial extent and distribution, frequency and temporal variability). In this subsection, we refrain from describing variations among vegetation types - this will be accomplished in the section on (TITLE?) Vegetation Patterns and Dynamics. Finally, it is important to realize that while the information below is presented as ``results,'' it could have easily been presented in the methods section as ``model calibration.'' Key spatial and temporal aspects of the disturbance regime were evaluated during preliminary ``calibration'' runs, and subsequent adjustments were made to model parameters to effect desired changes. Thus, while the information presented below does in fact represent results (output) of the simulation, it also represents a set of targets used to calibrate the model (i.e., adjust model parameters to achieve desired results). While this may seem a bit circular, it was a necessary process for a complex model such as RMLANDS. Moreoever, our real emphasis was on quantifying the vegetation patterns and dynamics resulting from these disturbance processes.
+This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire.\todo{is this true?} In the sections below, we briefly describe the simulated disturbance regime (i.e., spatial extent and distribution, frequency and temporal variability). In this subsection, we refrain from describing variations among vegetation types - this will be accomplished in Subsection~\ref{subsec:HRVvegresponse}\todo{verify this}. Finally, it is important to realize that while the information below is presented as ``results,'' it could have easily been presented in the methods section as ``model calibration.'' Key spatial and temporal aspects of the disturbance regime were evaluated during preliminary calibration runs, and we subsequently adjusted model parameters to effect desired changes. Thus, while the information presented below does in fact represent results (output) of the simulation, it also represents a set of targets used to calibrate the model (i.e., adjust model parameters to achieve desired results). While this may seem a bit circular, it was a necessary process for a complex model such as \textsc{RMLands}. Moreover, our real emphasis was on quantifying the vegetation patterns and dynamics resulting from these disturbance processes.
 
 \paragraph{Disturbed Area}
 
 % 174830 eligible hectares
 % 181550 hectares in core
-Approximately 96\% of the landscape was eligible for wildfire disturbance (all cover types except Barren and Water). As expected, the frequency and extent of simulated wildfires varied across timesteps. Remarkably, given the rotation interval and percent mortality expected over time on this landscape, large proportions of the project area burned each (5-year) timestep. On average, at least 10\% of the landscape burned at some combination of low and high mortality every decade. Timesteps with area burned of 30\% or less were the most commonly observed. Fires covering at least 25\% of the landscape burned approximately every 25 years, and half or more of the landscape burned at a 200 year interval. The smallest area disturbed over the course of the simulation was 0.26\%, while the largest was 66.2\% (of which 22.91\% was high mortality). About a third of the disturbed area burned as high mortality (which does include the burning of early development vegetation, including chaparral).
+% check math using Wildfire_darea_trajectory.csv
+Approximately 96\% of the landscape was eligible for wildfire disturbance (all cover types except Barren and Water). As expected, the frequency and extent of simulated wildfires varied across timesteps (Figures~\ref{darea} and~\ref{fig:darea_hist}). Remarkably, given the rotation interval and percent mortality expected over time on this landscape, large proportions of the project area burned each (5-year) timestep. On average, at least 10\% of the landscape burned at some combination of low and high mortality every ten years. Timesteps with area burned of 30\% or less were the most frequently observed. Fires covering at least 25\% of the landscape burned approximately every 25 years, and half or more of the landscape burned at a 200 year interval\todo{how did I calculate this?}. The smallest area disturbed over the course of the simulation was 0.26\%, while the largest was 66.2\% (of which 22.91\% was high mortality). In general, within a given timestep about a third of the disturbed area burned as high mortality (Table~\ref{tab:darea}. High mortality fires do include the burning of early development vegetation, including chaparral.
 
-\begin{verbatim}
-     summary statistic mort.low mort.high mort.any
-minimum darea/timestep     0.22      0.03     0.26
-maximum darea/timestep    43.27     22.91     66.2
- median darea/timestep     9.24      3.98    13.12
-   mean darea/timestep    11.58      5.17    16.75
-\end{verbatim}
-
-\begin{figure}
+\begin{table}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea.png}
-\caption{}
+\caption{Summary statistics for area disturbed by wildfire during the simulation. Values are expressed as percentage of the landscape eligible for disturbance that was actually disturbed.}
+\label{tab:darea}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}}    & \textbf{Low Mortality}   & \textbf{High Mortality}    & \textbf{Any Mortality}   \\
+\midrule
+Minimum darea/timestep        &    0.22             & 0.03                  &     0.26            \\
+Maximum darea/timestep        &   43.27             & 22.91                 &     66.2            \\
+ Median darea/timestep        &    9.24             & 3.98                  &     13.12           \\
+   Mean darea/timestep        &   11.58             & 5.17                  &     16.75           \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%\begin{verbatim}
+%     summary statistic mort.low mort.high mort.any
+%minimum darea/timestep     0.22      0.03     0.26
+%maximum darea/timestep    43.27     22.91     66.2
+% median darea/timestep     9.24      3.98    13.12
+%   mean darea/timestep    11.58      5.17    16.75
+%\end{verbatim}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea.png}
+\caption{Disturbance trajectory for wildfire during the simulation. The first timestep is 40 because we excluded earlier timesteps as equilibration. Dark blue values represent high mortality fire, while light blue values represent low mortality fire and are stacked on top of high mortality.}
 \label{darea}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea_hist.png}
-\caption{}
-\label{darea_hist}
+\includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea_hist.png}
+\caption{Histogram of percent of landscape disturbed by wildfire during the simulation. The distribution is substantially right-skewed, and most fires burn less than 20\% of the eligible landscape.}
+\label{fig:darea_hist}
 \end{figure}
 
-\paragraph{Effect of Climate} Climate does have a positive relationship with disturbed area, as expected. We show here a fitted line, but note the heteroskedastic variance about the mean. The relationship is fairly weak. During wetter-than-average years, we see less disturbed area. Over 20\% of the landscape burned only in timesteps during which the climate parameter was at least 0.75. However, over 50\% of the landscape burned in a few timesteps less than the average value, 1.
+\paragraph{Effect of Climate} \todo{Do I say I'll do this in methods?}Climate does have a positive relationship with disturbed area, as expected (Figure \ref{fig:darea_climate}. We show here a fitted line, but note the heteroskedastic variance about the mean. The relationship is fairly weak. During wetter-than-average years, we see less disturbed area. Over 20\% of the landscape burned only in timesteps during which the climate parameter was at least 0.75. However, over 50\% of the landscape burned in a few timesteps less than the average value, 1. Overall we observe that as climate shifts from wet to drought, the disturbed area increases.
 
-\begin{figure}
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea_climate.png}
-\caption{}
-\label{darea_climate}
+\includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea_climate.png}
+\caption{Plot of the climate parameter and disturbed area value for each timestep of the simulation (excluding the equilibration period). A linear model has been fit to the data and is shown as a blue line; the grey shaded area represents the 95\% confidence interval around the mean.}
+\label{fig:darea_climate}
 \end{figure}
 
 \paragraph{Disturbance Size}
-\begin{verbatim}
-$`Wildfire disturbance size`$`run number 1`
-   bin obs.freq obs.proportion target.freq target.proportion
-     5   135327   0.7797220526        8464      0.8801996672
-    25    21339   0.1229502529         378      0.0393094842
-   125     5366   0.0309176183         316      0.0328618968
-   625     5011   0.0288721926         293      0.0304700499
-  3125     4803   0.0276737460         111      0.0115432612
- 15625     1503   0.0086599292          48      0.0049916805
- 78125      130   0.0007490291           6      0.0006239601
-133828       79   0.0004551792           0      0.0000000000
-\end{verbatim}
+As described in Section \ref{subsubsec:distparams}, we specified a target set of disturbance sizes. Because wildfire has many stochastic components, we do not expect the model results to match these targets exactly. Figure \ref{fig:dsize} compares the observed and target disturbance size distribution.
 
-\begin{figure}
+%\begin{verbatim}
+%$`Wildfire disturbance size`$`run number 1`
+%   bin obs.freq obs.proportion target.freq target.proportion
+%     5   135327   0.7797220526        8464      0.8801996672
+%    25    21339   0.1229502529         378      0.0393094842
+%   125     5366   0.0309176183         316      0.0328618968
+%   625     5011   0.0288721926         293      0.0304700499
+%  3125     4803   0.0276737460         111      0.0115432612
+% 15625     1503   0.0086599292          48      0.0049916805
+% 78125      130   0.0007490291           6      0.0006239601
+%133828       79   0.0004551792           0      0.0000000000
+%\end{verbatim}
+
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/dsize.png}
-\caption{}
-\label{dsize}
+\caption{Side by side barplot of the observed and target wildfire size distribution for our 500-timestep long run of the model.}
+\label{fig:dsize}
 \end{figure}
 
 \paragraph{Fire Rotation}
@@ -199,6 +218,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vegetation Response}
+\label{subsec:HRVvegresponse}
 
 \paragraph{Landscape Composition}
 
