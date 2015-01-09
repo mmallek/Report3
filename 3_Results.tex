@@ -6,7 +6,7 @@
 
 This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire.\todo{is this true?} In the sections below, we briefly describe the simulated disturbance regime (i.e., spatial extent and distribution, frequency and temporal variability). In this subsection, we refrain from describing variations among vegetation types - this will be accomplished in Subsection~\ref{subsec:HRVvegresponse}\todo{verify this}. Finally, it is important to realize that while the information below is presented as ``results,'' it could have easily been presented in the methods section as ``model calibration.'' Key spatial and temporal aspects of the disturbance regime were evaluated during preliminary calibration runs, and we subsequently adjusted model parameters to effect desired changes. Thus, while the information presented below does in fact represent results (output) of the simulation, it also represents a set of targets used to calibrate the model (i.e., adjust model parameters to achieve desired results). While this may seem a bit circular, it was a necessary process for a complex model such as \textsc{RMLands}. Moreover, our real emphasis was on quantifying the vegetation patterns and dynamics resulting from these disturbance processes.
 
-\paragraph{Disturbed Area}
+\subsubsection{Disturbed Area}
 
 % 174830 eligible hectares
 % 181550 hectares in core
@@ -53,7 +53,7 @@ Maximum darea/timestep        &   43.27             & 22.91                 &   
 
 
 
-\paragraph{Disturbance Size}
+\subsubsection{Disturbance Size}
 As described in Section \ref{subsubsec:distparams}, we specified a target set of disturbance sizes. Because wildfire has many stochastic components, we do not expect the model results to match these targets exactly. Figure \ref{fig:dsize} compares the observed and target disturbance size distribution.
 
 %\begin{verbatim}
@@ -78,7 +78,7 @@ As described in Section \ref{subsubsec:distparams}, we specified a target set of
 
 
 
-\paragraph{Effect of Climate} \todo{Do I say I'll do this in methods?}Climate does have a positive relationship with disturbed area, as expected (Figure \ref{fig:climate_darea}. We show here a fitted line, but note the heteroskedastic variance about the mean. The relationship is fairly weak. During wetter-than-average years, we see less disturbed area. Over 20\% of the landscape burned only in timesteps during which the climate parameter was at least 0.75. However, over 50\% of the landscape burned in a few timesteps less than the average value, 1. Overall we observe that as climate shifts from wet to drought, the disturbed area increases. Climate also has a weak effect on the size of individual fires (Figure \ref{fig:climate_dsize}). Fire size is also influenced by vegetation susceptibility and the specified disturbance size distribution. Figure \ref{fig:compare_clim_darea} illustrates the climate parameter values and disturbed area proportion of the landscape for a subset of timesteps during the simulation.
+\subsubsection{Effect of Climate} \todo{Do I say I'll do this in methods?}Climate does have a positive relationship with disturbed area, as expected (Figure \ref{fig:climate_darea}. We show here a fitted line, but note the heteroskedastic variance about the mean. The relationship is fairly weak. During wetter-than-average years, we see less disturbed area. Over 20\% of the landscape burned only in timesteps during which the climate parameter was at least 0.75. However, over 50\% of the landscape burned in a few timesteps less than the average value, 1. Overall we observe that as climate shifts from wet to drought, the disturbed area increases. Climate also has a weak effect on the size of individual fires (Figure \ref{fig:climate_dsize}). Fire size is also influenced by vegetation susceptibility and the specified disturbance size distribution. Figure \ref{fig:compare_clim_darea} illustrates the climate parameter values and disturbed area proportion of the landscape for a subset of timesteps during the simulation.
 
 \begin{figure}[!htbp]
   \centering
@@ -105,7 +105,7 @@ As described in Section \ref{subsubsec:distparams}, we specified a target set of
 
 
 \newpage
-\paragraph{Fire Rotation}
+\subsubsection{Fire Rotation}
 We present here the results for non-static cover types whose extent is at least 1000 ha. Full results are presented in \todo{Appendix?}. As previously discussed, these results could have been presented in the methods section. Each of the nine cover types shown here were calibrated to within 10\% of their target values, which were based on empirical published values and local expert opinion.
 
 \begin{table}[!htbp]
@@ -128,8 +128,8 @@ Total                                        & 45                          & 100
 \end{table}
 
 
-\paragraph{Population Return Interval}
-Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}. The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to each of the nine focal cover types follow (Figures \ref{fig:preturn_megm} through \ref{fig:preturn_smcx}.).
+\subsubsection{Population Return Interval}
+Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}. The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to each of the nine focal cover types follow (Figures \ref{fig:preturn_megm} through \ref{fig:preturn_smcx}.). We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Tables \ref{tab:covcond1} and \ref{tab:covcond2}
 
 \begin{figure}[!htbp]
   \centering
@@ -140,7 +140,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   }%
   \qquad
   \subfloat[][]{
-    \includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/fri_all.jpg}
+    \includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/fri_all.png}
     \label{fig:preturn_map}
   }
   \caption{(a) Population return interval (average number of years between fires) distribution for the full landscape under study. The population return interval is the point-specific interval, sometimes described as the ``grand mean'' for a given point. (b) Spatial depiction of fire return intervals across the landscape, for all cover types, in terms of fire return interval. The value at any given cell is the point-specific return interval.}
@@ -157,7 +157,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_megm.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Mixed Evergreen - Mesic. (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Mixed Evergreen - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 19 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Mixed Evergreen - Mesic. (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Mixed Evergreen - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 19 years to \textgreater 500 years.}
     \label{fig:preturn_megm}
 \end{figure}
 
@@ -170,7 +170,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_megx.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Mixed Evergreen - Xeric.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Mixed Evergreen - Xeric are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 20 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Mixed Evergreen - Xeric.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Mixed Evergreen - Xeric are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 20 years to \textgreater 500 years.}
 \label{fig:preturn_megx}
 \end{figure}
 
@@ -183,7 +183,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_ocfw.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Oak-Conifer Forest and Woodland.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Oak-Conifer Forest and Woodland are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 17 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Oak-Conifer Forest and Woodland.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Oak-Conifer Forest and Woodland are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 17 years to \textgreater 500 years.}
 \label{fig:preturn_ocfw}
 \end{figure}
 
@@ -196,7 +196,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_ocfwu.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Oak-Conifer Forest and Woodland - Ultramafic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Oak-Conifer Forest and Woodland - Ultramafic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 21 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Oak-Conifer Forest and Woodland - Ultramafic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Oak-Conifer Forest and Woodland - Ultramafic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 21 years to \textgreater 500 years.}
 \label{fig:preturn_ocfwu}
 \end{figure}
 
@@ -209,7 +209,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_rfrm.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Red Fir - Mesic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Red Fir - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 21 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Red Fir - Mesic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Red Fir - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 21 years to \textgreater 500 years.}
 \label{fig:preturn_rfrm}
 \end{figure}
 
@@ -222,7 +222,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_rfrx.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Red Fir - Xeric.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Red Fir - Xeric are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 20 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Red Fir - Xeric.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Red Fir - Xeric are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 20 years to \textgreater 500 years.}
 \label{fig:preturn_rfrx}
 \end{figure}
 
@@ -235,7 +235,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_smcm.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Mesic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 18 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Mesic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 18 years to \textgreater 500 years.}
 \label{fig:preturn_smcm}
 \end{figure}
 
@@ -248,7 +248,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_smcu.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Ultramafic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Ultramafic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 20 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Ultramafic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Ultramafic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 20 years to \textgreater 500 years.}
 \label{fig:preturn_smcu}
 \end{figure}
 
@@ -261,7 +261,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_smcx.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Xeric.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Xeric are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 18 years to \textgreater 1000 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Xeric.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Xeric are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 18 years to \textgreater 500 years.}
 \label{fig:preturn_smcx}
 \end{figure}
 
@@ -272,9 +272,9 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
 \subsection{Vegetation Response}
 \label{subsec:HRVvegresponse}
 
-\paragraph{Landscape Composition}
+\subsubsection{Landscape Composition}
 
-The distribution of area among condition classes within all cover types fluctuated over time, as expected. The relative proportion of each condition class also varied across cover types. In general, the condition class distribution appeared to be in dynamic equilibrium, despite considerable variability from timestep to timestep. 
+The distribution of area among condition classes within all cover types fluctuated over time, as expected. The relative proportion of each condition class also varied across cover types. In general, the condition class distribution appeared to be in dynamic equilibrium, despite considerable variability from timestep to timestep. The cover-condition dynamics and current seral stage distribution plots specific to each of the nine focal cover types follow (Figures \ref{fig:covcond_megm} through \ref{fig:covcond_smcx}.).
 
 \begin{figure}[!htbp]
   \centering
@@ -284,7 +284,7 @@ The distribution of area among condition classes within all cover types fluctuat
     }%
   \subfloat[][]{
   \centering
-  \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_megm.png}
+  \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_megm.png}
     }
   \caption{(a) Cover-Condition dynamics for Mixed Evergreen - Mesic. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Mixed Evergreen - Mesic.}
 \label{fig:covcond_megm}
@@ -297,7 +297,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_megx.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_megx.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_megx.png}
     }
   \caption{(a) Cover-Condition dynamics for Mixed Evergreen - Xeric. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Mixed Evergreen - Xeric.} 
   \label{fig:covcond_megx}
@@ -310,7 +310,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_ocfw.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_ocfw.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_ocfw.png}
     }
   \caption{(a) Cover-Condition dynamics for Oak-Conifer Forest and Woodland. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Oak-Conifer Forest and Woodland.} 
   \label{fig:covcond_ocfw}
@@ -323,7 +323,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_ocfwu.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_ocfwu.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_ocfwu.png}
     }
   \caption{(a) Cover-Condition dynamics for Oak-Conifer Forest and Woodland - Ultramafic. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Oak-Conifer Forest and Woodland - Ultramafic.} 
   \label{fig:covcond_ocfwu}
@@ -336,7 +336,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_rfrm.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_rfrm.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_rfrm.png}
     }
   \caption{(a) Cover-Condition dynamics for Red Fir - Mesic. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Red Fir - Mesic.} 
   \label{fig:covcond_rfrm}
@@ -349,7 +349,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_rfrx.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_rfrx.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_rfrx.png}
     }
   \caption{(a) Cover-Condition dynamics for Red Fir - Xeric. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Red Fir - Xeric.} 
   \label{fig:covcond_rfrx}
@@ -362,7 +362,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_smcm.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcm.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcm.png}
     }
   \caption{(a) Cover-Condition dynamics for Sierran Mixed Conifer - Mesic. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Sierran Mixed Conifer - Mesic.} 
   \label{fig:covcond_smcm}
@@ -375,7 +375,7 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_smcu.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcu.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcu.png}
     }
   \caption{(a) Cover-Condition dynamics for Sierran Mixed Conifer - Ultramafic. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Sierran Mixed Conifer - Ultramafic.} 
   \label{fig:covcond_smcu}
@@ -388,43 +388,170 @@ The distribution of area among condition classes within all cover types fluctuat
     \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_smcx.png}
     }%
   \subfloat[][]{
-    \includegraphics[height=2.5in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcx.png}
+    \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/Report2/images/covcond_current_smcx.png}
     }
   \caption{(a) Cover-Condition dynamics for Sierran Mixed Conifer - Xeric. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Sierran Mixed Conifer - Xeric.} 
   \label{fig:covcond_smcx}
 \end{figure}
 
+\begin{sidewaystable}[!htbp]
+\caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Mixed Evergreen - Mesic (MEG\_M), Mixed Evergreen - Xeric (MEG\_X), Oak-Conifer Forest and Woodland (OCFW), and Oak-Conifer Forest and Woodland - Ultramafic (OCFW\_U).}
+\label{tab:covcond1}
+\begin{tabular}{@{}llllllllll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Land Cover \\ Type\end{tabular}} & \textbf{Condition Class}      & \textbf{srv0\%} & \textbf{srv25\%} & \textbf{srv50\%} & \textbf{srv75\%} & \textbf{srv100\%} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%cover\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%srv\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular}} \\ \midrule
+\small MEG\_M          & Early-All Structures & 0.67   & 2.3     & 3.29    & 4.93    & 9.89     & 8.21                                                      & \small 97                                                      & 94              \\
+\small MEG\_M          & Mid-Closed           & 0.01   & 0.18    & 0.38    & 0.72    & 5.09     & 36.53                                                     & \small 100                                                     & 100             \\
+\small MEG\_M          & Mid-Moderate         & 0.47   & 1.53    & 2.27    & 3.67    & 9.06     & 9.76                                                      & \small 100                                                     & 100             \\
+\small MEG\_M          & Mid-Open             & 0      & 0.06    & 0.11    & 0.2     & 0.76     & 6.37                                                      & \small 100                                                     & 100             \\
+\small MEG\_M          & Late-Closed          & 63.9   & 77.22   & 81.07   & 84.41   & 91.68    & 29.31                                                     & \small 0                                                       & -100            \\
+\small MEG\_M          & Late-Moderate        & 3.75   & 7.37    & 9.16    & 11.33   & 18.04    & 7.31                                                      & \small 25                                                      & -50             \\
+\small MEG\_M          & Late-Open            & 0.77   & 1.81    & 2.56    & 3.51    & 7.01     & 2.5                                                       & \small 49                                                      & -2              \\
+\small MEG\_X          & Early-All Structures & 0.71   & 2.87    & 3.92    & 5.3     & 10.86    & 10.88                                                     & \small 100                                                     & 100             \\
+\small MEG\_X          & Mid-Closed           & 0.02   & 0.19    & 0.4     & 0.85    & 5.3      & 48.8                                                      & \small 100                                                     & 100             \\
+\small MEG\_X          & Mid-Moderate         & 0.5    & 1.98    & 2.85    & 3.82    & 9.03     & 9.39                                                      & \small 100                                                     & 100             \\
+\small MEG\_X          & Mid-Open             & 0.01   & 0.08    & 0.13    & 0.23    & 0.71     & 12.87                                                     & \small 100                                                     & 100             \\
+\small MEG\_X          & Late-Closed          & 64.45  & 76.78   & 79.98   & 82.89   & 89.89    & 12.84                                                     & \small 0                                                       & -100            \\
+\small MEG\_X          & Late-Moderate        & 4.44   & 8.03    & 9.71    & 11.76   & 19.2     & 3.84                                                      & \small 0                                                       & -100            \\
+\small MEG\_X          & Late-Open            & 0.72   & 1.68    & 2.16    & 2.93    & 5.67     & 1.38                                                      & \small 13                                                      & -74             \\
+\small OCFW            & Early-All Structures & 6.36   & 12.92   & 16.16   & 19.91   & 30.07    & 19.97                                                     & \small 76                                                      & 52              \\
+\small OCFW            & Mid-Closed           & 5.33   & 13.38   & 17.03   & 20.61   & 29.87    & 37.36                                                     & \small 100                                                     & 100             \\
+\small OCFW            & Mid-Moderate         & 7.53   & 10.33   & 11.41   & 12.73   & 20.25    & 14.61                                                     & \small 94                                                      & 88              \\
+\small OCFW            & Mid-Open             & 3.94   & 8.46    & 9.9     & 12.18   & 22.05    & 24.34                                                     & \small 100                                                     & 100             \\
+\small OCFW            & Late-Closed          & 9.21   & 21.56   & 26.14   & 30.91   & 43.09    & 1.58                                                      & \small 0                                                       & -100            \\
+\small OCFW            & Late-Moderate        & 7.65   & 11.67   & 13.62   & 15.82   & 21.06    & 1.02                                                      & \small 0                                                       & -100            \\
+\small OCFW            & Late-Open            & 1.25   & 2.88    & 3.9     & 5.25    & 9.25     & 1.12                                                      & \small 0                                                       & -100            \\
+\small OCFW\_U         & Early-All Structures & 1.36   & 2.68    & 3.53    & 4.95    & 14.9     & 17.76                                                     & \small 100                                                     & 100             \\
+\small OCFW\_U         & Mid-Closed           & 0.01   & 0.02    & 0.06    & 0.14    & 3.12     & 29.32                                                     & \small 100                                                     & 100             \\
+\small OCFW\_U         & Mid-Moderate         & 0.12   & 0.38    & 0.75    & 1.65    & 8.25     & 11.54                                                     & \small 100                                                     & 100             \\
+\small OCFW\_U         & Mid-Open             & 1.64   & 2.62    & 3.55    & 5.2     & 22.62    & 33.49                                                     & \small 100                                                     & 100             \\
+\small OCFW\_U         & Late-Closed          & 0.01   & 0.03    & 0.08    & 0.22    & 3.69     & 5.35                                                      & \small 100                                                     & 100             \\
+\small OCFW\_U         & Late-Moderate        & 0.84   & 1.44    & 2.4     & 7.86    & 26.31    & 2.2                                                       & \small 46                                                      & -8              \\
+\small OCFW\_U         & Late-Open            & 32.9   & 81.2    & 89.44   & 91.76   & 93.85    & 0.34                                                      & 0                                                       & -100            \\
+\bottomrule
+\end{tabular}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}[!htbp]
+\caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Red Fir - Mesic (RFR\_M), Red Fir - Xeric (RFR\_X), Sierran Mixed Conifer - Mesic (SMC\_M), and Sierran Mixed Conifer - Ultramafic (SMC\_U).}
+\label{tab:covcond2}
+\begin{tabular}{@{}llllllllll@{}}
+\toprule
+\textbf{Land Cover Type} & \textbf{Condition Class} & \textbf{srv0\%} & \textbf{srv25\%} & \textbf{srv50\%} & \textbf{srv75\%} & \textbf{srv100\%} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%cover\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%srv\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Departure\\ Index\end{tabular}} \\ \midrule
+\small RFR\_M                   & Early-All Structures     & 4.93            & 12.25            & 17.75            & 23.57            & 39.4              & 24.\small 21                                                              & 79                                                               & \small 58                                                                 \\
+\small RFR\_M                   & Mid-Closed               & 17.05           & 28.09            & 32.61            & 38.31            & 55.34             & 3.\small 63                                                               & 0                                                                & -\small 100                                                               \\
+\small RFR\_M                   & Mid-Moderate             & 0.42            & 0.92             & 1.25             & 1.58             & 3.53              & 18.\small 67                                                              & 100                                                              & \small 100                                                                \\
+\small RFR\_M                   & Mid-Open                 & 0.11            & 0.33             & 0.48             & 0.65             & 1.39              & 16.\small 7                                                               & 100                                                              & \small 100                                                                \\
+\small RFR\_M                   & Late-Closed              & 20.74           & 33.53            & 39.97            & 46.88            & 59.29             & 10.\small 7                                                               & 0                                                                & -\small 100                                                               \\
+\small RFR\_M                   & Late-Moderate            & 1.77            & 2.63             & 3.02             & 3.43             & 5.41              & 21.\small 96                                                              & 100                                                              & \small 100                                                                \\
+\small RFR\_M                   & Late-Open                & 1.15            & 2.13             & 2.89             & 3.64             & 7.7               & 4.\small 13                                                               & 87                                                               & \small 74                                                                 \\
+\small RFR\_X                   & Early-All Structures     & 19.92           & 31.05            & 36.71            & 41.13            & 56.55             & 32.\small 39                                                              & 32                                                               & -\small 36                                                                \\
+\small RFR\_X                   & Mid-Closed               & 0.04            & 0.21             & 0.37             & 0.66             & 4.14              & 8.\small 26                                                               & 100                                                              & \small 100                                                                \\
+\small RFR\_X                   & Mid-Moderate             & 1.14            & 4.19             & 5.86             & 7.7              & 13.59             & 18.\small 66                                                              & 100                                                              & \small 100                                                                \\
+\small RFR\_X                   & Mid-Open                 & 8.99            & 17.61            & 19.95            & 22.93            & 33.41             & 12.\small 58                                                              & 5                                                                & -\small 90                                                                \\
+\small RFR\_X                   & Late-Closed              & 4.51            & 9.57             & 11.99            & 15.38            & 25.44             & 10.\small 45                                                              & 35                                                               & -\small 30                                                                \\
+\small RFR\_X                   & Late-Moderate            & 7.28            & 12.42            & 14.16            & 15.44            & 20.37             & 14.\small 57                                                              & 59                                                               & \small 18                                                                 \\
+\small RFR\_X                   & Late-Open                & 5.38            & 7.88             & 9.65             & 11.03            & 19.34             & 3.\small 1                                                                & 0                                                                & -\small 100                                                               \\
+\small SMC\_M                   & Early-All Structures     & 3.83            & 11.88            & 15.32            & 19.39            & 32.65             & 14.\small 98                                                              & 47                                                               & -\small 6                                                                 \\
+\small SMC\_M                   & Mid-Closed               & 13.57           & 24.42            & 28.28            & 32.5             & 42.25             & 9.\small 74                                                               & 0                                                                & -\small 100                                                               \\
+\small SMC\_M                   & Mid-Moderate             & 7.45            & 10.8             & 12.23            & 13.48            & 18.95             & 17.\small 97                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_M                   & Mid-Open                 & 5.07            & 9.31             & 11.56            & 13.69            & 22.7              & 16.\small 29                                                              & 94                                                               & \small 88                                                                 \\
+\small SMC\_M                   & Late-Closed              & 7.49            & 15.34            & 18.71            & 23.15            & 32.66             & 23.\small 23                                                              & 76                                                               & \small 52                                                                 \\
+\small SMC\_M                   & Late-Moderate            & 5.26            & 7.72             & 8.79             & 9.74             & 12.67             & 14.\small 18                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_M                   & Late-Open                & 1.65            & 3.08             & 3.97             & 4.87             & 9.34              & 3.\small 6                                                                & 41                                                               & -\small 18                                                                \\
+\small SMC\_U                   & Early-All Structures     & 23.05           & 32.07            & 34.75            & 37.52            & 44.39             & 48.\small 7                                                               & 100                                                              & \small 100                                                                \\
+\small SMC\_U                   & Mid-Closed               & 0.34            & 0.7              & 0.86             & 1.22             & 2.78              & 2.\small 99                                                               & 100                                                              & \small 100                                                                \\
+\small SMC\_U                   & Mid-Moderate             & 2.97            & 5.25             & 6.11             & 7.61             & 17.62             & 6.\small 77                                                               & 64                                                               & \small 28                                                                 \\
+\small SMC\_U                   & Mid-Open                 & 15.82           & 21.85            & 23.59            & 25.95            & 32.88             & 5.\small 33                                                               & 0                                                                & -\small 100                                                               \\
+\small SMC\_U                   & Late-Closed              & 9.06            & 13.87            & 15.31            & 16.94            & 22.47             & 24.\small 43                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_U                   & Late-Moderate            & 7.4             & 10.32            & 10.78            & 11.51            & 14.71             & 8.\small 51                                                               & 1                                                                & -\small 98                                                                \\
+\small SMC\_U                   & Late-Open                & 3.41            & 6.61             & 7.63             & 8.43             & 14.37             & 3.\small 27                                                               & 0                                                                & -\small 100                                                               \\ \bottomrule
+\end{tabular}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}[!htbp]
+\caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Sierran Mixed Conifer -~Xeric (SMC\_X).}
+\label{tab:covcond3}
+\begin{tabular}{@{}llllllllll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Land Cover \\ Type\end{tabular}} & \textbf{Condition Class}      & \textbf{srv0\%} & \textbf{srv25\%} & \textbf{srv50\%} & \textbf{srv75\%} & \textbf{srv100\%} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%cover\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%srv\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular}} \\ \midrule
+\small SMC\_X                   & Early-All Structures     & 24.05           & 32.95            & 39.96            & 43.9             & 52.69             & 19.\small 48                                                              & 0                                                                & -\small 100                                                               \\
+\small SMC\_X                   & Mid-Closed               & 0.04            & 0.26             & 0.46             & 0.74             & 2.99              & 11.\small 96                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_X                   & Mid-Moderate             & 1.61            & 4.91             & 6.68             & 8.75             & 15.42             & 14.\small 92                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_X                   & Mid-Open                 & 20.36           & 26.93            & 29.48            & 33.15            & 40.63             & 11.\small 48                                                              & 0                                                                & -\small 100                                                               \\
+\small SMC\_X                   & Late-Closed              & 2.53            & 5.68             & 7.18             & 9                & 12.47             & 24.\small 72                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_X                   & Late-Moderate            & 6.2             & 7.69             & 8.38             & 9.36             & 12.32             & 13.\small 31                                                              & 100                                                              & \small 100                                                                \\
+\small SMC\_X                   & Late-Open                & 3.84            & 6.06             & 7.51             & 8.77             & 14.07             & 4.\small 13                                                               & 1                                                                & -98                                                                \\ \bottomrule
+\end{tabular}
+\end{sidewaystable}
+
+
+
+
+
+
 %\clearpage
+\pagebreak[4]
+\paragraph{Landscape Configuration}
+We summarize the structure and patterns in the landscape using a suite of statistical measures calculated using \textsc{Fragstats}. Table \ref{tab:fragland} shows the range of variability for the simulation period as well as the current value and depature index. Patch density and patch richness are within the simulated HRV, but the other fifteen metrics are outside the 5$^{\text{th}}$ to 95$^{\text{th}}$ percentile range of variability. See Section \ref{subsec:dataanalysis} for a detailed description of \textsc{Fragstats} metrics.
 
-\paragraph{Landscape Structure and Patterns}
+The departure index indicates the distance from the 50$^{\text{th}}$ percentile value for a given metric. It is computed by subtracting 50 from the current value's percentile (if that value is between 0 and 50) under the simulated range of variability (SRV) then dividing by 50 and multiplying by 100 (to ensure the departure index scales from 0 to 100). Thus, for the landscape metric `Patch Density,' 19.507 is equivalent to the 39$^{\text{th}}$ percentile of observations during the HRV simulation, and the departure index is $(39-50)/50*100 = -22$). This value is within the HRV for the landscape. However, the landscape metric `Edge Density' is 100, because $128.875 > 123.872$, the largest value observed during the HRV simulation. Edge density at the landscape level is outside the HRV.
 
-The departure index indicates the distance from the 50th percentile value for a given metric. Thus, for the landscape metric 'PD,' 19.507 is equivalent to the 28th percentile of observations during the HRV simulation ($50-22 = 28$). This value is within the HRV for the landscape. However, the landscape metric `ED' is 100, because $128.875 > 123.872$, the largest value observed during the HRV simulation. Edge density at the landscape level is outside the HRV.
+\todo{check this paragraph}One of the principal purposes of gaining a better quantitative understanding of the historic reference period is to know whether recent human activities have caused landscapes to move outside their historic range of variability (Landres et al.1999; Swetnam et al. 1999). As described above, we summarized the distribution of each metric calculated over the length of the simulation, minus the equilibration period. We computed the $0^{th}$, $5^{th}$, $25^{th}$, $50^{th}$, $75^{th}$, $95^{th}$ and $100^{th}$ percentiles of the distribution of observed values. The current percentile for the statistical range of variability refers to the place within the $0-100^{th}$ percentile of the observed, simulated HRV. If the current value is outside the HRV, it is given the appropriate maximum (100) or minimum (0) score. The index of departure from HRV measures the relative distance from the median HRV value to the $0^{th}$ or $100^{th}$ percentile. At the landscape-level, most computed metrics have values outside the HRV. 
 
 
-\textbf{need to add in TECI}
-\begin{verbatim}
-$`landscape SRV`
-   landscape.metric    srv5%   srv50%   srv95%  current.value current.%SRV departure.index
-2                ED  116.425  119.488  122.519        128.875          100             100
-4           AREA_AM  169.503  194.062  243.753        119.985            0            -100
-5         GYRATE_AM  714.212  752.733  806.692        620.951            0            -100
-7          SHAPE_AM    3.604    3.776    3.988          3.243            0            -100
-9           CORE_AM  146.748  167.446  211.455        106.710            0            -100
-11          SIMI_MN 2433.125 2683.733 3029.040       2095.764            0            -100
-12             CWED   40.169   41.449   42.453         36.092            0            -100
-13           CONTAG   54.481   55.222   55.973         51.172            0            -100
-16             SIDI    0.936    0.942    0.948          0.962          100             100
-17             SIEI    0.944    0.950    0.956          0.971          100             100
-18               AI   81.871   82.324   82.791         80.963            0            -100
+\begin{sidewaystable}[!htbp]
+\caption{Range of variability during the simulation for a selected suite of landscape configuration metrics calculated using \textsc{Fragstats}. The landscape metrics listed here are described in detail in the \textsc{Fragstats} methods section. PD = patch density; ED = edge density; AREA\_AM = area-weighted mean patch size; GYRATE\_AM = area-weighted mean patch radius of gyration (correlation length); SHAPE\_AM = area-weighted mean patch shape index; CORE\_AM = area-weighted mean patch core area; CAI\_AM = area-weighted mean patch core area index; SIMI\_MN = mean similarity; CWED = contrast-weighted edge density; TECI = total edge contrast index; ECON\_AM = area-weighted mean edge contrast; CONTAG = contagion; IJI = interspersion and juxtaposition index; PR = patch richness; SIDI = Simpson's diversity index; SIEI = Simpson's evenness index; AI = aggregation index.}
+\label{tab:fragland}
+\begin{tabular}{@{}lllllllllll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Landscape\\ Metric\end{tabular}} & \textbf{srv0\%} & \textbf{srv5\%} & \textbf{srv25\%} & \textbf{srv50\%} & \textbf{srv75\%} & \textbf{srv95\%} & \textbf{srv100\%}  & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%SRV\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Departure\\ Index\end{tabular}} \\ \midrule
+\small \textsc{pd}              & \small 17.866          & 18.647          & 19.211           & 19.679           & 20.229           & 20.872           & 21.372     & 19.507        & 39                                                               & -22                                                                \\
+\small \textsc{ed}              & 114.606         & 116.425         & 118.376          & 119.488          & 120.683          & 122.519          & 123.872           & 128.875       & 100                                                              & 100                                                                \\
+\small \textsc{area\_am}        & 158.59          & 169.503         & 183.793          & 194.062          & 209.983          & 243.753          & 362.032           & 119.985       & 0                                                                & -100                                                               \\
+\small \textsc{gyrate\_am}      & 693.818         & 714.212         & 737.307          & 752.733          & 770.93           & 806.692          & 914.181           & 620.951       & 0                                                                & -100                                                               \\
+\small \textsc{shape\_am}       & 3.547           & 3.604           & 3.712            & 3.776            & 3.86             & 3.988            & 4.272             & 3.243         & 0                                                                & -100                                                               \\
+\small \textsc{core\_am}        & 137.672         & 146.748         & 157.365          & 167.446          & 181.671          & 211.455          & 329.638           & 106.71        & 0                                                                & -100                                                               \\
+\small \textsc{cai\_am}         & 59.851          & 60.638          & 61.606           & 62.467           & 63.422           & 64.833           & 66.444            & 65.295        & 98                                                               & 96                                                                 \\
+\small \textsc{simi\_mn}        & 2316.796        & 2433.125        & 2575.45          & 2683.733         & 2801.744         & 3029.04          & 3918.372          & 2095.764      & 0                                                                & -100                                                               \\
+\small \textsc{cwed}            & 39.586          & 40.169          & 40.889           & 41.449           & 41.936           & 42.453           & 43.513            & 36.092        & 0                                                                & -100                                                               \\
+\small \textsc{teci}            & 32.977          & 33.446          & 33.828           & 34.149           & 34.501           & 34.943           & 35.621            & 27.654        & 0                                                                & -100                                                               \\
+\small \textsc{econ\_am}        & 33.142          & 33.518          & 33.979           & 34.343           & 34.699           & 35.166           & 36.054            & 27.756        & 0                                                                & -100                                                               \\
+\small \textsc{contag}          & 54.205          & 54.481          & 54.874           & 55.222           & 55.605           & 55.973           & 56.647            & 51.172        & 0                                                                & -100                                                               \\
+\small \textsc{iji }            & 60.367          & 61.568          & 62.217           & 62.697           & 63.199           & 63.876           & 64.361            & 65.868        & 100                                                              & 100                                                                \\
+\small \textsc{pr}              & 111             & 114             & 116              & 118              & 120              & 122              & 124               & 117           & 28                                                               & -44                                                                \\
+\small \textsc{sidi}            & 0.932           & 0.936           & 0.939            & 0.942            & 0.944            & 0.948            & 0.951             & 0.962         & 100                                                              & 100                                                                \\
+\small \textsc{siei}            & 0.94            & 0.944           & 0.947            & 0.95             & 0.952            & 0.956            & 0.959             & 0.971         & 100                                                              & 100                                                                \\
+\small \textsc{ai}              & 81.664          & 81.871          & 82.142           & 82.324           & 82.493           & 82.791           & 83.061            & 80.963        & 0                                                                & -100                                                               \\ \bottomrule
+\end{tabular}
+\end{sidewaystable}
 
-$`landscape departure index (%)`
-[1] 87
-\end{verbatim}
 
-Several of the individual landscape metrics are redundant with one another. For example, \emph{Contagion} and \emph{Edge Density} are inversely related, so it is perhaps helpful, but not necessary, to examine both metrics. Here we highlight a subset of the metrics from Table MAKE TABLE for the purposes of discussing the landscape under the simulated historic period as compared to the present day.
+%\textbf{need to add in TECI}
+%\begin{verbatim}
+%$`landscape SRV`
+%   landscape.metric    srv5%   srv50%   srv95%  current.value current.%SRV departure.index
+%2                ED  116.425  119.488  122.519        128.875          100             100
+%4           AREA_AM  169.503  194.062  243.753        119.985            0            -100
+%5         GYRATE_AM  714.212  752.733  806.692        620.951            0            -100
+%7          SHAPE_AM    3.604    3.776    3.988          3.243            0            -100
+%9           CORE_AM  146.748  167.446  211.455        106.710            0            -100
+%11          SIMI_MN 2433.125 2683.733 3029.040       2095.764            0            -100
+%12             CWED   40.169   41.449   42.453         36.092            0            -100
+%13           CONTAG   54.481   55.222   55.973         51.172            0            -100
+%16             SIDI    0.936    0.942    0.948          0.962          100             100
+%17             SIEI    0.944    0.950    0.956          0.971          100             100
+%18               AI   81.871   82.324   82.791         80.963            0            -100
+%
+%$`landscape departure index (%)`
+%[1] 87
+%\end{verbatim}
 
-First, we note that during the HRV, the landscape was composed of larger and more extensive patches, as illustrated by Figure \ref{landscapestory1}. 
-Second, patches on the landscape were more aggregated at the cell-level during HRV, which is illustrated by the \emph{Contagion} metric. In addition, we observe increased dominance by certain cover types, as illustrated by smaller values for the \emph{Simpson's Evenness Index} durin the HRV (see Figure \ref{landscapestory2}). However, despite being larger, more extensive, and aggregated, they do not show an associated increase in core area. This indicates that they are geometrically more complex, to the extent that little core area fits inside each patch. As an example, we highlight in Figure \ref{landscapestory3} a patch of Sierran Mixed Conifer - Mesic Forest in the Mid Development - Closed condition, which is one of the largest patches on the landscape. Little room is available for cores due to the irregular shape of this patch.
+%Several of the individual landscape metrics are redundant with one another. For example, \emph{Contagion} and \emph{Edge Density} are inversely related, so it is perhaps helpful, but not necessary, to examine both metrics. Here we highlight a subset of the metrics from Table \todo{MAKE TABLE} for the purposes of discussing the landscape under the simulated historic period as compared to the present day.
+
+%First, we note that during the HRV, the landscape was composed of larger and more extensive patches, as illustrated by Figure \ref{landscapestory1}. Second, patches on the landscape were more aggregated at the cell-level during HRV, which is illustrated by the \emph{Contagion} metric. In addition, we observe increased dominance by certain cover types, as illustrated by smaller values for the \emph{Simpson's Evenness Index} durin the HRV (see Figure \ref{landscapestory2}). However, despite being larger, more extensive, and aggregated, they do not show an associated increase in core area. This indicates that they are geometrically more complex, to the extent that little core area fits inside each patch. As an example, we highlight in Figure \ref{landscapestory3} a patch of Sierran Mixed Conifer - Mesic Forest in the Mid Development - Closed condition, which is one of the largest patches on the landscape. Little room is available for cores due to the irregular shape of this patch.
 
 
 \begin{figure}
@@ -449,6 +576,7 @@ Second, patches on the landscape were more aggregated at the cell-level during H
 \end{figure}
 
 \subsection{Historic Range of Variability Departure}
+\todo{Consider deleting this section}
 \paragraph{Landscape-level Results}
 One of the principal purposes of gaining a better quantitative understanding of the historic reference period is to know whether recent human activities have caused landscapes to move outside their historic range of variability (Landres et al.1999; Swetnam et al. 1999). As described above, we summarized the distribution of each metric calculated over the length of the simulation, minus the equilibration period. We computed the $0^{th}$, $5^{th}$, $25^{th}$, $50^{th}$, $75^{th}$, $95^{th}$ and $100^{th}$ percentiles of the distribution of observed values. The current percentile for the statistical range of variability refers to the place within the $0-100^{th}$ percentile of the observed, simulated HRV. If the current value is outside the HRV, it is given the appropriate maximum (100) or minimum (0) score. The index of departure from HRV measures the relative distance from the median HRV value to the $0^{th}$ or $100^{th}$ percentile. At the landscape-level, most computed metrics have values outside the HRV. 
 
