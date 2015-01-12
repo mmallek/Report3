@@ -103,9 +103,78 @@ As described in Section \ref{subsubsec:distparams}, we specified a target set of
 \label{fig:compare_clim_darea}
 \end{figure}
 
-\subsubsection{Effect of Topographic Position}
+\clearpage
+\subsubsection{Effect of Topographic Position} \todo{not sure if I said I'd do this one either}
 
-\todo{Write up this section and redo plots in ggplot}
+The topographic position index value for a given cell acts as an input into the susceptibility and mortality values otherwise defined for that cover type and condition class combination. In general, cells with smaller TPI values had reduced susceptibility and mortality. Early development and open canopy conditions tend to result from fire, and we predicted that an increase in fires and in the likelihood of high mortality fire would lead to a decrease in the average canopy cover values for cells with large TPI values. Table \ref{tab:tpi_cc} displays the results for this simulation for the nine focal cover types. All but one (\textsc{ocfw\_u}) show decreased average canopy cover as TPI increases, with the decrease ranging from 3.3\% in Mixed Evergreen - Mesic to 36.4\% in Sierran Mixed Conifer - Ultramafic. Figure \ref{fig:tpi_cc} shows the plotted data and fitted linear regression line for each of the nine focal types.
+
+\begin{table}[!htbp]
+\caption{For each cover type on the landscape, the percent change in canopy cover from the minimum TPI value for that cover type to the maximum TPI value.}
+\label{tab:tpi_cc}
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\small \textbf{\begin{tabular}[c]{@{}l@{}}Cover \\ Name\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Minimum \\ TPI\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Maximum \\ TPI\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Average Canopy \\Cover at \\ Minimum TPI\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Average Canopy \\ Cover at \\ Maximum TPI\end{tabular}}  & \small \textbf{\begin{tabular}[c]{@{}l@{}}Percent \\ Change in \\ Canopy \\ Cover\end{tabular}} \\ \midrule
+MEG\_M       & -300                 & 300                  & 77.4         & 74.9              &  -3.3      \\
+MEG\_X       & -299                 & 300                  & 77.8         & 75.0              &  -3.6      \\
+OCFW         & -300                 & 300                  & 57.7         & 53.2              &  -7.8      \\
+OCFW\_U      & -300                 & 300                  & 21.3         & 22.0              &   2.9       \\
+RFR\_M       & -300                 & 300                  & 72.0         & 64.0              & -11.2     \\
+RFR\_X       & -259                 & 300                  & 40.9         & 29.1              & -28.8     \\
+SMC\_M       & -300                 & 300                  & 58.8         & 53.5              &  -9.1      \\
+SMC\_U       & -300                 & 300                  & 39.2         & 25.0              & -36.4     \\
+SMC\_X       & -300                 & 300                  & 30.8         & 24.4              & -20.9     \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[][]{
+    \centering
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_megm.png}
+    \label{fig:tpi_cc_megm}
+  }%
+  \subfloat[][]{
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_megx.png}
+    \label{fig:tpi_cc_megx}
+  }%
+  \subfloat[][]{
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_ocfw.png}
+    \label{fig:ocfw}
+    }
+
+  \subfloat[][]{
+    \centering
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_ocfwu.png}
+    \label{fig:tpi_cc_ocfwu}
+  }%
+  \subfloat[][]{
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_rfrm.png}
+    \label{fig:tpi_cc_rfrm}
+  }%
+  \subfloat[][]{
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_rfrx.png}
+    \label{fig:tpi_cc_rfrx}
+    }
+
+  \subfloat[][]{
+    \centering
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_smcx.png}
+    \label{fig:tpi_cc_smcm}
+  }%
+  \subfloat[][]{
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_smcu.png}
+    \label{fig:tpi_cc_smcu}
+  }%
+  \subfloat[][]{
+    \includegraphics[width=0.33\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_smcx.png}
+    \label{fig:tpi_cc_smcx}
+    }
+  \caption{Average canopy cover for the nine focal cover types during the simulated. Each blue point represents one pixel of an individual cover type on the landscape grid. The black line is the result of a linear regression fit to the data. Note, the $y$ axis is scaled differently across cover types in order to more easily focus on the data for each type. Table \ref{tab:tpi_cc} provides the numerical representation of the shift from minimum to maximum TPI values for each cover type. (a) Mixed Evergreen - Mesic; (b) Mixed Evergreen - Xeric; (c) Oak-Conifer Forest and Woodland; (d) Oak-Conifer Forest and Woodland - Ultramafic; (e) Red Fir - Mesic; (f) Red Fir - Xeric; (g) Sierran Mixed Conifer - Mesic; (h) Sierran Mixed Conifer - Ultramafic; (i) Sierran Mixed Conifer - Xeric.}
+  \label{fig:tpi_cc}
+\end{figure}
+
+
 
 \newpage
 \subsubsection{Fire Rotation}
@@ -504,7 +573,7 @@ We summarize the structure and patterns in the landscape using a suite of statis
 
 The departure index indicates the distance from the 50$^{\text{th}}$ percentile value for a given metric. It is computed by subtracting 50 from the current value's percentile (if that value is between 0 and 50) under the simulated range of variability (SRV) then dividing by 50 and multiplying by 100 (to ensure the departure index scales from 0 to 100). Thus, for the landscape metric \emph{Patch Density}, 19.507 is equivalent to the 39$^{\text{th}}$ percentile of observations during the HRV simulation, and the departure index is $(39-50)/50*100 = -22$). This value is within the HRV for the landscape. However, the landscape metric \emph{Edge Density} is 100, because $128.875 > 123.872$, the largest value observed during the HRV simulation. Edge density at the landscape level is outside the HRV.
 
-\todo{check this paragraph}One of the principal purposes of gaining a better quantitative understanding of the historic reference period is to know whether recent human activities have caused landscapes to move outside their historic range of variability (Landres et al.1999; Swetnam et al. 1999). As described above, we summarized the distribution of each metric calculated over the length of the simulation, minus the equilibration period. We computed the 0$^{\text{th}}$, 5$^{\text{th}}$, 25$^{\text{th}}$, 50$^{\text{th}}$, 75$^{\text{th}}$, 95$^{\text{th}}$ and 100$^{\text{th}}$ percentiles of the distribution of observed values. The current percentile for the statistical range of variability refers to the place within the $0-100^{\text{th}}$ percentile of the observed, simulated HRV. If the current value is outside the HRV, it is given the appropriate maximum (100) or minimum (0) score. The index of departure from HRV measures the relative distance from the median HRV value to the 0$^{\text{th}}$ or 100$^{\text{th}}$ percentile. At the landscape-level, most computed metrics have values outside the HRV. 
+\todo{check this paragraph}One of the principal purposes of gaining a better quantitative understanding of the historic reference period is to know whether recent human activities have caused landscapes to move outside their historic range of variability (Landres et al.1999; Swetnam et al. 1999). As described above, we summarized the distribution of each metric calculated over the length of the simulation, minus the equilibration period. We computed the 0$^{\text{th}}$, 5$^{\text{th}}$, 25$^{\text{th}}$, 50$^{\text{th}}$, 75$^{\text{th}}$, 95$^{\text{th}}$ and 100$^{\text{th}}$ percentiles of the distribution of observed values. The current percentile for the statistical range of variability refers to the place within the 0--100$^{\text{th}}$ percentile of the observed, simulated HRV. If the current value is outside the HRV, it is given the appropriate maximum (100) or minimum (0) score. The index of departure from HRV measures the relative distance from the median HRV value to the 0$^{\text{th}}$ or 100$^{\text{th}}$ percentile. At the landscape-level, most computed metrics have values outside the HRV. 
 
 Several of the individual landscape metrics are redundant with one another. For example, \emph{Contagion} and \emph{Edge Density} are inversely related, so it is perhaps helpful, but not necessary, to examine both metrics. In Figures \ref{fig:fragland_areashape}, \ref{fig:fragland_contagsiei}, and \ref{fig:fragland_core} we highlight a subset of the metrics from Table \ref{tab:fragland} for the purposes of discussing the landscape under the simulated historic period as compared to the present day. Figures for all metrics are included in \todo{the appendix?}.
 
@@ -601,7 +670,26 @@ Several of the individual landscape metrics are redundant with one another. For 
 %[1] 87
 %\end{verbatim}
 
-\paragraph{Class-level Results} We compiled the results for several class-level metrics for a few classes of particular interest. \textbf{I don't fully understand why the class-level results are not as useful to report.} We were particularly interested in the Early Development condition for Sierran Mixed Conifer - Mesic, Sierran Mixed Conifer - Xeric, and Oak-Conifer Forest and Woodland, cover types that are very extensive across our landscape, are predicted to be highly affected by past fire suppression, and are characterized by chaparral vegetation present during the early successional stage. The results differ across the three cover types. Oak-Conifer Forest and Woodland's early seral patches are, on average, smaller, less complex, and less aggregated today than during the HRV, although this is in relation to the median values rather than the HRV. Current values are within HRV for all but one metric, Mean Similarity. For Sierran Mixed Conifer - Mesic, early seral patches are smaller, less complex, and less aggregated than during HRV, but their departure from the median is greater. Four metrics are outside of the $5^{th}-95^{th}$ percentile range, including Area-weighted Mean Area and Area-weighte Mean Core Area. Sierran Mixed Conifer - Xeric patches in the early seral stage show the greatest departure among the three: virtually all metrics are outside the HRV. Each metric is also less than the HRV, indicating that patches today are smaller, simpler and more dispersed and disjunct from one another than during the HRV.
+\paragraph{Class-level Results} We compiled the results for several class-level metrics for a few classes of particular interest. We were particularly interested in the Early Development condition for Sierran Mixed Conifer - Mesic, Sierran Mixed Conifer - Xeric, and Oak-Conifer Forest and Woodland, cover types that are very extensive across our landscape, are predicted to be highly affected by past fire suppression, and are characterized by chaparral vegetation present during the early successional stage. The results differ across the three cover types. 
+
+\begin{table}[!htbp]
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+\textbf{Cover Type}    & \textbf{Class Metric} & \textbf{srv5\%} & \textbf{srv50\%} & \textbf{srv95\%} & \textbf{\begin{tabular}[c]{@{}l@{}}Current \\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Current \\ \%SRV\end{tabular}} \\ \midrule
+\multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}Oak-Conifer Forest \\ and Woodland\end{tabular}}  & \textsc{area\_am }       & 31.898          & 75.523           & 257.481          & 45.113      & 17    \\
+                                                                                          & \textsc{shape\_am}       & 1.894           & 2.281            & 3.202            & 2.069       & 22    \\
+                                                                                          & \textsc{core\_am }       & 30.715          & 71.899           & 248.712          & 43.871      & 17    \\
+                                                                                          & \textsc{clumpy   }       & 0.83            & 0.853            & 0.875            & 0.837       & 12    \\
+\multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}Sierran Mixed \\ Conifer - Mesic\end{tabular}} & \textsc{area\_am }       & 36.582          & 107.019          & 322.34           & 28.587      & 2     \\
+                                                                                          & \textsc{shape\_am}       & 2.254           & 2.85             & 3.806            & 2.295       & 8     \\
+                                                                                          & \textsc{core\_am }       & 34.674          & 101.666          & 306.569          & 27.758      & 2     \\
+                                                                                          & \textsc{clumpy   }       & 0.789           & 0.812            & 0.837            & 0.786       & 5     \\
+\multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}Sierran Mixed \\ Conifer - Xeric\end{tabular}} & \textsc{area\_am }       & 36.582          & 107.019          & 322.34           & 28.587      & 2     \\
+                                                                                          & \textsc{shape\_am}       & 2.254           & 2.85             & 3.806            & 2.295       & 8     \\
+                                                                                          & \textsc{core\_am }       & 34.674          & 101.666          & 306.569          & 27.758      & 2     \\
+                                                                                          & \textsc{clumpy   }       & 0.789           & 0.812            & 0.837            & 0.786       & 5     \\ \bottomrule %cmidrule(l){2-7} 
+\end{tabular}
+\end{table}
 
 %\begin{verbatim}
 %
