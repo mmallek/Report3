@@ -50,8 +50,8 @@ We defined 31 distinct land cover types in the Yuba River watershed and surround
 
 
 %topics
-% disturbed area
-% climate? 
+% CHECK disturbed area
+% climate? tpi? - Looked at climate for OCFW...basically the same as for landscape. not sure what it adds
 % fire rotation
 % preturn
 % covcond 
@@ -59,17 +59,183 @@ We defined 31 distinct land cover types in the Yuba River watershed and surround
 
 \subsection{Mixed Evergreen - Mesic} 
 
+\begin{wrapfigure}{l}{0.5\textwidth}
+\centering
+    \includegraphics[width=0.48\textwidth]{/Users/mmallek/Tahoe/Report2/images/darea_megm.png}
+    \caption{Disturbance trajectory for Mixed Evergreen - Mesic. High mortality fire in dark blue; low mortality fire in light blue.}
+	\label{fig:darea_megm}
+\end{wrapfigure}
+
+Mixed Evergreen - Mesic (\textsc{meg\_m})is a somewhat common cover type within the core project area, encompassing 7,273 ha and comprising roughly 4\% of the project area. The frequency and extent of simulated wildfires in cool moist mixed-conifer forest varied markedly among decades (Figure \ref{fig:darea_megm} and Table \ref{tab:darea_megm}). While \textsc{meg\_m} escaped fire completely five times during the simulation, during a typical five year period a small portion of the cover type burned, mostly with a low mortality effect. Seldom did large extents of \textsc{meg\_m} burn, at any mortality level, although roughly once every 60 years, $>25\%$ of the cover type burned. 
+
+Under this wildfire regime, the return interval between fires (of any mortality level) varied widely from X to X years, with a mean and median of X and X years, respectively. As expected, return intervals varied spatially across the forest (Figure \ref{fig:preturn_megm}). In general, return intervals increased with increasing TPI, reflecting the moister, cooler conditions at higher elevations. In addition, \textsc{meg\_m} stands embedded in a neighborhood containing cover types with shorter return intervals exhibited shorter return intervals, reflecting the importance of landscape context on fire regimes.
+
+\todo{next! age structure}
 
 
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Mixed Evergreen - Mesic. Proportions shown are relative to the total area of Mixed Evergreen - Mesic.}
+\label{tab:darea_megm}
+	\begin{tabular}{@{}llll@{}} 
+	\toprule
+	\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Low  Mortality\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}High  Mortality\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Any  Mortality\end{tabular}} \\ \midrule
+	Minimum       & 0.00        &  0.00         & 0.00         \\
+	Maximum       & 46.18       & 7.24          & 50.17         \\
+	Median        & 4.99        &  0.50         & 5.99         \\
+	Mean          & 8.24        &  1.00         & 9.24         \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+%\begin{wrapfigure}{r}{0.5\textwidth}
+%\includegraphics[width=0.48\textwidth]{images/CALVEGmappingzones.png}
+%\caption{\small CALVEG Mapping Zones. These zones meet U.S. Forest Service standard at national and regional levels. These ecological provinces are %associated with dozens of vegetation alliances, which are used to classify vegetation in spatial data products.} 
+%\label{calveg}
+%\end{wrapfigure}
 
 \subsection{Mixed Evergreen - Xeric} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Mixed Evergreen - Xeric. Proportions shown are relative to the total area of Mixed Evergreen - Xeric.}
+\label{tab:darea_megx}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.00	& 	0.00	& 0.00        \\
+Maximum       & 54.72	& 	8.58	& 58.48         \\
+Median        & 6.97	& 	0.54	& 7.78        \\
+Mean          & 10.19	& 	1.07	& 11.27        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
 \subsection{Oak-Conifer Forest and Woodland} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Oak-Conifer Forest and Woodland. Proportions shown are relative to the total area of Oak-Conifer Forest and Woodland.}
+\label{tab:darea_ocfw}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.39	& 0.00	& 0.47       \\
+Maximum       & 59.90	& 22.77	& 81.34         \\
+Median        & 11.93	& 3.82	& 16.22       \\
+Mean          & 15.75	& 5.23	& 20.90        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 \subsection{Oak-Conifer Forest and Woodland - Ultramafic} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Oak-Conifer Forest and Woodland - Ultramafic. Proportions shown are relative to the total area of Oak-Conifer Forest and Woodland - Ultramafic.}
+\label{tab:darea_ocfwu}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.00	&   0.00	& 0.00       \\
+Maximum       & 83.93	&   5.14	& 85.64         \\
+Median        & 5.14	&   0.00	& 5.14       \\
+Mean          & 10.28	&   0.00	& 10.28        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 \subsection{Red Fir - Mesic} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Red Fir - Mesic. Proportions shown are relative to the total area of Red Fir - Mesic.}
+\label{tab:darea_rfrm}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.00	& 	0.00	& 0.00        \\
+Maximum       & 54.72	& 	8.58	& 58.48         \\
+Median        & 6.97	& 	0.54	& 7.78        \\
+Mean          & 10.19	& 	1.07	& 11.27        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 \subsection{Red Fir - Xeric} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Red Fir - Xeric. Proportions shown are relative to the total area of Red Fir - Xeric.}
+\label{tab:darea_rfrx}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.00	& 	0.00	& 0.00     \\
+Maximum       & 54.52	& 	32.71	& 80.68        \\
+Median        & 4.60	& 	2.18	& 6.78     \\
+Mean          & 8.72	& 	4.36	& 13.33      \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 \subsection{Sierran Mixed Conifer - Mesic} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Sierran Mixed Conifer - Mesic. Proportions shown are relative to the total area of Sierran Mixed Conifer - Mesic.}
+\label{tab:darea_smcm}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.19	& 	0.03	& 0.22       \\
+Maximum       & 51.09	& 	24.42	& 74.53         \\
+Median        & 10.54	& 	3.36	& 13.90       \\
+Mean          & 13.46	& 	4.52	& 17.98        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 \subsection{Sierran Mixed Conifer - Ultramafic} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Sierran Mixed Conifer - Ultramafic. Proportions shown are relative to the total area of Sierran Mixed Conifer - Ultramafic.}
+\label{tab:darea_smcu}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.00	& 0.00		& 0.00      \\
+Maximum       & 32.14	& 21.13		& 52.83        \\
+Median        & 2.64	& 1.32		& 4.40      \\
+Mean          & 4.84	& 2.64		& 7.48       \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 \subsection{Sierran Mixed Conifer - Xeric} 
+
+\begin{table}[!htbp]
+\centering
+\caption{Disturbed area summary statistics for Sierran Mixed Conifer - Xeric. Proportions shown are relative to the total area of Sierran Mixed Conifer - Xeric.}
+\label{tab:darea_smcx}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Minimum       & 0.28	& 0.03	  & 0.38    \\
+Maximum       & 52.00	& 35.55	  & 84.90       \\
+Median        & 9.98	& 6.26	  & 16.80    \\
+Mean          & 12.83	& 8.42	  & 21.25     \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 
 
 
