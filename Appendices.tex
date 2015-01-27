@@ -1,13 +1,248 @@
 \chapter{Appendices}
 
+
+
 \section{Cover Type Descriptions}
 \label{sec:covertypedesc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Full Landscape Results}
+
+\section{Full \textsc{Fragstats} Landscape Results}\todo{Missing full edge contrast metrics (on Z drive).}
+
 \label{sec:full-land-results}
 
-\section{Full Class Results}
+\begin{landscape}
+\begin{table}[!htbp]
+\footnotesize
+\caption{Unabridged results for landscape metrics calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.}
+\label{tab:allfraglandmetrics}
+\begin{tabular}{@{}rrrrrrrrrrrr@{}}
+\toprule
+Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\
+\midrule
+\textsc{pd        } & 17.866   & 18.647   & 19.211   & 19.679   & 20.229   & 20.872   & 21.372    & 11     & 19.507        & 39             & -22             \\
+\textsc{ed        } & 114.606  & 116.425  & 118.376  & 119.488  & 120.683  & 122.519  & 123.872   & 5      & 128.875       & 100            & 100             \\
+\textsc{area\_mn  } & 4.679    & 4.791    & 4.943    & 5.082    & 5.205    & 5.363    & 5.597     & 11     & 5.126         & 61             & 22              \\
+\textsc{area\_am  } & 158.59   & 169.503  & 183.793  & 194.062  & 209.983  & 243.753  & 362.032   & 38     & 119.985       & 0              & -100            \\
+\textsc{gyrate\_am} & 693.818  & 714.212  & 737.307  & 752.733  & 770.93   & 806.692  & 914.181   & 12     & 620.951       & 0              & -100            \\
+\textsc{shape\_mn } & 1.411    & 1.416    & 1.421    & 1.426    & 1.432    & 1.439    & 1.444     & 2      & 1.511         & 100            & 100             \\
+\textsc{shape\_am } & 3.547    & 3.604    & 3.712    & 3.776    & 3.86     & 3.988    & 4.272     & 10     & 3.243         & 0              & -100            \\
+\textsc{core\_mn  } & 2.921    & 3.018    & 3.096    & 3.175    & 3.251    & 3.361    & 3.515     & 11     & 3.347         & 95             & 90              \\
+\textsc{core\_am  } & 137.672  & 146.748  & 157.365  & 167.446  & 181.671  & 211.455  & 329.638   & 39     & 106.71        & 0              & -100            \\
+\textsc{cai\_am   } & 59.851   & 60.638   & 61.606   & 62.467   & 63.422   & 64.833   & 66.444    & 7      & 65.295        & 98             & 96              \\
+\textsc{simi\_mn  } & 2316.796 & 2433.125 & 2575.45  & 2683.733 & 2801.744 & 3029.04  & 3918.372  & 22     & 2095.764      & 0              & -100            \\
+\textsc{cwed      } & 39.586   & 40.169   & 40.889   & 41.449   & 41.936   & 42.453   & 43.513    & 6      & 36.092        & 0              & -100            \\
+\textsc{contag    } & 54.205   & 54.481   & 54.874   & 55.222   & 55.605   & 55.973   & 56.647    & 3      & 51.172        & 0              & -100            \\
+\textsc{iji       } & 60.367   & 61.568   & 62.217   & 62.697   & 63.199   & 63.876   & 64.361    & 4      & 65.868        & 100            & 100             \\
+\textsc{pr        } & 111      & 114      & 116      & 118      & 120      & 122      & 124       & 7      & 117           & 28             & -44             \\
+\textsc{sidi      } & 0.932    & 0.936    & 0.939    & 0.942    & 0.944    & 0.948    & 0.951     & 1      & 0.962         & 100            & 100             \\
+\textsc{siei      } & 0.94     & 0.944    & 0.947    & 0.95     & 0.952    & 0.956    & 0.959     & 1      & 0.971         & 100            & 100             \\
+\textsc{ai        } & 81.664   & 81.871   & 82.142   & 82.324   & 82.493   & 82.791   & 83.061    & 1      & 80.963        & 0              & -100            \\ \bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Full \textsc{Fragstats} Class Results}
 \label{sec:full-class-results}
 
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{meg\_m\_early\_all} & \textsc{ai        }   & 59.152   & 67.504   & 72.274   & 75.499   & 78.523   & 81.923   & 84.577   & 19     & 74.437        & 41            & -18             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{ai        }   & 0        & 59.861   & 70.807   & 75.738   & 80.859   & 86.888   & 94.76    & 36     & 77.044        & 58            & 16              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{ai        }   & 61.646   & 67.998   & 73.304   & 76.451   & 79.159   & 83.35    & 85.966   & 20     & 76.278        & 49            & -2              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{ai        }   & 0        & 0        & 38.916   & 51.501   & 65.354   & 100      & 100      & 194    & 70.857        & 86            & 72              \\
+\textsc{meg\_m\_late\_cl  } & \textsc{ai        }   & 80.473   & 80.679   & 80.867   & 81.005   & 81.122   & 81.309   & 81.607   & 1      & 81.707        & 100           & 100             \\
+\textsc{meg\_m\_late\_mod } & \textsc{ai        }   & 45.56    & 50.658   & 55.365   & 60.246   & 65.88    & 73.741   & 82.438   & 38     & 79.01         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{ai        }   & 8.823    & 16.239   & 25       & 31.351   & 36.444   & 43.478   & 52.846   & 87     & 73.181        & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{area\_am  }   & 1.598    & 4.031    & 9.089    & 13.886   & 27.877   & 66.794   & 227.681  & 452    & 6.956         & 18            & -64             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{area\_am  }   & 0.09     & 0.917    & 2.293    & 4.846    & 11.38    & 47.044   & 298.015  & 952    & 30.636        & 92            & 84              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{area\_am  }   & 1.857    & 3.367    & 7.757    & 12.976   & 24.395   & 62.204   & 236.831  & 453    & 10.37         & 38            & -24             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{area\_am  }   & 0.09     & 0.09     & 0.15     & 0.326    & 0.793    & 1.207    & 2.189    & 343    & 5.305         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{area\_am  }   & 40.93    & 51.342   & 64.303   & 71.246   & 78.01    & 83.291   & 86.276   & 45     & 22.709        & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{area\_am  }   & 0.802    & 1.091    & 1.996    & 3.748    & 8.252    & 32.097   & 114.065  & 827    & 13.662        & 85            & 70              \\
+\textsc{meg\_m\_late\_op  } & \textsc{area\_am  }   & 0.114    & 0.161    & 0.284    & 0.431    & 0.579    & 0.855    & 1.972    & 161    & 6.7           & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{area\_mn  }   & 0.683    & 1.175    & 1.724    & 2.192    & 2.746    & 3.82     & 6.625    & 121    & 2.308         & 59            & 18              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{area\_mn  }   & 0.09     & 0.54     & 1.15     & 1.817    & 2.824    & 6.573    & 30.285   & 332    & 3.367         & 82            & 64              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{area\_mn  }   & 0.826    & 1.198    & 1.744    & 2.311    & 2.939    & 4.487    & 9.423    & 142    & 2.99          & 77            & 54              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{area\_mn  }   & 0.09     & 0.09     & 0.135    & 0.228    & 0.399    & 0.857    & 1.8      & 336    & 1.894         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{area\_mn  }   & 4.617    & 4.77     & 4.925    & 5.025    & 5.129    & 5.294    & 5.534    & 10     & 5.767         & 100           & 100             \\
+\textsc{meg\_m\_late\_mod } & \textsc{area\_mn  }   & 0.297    & 0.379    & 0.463    & 0.562    & 0.726    & 1.123    & 2.398    & 132    & 4.141         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{area\_mn  }   & 0.104    & 0.126    & 0.155    & 0.179    & 0.203    & 0.249    & 0.35     & 69     & 3.038         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{cai\_am   }   & 79.062   & 87.028   & 91.245   & 93.02    & 94.782   & 96.579   & 98.569   & 10     & 96.195        & 93            & 86              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{cai\_am   }   & 0        & 4.933    & 21.955   & 37.327   & 51.294   & 74.153   & 100      & 185    & 45.313        & 65            & 30              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{cai\_am   }   & 43.459   & 50       & 59.178   & 65.924   & 71.957   & 79.845   & 84.965   & 45     & 67.913        & 59            & 18              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{cai\_am   }   & 0        & 0        & 28.571   & 50       & 70.454   & 100      & 100      & 200    & 79.077        & 84            & 68              \\
+\textsc{meg\_m\_late\_cl  } & \textsc{cai\_am   }   & 24.685   & 29.019   & 34.809   & 38.759   & 42.957   & 47.212   & 49.514   & 47     & 42.274        & 69            & 38              \\
+\textsc{meg\_m\_late\_mod } & \textsc{cai\_am   }   & 17.115   & 27.67    & 35.133   & 40.05    & 46.737   & 59.229   & 67.5     & 79     & 56.478        & 94            & 88              \\
+\textsc{meg\_m\_late\_op  } & \textsc{cai\_am   }   & 1.923    & 6.944    & 12.264   & 16.842   & 22.222   & 31.447   & 50       & 145    & 55.901        & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{clumpy    }   & 0.591    & 0.675    & 0.722    & 0.754    & 0.785    & 0.819    & 0.846    & 19     & 0.744         & 41            & -18             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{clumpy    }   & -1       & 0.599    & 0.708    & 0.757    & 0.809    & 0.869    & 0.948    & 36     & 0.767         & 55            & 10              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{clumpy    }   & 0.616    & 0.68     & 0.733    & 0.764    & 0.791    & 0.833    & 0.86     & 20     & 0.762         & 47            & -6              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{clumpy    }   & -1       & -1       & 0.389    & 0.515    & 0.654    & 1        & 1        & 388    & 0.708         & 86            & 72              \\
+\textsc{meg\_m\_late\_cl  } & \textsc{clumpy    }   & 0.798    & 0.8      & 0.801    & 0.803    & 0.804    & 0.806    & 0.809    & 1      & 0.815         & 100           & 100             \\
+\textsc{meg\_m\_late\_mod } & \textsc{clumpy    }   & 0.456    & 0.506    & 0.554    & 0.602    & 0.659    & 0.737    & 0.824    & 38     & 0.79          & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{clumpy    }   & 0.088    & 0.162    & 0.25     & 0.314    & 0.364    & 0.435    & 0.528    & 87     & 0.732         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{core\_am  }   & 1.482    & 3.627    & 8.414    & 13.114   & 27.26    & 65.127   & 222.048  & 469    & 6.877         & 20            & -60             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{core\_am  }   & 0        & 0.021    & 0.542    & 1.878    & 5.724    & 33.411   & 223.667  & 1778   & 18.588        & 92            & 84              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{core\_am  }   & 1.028    & 2.124    & 5.071    & 9.599    & 19.418   & 51.918   & 211.742  & 519    & 7.149         & 37            & -26             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{core\_am  }   & 0        & 0        & 0.051    & 0.18     & 0.461    & 1        & 1.737    & 556    & 4.598         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{core\_am  }   & 19.613   & 24.221   & 31.418   & 36.724   & 44.505   & 51.915   & 57.564   & 75     & 11.566        & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{core\_am  }   & 0.166    & 0.411    & 0.923    & 1.967    & 4.566    & 22.294   & 89.877   & 1113   & 8.615         & 85            & 70              \\
+\textsc{meg\_m\_late\_op  } & \textsc{core\_am  }   & 0.002    & 0.012    & 0.032    & 0.066    & 0.142    & 0.297    & 0.966    & 432    & 3.86          & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{core\_mn  }   & 0.565    & 1.09     & 1.602    & 2.037    & 2.577    & 3.647    & 6.346    & 126    & 2.22          & 63            & 26              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{core\_mn  }   & 0        & 0.045    & 0.27     & 0.613    & 1.302    & 4.242    & 23.152   & 685    & 1.526         & 82            & 64              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{core\_mn  }   & 0.421    & 0.642    & 1.065    & 1.488    & 2.019    & 3.332    & 7.724    & 181    & 2.031         & 76            & 52              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{core\_mn  }   & 0        & 0        & 0.045    & 0.12     & 0.234    & 0.63     & 1.26     & 525    & 1.498         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{core\_mn  }   & 1.277    & 1.519    & 1.77     & 1.951    & 2.15     & 2.371    & 2.542    & 44     & 2.438         & 99            & 98              \\
+\textsc{meg\_m\_late\_mod } & \textsc{core\_mn  }   & 0.051    & 0.109    & 0.167    & 0.223    & 0.318    & 0.651    & 1.584    & 243    & 2.339         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{core\_mn  }   & 0.003    & 0.011    & 0.02     & 0.029    & 0.042    & 0.061    & 0.115    & 172    & 1.698         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{cpland    }   & 0.016    & 0.037    & 0.075    & 0.111    & 0.172    & 0.265    & 0.377    & 205    & 0.304         & 98            & 96              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{cpland    }   & 0        & 0        & 0.001    & 0.004    & 0.013    & 0.049    & 0.141    & 1225   & 0.667         & 100           & 100             \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{cpland    }   & 0.007    & 0.016    & 0.034    & 0.056    & 0.094    & 0.161    & 0.278    & 259    & 0.267         & 100           & 100             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{cpland    }   & 0        & 0        & 0        & 0        & 0.001    & 0.001    & 0.003    & Inf    & 0.199         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{cpland    }   & 0.852    & 1.051    & 1.268    & 1.426    & 1.605    & 1.783    & 1.894    & 51     & 0.497         & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{cpland    }   & 0.004    & 0.01     & 0.015    & 0.023    & 0.033    & 0.056    & 0.102    & 200    & 0.166         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{cpland    }   & 0        & 0        & 0        & 0.001    & 0.001    & 0.002    & 0.005    & 200    & 0.057         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{cwed      }   & 0.043    & 0.081    & 0.141    & 0.195    & 0.276    & 0.374    & 0.466    & 150    & 0.346         & 91            & 82              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{cwed      }   & 0        & 0.002    & 0.008    & 0.016    & 0.028    & 0.073    & 0.118    & 444    & 1.279         & 100           & 100             \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{cwed      }   & 0.02     & 0.041    & 0.066    & 0.099    & 0.147    & 0.218    & 0.304    & 179    & 0.354         & 100           & 100             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{cwed      }   & 0        & 0        & 0.001    & 0.001    & 0.003    & 0.005    & 0.01     & 500    & 0.296         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{cwed      }   & 2.948    & 3.046    & 3.142    & 3.257    & 3.366    & 3.522    & 3.73     & 15     & 0.863         & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{cwed      }   & 0.045    & 0.061    & 0.08     & 0.102    & 0.129    & 0.173    & 0.225    & 110    & 0.259         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{cwed      }   & 0.003    & 0.008    & 0.013    & 0.017    & 0.023    & 0.034    & 0.056    & 153    & 0.131         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{ed        }   & 0.087    & 0.18     & 0.298    & 0.42     & 0.594    & 0.826    & 1.103    & 154    & 1.112         & 100           & 100             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{ed        }   & 0.001    & 0.008    & 0.026    & 0.052    & 0.091    & 0.236    & 0.418    & 438    & 4.586         & 100           & 100             \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{ed        }   & 0.059    & 0.118    & 0.199    & 0.29     & 0.425    & 0.64     & 0.902    & 180    & 1.285         & 100           & 100             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{ed        }   & 0.001    & 0.001    & 0.002    & 0.004    & 0.008    & 0.015    & 0.031    & 350    & 1.009         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{ed        }   & 8.589    & 8.975    & 9.271    & 9.44     & 9.587    & 9.77     & 9.941    & 8      & 2.941         & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{ed        }   & 0.136    & 0.181    & 0.244    & 0.305    & 0.382    & 0.503    & 0.682    & 106    & 0.864         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{ed        }   & 0.008    & 0.02     & 0.033    & 0.045    & 0.06     & 0.09     & 0.144    & 156    & 0.387         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{gyrate\_am}   & 57.795   & 92.652   & 135.323  & 176.506  & 239.491  & 371.963  & 947.914  & 158    & 118.307       & 16            & -68             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{gyrate\_am}   & 15       & 42.822   & 70.478   & 104.183  & 155.807  & 326.524  & 1207.73  & 272    & 267.666       & 92            & 84              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{gyrate\_am}   & 61.987   & 84.204   & 126.403  & 165.326  & 230.988  & 379.09   & 983.958  & 178    & 154.277       & 42            & -16             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{gyrate\_am}   & 15       & 15       & 15       & 24.085   & 39.01    & 53.848   & 98.187   & 161    & 109.964       & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{gyrate\_am}   & 305.3    & 348.92   & 387.353  & 408.982  & 428.236  & 442.681  & 451.594  & 23     & 228.496       & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{gyrate\_am}   & 37.794   & 44.724   & 59.82    & 77.712   & 121.77   & 246.386  & 465.079  & 259    & 183.996       & 90            & 80              \\
+\textsc{meg\_m\_late\_op  } & \textsc{gyrate\_am}   & 15       & 16.539   & 21.225   & 26.319   & 31.279   & 38.676   & 73.402   & 84     & 146.917       & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{iji       }   & 50.562   & 53.392   & 55.377   & 56.811   & 57.95    & 59.67    & 62.927   & 11     & 58.339        & 80            & 60              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{iji       }   & 4.901    & 32.81    & 42.691   & 47.71    & 51.375   & 56.009   & 60.838   & 49     & 59.156        & 100           & 100             \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{iji       }   & 44.917   & 50.282   & 53.395   & 55.203   & 57.068   & 59.471   & 61.63    & 17     & 62.004        & 100           & 100             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{iji       }   & 0        & 14.499   & 26.733   & 35.392   & 42.477   & 50.587   & 58.639   & 102    & 62.31         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{iji       }   & 50.842   & 52.376   & 54.045   & 55.264   & 56.468   & 57.686   & 59.257   & 10     & 60.085        & 100           & 100             \\
+\textsc{meg\_m\_late\_mod } & \textsc{iji       }   & 51.587   & 53.696   & 55.276   & 56.411   & 57.559   & 59.062   & 61.127   & 10     & 61.664        & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{iji       }   & 38.893   & 47.398   & 51.387   & 53.701   & 55.759   & 58.03    & 62.693   & 20     & 58.712        & 98            & 96              \\
+\textsc{meg\_m\_early\_all} & \textsc{pd        }   & 0.012    & 0.028    & 0.041    & 0.056    & 0.073    & 0.101    & 0.131    & 130    & 0.137         & 100           & 100             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{pd        }   & 0.001    & 0.002    & 0.004    & 0.007    & 0.012    & 0.024    & 0.036    & 314    & 0.437         & 100           & 100             \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{pd        }   & 0.01     & 0.018    & 0.028    & 0.037    & 0.05     & 0.073    & 0.093    & 149    & 0.132         & 100           & 100             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{pd        }   & 0.001    & 0.001    & 0.001    & 0.002    & 0.003    & 0.006    & 0.01     & 250    & 0.133         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{pd        }   & 0.646    & 0.679    & 0.715    & 0.733    & 0.749    & 0.772    & 0.796    & 13     & 0.204         & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{pd        }   & 0.047    & 0.064    & 0.08     & 0.096    & 0.112    & 0.143    & 0.176    & 82     & 0.071         & 13            & -74             \\
+\textsc{meg\_m\_late\_op  } & \textsc{pd        }   & 0.005    & 0.012    & 0.02     & 0.026    & 0.034    & 0.05     & 0.081    & 146    & 0.034         & 75            & 50              \\
+\textsc{meg\_m\_early\_all} & \textsc{pland     }   & 0.019    & 0.041    & 0.081    & 0.119    & 0.184    & 0.284    & 0.387    & 204    & 0.317         & 97            & 94              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{pland     }   & 0        & 0.001    & 0.006    & 0.014    & 0.028    & 0.086    & 0.201    & 607    & 1.473         & 100           & 100             \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{pland     }   & 0.013    & 0.028    & 0.056    & 0.085    & 0.141    & 0.225    & 0.359    & 232    & 0.394         & 100           & 100             \\
+\textsc{meg\_m\_mid\_op   } & \textsc{pland     }   & 0        & 0        & 0        & 0        & 0.001    & 0.002    & 0.005    & Inf    & 0.251         & 100           & 100             \\
+\textsc{meg\_m\_late\_cl  } & \textsc{pland     }   & 3.415    & 3.498    & 3.614    & 3.682    & 3.742    & 3.806    & 3.872    & 8      & 1.175         & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{pland     }   & 0.02     & 0.03     & 0.041    & 0.057    & 0.076    & 0.117    & 0.167    & 153    & 0.294         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{pland     }   & 0.001    & 0.002    & 0.003    & 0.005    & 0.006    & 0.01     & 0.015    & 160    & 0.102         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{shape\_am }   & 1.396    & 1.617    & 1.848    & 2.056    & 2.429    & 3.048    & 6.243    & 70     & 1.708         & 10            & -80             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{shape\_am }   & 1        & 1.229    & 1.444    & 1.656    & 1.96     & 2.955    & 8.057    & 104    & 2.599         & 93            & 86              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{shape\_am }   & 1.303    & 1.557    & 1.786    & 1.989    & 2.367    & 3.028    & 6.441    & 74     & 1.96          & 49            & -2              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{shape\_am }   & 1        & 1        & 1        & 1.125    & 1.283    & 1.533    & 2.111    & 47     & 1.73          & 99            & 98              \\
+\textsc{meg\_m\_late\_cl  } & \textsc{shape\_am }   & 2.672    & 2.854    & 3.044    & 3.129    & 3.224    & 3.336    & 3.373    & 15     & 2.076         & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{shape\_am }   & 1.232    & 1.289    & 1.378    & 1.505    & 1.751    & 2.442    & 3.793    & 77     & 1.995         & 87            & 74              \\
+\textsc{meg\_m\_late\_op  } & \textsc{shape\_am }   & 1        & 1.019    & 1.072    & 1.124    & 1.184    & 1.265    & 1.527    & 22     & 2.054         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{shape\_mn }   & 1.207    & 1.268    & 1.315    & 1.35     & 1.389    & 1.439    & 1.491    & 13     & 1.393         & 78            & 56              \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{shape\_mn }   & 1        & 1.132    & 1.251    & 1.338    & 1.417    & 1.581    & 2.055    & 34     & 1.467         & 83            & 66              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{shape\_mn }   & 1.184    & 1.245    & 1.313    & 1.35     & 1.39     & 1.443    & 1.54     & 15     & 1.456         & 97            & 94              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{shape\_mn }   & 1        & 1        & 1        & 1.067    & 1.133    & 1.296    & 2.111    & 28     & 1.418         & 98            & 96              \\
+\textsc{meg\_m\_late\_cl  } & \textsc{shape\_mn }   & 1.481    & 1.489    & 1.496    & 1.501    & 1.506    & 1.516    & 1.533    & 2      & 1.573         & 100           & 100             \\
+\textsc{meg\_m\_late\_mod } & \textsc{shape\_mn }   & 1.07     & 1.09     & 1.109    & 1.124    & 1.139    & 1.167    & 1.216    & 7      & 1.538         & 100           & 100             \\
+\textsc{meg\_m\_late\_op  } & \textsc{shape\_mn }   & 1        & 1.006    & 1.021    & 1.032    & 1.046    & 1.068    & 1.107    & 6      & 1.645         & 100           & 100             \\
+\textsc{meg\_m\_early\_all} & \textsc{simi\_mn  }   & 2371.342 & 3534.657 & 4550.573 & 5255.996 & 6094.379 & 7294.013 & 9135.375 & 72     & 3432.092      & 5             & -90             \\
+\textsc{meg\_m\_mid\_cl   } & \textsc{simi\_mn  }   & 179.297  & 746.331  & 2053.267 & 2713.158 & 3427.99  & 4862.353 & 9691.22  & 152    & 3234.009      & 69            & 38              \\
+\textsc{meg\_m\_mid\_mod  } & \textsc{simi\_mn  }   & 1507.04  & 2140.477 & 2822.933 & 3272.865 & 3815.622 & 4428.415 & 5550.4   & 70     & 4227.928      & 89            & 78              \\
+\textsc{meg\_m\_mid\_op   } & \textsc{simi\_mn  }   & 113.723  & 264.592  & 602.341  & 1636.021 & 4664.203 & 9404.574 & 17157.19 & 559    & 5938.995      & 83            & 66              \\
+\textsc{meg\_m\_late\_cl  } & \textsc{simi\_mn  }   & 2014.298 & 2073.116 & 2146.876 & 2212.248 & 2299.088 & 2419.367 & 2604.991 & 16     & 1835.667      & 0             & -100            \\
+\textsc{meg\_m\_late\_mod } & \textsc{simi\_mn  }   & 1492.677 & 1815.338 & 2126.559 & 2295.764 & 2524.272 & 2880.16  & 3365.62  & 46     & 2707.606      & 87            & 74              \\
+\textsc{meg\_m\_late\_op  } & \textsc{simi\_mn  }   & 628.495  & 1609.167 & 2257.686 & 2793.313 & 3423.463 & 4399.59  & 5737.653 & 100    & 4404.244      & 96            & 92              \\%
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Full Rotation Results}
 \label{sec:full-rot-results}
+
+\begin{table}[!htbp]
+\caption{Full fire rotation results for all cover types present within the core project area.}
+\small
+\begin{tabular}{@{}lllll@{}}
+\toprule
+	& 		&		\multicolumn{3}{c}{\textbf{Return Interval (Years)}} \\
+\textbf{Cover Type}                                                                     & \textbf{Area (ha)} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+Agriculture     				& 16   		& 2035   	& 73     	& 71     \\
+Barren    						& 2665   	& --      	& --   		& --  \\
+Curl-leaf Mountain Mahogany  	& 18   		& 121    	& 91     	& 52    \\
+Grassland     					& 1379  	& 598     	& 68     	& 61   \\
+Lodgepole Pine   				& 837   	& 67     	& 294      	& 55      \\
+Lodgepole Pine with Aspen       & 8     	& 56       	& 228 		& 45                                 \\
+Meadow     						& 1201      & 1372     	& 59  		& 57                                 \\
+Mixed Evergreen - Mesic         & 7273      & 63   		& 534    	& 57     \\
+Mixed Evergreen - Ultramafi     & 604  		& 149 		& 1270 		& 133   \\
+Mixed Evergreen - Xeric         & 6768 		& 51  		& 472  		& 46    \\
+Montane Riparian                & 732  		& 97  		& 114  		& 52    \\
+Oak Woodland                    & 19   		& 41  		& 130  		& 31            \\
+Oak-Conifer Forest and Woodland & 23279     & 33  		& 100 		& 25  		\\
+\begin{tabular}[c]{@{}l@{}}Oak-Conifer Forest and Woodland\\  - Ultramafic\end{tabular} 
+								& 1060  	& 48 		& 1192  	& 46 	 \\
+Red Fir - Mesic 				& 8563 		& 101   	& 164    	& 62    \\
+Red Fir - Ultramafic   			& 294  		& 142  		& 280  		& 94  \\\
+Red Fir - Xeric        			& 7493  	& 59   		& 117  		& 39  \\
+Red Fir with Aspen     			& 31    	& 86   		& 182  		& 58   \\
+Sierran Mixed Conifer - Mesic  	& 57853    	& 39  		& 115  		& 29  \\
+Sierran Mixed Conifer - Ultramafic  & 4124  & 106    	& 196     	& 69     \\
+Sierran Mixed Conifer - Xeric   & 52198  	& 40 		& 62  		& 24 \\
+Sierran Mixed Conifer with Aspen  	& 58  	& 43   		& 128   	& 32   \\
+Subalpine Conifer   			& 638  	 	& 890      	& 233   	& 184      \\
+Urban 							& 114  		& 1770     	& 86        & 82       \\
+Water 							& 4058 		& --       	& --        & --       \\
+Western White Pine    			& 273 		& 101    	& 550     	& 85     \\
+\textbf{Total}                                                                          & \textbf{181553}    & \textbf{45}                                                                                & \textbf{100}                                                                                & \textbf{31}                                                                                \\ \bottomrule
+\end{tabular}
+\end{table}
