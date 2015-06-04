@@ -50,6 +50,9 @@ Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc
 \section{Full \textsc{Fragstats} Class Results}
 \label{sec:full-class-results}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \pagestyle{empty}
 \newgeometry{bottom=1cm}
 \begin{landscape}
@@ -57,7 +60,7 @@ Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc
 \begin{center}
 \begin{footnotesize}
 \begin{longtable}{lllllllllllll}
-\caption{Unabridged results for class-level metrics calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+\caption{Unabridged results for class-level metrics for \textsc{meg\_m} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
 
 \hline 
 Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
@@ -193,6 +196,1250 @@ Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv
 \textsc{meg\_m\_late\_cl  } & \textsc{simi\_mn  }   & 2014.298 & 2073.116 & 2146.876 & 2212.248 & 2299.088 & 2419.367 & 2604.991 & 16     & 1835.667      & 0             & -100            \\
 \textsc{meg\_m\_late\_mod } & \textsc{simi\_mn  }   & 1492.677 & 1815.338 & 2126.559 & 2295.764 & 2524.272 & 2880.16  & 3365.62  & 46     & 2707.606      & 87            & 74              \\
 \textsc{meg\_m\_late\_op  } & \textsc{simi\_mn  }   & 628.495  & 1609.167 & 2257.686 & 2793.313 & 3423.463 & 4399.59  & 5737.653 & 100    & 4404.244      & 96            & 92              \\%
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{meg\_x} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{meg\_x\_early\_all} & \textsc{ai        }   & 63.988   & 72.956   & 76.747   & 79.416   & 82.178   & 84.903   & 89.139    & 15     & 77.01         & 28            & -44           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{ai        }   & 0        & 66.667   & 75       & 80.531   & 84.762   & 90.133   & 100       & 29     & 81.911        & 60            & 20            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{ai        }   & 64.523   & 73.037   & 78.212   & 80.576   & 83.294   & 86.221   & 88.685    & 16     & 78.244        & 26            & -48           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{ai        }   & 0        & 0        & 37.715   & 58.333   & 73.472   & 100      & 100       & 171    & 78.005        & 83            & 66            \\
+\textsc{meg\_x\_late\_cl  } & \textsc{ai        }   & 82.819   & 83.009   & 83.144   & 83.277   & 83.44    & 83.637   & 83.952    & 1      & 77.31         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{ai        }   & 37.336   & 55.759   & 63.321   & 68.247   & 73.429   & 81.578   & 85.387    & 38     & 75.246        & 80            & 60            \\
+\textsc{meg\_x\_late\_op  } & \textsc{ai        }   & 0        & 11.111   & 20.37    & 31.667   & 40.449   & 52.332   & 63.946    & 130    & 72.5          & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{area\_am  }   & 1.455    & 5.688    & 11.457   & 17.91    & 26.463   & 56.361   & 94.098    & 283    & 14.598        & 36            & -28           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{area\_am  }   & 0.09     & 0.974    & 3.26     & 6.73     & 16.543   & 41.874   & 119.705   & 608    & 24.779        & 86            & 72            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{area\_am  }   & 2.241    & 4.983    & 10.746   & 17.911   & 26.315   & 56.803   & 102.698   & 289    & 11.386        & 28            & -44           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{area\_am  }   & 0.09     & 0.09     & 0.09     & 0.18     & 0.562    & 1.206    & 2.062     & 620    & 9.983         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{area\_am  }   & 36.342   & 38.927   & 41.903   & 43.868   & 45.678   & 46.812   & 47.637    & 18     & 16.592        & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{area\_am  }   & 0.693    & 1.477    & 3.682    & 6.858    & 16.282   & 51.06    & 87.419    & 723    & 9.979         & 60            & 20            \\
+\textsc{meg\_x\_late\_op  } & \textsc{area\_am  }   & 0.09     & 0.126    & 0.208    & 0.413    & 0.65     & 1.092    & 2.682     & 234    & 4.586         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{area\_mn  }   & 0.796    & 1.495    & 2.014    & 2.616    & 3.309    & 4.52     & 6.803     & 116    & 2.766         & 57            & 14            \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{area\_mn  }   & 0.09     & 0.495    & 1.314    & 2.269    & 3.754    & 7.731    & 24.255    & 319    & 4.663         & 85            & 70            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{area\_mn  }   & 0.776    & 1.476    & 2.223    & 2.878    & 3.684    & 5.326    & 6.883     & 134    & 3.118         & 59            & 18            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{area\_mn  }   & 0.09     & 0.09     & 0.09     & 0.18     & 0.382    & 0.765    & 1.935     & 375    & 3.265         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{area\_mn  }   & 4.362    & 4.486    & 4.599    & 4.7      & 4.795    & 5.003    & 5.269     & 11     & 2.351         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{area\_mn  }   & 0.231    & 0.448    & 0.625    & 0.803    & 1.028    & 1.674    & 2.371     & 153    & 2.212         & 100           & 100           \\
+\textsc{meg\_x\_late\_op  } & \textsc{area\_mn  }   & 0.09     & 0.11     & 0.137    & 0.171    & 0.213    & 0.312    & 0.498     & 118    & 1.786         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{cai\_am   }   & 79.074   & 89.568   & 92.367   & 94.413   & 96.227   & 98.188   & 99.526    & 9      & 94.59         & 53            & 6             \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{cai\_am   }   & 0        & 1.896    & 20.195   & 34.038   & 45.954   & 65.478   & 100       & 187    & 42.672        & 70            & 40            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{cai\_am   }   & 42.919   & 51.249   & 58.884   & 63.706   & 68.367   & 75.293   & 83.012    & 38     & 72.905        & 92            & 84            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{cai\_am   }   & 0        & 0        & 16.667   & 50       & 77.778   & 100      & 100       & 200    & 80.368        & 78            & 56            \\
+\textsc{meg\_x\_late\_cl  } & \textsc{cai\_am   }   & 31.52    & 34.107   & 37.476   & 40.055   & 42.804   & 45.974   & 50.895    & 30     & 41.336        & 62            & 24            \\
+\textsc{meg\_x\_late\_mod } & \textsc{cai\_am   }   & 25.848   & 36.802   & 43.382   & 47.969   & 53.557   & 63.286   & 72.339    & 55     & 61.586        & 93            & 86            \\
+\textsc{meg\_x\_late\_op  } & \textsc{cai\_am   }   & 0        & 5.882    & 11.905   & 18       & 25.926   & 41.936   & 66.667    & 200    & 53.854        & 99            & 98            \\
+\textsc{meg\_x\_early\_all} & \textsc{clumpy    }   & 0.64     & 0.729    & 0.767    & 0.794    & 0.821    & 0.849    & 0.891     & 15     & 0.769         & 27            & -46           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{clumpy    }   & -1       & 0.667    & 0.75     & 0.805    & 0.848    & 0.901    & 1         & 29     & 0.816         & 58            & 16            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{clumpy    }   & 0.645    & 0.73     & 0.782    & 0.805    & 0.833    & 0.862    & 0.887     & 16     & 0.782         & 26            & -48           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{clumpy    }   & -1       & -1       & 0.377    & 0.583    & 0.735    & 1        & 1         & 343    & 0.779         & 83            & 66            \\
+\textsc{meg\_x\_late\_cl  } & \textsc{clumpy    }   & 0.822    & 0.824    & 0.826    & 0.827    & 0.829    & 0.831    & 0.834     & 1      & 0.772         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{clumpy    }   & 0.373    & 0.557    & 0.633    & 0.682    & 0.734    & 0.816    & 0.854     & 38     & 0.752         & 80            & 60            \\
+\textsc{meg\_x\_late\_op  } & \textsc{clumpy    }   & -1       & 0.111    & 0.204    & 0.317    & 0.404    & 0.523    & 0.639     & 130    & 0.725         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{core\_am  }   & 1.441    & 5.349    & 10.57    & 16.45    & 25.328   & 52.065   & 92.441    & 284    & 13.815        & 36            & -28           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{core\_am  }   & 0        & 0.005    & 0.628    & 2.277    & 7.01     & 23.902   & 94.447    & 1049   & 11.958        & 86            & 72            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{core\_am  }   & 1.136    & 3.388    & 7.193    & 12.352   & 19.259   & 43.049   & 87.136    & 321    & 8.721         & 32            & -36           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{core\_am  }   & 0        & 0        & 0.015    & 0.09     & 0.306    & 0.853    & 1.984     & 948    & 8.332         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{core\_am  }   & 16.967   & 19.239   & 21.674   & 23.16    & 24.508   & 26.845   & 29.174    & 33     & 8.037         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{core\_am  }   & 0.313    & 0.688    & 1.909    & 4.488    & 10.045   & 38.181   & 71.415    & 835    & 7.024         & 66            & 32            \\
+\textsc{meg\_x\_late\_op  } & \textsc{core\_am  }   & 0        & 0.007    & 0.022    & 0.06     & 0.174    & 0.421    & 2.066     & 690    & 2.724         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{core\_mn  }   & 0.769    & 1.442    & 1.898    & 2.435    & 3.104    & 4.22     & 6.517     & 114    & 2.617         & 58            & 16            \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{core\_mn  }   & 0        & 0.022    & 0.297    & 0.698    & 1.483    & 3.783    & 17.73     & 539    & 1.99          & 84            & 68            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{core\_mn  }   & 0.388    & 0.854    & 1.298    & 1.808    & 2.449    & 3.76     & 5.271     & 161    & 2.273         & 71            & 42            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{core\_mn  }   & 0        & 0        & 0.03     & 0.09     & 0.21     & 0.54     & 1.215     & 600    & 2.624         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{core\_mn  }   & 1.497    & 1.636    & 1.778    & 1.887    & 1.982    & 2.132    & 2.353     & 26     & 0.972         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{core\_mn  }   & 0.084    & 0.18     & 0.274    & 0.38     & 0.538    & 0.973    & 1.591     & 209    & 1.362         & 99            & 98            \\
+\textsc{meg\_x\_late\_op  } & \textsc{core\_mn  }   & 0        & 0.009    & 0.018    & 0.032    & 0.046    & 0.094    & 0.225     & 266    & 0.962         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{cpland    }   & 0.016    & 0.045    & 0.094    & 0.13     & 0.177    & 0.275    & 0.366     & 177    & 0.372         & 100           & 100           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{cpland    }   & 0        & 0        & 0.002    & 0.004    & 0.012    & 0.036    & 0.097     & 900    & 0.78          & 100           & 100           \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{cpland    }   & 0.008    & 0.018    & 0.044    & 0.067    & 0.092    & 0.157    & 0.224     & 207    & 0.257         & 100           & 100           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{cpland    }   & 0        & 0        & 0        & 0        & 0        & 0.001    & 0.002     & Inf    & 0.387         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{cpland    }   & 0.972    & 1.113    & 1.242    & 1.356    & 1.459    & 1.594    & 1.785     & 35     & 0.198         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{cpland    }   & 0.004    & 0.012    & 0.021    & 0.031    & 0.045    & 0.078    & 0.122     & 213    & 0.088         & 98            & 96            \\
+\textsc{meg\_x\_late\_op  } & \textsc{cpland    }   & 0        & 0        & 0        & 0        & 0.001    & 0.002    & 0.004     & Inf    & 0.027         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{cwed      }   & 0.041    & 0.08     & 0.136    & 0.18     & 0.232    & 0.328    & 0.448     & 138    & 0.377         & 98            & 96            \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{cwed      }   & 0        & 0.002    & 0.008    & 0.016    & 0.028    & 0.059    & 0.131     & 356    & 1.231         & 100           & 100           \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{cwed      }   & 0.019    & 0.04     & 0.074    & 0.098    & 0.13     & 0.193    & 0.278     & 156    & 0.254         & 100           & 100           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{cwed      }   & 0        & 0        & 0        & 0.001    & 0.001    & 0.003    & 0.006     & 300    & 0.409         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{cwed      }   & 2.442    & 2.516    & 2.595    & 2.664    & 2.715    & 2.794    & 2.896     & 10     & 0.368         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{cwed      }   & 0.029    & 0.045    & 0.069    & 0.09     & 0.116    & 0.156    & 0.226     & 123    & 0.119         & 79            & 58            \\
+\textsc{meg\_x\_late\_op  } & \textsc{cwed      }   & 0.001    & 0.004    & 0.007    & 0.009    & 0.013    & 0.024    & 0.039     & 222    & 0.058         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{ed        }   & 0.089    & 0.174    & 0.295    & 0.394    & 0.521    & 0.729    & 0.983     & 141    & 1.247         & 100           & 100           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{ed        }   & 0.001    & 0.006    & 0.025    & 0.047    & 0.084    & 0.166    & 0.386     & 340    & 4.503         & 100           & 100           \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{ed        }   & 0.056    & 0.116    & 0.214    & 0.284    & 0.374    & 0.546    & 0.778     & 151    & 1.063         & 100           & 100           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{ed        }   & 0        & 0.001    & 0.001    & 0.002    & 0.004    & 0.008    & 0.019     & 350    & 1.464         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{ed        }   & 6.966    & 7.238    & 7.488    & 7.675    & 7.773    & 7.939    & 8.14      & 9      & 1.492         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{ed        }   & 0.092    & 0.149    & 0.217    & 0.288    & 0.353    & 0.479    & 0.7       & 115    & 0.501         & 97            & 94            \\
+\textsc{meg\_x\_late\_op  } & \textsc{ed        }   & 0.004    & 0.011    & 0.019    & 0.026    & 0.037    & 0.067    & 0.111     & 215    & 0.199         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{gyrate\_am}   & 55.432   & 105.746  & 146.411  & 182.775  & 219.035  & 322.683  & 419.98    & 119    & 154.026       & 30            & -40           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{gyrate\_am}   & 15       & 41.644   & 76.194   & 112.814  & 188.836  & 307.915  & 709.816   & 236    & 222.17        & 85            & 70            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{gyrate\_am}   & 62.304   & 97.455   & 141.926  & 183.793  & 226.359  & 332.223  & 512.528   & 128    & 143.757       & 26            & -48           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{gyrate\_am}   & 15       & 15       & 15       & 16.63    & 33.266   & 50.185   & 63.488    & 212    & 144.494       & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{gyrate\_am}   & 258.31   & 271.717  & 282.905  & 292.827  & 297.62   & 301.825  & 305.214   & 10     & 186.881       & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{gyrate\_am}   & 34.798   & 51.036   & 75.307   & 105.081  & 158.907  & 300.492  & 499.816   & 237    & 173.458       & 82            & 64            \\
+\textsc{meg\_x\_late\_op  } & \textsc{gyrate\_am}   & 15       & 15       & 18.522   & 25.213   & 31.74    & 43.273   & 79.626    & 112    & 103.556       & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{iji       }   & 44.628   & 49.298   & 51.652   & 53.167   & 54.546   & 56.855   & 59.727    & 14     & 56.952        & 96            & 92            \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{iji       }   & 10.344   & 27.665   & 38.089   & 43.141   & 47.868   & 53.186   & 58.674    & 59     & 57.886        & 100           & 100           \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{iji       }   & 42.501   & 47.272   & 50.036   & 52.398   & 54.075   & 56.264   & 58.31     & 17     & 56.24         & 95            & 90            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{iji       }   & 0        & 11.767   & 14.662   & 24.347   & 32.443   & 41.193   & 48.217    & 121    & 58.958        & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{iji       }   & 48.523   & 49.953   & 51.249   & 51.945   & 52.741   & 53.883   & 54.902    & 8      & 51.401        & 28            & -44           \\
+\textsc{meg\_x\_late\_mod } & \textsc{iji       }   & 45.921   & 48.588   & 50.027   & 51.493   & 52.815   & 54.722   & 56.773    & 12     & 52.147        & 63            & 26            \\
+\textsc{meg\_x\_late\_op  } & \textsc{iji       }   & 29.31    & 39.175   & 43.455   & 47.065   & 49.883   & 53.233   & 55.062    & 30     & 53.11         & 95            & 90            \\
+\textsc{meg\_x\_early\_all} & \textsc{pd        }   & 0.016    & 0.025    & 0.038    & 0.052    & 0.066    & 0.095    & 0.129     & 135    & 0.142         & 100           & 100           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{pd        }   & 0.001    & 0.002    & 0.004    & 0.006    & 0.01     & 0.022    & 0.04      & 333    & 0.392         & 100           & 100           \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{pd        }   & 0.009    & 0.016    & 0.026    & 0.035    & 0.047    & 0.064    & 0.094     & 137    & 0.113         & 100           & 100           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{pd        }   & 0.001    & 0.001    & 0.001    & 0.001    & 0.002    & 0.004    & 0.006     & 300    & 0.148         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{pd        }   & 0.615    & 0.658    & 0.697    & 0.72     & 0.739    & 0.758    & 0.778     & 14     & 0.203         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{pd        }   & 0.031    & 0.046    & 0.063    & 0.08     & 0.096    & 0.124    & 0.189     & 98     & 0.065         & 29            & -42           \\
+\textsc{meg\_x\_late\_op  } & \textsc{pd        }   & 0.003    & 0.007    & 0.012    & 0.016    & 0.022    & 0.035    & 0.058     & 175    & 0.028         & 89            & 78            \\
+\textsc{meg\_x\_early\_all} & \textsc{pland     }   & 0.017    & 0.05     & 0.098    & 0.14     & 0.19     & 0.293    & 0.391     & 174    & 0.393         & 100           & 100           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{pland     }   & 0        & 0.001    & 0.007    & 0.015    & 0.032    & 0.072    & 0.203     & 473    & 1.829         & 100           & 100           \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{pland     }   & 0.014    & 0.034    & 0.07     & 0.105    & 0.143    & 0.231    & 0.34      & 188    & 0.352         & 100           & 100           \\
+\textsc{meg\_x\_mid\_op   } & \textsc{pland     }   & 0        & 0        & 0        & 0        & 0        & 0.001    & 0.004     & Inf    & 0.482         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{pland     }   & 3.049    & 3.219    & 3.31     & 3.378    & 3.434    & 3.507    & 3.588     & 9      & 0.478         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{pland     }   & 0.011    & 0.026    & 0.047    & 0.066    & 0.089    & 0.135    & 0.192     & 165    & 0.144         & 97            & 94            \\
+\textsc{meg\_x\_late\_op  } & \textsc{pland     }   & 0        & 0.001    & 0.002    & 0.003    & 0.004    & 0.008    & 0.013     & 233    & 0.05          & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{shape\_am }   & 1.363    & 1.573    & 1.735    & 1.873    & 2.029    & 2.324    & 2.902     & 40     & 1.805         & 40            & -20           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{shape\_am }   & 1        & 1.22     & 1.423    & 1.626    & 1.932    & 2.36     & 3.528     & 70     & 2.089         & 85            & 70            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{shape\_am }   & 1.272    & 1.542    & 1.703    & 1.865    & 2.038    & 2.313    & 2.889     & 41     & 1.845         & 47            & -6            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{shape\_am }   & 1        & 1        & 1        & 1        & 1.2      & 1.395    & 1.757     & 40     & 1.744         & 100           & 100           \\
+\textsc{meg\_x\_late\_cl  } & \textsc{shape\_am }   & 2.121    & 2.162    & 2.193    & 2.213    & 2.229    & 2.244    & 2.275     & 4      & 1.975         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{shape\_am }   & 1.196    & 1.313    & 1.414    & 1.544    & 1.772    & 2.137    & 2.673     & 53     & 1.919         & 87            & 74            \\
+\textsc{meg\_x\_late\_op  } & \textsc{shape\_am }   & 1        & 1        & 1.043    & 1.1      & 1.163    & 1.298    & 1.75      & 27     & 1.611         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{shape\_mn }   & 1.172    & 1.232    & 1.281    & 1.312    & 1.347    & 1.391    & 1.44      & 12     & 1.401         & 97            & 94            \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{shape\_mn }   & 1        & 1.105    & 1.226    & 1.293    & 1.38     & 1.54     & 2.027     & 34     & 1.421         & 86            & 72            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{shape\_mn }   & 1.139    & 1.228    & 1.279    & 1.32     & 1.36     & 1.409    & 1.47      & 14     & 1.397         & 93            & 86            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{shape\_mn }   & 1        & 1        & 1        & 1        & 1.125    & 1.32     & 1.704     & 32     & 1.419         & 99            & 98            \\
+\textsc{meg\_x\_late\_cl  } & \textsc{shape\_mn }   & 1.365    & 1.373    & 1.379    & 1.383    & 1.388    & 1.395    & 1.408     & 2      & 1.317         & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{shape\_mn }   & 1.063    & 1.092    & 1.115    & 1.133    & 1.152    & 1.185    & 1.252     & 8      & 1.367         & 100           & 100           \\
+\textsc{meg\_x\_late\_op  } & \textsc{shape\_mn }   & 1        & 1        & 1.012    & 1.026    & 1.039    & 1.072    & 1.17      & 7      & 1.356         & 100           & 100           \\
+\textsc{meg\_x\_early\_all} & \textsc{simi\_mn  }   & 1121.242 & 2162.434 & 2907.458 & 3478.644 & 4245.217 & 5193.697 & 7174.092  & 87     & 2375.836      & 8             & -84           \\
+\textsc{meg\_x\_mid\_cl   } & \textsc{simi\_mn  }   & 73.618   & 641.8    & 1233.178 & 1804.711 & 2512.716 & 3757.467 & 6391.897  & 173    & 2414.102      & 72            & 44            \\
+\textsc{meg\_x\_mid\_mod  } & \textsc{simi\_mn  }   & 911.899  & 1521.458 & 1998.264 & 2356.897 & 2804.434 & 3567.444 & 4638.326  & 87     & 2552.584      & 60            & 20            \\
+\textsc{meg\_x\_mid\_op   } & \textsc{simi\_mn  }   & 109.89   & 184.385  & 418.95   & 928.607  & 1998.742 & 6669.283 & 16967.877 & 698    & 4552.039      & 91            & 82            \\
+\textsc{meg\_x\_late\_cl  } & \textsc{simi\_mn  }   & 1464.193 & 1526.67  & 1600.81  & 1663.902 & 1734.875 & 1835.658 & 2009.749  & 19     & 1000.967      & 0             & -100          \\
+\textsc{meg\_x\_late\_mod } & \textsc{simi\_mn  }   & 954.875  & 1141.807 & 1319.811 & 1449.407 & 1610.312 & 1895.154 & 2293.639  & 52     & 1138.751      & 5             & -90           \\
+\textsc{meg\_x\_late\_op  } & \textsc{simi\_mn  }   & 247.461  & 750.562  & 1147.703 & 1572.641 & 1966.682 & 2611.742 & 3820.411  & 118    & 2990.76       & 98            & 96            \\%
+
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{ocfw} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{ocfw\_early\_all} & \textsc{ai        }   & 82.277   & 83.843   & 84.735   & 85.459   & 86.392   & 87.791   & 89.112   & 5   & 84.16    & 10  & -80  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{ai        }   & 77.049   & 80.259   & 82.03    & 83.057   & 83.946   & 85.083   & 87.047   & 6   & 86.993   & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{ai        }   & 75.916   & 77.507   & 78.875   & 79.829   & 80.833   & 82.53    & 85.832   & 6   & 83.443   & 99  & 98   \\
+\textsc{ocfw\_mid\_op   } & \textsc{ai        }   & 75.697   & 79.665   & 81.305   & 82.751   & 84.063   & 85.843   & 89.006   & 7   & 83.666   & 67  & 34   \\
+\textsc{ocfw\_late\_cl  } & \textsc{ai        }   & 75.344   & 79.927   & 82.41    & 83.52    & 84.646   & 85.687   & 86.831   & 7   & 84.087   & 63  & 26   \\
+\textsc{ocfw\_late\_mod } & \textsc{ai        }   & 77.591   & 78.704   & 79.702   & 80.496   & 81.297   & 82.653   & 83.925   & 5   & 85.214   & 100 & 100  \\
+\textsc{ocfw\_late\_op  } & \textsc{ai        }   & 65.482   & 69.557   & 71.147   & 72.653   & 74.471   & 77.48    & 84.826   & 11  & 85.611   & 100 & 100  \\
+\textsc{ocfw\_early\_all} & \textsc{area\_am  }   & 22.369   & 34.924   & 53.759   & 74.796   & 121.451  & 274.537  & 408.87   & 320 & 45.113   & 17  & -66  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{area\_am  }   & 8.46     & 23.517   & 38.093   & 55.533   & 85.281   & 200.131  & 420.882  & 318 & 117.148  & 86  & 72   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{area\_am  }   & 7.409    & 10.877   & 16.055   & 23.564   & 39.453   & 86.678   & 309.095  & 322 & 21.968   & 46  & -8   \\
+\textsc{ocfw\_mid\_op   } & \textsc{area\_am  }   & 4.883    & 14.335   & 24.1     & 38.376   & 79.181   & 169.737  & 594.098  & 405 & 38.05    & 50  & 0    \\
+\textsc{ocfw\_late\_cl  } & \textsc{area\_am  }   & 6.824    & 25.119   & 45.076   & 65.712   & 96.089   & 161.856  & 239.508  & 208 & 12.611   & 1   & -98  \\
+\textsc{ocfw\_late\_mod } & \textsc{area\_am  }   & 8.69     & 12.549   & 19.483   & 26.282   & 38.283   & 70.925   & 176.649  & 222 & 12.107   & 5   & -90  \\
+\textsc{ocfw\_late\_op  } & \textsc{area\_am  }   & 1.122    & 1.841    & 2.395    & 3.312    & 5.146    & 15.485   & 31.14    & 412 & 11.03    & 93  & 86   \\
+\textsc{ocfw\_early\_all} & \textsc{area\_mn  }   & 5.187    & 6.17     & 6.894    & 7.635    & 8.549    & 9.95     & 11.687   & 50  & 7.353    & 41  & -18  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{area\_mn  }   & 3.163    & 4.428    & 5.4      & 6.132    & 6.784    & 7.981    & 9.651    & 58  & 13.989   & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{area\_mn  }   & 2.958    & 3.439    & 3.829    & 4.194    & 4.578    & 5.336    & 6.733    & 45  & 7.231    & 100 & 100  \\
+\textsc{ocfw\_mid\_op   } & \textsc{area\_mn  }   & 2.752    & 3.697    & 4.46     & 4.967    & 5.785    & 6.828    & 11.202   & 63  & 7.416    & 97  & 94   \\
+\textsc{ocfw\_late\_cl  } & \textsc{area\_mn  }   & 2.901    & 4.253    & 5.451    & 6.363    & 7.391    & 8.527    & 10.579   & 67  & 7.36     & 74  & 48   \\
+\textsc{ocfw\_late\_mod } & \textsc{area\_mn  }   & 3.329    & 3.811    & 4.333    & 4.817    & 5.312    & 6.164    & 7.206    & 49  & 6.776    & 99  & 98   \\
+\textsc{ocfw\_late\_op  } & \textsc{area\_mn  }   & 0.892    & 1.26     & 1.582    & 1.819    & 2.156    & 3.026    & 4.656    & 97  & 6.525    & 100 & 100  \\
+\textsc{ocfw\_early\_all} & \textsc{cai\_am   }   & 92.224   & 94.457   & 95.34    & 95.85    & 96.322   & 97.075   & 98.019   & 3   & 97.426   & 99  & 98   \\
+\textsc{ocfw\_mid\_cl   } & \textsc{cai\_am   }   & 17.177   & 26.555   & 33.572   & 38.206   & 42.406   & 47.771   & 54.567   & 56  & 42.932   & 77  & 54   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{cai\_am   }   & 44.392   & 51.259   & 56.155   & 59.767   & 63.516   & 67.742   & 73.222   & 28  & 69.712   & 99  & 98   \\
+\textsc{ocfw\_mid\_op   } & \textsc{cai\_am   }   & 67.622   & 72.14    & 75.77    & 78.706   & 80.901   & 83.707   & 85.553   & 15  & 85.213   & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{cai\_am   }   & 14.34    & 24.675   & 31.725   & 35.564   & 39.617   & 45.085   & 50.093   & 57  & 35.559   & 50  & 0    \\
+\textsc{ocfw\_late\_mod } & \textsc{cai\_am   }   & 39.746   & 42.342   & 46.94    & 50.084   & 52.875   & 57.505   & 62.942   & 30  & 63.036   & 100 & 100  \\
+\textsc{ocfw\_late\_op  } & \textsc{cai\_am   }   & 11.009   & 27.743   & 35.915   & 41.158   & 46.024   & 54.776   & 63.934   & 66  & 62       & 100 & 100  \\
+\textsc{ocfw\_early\_all} & \textsc{clumpy    }   & 0.819    & 0.834    & 0.843    & 0.851    & 0.86     & 0.874    & 0.889    & 5   & 0.837    & 9   & -82  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{clumpy    }   & 0.769    & 0.8      & 0.816    & 0.826    & 0.835    & 0.846    & 0.867    & 6   & 0.863    & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{clumpy    }   & 0.756    & 0.772    & 0.786    & 0.795    & 0.806    & 0.822    & 0.856    & 6   & 0.831    & 99  & 98   \\
+\textsc{ocfw\_mid\_op   } & \textsc{clumpy    }   & 0.756    & 0.796    & 0.811    & 0.826    & 0.839    & 0.856    & 0.889    & 7   & 0.831    & 60  & 20   \\
+\textsc{ocfw\_late\_cl  } & \textsc{clumpy    }   & 0.751    & 0.795    & 0.819    & 0.829    & 0.84     & 0.85     & 0.86     & 7   & 0.84     & 75  & 50   \\
+\textsc{ocfw\_late\_mod } & \textsc{clumpy    }   & 0.774    & 0.785    & 0.794    & 0.802    & 0.809    & 0.823    & 0.838    & 5   & 0.852    & 100 & 100  \\
+\textsc{ocfw\_late\_op  } & \textsc{clumpy    }   & 0.655    & 0.695    & 0.711    & 0.726    & 0.744    & 0.774    & 0.848    & 11  & 0.856    & 100 & 100  \\
+\textsc{ocfw\_early\_all} & \textsc{core\_am  }   & 21.626   & 33.7     & 51.658   & 71.197   & 113.433  & 261.563  & 381.116  & 320 & 43.871   & 17  & -66  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{core\_am  }   & 1.881    & 9.454    & 19.413   & 31.575   & 52.956   & 122.658  & 280.887  & 359 & 57.319   & 78  & 56   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{core\_am  }   & 4.072    & 6.852    & 11.187   & 17.18    & 30.437   & 65.482   & 252.664  & 341 & 16.386   & 47  & -6   \\
+\textsc{ocfw\_mid\_op   } & \textsc{core\_am  }   & 3.464    & 11.791   & 20.317   & 33.28    & 67.854   & 146.062  & 516.414  & 403 & 34.474   & 53  & 6    \\
+\textsc{ocfw\_late\_cl  } & \textsc{core\_am  }   & 1.602    & 12.098   & 22.889   & 37.234   & 56.386   & 96.798   & 158.765  & 227 & 4.78     & 2   & -96  \\
+\textsc{ocfw\_late\_mod } & \textsc{core\_am  }   & 4.841    & 7.246    & 12.133   & 17.256   & 24.351   & 47.202   & 118.288  & 232 & 8.055    & 9   & -82  \\
+\textsc{ocfw\_late\_op  } & \textsc{core\_am  }   & 0.112    & 0.613    & 1.015    & 1.489    & 2.626    & 8.16     & 22.582   & 507 & 7.746    & 95  & 90   \\
+\textsc{ocfw\_early\_all} & \textsc{core\_mn  }   & 5.005    & 5.943    & 6.638    & 7.31     & 8.175    & 9.467    & 11.226   & 48  & 7.164    & 44  & -12  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{core\_mn  }   & 0.543    & 1.206    & 1.829    & 2.33     & 2.874    & 3.726    & 5.266    & 108 & 6.006    & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{core\_mn  }   & 1.313    & 1.872    & 2.194    & 2.482    & 2.886    & 3.434    & 4.806    & 63  & 5.041    & 100 & 100  \\
+\textsc{ocfw\_mid\_op   } & \textsc{core\_mn  }   & 1.861    & 2.789    & 3.43     & 3.915    & 4.628    & 5.548    & 9.251    & 70  & 6.32     & 98  & 96   \\
+\textsc{ocfw\_late\_cl  } & \textsc{core\_mn  }   & 0.416    & 1.093    & 1.733    & 2.258    & 2.932    & 3.776    & 5.299    & 119 & 2.617    & 65  & 30   \\
+\textsc{ocfw\_late\_mod } & \textsc{core\_mn  }   & 1.349    & 1.733    & 2.113    & 2.398    & 2.739    & 3.351    & 4.228    & 67  & 4.271    & 100 & 100  \\
+\textsc{ocfw\_late\_op  } & \textsc{core\_mn  }   & 0.098    & 0.375    & 0.583    & 0.749    & 0.945    & 1.375    & 2.094    & 134 & 4.045    & 100 & 100  \\
+\textsc{ocfw\_early\_all} & \textsc{cpland    }   & 0.996    & 1.469    & 2.048    & 2.654    & 3.285    & 4.189    & 4.859    & 102 & 2.49     & 42  & -16  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{cpland    }   & 0.12     & 0.378    & 0.663    & 0.974    & 1.236    & 1.7      & 2.154    & 136 & 2.061    & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{cpland    }   & 0.419    & 0.568    & 0.703    & 0.835    & 0.959    & 1.183    & 1.801    & 74  & 1.302    & 99  & 98   \\
+\textsc{ocfw\_mid\_op   } & \textsc{cpland    }   & 0.247    & 0.464    & 0.65     & 0.825    & 1.027    & 1.413    & 2.099    & 115 & 2.659    & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{cpland    }   & 0.133    & 0.445    & 0.811    & 1.152    & 1.566    & 2.138    & 2.86     & 147 & 0.072    & 0   & -100 \\
+\textsc{ocfw\_late\_mod } & \textsc{cpland    }   & 0.295    & 0.392    & 0.594    & 0.76     & 0.951    & 1.332    & 1.712    & 124 & 0.082    & 0   & -100 \\
+\textsc{ocfw\_late\_op  } & \textsc{cpland    }   & 0.001    & 0.006    & 0.014    & 0.025    & 0.046    & 0.092    & 0.179    & 344 & 0.089    & 94  & 88   \\
+\textsc{ocfw\_early\_all} & \textsc{cwed      }   & 0.861    & 1.248    & 1.646    & 2.064    & 2.556    & 3.063    & 3.5      & 88  & 1.905    & 39  & -22  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{cwed      }   & 0.7      & 1.054    & 1.408    & 1.687    & 2.039    & 2.332    & 2.694    & 76  & 2.684    & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{cwed      }   & 0.548    & 0.735    & 0.889    & 1.02     & 1.151    & 1.391    & 1.635    & 64  & 1.112    & 69  & 38   \\
+\textsc{ocfw\_mid\_op   } & \textsc{cwed      }   & 0.269    & 0.425    & 0.582    & 0.702    & 0.863    & 1.113    & 1.55     & 98  & 2.101    & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{cwed      }   & 0.832    & 1.424    & 1.978    & 2.38     & 2.764    & 3.14     & 3.411    & 72  & 0.153    & 0   & -100 \\
+\textsc{ocfw\_late\_mod } & \textsc{cwed      }   & 0.513    & 0.715    & 0.976    & 1.254    & 1.589    & 2.077    & 2.36     & 109 & 0.083    & 0   & -100 \\
+\textsc{ocfw\_late\_op  } & \textsc{cwed      }   & 0.007    & 0.018    & 0.035    & 0.06     & 0.102    & 0.192    & 0.29     & 290 & 0.103    & 76  & 52   \\
+\textsc{ocfw\_early\_all} & \textsc{ed        }   & 2.149    & 3.03     & 4.229    & 5.369    & 6.724    & 8.23     & 9.483    & 97  & 5.472    & 53  & 6    \\
+\textsc{ocfw\_mid\_cl   } & \textsc{ed        }   & 2.19     & 3.457    & 4.655    & 5.682    & 6.764    & 7.873    & 9.225    & 78  & 8.444    & 98  & 96   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{ed        }   & 2.065    & 2.807    & 3.33     & 3.759    & 4.282    & 5.118    & 5.945    & 61  & 4.184    & 72  & 44   \\
+\textsc{ocfw\_mid\_op   } & \textsc{ed        }   & 0.957    & 1.483    & 2.018    & 2.455    & 2.956    & 3.941    & 5.488    & 100 & 6.876    & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{ed        }   & 2.633    & 4.379    & 6.081    & 7.269    & 8.399    & 9.914    & 10.536   & 76  & 0.466    & 0   & -100 \\
+\textsc{ocfw\_late\_mod } & \textsc{ed        }   & 1.711    & 2.428    & 3.212    & 4.014    & 4.933    & 6.378    & 7.176    & 98  & 0.286    & 0   & -100 \\
+\textsc{ocfw\_late\_op  } & \textsc{ed        }   & 0.024    & 0.068    & 0.134    & 0.242    & 0.412    & 0.796    & 1.196    & 301 & 0.306    & 62  & 24   \\
+\textsc{ocfw\_early\_all} & \textsc{gyrate\_am}   & 189.341  & 235.817  & 287.941  & 331.344  & 423.292  & 614.855  & 829.482  & 114 & 268.668  & 18  & -64  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{gyrate\_am}   & 121.001  & 198.334  & 247.47   & 294.795  & 357.277  & 525.85   & 815.62   & 111 & 474.172  & 92  & 84   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{gyrate\_am}   & 116.475  & 139.234  & 162.34   & 191.136  & 231.382  & 347.378  & 708.449  & 109 & 207.612  & 63  & 26   \\
+\textsc{ocfw\_mid\_op   } & \textsc{gyrate\_am}   & 95.742   & 151.361  & 191.145  & 239.063  & 326.478  & 499.39   & 1117.386 & 146 & 259.389  & 57  & 14   \\
+\textsc{ocfw\_late\_cl  } & \textsc{gyrate\_am}   & 115.61   & 203.502  & 273.546  & 329.124  & 394.844  & 496.732  & 599.066  & 89  & 165.148  & 2   & -96  \\
+\textsc{ocfw\_late\_mod } & \textsc{gyrate\_am}   & 123.877  & 147.429  & 182.417  & 210.789  & 246.293  & 321.983  & 466.943  & 83  & 149.439  & 6   & -88  \\
+\textsc{ocfw\_late\_op  } & \textsc{gyrate\_am}   & 45.591   & 56.683   & 66.441   & 77.091   & 93.767   & 161.543  & 248.296  & 136 & 141.368  & 92  & 84   \\
+\textsc{ocfw\_early\_all} & \textsc{iji       }   & 59.216   & 60.63    & 61.671   & 62.557   & 63.346   & 64.576   & 66.372   & 6   & 60.61    & 5   & -90  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{iji       }   & 54.255   & 57.343   & 58.556   & 59.251   & 60.12    & 61.365   & 64.303   & 7   & 66.454   & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{iji       }   & 53.016   & 55.879   & 56.981   & 57.799   & 58.666   & 59.801   & 62.846   & 7   & 62.976   & 100 & 100  \\
+\textsc{ocfw\_mid\_op   } & \textsc{iji       }   & 53.067   & 55.282   & 57.954   & 59.266   & 60.62    & 62.257   & 63.79    & 12  & 67.401   & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{iji       }   & 54.508   & 58.256   & 60.248   & 61.428   & 62.523   & 63.575   & 64.763   & 9   & 59.475   & 15  & -70  \\
+\textsc{ocfw\_late\_mod } & \textsc{iji       }   & 51.536   & 55.05    & 57.24    & 58.613   & 59.558   & 61.225   & 62.679   & 11  & 61.683   & 99  & 98   \\
+\textsc{ocfw\_late\_op  } & \textsc{iji       }   & 30.791   & 39.779   & 44.047   & 46.559   & 48.96    & 52.359   & 56.239   & 27  & 60.477   & 100 & 100  \\
+\textsc{ocfw\_early\_all} & \textsc{pd        }   & 0.168    & 0.208    & 0.282    & 0.361    & 0.443    & 0.526    & 0.594    & 88  & 0.348    & 46  & -8   \\
+\textsc{ocfw\_mid\_cl   } & \textsc{pd        }   & 0.194    & 0.274    & 0.346    & 0.41     & 0.47     & 0.519    & 0.616    & 60  & 0.343    & 24  & -52  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{pd        }   & 0.199    & 0.246    & 0.29     & 0.33     & 0.378    & 0.438    & 0.504    & 58  & 0.258    & 10  & -80  \\
+\textsc{ocfw\_mid\_op   } & \textsc{pd        }   & 0.088    & 0.131    & 0.169    & 0.205    & 0.25     & 0.316    & 0.39     & 90  & 0.421    & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{pd        }   & 0.228    & 0.364    & 0.454    & 0.51     & 0.561    & 0.612    & 0.673    & 49  & 0.028    & 0   & -100 \\
+\textsc{ocfw\_late\_mod } & \textsc{pd        }   & 0.165    & 0.21     & 0.264    & 0.315    & 0.373    & 0.456    & 0.525    & 78  & 0.019    & 0   & -100 \\
+\textsc{ocfw\_late\_op  } & \textsc{pd        }   & 0.004    & 0.011    & 0.02     & 0.034    & 0.054    & 0.096    & 0.124    & 250 & 0.022    & 29  & -42  \\
+\textsc{ocfw\_early\_all} & \textsc{pland     }   & 1.046    & 1.53     & 2.136    & 2.779    & 3.442    & 4.371    & 5.112    & 102 & 2.556    & 41  & -18  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{pland     }   & 0.7      & 1.373    & 1.937    & 2.51     & 3.055    & 3.66     & 4.511    & 91  & 4.8      & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{pland     }   & 0.692    & 1.012    & 1.208    & 1.383    & 1.583    & 1.9      & 2.678    & 64  & 1.868    & 93  & 86   \\
+\textsc{ocfw\_mid\_op   } & \textsc{pland     }   & 0.325    & 0.585    & 0.826    & 1.054    & 1.313    & 1.788    & 2.745    & 114 & 3.121    & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{pland     }   & 0.862    & 1.609    & 2.555    & 3.259    & 3.998    & 4.883    & 5.71     & 100 & 0.203    & 0   & -100 \\
+\textsc{ocfw\_late\_mod } & \textsc{pland     }   & 0.62     & 0.856    & 1.204    & 1.542    & 1.919    & 2.616    & 3.017    & 114 & 0.131    & 0   & -100 \\
+\textsc{ocfw\_late\_op  } & \textsc{pland     }   & 0.005    & 0.016    & 0.036    & 0.06     & 0.106    & 0.215    & 0.379    & 332 & 0.144    & 84  & 68   \\
+\textsc{ocfw\_early\_all} & \textsc{shape\_am }   & 1.776    & 1.938    & 2.121    & 2.304    & 2.564    & 3.079    & 3.528    & 50  & 2.069    & 16  & -68  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{shape\_am }   & 1.704    & 1.972    & 2.202    & 2.365    & 2.593    & 3.238    & 3.813    & 54  & 3.006    & 92  & 84   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{shape\_am }   & 1.66     & 1.755    & 1.865    & 1.98     & 2.169    & 2.524    & 3.84     & 39  & 1.959    & 45  & -10  \\
+\textsc{ocfw\_mid\_op   } & \textsc{shape\_am }   & 1.515    & 1.703    & 1.871    & 2.025    & 2.305    & 2.897    & 4.123    & 59  & 2.101    & 59  & 18   \\
+\textsc{ocfw\_late\_cl  } & \textsc{shape\_am }   & 1.695    & 1.958    & 2.217    & 2.422    & 2.678    & 3.038    & 3.405    & 45  & 1.738    & 1   & -98  \\
+\textsc{ocfw\_late\_mod } & \textsc{shape\_am }   & 1.667    & 1.823    & 2.016    & 2.167    & 2.348    & 2.744    & 3.162    & 43  & 1.558    & 0   & -100 \\
+\textsc{ocfw\_late\_op  } & \textsc{shape\_am }   & 1.178    & 1.28     & 1.377    & 1.454    & 1.593    & 2.01     & 2.92     & 50  & 1.456    & 52  & 4    \\
+\textsc{ocfw\_early\_all} & \textsc{shape\_mn }   & 1.408    & 1.431    & 1.45     & 1.467    & 1.482    & 1.502    & 1.529    & 5   & 1.579    & 100 & 100  \\
+\textsc{ocfw\_mid\_cl   } & \textsc{shape\_mn }   & 1.368    & 1.431    & 1.464    & 1.483    & 1.499    & 1.524    & 1.576    & 6   & 1.676    & 100 & 100  \\
+\textsc{ocfw\_mid\_mod  } & \textsc{shape\_mn }   & 1.383    & 1.399    & 1.415    & 1.428    & 1.441    & 1.459    & 1.482    & 4   & 1.557    & 100 & 100  \\
+\textsc{ocfw\_mid\_op   } & \textsc{shape\_mn }   & 1.336    & 1.37     & 1.396    & 1.412    & 1.429    & 1.452    & 1.484    & 6   & 1.582    & 100 & 100  \\
+\textsc{ocfw\_late\_cl  } & \textsc{shape\_mn }   & 1.385    & 1.429    & 1.464    & 1.489    & 1.507    & 1.53     & 1.56     & 7   & 1.552    & 100 & 100  \\
+\textsc{ocfw\_late\_mod } & \textsc{shape\_mn }   & 1.366    & 1.406    & 1.44     & 1.456    & 1.477    & 1.504    & 1.534    & 7   & 1.481    & 79  & 58   \\
+\textsc{ocfw\_late\_op  } & \textsc{shape\_mn }   & 1.123    & 1.216    & 1.273    & 1.306    & 1.346    & 1.415    & 1.49     & 15  & 1.448    & 99  & 98   \\
+\textsc{ocfw\_early\_all} & \textsc{simi\_mn  }   & 2451.194 & 2917.928 & 3362.953 & 3744.487 & 4163.368 & 5046.692 & 9499.768 & 57  & 2409.316 & 0   & -100 \\
+\textsc{ocfw\_mid\_cl   } & \textsc{simi\_mn  }   & 1575.901 & 1907.847 & 2128.003 & 2298.188 & 2493.154 & 2846.626 & 4265.992 & 41  & 2713.299 & 90  & 80   \\
+\textsc{ocfw\_mid\_mod  } & \textsc{simi\_mn  }   & 1658.092 & 1944.124 & 2136.086 & 2315.682 & 2577.711 & 3107.188 & 4880.099 & 50  & 3037.674 & 95  & 90   \\
+\textsc{ocfw\_mid\_op   } & \textsc{simi\_mn  }   & 1754.257 & 2071.339 & 2416.852 & 2727.257 & 3043.465 & 3700.878 & 8200.961 & 60  & 2893.278 & 63  & 26   \\
+\textsc{ocfw\_late\_cl  } & \textsc{simi\_mn  }   & 1400.7   & 1543.504 & 1728.035 & 1865.434 & 2025.318 & 2404.204 & 2805.512 & 46  & 2342.631 & 94  & 88   \\
+\textsc{ocfw\_late\_mod } & \textsc{simi\_mn  }   & 1458.011 & 1707.717 & 1891.795 & 2021.847 & 2195.527 & 2534.448 & 4147.463 & 41  & 2592.142 & 96  & 92   \\
+\textsc{ocfw\_late\_op  } & \textsc{simi\_mn  }   & 681.763  & 1225.435 & 1756.01  & 2131.728 & 2628.302 & 3623.073 & 8764.771 & 112 & 4186.441 & 98  & 96  
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{ocfw\_u} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+
+\textsc{ocfw\_u\_early\_all} & \textsc{ai        }   & 64.126   & 71.028   & 74.526   & 78.788   & 81.85    & 86.72    & 88.919    & 20     & 82.851        & 80            & 60       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{ai        }   & 70.588   & 76.797   & 86.154   & 90.698   & 93.878   & 100      & 100       & 26     & 83.623        & 12            & -76      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{ai        }   & 64.706   & 74.029   & 79.503   & 84.021   & 88.128   & 94.693   & 100       & 25     & 80.972        & 35            & -30      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{ai        }   & 68.831   & 72.678   & 78.883   & 81.048   & 84.091   & 87.511   & 91.503    & 18     & 81.935        & 58            & 16       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{ai        }   & 50       & 71.889   & 77.5     & 85.838   & 88.889   & 100      & 100       & 33     & 90.835        & 79            & 58       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{ai        }   & 66.079   & 71.111   & 75.535   & 78.993   & 83.55    & 89.474   & 90        & 23     & 84.849        & 81            & 62       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{ai        }   & 78.652   & 81.241   & 86.893   & 87.17    & 87.322   & 87.417   & 87.536    & 7      & 79.105        & 1             & -98      \\
+\textsc{ocfw\_u\_early\_all} & \textsc{area\_am  }   & 1.108    & 1.785    & 3.097    & 4.536    & 10.163   & 20.518   & 38.107    & 413    & 16.277        & 89            & 78       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{area\_am  }   & 0.09     & 0.18     & 1.08     & 1.62     & 2.52     & 8.467    & 26.651    & 512    & 13.708        & 99            & 98       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{area\_am  }   & 0.09     & 0.9      & 1.663    & 3.06     & 6.536    & 17.04    & 27.45     & 527    & 6.819         & 76            & 52       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{area\_am  }   & 1.261    & 2.167    & 3.761    & 6.235    & 11.789   & 21.356   & 36.224    & 308    & 14.595        & 86            & 72       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{area\_am  }   & 0.09     & 0.09     & 0.09     & 0.964    & 2.077    & 13.879   & 29.97     & 1430   & 18.655        & 99            & 98       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{area\_am  }   & 0.75     & 1.46     & 2.16     & 3.546    & 5.2      & 11.32    & 15.009    & 278    & 10.678        & 92            & 84       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{area\_am  }   & 9.433    & 13.832   & 44.675   & 50.544   & 52.271   & 53.44    & 53.88     & 78     & 1.714         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{area\_mn  }   & 0.882    & 1.218    & 1.791    & 2.37     & 3.124    & 5.22     & 6.12      & 169    & 5.547         & 97            & 94       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{area\_mn  }   & 0.09     & 0.18     & 1.08     & 1.395    & 2.52     & 7.542    & 17.73     & 528    & 6.355         & 94            & 88       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{area\_mn  }   & 0.09     & 0.855    & 1.44     & 2.241    & 4.05     & 7.882    & 27.45     & 314    & 3.867         & 71            & 42       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{area\_mn  }   & 0.926    & 1.631    & 2.415    & 3.024    & 4.32     & 6.91     & 18.54     & 175    & 5.4           & 86            & 72       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{area\_mn  }   & 0.09     & 0.09     & 0.09     & 0.945    & 1.192    & 8.55     & 29.97     & 895    & 11.556        & 99            & 98       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{area\_mn  }   & 0.54     & 1.012    & 1.404    & 2.23     & 2.67     & 3.704    & 4.995     & 121    & 5.94          & 100           & 100      \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{area\_mn  }   & 3.947    & 5.229    & 10.213   & 10.722   & 11.043   & 11.341   & 11.787    & 57     & 1.2           & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{cai\_am   }   & 76.316   & 85.507   & 93.248   & 96.933   & 100      & 100      & 100       & 15     & 89.233        & 13            & -74      \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{cai\_am   }   & 0        & 0        & 0        & 0        & 0        & 25       & 40.102    & Inf    & 25.289        & 96            & 92       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{cai\_am   }   & 0        & 0        & 14.754   & 30.952   & 50       & 68.333   & 84.21     & 221    & 44.582        & 68            & 36       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{cai\_am   }   & 47.794   & 60.497   & 71.064   & 76.32    & 80.916   & 87.943   & 95.454    & 36     & 66.894        & 14            & -72      \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{cai\_am   }   & 0        & 0        & 0        & 0        & 2.887    & 12.404   & 23.077    & Inf    & 28.505        & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{cai\_am   }   & 0        & 0        & 8.929    & 22.817   & 36.39    & 45.671   & 66.154    & 200    & 37.5          & 77            & 54       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{cai\_am   }   & 42.905   & 46.482   & 48.116   & 49.373   & 50.835   & 54.205   & 57.497    & 16     & 80            & 100           & 100      \\
+\textsc{ocfw\_u\_early\_all} & \textsc{clumpy    }   & 0.641    & 0.71     & 0.745    & 0.788    & 0.818    & 0.867    & 0.889     & 20     & 0.828         & 80            & 60       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{clumpy    }   & 0.706    & 0.768    & 0.862    & 0.907    & 0.939    & 1        & 1         & 26     & 0.836         & 12            & -76      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{clumpy    }   & 0.647    & 0.74     & 0.795    & 0.84     & 0.881    & 0.947    & 1         & 25     & 0.81          & 35            & -30      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{clumpy    }   & 0.688    & 0.727    & 0.789    & 0.81     & 0.841    & 0.875    & 0.915     & 18     & 0.819         & 58            & 16       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{clumpy    }   & 0.5      & 0.719    & 0.775    & 0.858    & 0.889    & 1        & 1         & 33     & 0.908         & 79            & 58       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{clumpy    }   & 0.661    & 0.711    & 0.755    & 0.79     & 0.836    & 0.895    & 0.9       & 23     & 0.848         & 81            & 62       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{clumpy    }   & 0.786    & 0.812    & 0.868    & 0.871    & 0.872    & 0.874    & 0.875     & 7      & 0.791         & 1             & -98      \\
+\textsc{ocfw\_u\_early\_all} & \textsc{core\_am  }   & 1.108    & 1.736    & 3.073    & 4.536    & 9.625    & 18.31    & 37.777    & 365    & 13.934        & 84            & 68       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{core\_am  }   & 0        & 0        & 0        & 0        & 0        & 2.278    & 7.11      & Inf    & 4.579         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{core\_am  }   & 0        & 0        & 0.27     & 0.973    & 3.548    & 9.441    & 21.15     & 970    & 3.042         & 73            & 46       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{core\_am  }   & 0.641    & 1.753    & 3.163    & 5.363    & 8.87     & 17.139   & 34.12     & 287    & 10.963        & 87            & 74       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{core\_am  }   & 0        & 0        & 0        & 0        & 0.059    & 0.656    & 3.6       & Inf    & 7.048         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{core\_am  }   & 0        & 0        & 0.186    & 1.125    & 2.183    & 5.525    & 8.001     & 491    & 3.434         & 89            & 78       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{core\_am  }   & 4.39     & 7.455    & 26.874   & 28.288   & 29.71    & 31.189   & 32.599    & 84     & 1.397         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{core\_mn  }   & 0.87     & 1.185    & 1.746    & 2.26     & 3.083    & 4.973    & 5.602     & 168    & 4.95          & 95            & 90       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{core\_mn  }   & 0        & 0        & 0        & 0        & 0        & 1.532    & 7.11      & Inf    & 1.607         & 96            & 92       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{core\_mn  }   & 0        & 0        & 0.27     & 0.63     & 1.935    & 4.95     & 21.15     & 786    & 1.724         & 72            & 44       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{core\_mn  }   & 0.488    & 1.134    & 1.74     & 2.475    & 3.263    & 5.238    & 17.64     & 166    & 3.612         & 82            & 64       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{core\_mn  }   & 0        & 0        & 0        & 0        & 0.045    & 0.36     & 3.6       & Inf    & 3.294         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{core\_mn  }   & 0        & 0        & 0.116    & 0.472    & 0.945    & 1.543    & 2.04      & 327    & 2.228         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{core\_mn  }   & 1.693    & 2.678    & 5.022    & 5.268    & 5.468    & 5.744    & 6.136     & 58     & 0.96          & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{cpland    }   & 0.001    & 0.004    & 0.008    & 0.012    & 0.02     & 0.044    & 0.082     & 333    & 0.09          & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{cpland    }   & 0        & 0        & 0        & 0        & 0        & 0.002    & 0.004     & Inf    & 0.043         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{cpland    }   & 0        & 0        & 0        & 0.001    & 0.005    & 0.018    & 0.031     & 1800   & 0.03          & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{cpland    }   & 0.002    & 0.004    & 0.007    & 0.01     & 0.019    & 0.053    & 0.106     & 490    & 0.131         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{cpland    }   & 0        & 0        & 0        & 0        & 0        & 0        & 0.002     & NaN    & 0.009         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{cpland    }   & 0        & 0        & 0        & 0.002    & 0.003    & 0.053    & 0.068     & 2650   & 0.005         & 79            & 58       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{cpland    }   & 0.076    & 0.148    & 0.259    & 0.268    & 0.277    & 0.292    & 0.31      & 54     & 0.002         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{cwed      }   & 0.004    & 0.008    & 0.012    & 0.015    & 0.022    & 0.052    & 0.099     & 293    & 0.076         & 99            & 98       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{cwed      }   & 0        & 0        & 0.001    & 0.002    & 0.002    & 0.005    & 0.01      & 250    & 0.146         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{cwed      }   & 0        & 0.001    & 0.002    & 0.005    & 0.009    & 0.028    & 0.043     & 540    & 0.058         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{cwed      }   & 0.004    & 0.006    & 0.009    & 0.012    & 0.022    & 0.058    & 0.112     & 433    & 0.173         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{cwed      }   & 0        & 0        & 0        & 0.001    & 0.004    & 0.006    & 0.007     & 600    & 0.025         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{cwed      }   & 0.004    & 0.004    & 0.007    & 0.011    & 0.018    & 0.113    & 0.148     & 991    & 0.014         & 64            & 28       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{cwed      }   & 0.162    & 0.252    & 0.406    & 0.423    & 0.432    & 0.439    & 0.444     & 44     & 0.003         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{ed        }   & 0.01     & 0.02     & 0.034    & 0.043    & 0.058    & 0.134    & 0.25      & 265    & 0.254         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{ed        }   & 0.001    & 0.001    & 0.003    & 0.005    & 0.007    & 0.014    & 0.025     & 260    & 0.407         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{ed        }   & 0.001    & 0.003    & 0.006    & 0.013    & 0.03     & 0.096    & 0.144     & 715    & 0.189         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{ed        }   & 0.015    & 0.019    & 0.031    & 0.041    & 0.066    & 0.196    & 0.353     & 432    & 0.506         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{ed        }   & 0.001    & 0.001    & 0.001    & 0.003    & 0.014    & 0.026    & 0.031     & 833    & 0.054         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{ed        }   & 0.005    & 0.005    & 0.014    & 0.022    & 0.043    & 0.394    & 0.456     & 1768   & 0.036         & 68            & 36       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{ed        }   & 0.529    & 0.766    & 0.969    & 0.988    & 1.004    & 1.016    & 1.021     & 25     & 0.009         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{gyrate\_am}   & 45.774   & 58.973   & 81.682   & 96.167   & 143.269  & 230.416  & 281.456   & 178    & 186.593       & 90            & 80       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{gyrate\_am}   & 15       & 15       & 41.784   & 55.009   & 67.497   & 122.95   & 233.048   & 196    & 171.396       & 99            & 98       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{gyrate\_am}   & 15       & 38.498   & 59.863   & 78.118   & 119.86   & 192.146  & 286.481   & 197    & 117.46        & 74            & 48       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{gyrate\_am}   & 46.857   & 69.015   & 87.608   & 110.666  & 164.38   & 228.468  & 293.091   & 144    & 178.228       & 86            & 72       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{gyrate\_am}   & 15       & 15       & 15       & 40.743   & 70.083   & 185.575  & 254.451   & 419    & 202.133       & 99            & 98       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{gyrate\_am}   & 33.377   & 55.021   & 68.115   & 83.764   & 100.203  & 146.78   & 178.01    & 110    & 191.121       & 100           & 100      \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{gyrate\_am}   & 143.927  & 176.281  & 324.45   & 347.408  & 349.238  & 354.963  & 356.111   & 51     & 57.455        & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{iji       }   & 27.278   & 37.292   & 42.936   & 46.664   & 50.528   & 54.924   & 57.297    & 38     & 52.768        & 88            & 76       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{iji       }   & 0        & 6.001    & 22.815   & 27.625   & 33.249   & 39.248   & 45.44     & 120    & 54.818        & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{iji       }   & 8.581    & 14.657   & 29.235   & 37.957   & 44.374   & 55.195   & 58.992    & 107    & 51.763        & 92            & 84       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{iji       }   & 27.611   & 34.292   & 41.475   & 45.902   & 50.242   & 56.846   & 60.158    & 49     & 56.976        & 96            & 92       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{iji       }   & 0        & 4.329    & 14.555   & 21.872   & 27.387   & 44.538   & 49.64     & 184    & 46.059        & 98            & 96       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{iji       }   & 0        & 9.767    & 38.553   & 41.64    & 45.441   & 51.411   & 53.965    & 100    & 46.348        & 78            & 56       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{iji       }   & 48.873   & 50.056   & 51.389   & 52.621   & 54.968   & 59.393   & 60.436    & 18     & 31.045        & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{pd        }   & 0.002    & 0.003    & 0.004    & 0.005    & 0.007    & 0.015    & 0.024     & 240    & 0.018         & 98            & 96       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{pd        }   & 0.001    & 0.001    & 0.001    & 0.001    & 0.001    & 0.001    & 0.002     & 0      & 0.027         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{pd        }   & 0.001    & 0.001    & 0.001    & 0.002    & 0.003    & 0.008    & 0.012     & 350    & 0.018         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{pd        }   & 0.001    & 0.002    & 0.003    & 0.004    & 0.007    & 0.022    & 0.028     & 500    & 0.036         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{pd        }   & 0.001    & 0.001    & 0.001    & 0.001    & 0.001    & 0.003    & 0.004     & 200    & 0.003         & 98            & 96       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{pd        }   & 0.001    & 0.001    & 0.002    & 0.003    & 0.006    & 0.035    & 0.042     & 1133   & 0.002         & 23            & -54      \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{pd        }   & 0.045    & 0.049    & 0.05     & 0.051    & 0.052    & 0.056    & 0.058     & 14     & 0.002         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{pland     }   & 0.002    & 0.004    & 0.009    & 0.012    & 0.021    & 0.045    & 0.095     & 342    & 0.101         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{pland     }   & 0        & 0        & 0.001    & 0.001    & 0.002    & 0.006    & 0.019     & 600    & 0.172         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{pland     }   & 0        & 0        & 0.002    & 0.004    & 0.01     & 0.035    & 0.058     & 875    & 0.068         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{pland     }   & 0.004    & 0.006    & 0.009    & 0.014    & 0.026    & 0.065    & 0.146     & 421    & 0.196         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{pland     }   & 0        & 0        & 0        & 0.001    & 0.003    & 0.01     & 0.016     & 1000   & 0.032         & 100           & 100      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{pland     }   & 0.001    & 0.001    & 0.004    & 0.006    & 0.013    & 0.13     & 0.156     & 2150   & 0.013         & 75            & 50       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{pland     }   & 0.176    & 0.291    & 0.528    & 0.544    & 0.557    & 0.563    & 0.565     & 50     & 0.002         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{shape\_am }   & 1.257    & 1.331    & 1.472    & 1.569    & 1.727    & 2.087    & 2.619     & 48     & 1.898         & 88            & 76       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{shape\_am }   & 1        & 1        & 1.143    & 1.286    & 1.424    & 1.636    & 1.812     & 49     & 1.801         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{shape\_am }   & 1        & 1.143    & 1.303    & 1.452    & 1.618    & 2.203    & 2.49      & 73     & 1.534         & 66            & 32       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{shape\_am }   & 1.246    & 1.334    & 1.479    & 1.626    & 1.856    & 2.154    & 2.683     & 50     & 1.844         & 74            & 48       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{shape\_am }   & 1        & 1        & 1        & 1.167    & 1.522    & 2.339    & 2.423     & 115    & 1.556         & 77            & 54       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{shape\_am }   & 1.065    & 1.224    & 1.328    & 1.412    & 1.579    & 1.857    & 2.017     & 45     & 1.937         & 99            & 98       \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{shape\_am }   & 1.751    & 1.936    & 2.221    & 2.256    & 2.294    & 2.308    & 2.327     & 16     & 1.378         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{shape\_mn }   & 1.202    & 1.259    & 1.315    & 1.365    & 1.418    & 1.503    & 1.593     & 18     & 1.555         & 100           & 100      \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{shape\_mn }   & 1        & 1        & 1.143    & 1.293    & 1.383    & 1.616    & 1.812     & 48     & 1.54          & 88            & 76       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{shape\_mn }   & 1        & 1.112    & 1.265    & 1.373    & 1.465    & 1.72     & 2.343     & 44     & 1.391         & 58            & 16       \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{shape\_mn }   & 1.173    & 1.238    & 1.334    & 1.388    & 1.481    & 1.695    & 2.125     & 33     & 1.532         & 87            & 74       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{shape\_mn }   & 1        & 1        & 1        & 1.151    & 1.35     & 1.904    & 1.992     & 79     & 1.478         & 77            & 54       \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{shape\_mn }   & 1.056    & 1.161    & 1.235    & 1.31     & 1.397    & 1.486    & 1.534     & 25     & 1.75          & 100           & 100      \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{shape\_mn }   & 1.451    & 1.522    & 1.57     & 1.584    & 1.592    & 1.604    & 1.613     & 5      & 1.259         & 0             & -100     \\
+\textsc{ocfw\_u\_early\_all} & \textsc{simi\_mn  }   & 373.317  & 568.627  & 951.778  & 3941.082 & 5954.252 & 8884.497 & 13141.193 & 211    & 6939.216      & 87            & 74       \\
+\textsc{ocfw\_u\_mid\_cl   } & \textsc{simi\_mn  }   & 105.728  & 216      & 346.581  & 491.518  & 4354.836 & 8705.478 & 10876.563 & 1727   & 3413.653      & 75            & 50       \\
+\textsc{ocfw\_u\_mid\_mod  } & \textsc{simi\_mn  }   & 188.452  & 301.278  & 696.736  & 2408.458 & 5080.783 & 8187.228 & 14075.755 & 327    & 2665.766      & 53            & 6        \\
+\textsc{ocfw\_u\_mid\_op   } & \textsc{simi\_mn  }   & 375.452  & 699.29   & 1401.481 & 2823.094 & 3983.443 & 6570.794 & 13192.796 & 208    & 5220.69       & 90            & 80       \\
+\textsc{ocfw\_u\_late\_cl  } & \textsc{simi\_mn  }   & 85.278   & 162.481  & 1155.951 & 2701.186 & 4433.184 & 4487.357 & 4894.572  & 160    & 1216.445      & 30            & -40      \\
+\textsc{ocfw\_u\_late\_mod } & \textsc{simi\_mn  }   & 96.594   & 320.904  & 2649.811 & 3169.08  & 4226.256 & 5359.808 & 6545.887  & 159    & 1261.947      & 7             & -86      \\
+\textsc{ocfw\_u\_late\_op  } & \textsc{simi\_mn  }   & 2722.003 & 2932.874 & 3319.902 & 3543.725 & 3718.249 & 4022.456 & 4667.038  & 31     & 537.273       & 0             & -100    
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{rfr\_m} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{rfr\_m\_early\_all} & \textsc{ai        }   & 72.741  & 75.347  & 78.547   & 80.137   & 82.01    & 84.556   & 86.365   & 11     & 78.365        & 23            & -54      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{ai        }   & 79.353  & 80.612  & 81.947   & 83.473   & 84.459   & 85.643   & 86.729   & 6      & 75.19         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{ai        }   & 8       & 25.676  & 38.71    & 43.981   & 49.425   & 55.801   & 66.071   & 68     & 75.737        & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{ai        }   & 0       & 10      & 20       & 29.63    & 40       & 55.263   & 100      & 153    & 77.17         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{ai        }   & 80.371  & 82.489  & 83.458   & 84.711   & 85.684   & 86.658   & 87.267   & 5      & 78.708        & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{ai        }   & 17.021  & 49.438  & 56.15    & 60.405   & 63.274   & 67.084   & 79.952   & 29     & 79.567        & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{ai        }   & 0       & 42.222  & 56.931   & 61.335   & 64.273   & 68.693   & 76.596   & 43     & 76.018        & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{area\_am  }   & 6.866   & 13.856  & 26.994   & 45.562   & 88.092   & 266.09   & 482.599  & 554    & 15.669        & 7             & -86      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{area\_am  }   & 21.88   & 30.285  & 52.802   & 86.231   & 155.177  & 283.903  & 436.99   & 294    & 8.264         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{area\_am  }   & 0.118   & 0.22    & 0.458    & 0.602    & 0.753    & 1.068    & 1.53     & 141    & 10.406        & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{area\_am  }   & 0.09    & 0.114   & 0.144    & 0.215    & 0.358    & 0.697    & 1.252    & 271    & 12.773        & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{area\_am  }   & 29.364  & 46.965  & 63.413   & 122.648  & 183.523  & 317.19   & 430.659  & 220    & 13.681        & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{area\_am  }   & 0.177   & 0.822   & 1.118    & 1.399    & 1.771    & 3.085    & 25.204   & 162    & 16.203        & 99            & 98       \\
+\textsc{rfr\_m\_late\_op  } & \textsc{area\_am  }   & 0.09    & 0.516   & 1.037    & 1.344    & 1.708    & 3.66     & 9.358    & 234    & 6.52          & 99            & 98       \\
+\textsc{rfr\_m\_early\_all} & \textsc{area\_mn  }   & 0.09    & 0.213   & 0.432    & 0.566    & 0.754    & 0.992    & 2.67     & 138    & 2.989         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{area\_mn  }   & 0.09    & 0.104   & 0.126    & 0.158    & 0.195    & 0.285    & 0.495    & 115    & 3.886         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{area\_mn  }   & 0.124   & 0.315   & 0.452    & 0.602    & 0.737    & 0.988    & 1.467    & 112    & 5.074         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{area\_mn  }   & 1.881   & 2.269   & 3.033    & 3.585    & 4.229    & 5.605    & 7.531    & 93     & 3.98          & 67            & 34       \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{area\_mn  }   & 0.102   & 0.152   & 0.216    & 0.259    & 0.309    & 0.381    & 0.492    & 88     & 3.298         & 100           & 100      \\
+\textsc{rfr\_m\_late\_mod } & \textsc{area\_mn  }   & 3.571   & 4.215   & 5.075    & 6.044    & 7.01     & 8.403    & 10.443   & 69     & 2.312         & 0             & -100     \\
+\textsc{rfr\_m\_late\_op  } & \textsc{area\_mn  }   & 3.889   & 5.367   & 6.209    & 7.134    & 8.191    & 9.842    & 10.666   & 63     & 4.173         & 1             & -98      \\
+\textsc{rfr\_m\_early\_all} & \textsc{cai\_am   }   & 0       & 2.632   & 9.259    & 16.129   & 25       & 40       & 59.649   & 232    & 53.317        & 100           & 100      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{cai\_am   }   & 0       & 7.143   & 20       & 33.333   & 47.619   & 66.667   & 100      & 179    & 73.177        & 98            & 96       \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{cai\_am   }   & 0       & 8.333   & 24.742   & 37.736   & 48.276   & 62.069   & 69.697   & 142    & 34.695        & 44            & -12      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{cai\_am   }   & 3.311   & 11.628  & 20.312   & 27.982   & 35.874   & 50.213   & 61.413   & 138    & 46.455        & 93            & 86       \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{cai\_am   }   & 14.826  & 19.169  & 23.916   & 28.558   & 32.909   & 36.889   & 42.771   & 62     & 22.106        & 15            & -70      \\
+\textsc{rfr\_m\_late\_mod } & \textsc{cai\_am   }   & 16.266  & 21.643  & 27.029   & 31.845   & 35.235   & 39.005   & 46.761   & 55     & 29.957        & 40            & -20      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{cai\_am   }   & 89.547  & 90.551  & 91.878   & 92.909   & 93.769   & 94.997   & 96.287   & 5      & 88.159        & 0             & -100     \\
+\textsc{rfr\_m\_early\_all} & \textsc{clumpy    }   & 0.727   & 0.753   & 0.784    & 0.799    & 0.818    & 0.843    & 0.862    & 11     & 0.781         & 23            & -54      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{clumpy    }   & 0.79    & 0.804   & 0.817    & 0.831    & 0.842    & 0.853    & 0.864    & 6      & 0.752         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{clumpy    }   & 0.08    & 0.257   & 0.387    & 0.44     & 0.494    & 0.558    & 0.661    & 68     & 0.755         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{clumpy    }   & -1      & 0.1     & 0.2      & 0.296    & 0.4      & 0.553    & 1        & 153    & 0.77          & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{clumpy    }   & 0.802   & 0.822   & 0.832    & 0.844    & 0.853    & 0.863    & 0.869    & 5      & 0.786         & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{clumpy    }   & 0.17    & 0.494   & 0.562    & 0.604    & 0.633    & 0.671    & 0.8      & 29     & 0.794         & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{clumpy    }   & -1      & 0.422   & 0.569    & 0.613    & 0.643    & 0.687    & 0.766    & 43     & 0.76          & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{core\_am  }   & 6.364   & 13.018  & 24.589   & 42.411   & 79.233   & 251.062  & 457.353  & 561    & 13.424        & 6             & -88      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{core\_am  }   & 5.297   & 10.524  & 19.965   & 36.708   & 77.382   & 145.403  & 208.531  & 367    & 2.399         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{core\_am  }   & 0       & 0.004   & 0.044    & 0.113    & 0.212    & 0.373    & 1.02     & 327    & 5.792         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{core\_am  }   & 0       & 0.008   & 0.03     & 0.064    & 0.156    & 0.355    & 1.14     & 542    & 9.807         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{core\_am  }   & 7.752   & 14.025  & 22.102   & 53.127   & 84.663   & 145.424  & 245.543  & 247    & 3.666         & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{core\_am  }   & 0.003   & 0.134   & 0.291    & 0.432    & 0.647    & 1.414    & 13.36    & 296    & 9.217         & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{core\_am  }   & 0       & 0.013   & 0.326    & 0.523    & 0.88     & 2.005    & 5.704    & 381    & 2.412         & 97            & 94       \\
+\textsc{rfr\_m\_early\_all} & \textsc{core\_mn  }   & 0       & 0.01    & 0.03     & 0.051    & 0.078    & 0.14     & 0.405    & 255    & 2.844         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{core\_mn  }   & 0       & 0.006   & 0.021    & 0.041    & 0.066    & 0.11     & 0.215    & 254    & 1.758         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{core\_mn  }   & 0       & 0.015   & 0.122    & 0.21     & 0.322    & 0.494    & 1.834    & 228    & 1.037         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{core\_mn  }   & 0.004   & 0.047   & 0.109    & 0.163    & 0.235    & 0.367    & 0.727    & 196    & 2.357         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{core\_mn  }   & 0.737   & 1.067   & 1.526    & 2.014    & 2.696    & 3.532    & 4.251    & 122    & 0.922         & 2             & -96      \\
+\textsc{rfr\_m\_late\_mod } & \textsc{core\_mn  }   & 0.726   & 1.057   & 1.437    & 1.885    & 2.358    & 2.979    & 3.607    & 102    & 0.693         & 0             & -100     \\
+\textsc{rfr\_m\_late\_op  } & \textsc{core\_mn  }   & 1.688   & 2.103   & 2.795    & 3.331    & 3.951    & 5.223    & 7.252    & 94     & 3.508         & 59            & 18       \\
+\textsc{rfr\_m\_early\_all} & \textsc{cpland    }   & 0       & 0       & 0        & 0        & 0.001    & 0.002    & 0.003    & Inf    & 0.481         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{cpland    }   & 0       & 0       & 0        & 0        & 0        & 0.001    & 0.002    & Inf    & 0.572         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{cpland    }   & 0       & 0       & 0.001    & 0.003    & 0.004    & 0.01     & 0.019    & 333    & 0.066         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{cpland    }   & 0       & 0.001   & 0.002    & 0.003    & 0.005    & 0.009    & 0.016    & 267    & 0.487         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{cpland    }   & 0.207   & 0.301   & 0.556    & 0.812    & 1.104    & 1.553    & 1.897    & 154    & 0.991         & 67            & 34       \\
+\textsc{rfr\_m\_late\_mod } & \textsc{cpland    }   & 0.149   & 0.253   & 0.399    & 0.562    & 0.769    & 0.981    & 1.232    & 130    & 0.112         & 0             & -100     \\
+\textsc{rfr\_m\_late\_op  } & \textsc{cpland    }   & 0.157   & 0.274   & 0.404    & 0.55     & 0.691    & 0.899    & 1.108    & 114    & 0.049         & 0             & -100     \\
+\textsc{rfr\_m\_early\_all} & \textsc{cwed      }   & 0.281   & 0.366   & 0.62     & 0.864    & 1.117    & 1.437    & 1.825    & 124    & 0.957         & 60            & 20       \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{cwed      }   & 0.808   & 0.955   & 1.217    & 1.362    & 1.607    & 1.886    & 2.279    & 68     & 0.138         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{cwed      }   & 0.002   & 0.004   & 0.006    & 0.01     & 0.014    & 0.019    & 0.025    & 150    & 0.721         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{cwed      }   & 0       & 0.001   & 0.002    & 0.003    & 0.004    & 0.005    & 0.009    & 133    & 0.576         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{cwed      }   & 0.893   & 1.252   & 1.496    & 1.669    & 1.865    & 2.09     & 2.292    & 50     & 0.397         & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{cwed      }   & 0.005   & 0.01    & 0.016    & 0.02     & 0.027    & 0.04     & 0.061    & 150    & 0.794         & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{cwed      }   & 0.002   & 0.005   & 0.008    & 0.013    & 0.018    & 0.033    & 0.055    & 215    & 0.18          & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{ed        }   & 0.713   & 0.93    & 1.64     & 2.287    & 3.061    & 4.103    & 5.123    & 139    & 3.28          & 81            & 62       \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{ed        }   & 2.129   & 2.689   & 3.358    & 3.836    & 4.467    & 5.47     & 6.273    & 72     & 0.563         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{ed        }   & 0.007   & 0.012   & 0.02     & 0.028    & 0.039    & 0.054    & 0.071    & 150    & 2.97          & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{ed        }   & 0.001   & 0.004   & 0.006    & 0.009    & 0.011    & 0.016    & 0.026    & 133    & 2.413         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{ed        }   & 2.223   & 2.999   & 3.649    & 4.128    & 4.638    & 5.242    & 5.628    & 54     & 1.49          & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{ed        }   & 0.014   & 0.028   & 0.049    & 0.063    & 0.084    & 0.126    & 0.217    & 156    & 2.914         & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{ed        }   & 0.004   & 0.013   & 0.026    & 0.041    & 0.06     & 0.109    & 0.186    & 234    & 0.634         & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{gyrate\_am}   & 111.822 & 154.315 & 214.015  & 274.87   & 391.225  & 718.296  & 1117.892 & 205    & 181.32        & 13            & -74      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{gyrate\_am}   & 192.267 & 236.7   & 307.572  & 400.66   & 526.646  & 743.781  & 926.06   & 127    & 126.366       & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{gyrate\_am}   & 15      & 19.542  & 27.1     & 30.914   & 35.47    & 43.536   & 68.08    & 78     & 146.7         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{gyrate\_am}   & 15      & 15      & 15       & 17.939   & 24.181   & 35.393   & 52.308   & 114    & 162.066       & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{gyrate\_am}   & 225.121 & 295.979 & 342.865  & 464.932  & 581.772  & 764.404  & 889.98   & 101    & 167.222       & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{gyrate\_am}   & 19.138  & 37.241  & 44.809   & 51.435   & 58.971   & 76.436   & 187.342  & 76     & 177.453       & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{gyrate\_am}   & 15      & 28.672  & 43.598   & 49.312   & 55.875   & 77.87    & 130.069  & 100    & 115.594       & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{iji       }   & 55.208  & 57.428  & 59.199   & 60.274   & 61.128   & 62.691   & 63.833   & 9      & 58.127        & 10            & -80      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{iji       }   & 54.34   & 56.417  & 58.167   & 59.308   & 60.107   & 61.213   & 62.146   & 8      & 59.957        & 71            & 42       \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{iji       }   & 34.048  & 43.46   & 49.251   & 52.353   & 54.952   & 58.153   & 62.108   & 28     & 61.602        & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{iji       }   & 16.784  & 30.76   & 39.435   & 44.563   & 48.681   & 53.163   & 58.146   & 50     & 61.212        & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{iji       }   & 54.43   & 56.572  & 59.068   & 60.531   & 61.522   & 62.692   & 64.489   & 10     & 57.207        & 8             & -84      \\
+\textsc{rfr\_m\_late\_mod } & \textsc{iji       }   & 38.709  & 42.307  & 47.858   & 50.946   & 53.3     & 56.372   & 59.98    & 28     & 60.007        & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{iji       }   & 27.852  & 36.358  & 42.255   & 46.308   & 50.225   & 54.186   & 59.536   & 38     & 57.371        & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{pd        }   & 0.079   & 0.114   & 0.176    & 0.237    & 0.302    & 0.389    & 0.498    & 116    & 0.283         & 69            & 38       \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{pd        }   & 0.172   & 0.216   & 0.246    & 0.281    & 0.327    & 0.397    & 0.445    & 64     & 0.07          & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{pd        }   & 0.004   & 0.007   & 0.009    & 0.014    & 0.018    & 0.025    & 0.035    & 129    & 0.274         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{pd        }   & 0.001   & 0.002   & 0.003    & 0.005    & 0.007    & 0.01     & 0.014    & 160    & 0.201         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{pd        }   & 0.182   & 0.22    & 0.259    & 0.278    & 0.297    & 0.321    & 0.346    & 36     & 0.122         & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{pd        }   & 0.007   & 0.011   & 0.015    & 0.019    & 0.023    & 0.03     & 0.04     & 100    & 0.207         & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{pd        }   & 0.003   & 0.006   & 0.009    & 0.013    & 0.016    & 0.024    & 0.032    & 138    & 0.063         & 100           & 100      \\
+\textsc{rfr\_m\_early\_all} & \textsc{pland     }   & 0       & 0.002   & 0.004    & 0.007    & 0.011    & 0.022    & 0.039    & 286    & 0.189         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{pland     }   & 0       & 0       & 0        & 0.001    & 0.001    & 0.002    & 0.003    & 200    & 0.781         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{pland     }   & 0.001   & 0.004   & 0.008    & 0.011    & 0.015    & 0.026    & 0.046    & 200    & 1.048         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{pland     }   & 0.229   & 0.322   & 0.595    & 0.878    & 1.189    & 1.669    & 2.049    & 153    & 1.125         & 71            & 42       \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{pland     }   & 0.001   & 0.001   & 0.002    & 0.004    & 0.005    & 0.007    & 0.01     & 150    & 0.903         & 100           & 100      \\
+\textsc{rfr\_m\_late\_mod } & \textsc{pland     }   & 0.914   & 1.083   & 1.475    & 1.704    & 2.02     & 2.557    & 2.943    & 87     & 0.163         & 0             & -100     \\
+\textsc{rfr\_m\_late\_op  } & \textsc{pland     }   & 0.868   & 1.292   & 1.651    & 2.025    & 2.371    & 2.76     & 3.033    & 72     & 0.508         & 0             & -100     \\
+\textsc{rfr\_m\_early\_all} & \textsc{shape\_am }   & 1.686   & 1.854   & 2.177    & 2.462    & 3.006    & 4.074    & 5.503    & 90     & 2.153         & 23            & -54      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{shape\_am }   & 2.048   & 2.295   & 2.679    & 3.094    & 3.516    & 4.297    & 5.343    & 65     & 1.776         & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{shape\_am }   & 1       & 1.038   & 1.102    & 1.152    & 1.216    & 1.322    & 1.502    & 25     & 2.005         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{shape\_am }   & 1       & 1       & 1        & 1.039    & 1.111    & 1.233    & 1.419    & 22     & 2.097         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{shape\_am }   & 2.111   & 2.517   & 2.789    & 3.201    & 3.596    & 4.278    & 5.073    & 55     & 2.042         & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{shape\_am }   & 1.069   & 1.202   & 1.296    & 1.372    & 1.458    & 1.637    & 2.007    & 32     & 2.079         & 100           & 100      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{shape\_am }   & 1       & 1.108   & 1.265    & 1.348    & 1.414    & 1.64     & 2.358    & 39     & 1.725         & 96            & 92       \\
+\textsc{rfr\_m\_early\_all} & \textsc{shape\_mn }   & 1       & 1.03    & 1.099    & 1.143    & 1.193    & 1.281    & 1.569    & 22     & 1.436         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{shape\_mn }   & 1.017   & 1.066   & 1.11     & 1.151    & 1.191    & 1.259    & 1.332    & 17     & 1.597         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{shape\_mn }   & 1.3     & 1.328   & 1.366    & 1.387    & 1.41     & 1.443    & 1.468    & 8      & 1.496         & 100           & 100      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{shape\_mn }   & 1       & 1.014   & 1.036    & 1.053    & 1.072    & 1.101    & 1.149    & 8      & 1.495         & 100           & 100      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{shape\_mn }   & 1       & 1       & 1        & 1.015    & 1.036    & 1.083    & 1.167    & 8      & 1.539         & 100           & 100      \\
+\textsc{rfr\_m\_late\_mod } & \textsc{shape\_mn }   & 1.402   & 1.428   & 1.452    & 1.476    & 1.497    & 1.521    & 1.55     & 6      & 1.37          & 0             & -100     \\
+\textsc{rfr\_m\_late\_op  } & \textsc{shape\_mn }   & 1.416   & 1.439   & 1.466    & 1.483    & 1.503    & 1.528    & 1.553    & 6      & 1.527         & 95            & 90       \\
+\textsc{rfr\_m\_early\_all} & \textsc{simi\_mn  }   & 659.795 & 813.348 & 971.339  & 1112.696 & 1261.156 & 1465.527 & 3098.635 & 59     & 809.215       & 5             & -90      \\
+\textsc{rfr\_m\_mid\_cl   } & \textsc{simi\_mn  }   & 801.23  & 874.881 & 1010.303 & 1121.442 & 1294.321 & 1643.979 & 2450.436 & 69     & 445.371       & 0             & -100     \\
+\textsc{rfr\_m\_mid\_mod  } & \textsc{simi\_mn  }   & 237.479 & 391.55  & 505.692  & 637.507  & 804.311  & 1164.106 & 3538.214 & 121    & 463.176       & 17            & -66      \\
+\textsc{rfr\_m\_mid\_op   } & \textsc{simi\_mn  }   & 151.182 & 284.788 & 440.218  & 593.813  & 851.909  & 1848.048 & 3486.651 & 263    & 547.025       & 44            & -12      \\
+\textsc{rfr\_m\_late\_cl  } & \textsc{simi\_mn  }   & 675.848 & 771.309 & 935.699  & 1077.335 & 1208.954 & 1537.869 & 1982.188 & 71     & 412.672       & 0             & -100     \\
+\textsc{rfr\_m\_late\_mod } & \textsc{simi\_mn  }   & 328.283 & 470.997 & 636.947  & 896.769  & 1129.138 & 1680.79  & 3032.915 & 135    & 544.149       & 12            & -76      \\
+\textsc{rfr\_m\_late\_op  } & \textsc{simi\_mn  }   & 200.535 & 425.298 & 608.496  & 816.418  & 1190.903 & 2126.512 & 4829.242 & 208    & 663.665       & 33            & -34      \\%
+
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{rfr\_x} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{rfr\_x\_early\_all} & \textsc{ai        }   & 79.655  & 80.529  & 81.455   & 82.598   & 83.539   & 84.531   & 85.684   & 5    & 82.016  & 40  & -20   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{ai        }   & 0       & 63.809  & 74.671   & 79.685   & 83.194   & 87.243   & 90.311   & 29   & 80.956  & 60  & 20    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{ai        }   & 70.306  & 76.851  & 80.343   & 82.18    & 84.148   & 85.968   & 87.946   & 11   & 78.611  & 15  & -70   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{ai        }   & 78.216  & 79.799  & 81.884   & 83.085   & 83.888   & 84.957   & 86.004   & 6    & 75.934  & 0   & -100  \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{ai        }   & 72.819  & 76.617  & 79.388   & 80.962   & 82.324   & 83.558   & 84.886   & 9    & 79.354  & 25  & -50   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{ai        }   & 78.394  & 80.379  & 82.155   & 83.099   & 84.046   & 85.581   & 86.255   & 6    & 77.075  & 0   & -100  \\
+\textsc{rfr\_x\_late\_op  } & \textsc{ai        }   & 75.784  & 77.85   & 80.845   & 82.629   & 83.92    & 85.817   & 87.136   & 10   & 75.456  & 0   & -100  \\
+\textsc{rfr\_x\_early\_all} & \textsc{area\_am  }   & 20.997  & 30.703  & 43.353   & 54.953   & 70.775   & 91.814   & 128.667  & 111  & 36.886  & 13  & -74   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{area\_am  }   & 0.09    & 1.032   & 2.451    & 5.718    & 13.115   & 35.412   & 145.351  & 601  & 16.84   & 83  & 66    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{area\_am  }   & 2.826   & 7.431   & 15.291   & 24.561   & 48.79    & 100.937  & 164.429  & 381  & 18.934  & 36  & -28   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{area\_am  }   & 9.731   & 18.56   & 29.5     & 43.064   & 55.402   & 87.891   & 111.402  & 161  & 9.215   & 0   & -100  \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{area\_am  }   & 5.452   & 10.951  & 17.754   & 29.813   & 42.006   & 64.481   & 102.468  & 180  & 10.145  & 4   & -92   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{area\_am  }   & 9.688   & 18.453  & 30.123   & 40.901   & 54.692   & 76.594   & 92.832   & 142  & 12.915  & 1   & -98   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{area\_am  }   & 7.564   & 10.201  & 19.29    & 31.445   & 43.614   & 70.81    & 135.039  & 193  & 5.644   & 0   & -100  \\
+\textsc{rfr\_x\_early\_all} & \textsc{area\_mn  }   & 3.53    & 4.026   & 4.465    & 5.034    & 5.616    & 6.414    & 7.295    & 47   & 4.522   & 28  & -44   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{area\_mn  }   & 0.09    & 0.54    & 1.119    & 2.243    & 3.312    & 6.065    & 15.282   & 246  & 5.607   & 94  & 88    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{area\_mn  }   & 1.375   & 2.092   & 3.209    & 4.085    & 5.237    & 6.327    & 8.29     & 104  & 4.123   & 52  & 4     \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{area\_mn  }   & 2.859   & 3.57    & 4.544    & 5.169    & 5.687    & 6.43     & 7.371    & 55   & 3.326   & 3   & -94   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{area\_mn  }   & 1.345   & 1.922   & 2.643    & 3.133    & 3.77     & 4.486    & 5.647    & 82   & 4.238   & 92  & 84    \\
+\textsc{rfr\_x\_late\_mod } & \textsc{area\_mn  }   & 2.815   & 3.567   & 4.184    & 4.768    & 5.4      & 6.499    & 7.708    & 61   & 3.295   & 3   & -94   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{area\_mn  }   & 2.192   & 2.811   & 3.63     & 4.338    & 4.86     & 6.107    & 6.977    & 76   & 2.662   & 4   & -92   \\
+\textsc{rfr\_x\_early\_all} & \textsc{cai\_am   }   & 93.053  & 94.083  & 94.684   & 95.043   & 95.474   & 96.107   & 96.655   & 2    & 91.818  & 0   & -100  \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{cai\_am   }   & 0       & 3.125   & 15.385   & 26.837   & 43.678   & 62.696   & 100      & 222  & 42.444  & 73  & 46    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{cai\_am   }   & 24.847  & 43.257  & 53.792   & 61.135   & 66.856   & 72.604   & 77.375   & 48   & 64.445  & 66  & 32    \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{cai\_am   }   & 59.487  & 67.377  & 72.417   & 75.779   & 79.358   & 82.503   & 86.988   & 20   & 74.558  & 43  & -14   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{cai\_am   }   & 4.532   & 12.801  & 18.96    & 24.466   & 30.229   & 36.103   & 42.978   & 95   & 29.709  & 74  & 48    \\
+\textsc{rfr\_x\_late\_mod } & \textsc{cai\_am   }   & 30.43   & 39.838  & 45.329   & 48.358   & 51.819   & 56.14    & 63.1     & 34   & 49.003  & 56  & 12    \\
+\textsc{rfr\_x\_late\_op  } & \textsc{cai\_am   }   & 27.035  & 35.912  & 41.37    & 45.972   & 51.168   & 56.26    & 59.364   & 44   & 40.964  & 24  & -52   \\
+\textsc{rfr\_x\_early\_all} & \textsc{clumpy    }   & 0.794   & 0.803   & 0.812    & 0.823    & 0.832    & 0.842    & 0.854    & 5    & 0.818   & 41  & -18   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{clumpy    }   & -1      & 0.638   & 0.747    & 0.797    & 0.832    & 0.872    & 0.903    & 29   & 0.809   & 59  & 18    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{clumpy    }   & 0.703   & 0.768   & 0.803    & 0.821    & 0.841    & 0.859    & 0.879    & 11   & 0.784   & 13  & -74   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{clumpy    }   & 0.781   & 0.797   & 0.817    & 0.829    & 0.837    & 0.848    & 0.858    & 6    & 0.758   & 0   & -100  \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{clumpy    }   & 0.728   & 0.766   & 0.793    & 0.808    & 0.822    & 0.834    & 0.847    & 8    & 0.793   & 25  & -50   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{clumpy    }   & 0.784   & 0.803   & 0.821    & 0.83     & 0.84     & 0.855    & 0.862    & 6    & 0.769   & 0   & -100  \\
+\textsc{rfr\_x\_late\_op  } & \textsc{clumpy    }   & 0.758   & 0.778   & 0.808    & 0.826    & 0.838    & 0.858    & 0.871    & 10   & 0.754   & 0   & -100  \\
+\textsc{rfr\_x\_early\_all} & \textsc{core\_am  }   & 19.931  & 29.073  & 41.871   & 52.4     & 67.907   & 86.554   & 123.111  & 110  & 32.922  & 10  & -80   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{core\_am  }   & 0       & 0.008   & 0.331    & 1.527    & 5.561    & 17.878   & 111.728  & 1170 & 9.022   & 87  & 74    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{core\_am  }   & 0.829   & 4.229   & 10.254   & 17.344   & 33.364   & 76.886   & 107.302  & 419  & 13.48   & 39  & -22   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{core\_am  }   & 7.833   & 13.861  & 23.717   & 35.889   & 47.231   & 74.344   & 93.956   & 169  & 7.09    & 0   & -100  \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{core\_am  }   & 0.377   & 2.092   & 5.088    & 10.174   & 17.19    & 33.919   & 58.6     & 313  & 3.631   & 16  & -68   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{core\_am  }   & 5.453   & 9.991   & 18.352   & 24.838   & 35.206   & 51.262   & 62.2     & 166  & 8.041   & 2   & -96   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{core\_am  }   & 3.142   & 4.966   & 10.169   & 18.269   & 26.73    & 42.709   & 86.66    & 207  & 2.803   & 0   & -100  \\
+\textsc{rfr\_x\_early\_all} & \textsc{core\_mn  }   & 3.389   & 3.852   & 4.243    & 4.783    & 5.338    & 6.062    & 6.941    & 46   & 4.152   & 19  & -62   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{core\_mn  }   & 0       & 0.03    & 0.188    & 0.556    & 1.126    & 2.766    & 7.095    & 492  & 2.38    & 93  & 86    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{core\_mn  }   & 0.353   & 1.037   & 1.804    & 2.486    & 3.403    & 4.353    & 6.415    & 133  & 2.657   & 55  & 10    \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{core\_mn  }   & 1.749   & 2.458   & 3.329    & 3.932    & 4.445    & 5.066    & 5.829    & 66   & 2.48    & 6   & -88   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{core\_mn  }   & 0.062   & 0.3     & 0.501    & 0.762    & 1.096    & 1.506    & 2.427    & 158  & 1.259   & 86  & 72    \\
+\textsc{rfr\_x\_late\_mod } & \textsc{core\_mn  }   & 0.857   & 1.505   & 1.895    & 2.297    & 2.791    & 3.46     & 4.396    & 85   & 1.615   & 10  & -80   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{core\_mn  }   & 0.722   & 1.022   & 1.514    & 2.019    & 2.47     & 3.278    & 3.833    & 112  & 1.09    & 7   & -86   \\
+\textsc{rfr\_x\_early\_all} & \textsc{cpland    }   & 0.828   & 1.126   & 1.305    & 1.564    & 1.782    & 2.072    & 2.487    & 60   & 1.233   & 18  & -64   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{cpland    }   & 0       & 0       & 0.001    & 0.003    & 0.009    & 0.029    & 0.137    & 967  & 0.146   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{cpland    }   & 0.01    & 0.035   & 0.096    & 0.154    & 0.22     & 0.341    & 0.442    & 199  & 0.495   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{cpland    }   & 0.191   & 0.363   & 0.544    & 0.661    & 0.781    & 1        & 1.239    & 96   & 0.382   & 7   & -86   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{cpland    }   & 0.005   & 0.029   & 0.062    & 0.105    & 0.178    & 0.287    & 0.464    & 246  & 0.128   & 60  & 20    \\
+\textsc{rfr\_x\_late\_mod } & \textsc{cpland    }   & 0.062   & 0.149   & 0.21     & 0.257    & 0.314    & 0.374    & 0.519    & 88   & 0.296   & 70  & 40    \\
+\textsc{rfr\_x\_late\_op  } & \textsc{cpland    }   & 0.049   & 0.066   & 0.108    & 0.14     & 0.176    & 0.274    & 0.38     & 149  & 0.052   & 1   & -98   \\
+\textsc{rfr\_x\_early\_all} & \textsc{cwed      }   & 0.896   & 1.13    & 1.3      & 1.431    & 1.561    & 1.77     & 1.982    & 45   & 0.964   & 1   & -98   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{cwed      }   & 0       & 0.002   & 0.006    & 0.012    & 0.023    & 0.043    & 0.093    & 342  & 0.191   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{cwed      }   & 0.037   & 0.081   & 0.134    & 0.18     & 0.23     & 0.307    & 0.396    & 126  & 0.455   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{cwed      }   & 0.258   & 0.413   & 0.524    & 0.598    & 0.682    & 0.835    & 1.012    & 71   & 0.352   & 2   & -96   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{cwed      }   & 0.163   & 0.23    & 0.323    & 0.398    & 0.486    & 0.629    & 0.702    & 100  & 0.281   & 15  & -70   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{cwed      }   & 0.236   & 0.315   & 0.372    & 0.421    & 0.466    & 0.506    & 0.547    & 45   & 0.426   & 54  & 8     \\
+\textsc{rfr\_x\_late\_op  } & \textsc{cwed      }   & 0.126   & 0.152   & 0.196    & 0.238    & 0.293    & 0.386    & 0.52     & 98   & 0.109   & 0   & -100  \\
+\textsc{rfr\_x\_early\_all} & \textsc{ed        }   & 2.324   & 2.904   & 3.343    & 3.812    & 4.26     & 4.916    & 5.407    & 53   & 3.247   & 20  & -60   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{ed        }   & 0.001   & 0.008   & 0.024    & 0.044    & 0.082    & 0.159    & 0.374    & 343  & 0.907   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{ed        }   & 0.119   & 0.26    & 0.46     & 0.614    & 0.803    & 1.051    & 1.333    & 129  & 2.221   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{ed        }   & 0.908   & 1.386   & 1.749    & 1.97     & 2.24     & 2.776    & 3.368    & 71   & 1.678   & 19  & -62   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{ed        }   & 0.403   & 0.587   & 0.925    & 1.167    & 1.477    & 1.932    & 2.459    & 115  & 1.221   & 58  & 16    \\
+\textsc{rfr\_x\_late\_mod } & \textsc{ed        }   & 0.608   & 0.894   & 1.094    & 1.23     & 1.342    & 1.474    & 1.82     & 47   & 1.88    & 100 & 100   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{ed        }   & 0.405   & 0.471   & 0.605    & 0.724    & 0.886    & 1.142    & 1.616    & 93   & 0.436   & 3   & -94   \\
+\textsc{rfr\_x\_early\_all} & \textsc{gyrate\_am}   & 183.848 & 233.781 & 269.941  & 309.576  & 340.65   & 392.546  & 527.338  & 51   & 259.32  & 17  & -66   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{gyrate\_am}   & 15      & 40.323  & 65.132   & 103.195  & 158.007  & 271.914  & 548.398  & 224  & 186.667 & 85  & 70    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{gyrate\_am}   & 70.426  & 112.817 & 160.622  & 207.789  & 293.683  & 415.592  & 532.046  & 146  & 194.415 & 42  & -16   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{gyrate\_am}   & 136.456 & 171.126 & 222.983  & 269.294  & 310.988  & 362.055  & 436.935  & 71   & 137.65  & 1   & -98   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{gyrate\_am}   & 91.581  & 136.865 & 176.632  & 219.376  & 263.905  & 328.035  & 451.998  & 87   & 140.872 & 7   & -86   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{gyrate\_am}   & 126.671 & 175.972 & 221.093  & 258.149  & 304.937  & 368.517  & 452.213  & 75   & 151.483 & 1   & -98   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{gyrate\_am}   & 116.635 & 134.625 & 179.752  & 225.89   & 267.649  & 353.934  & 473.155  & 97   & 102.617 & 0   & -100  \\
+\textsc{rfr\_x\_early\_all} & \textsc{iji       }   & 54.357  & 55.326  & 56.388   & 56.993   & 57.587   & 58.321   & 59.679   & 5    & 59.991  & 100 & 100   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{iji       }   & 0       & 25.666  & 37.91    & 43.592   & 47.797   & 52.093   & 55.607   & 61   & 55.871  & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{iji       }   & 45.46   & 48.306  & 51.409   & 52.807   & 54.024   & 56.382   & 58.981   & 15   & 57.333  & 98  & 96    \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{iji       }   & 46.42   & 49.129  & 52.755   & 54.208   & 55.523   & 56.952   & 58.685   & 14   & 55.806  & 82  & 64    \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{iji       }   & 47.524  & 49.88   & 51.745   & 52.893   & 54.093   & 55.776   & 57.977   & 11   & 55.276  & 91  & 82    \\
+\textsc{rfr\_x\_late\_mod } & \textsc{iji       }   & 46.236  & 50.273  & 52.31    & 53.996   & 55.104   & 56.457   & 58.138   & 11   & 54.945  & 71  & 42    \\
+\textsc{rfr\_x\_late\_op  } & \textsc{iji       }   & 46.662  & 49.727  & 51.951   & 53.593   & 54.777   & 56.524   & 58.062   & 13   & 55.844  & 90  & 80    \\
+\textsc{rfr\_x\_early\_all} & \textsc{pd        }   & 0.221   & 0.257   & 0.295    & 0.327    & 0.355    & 0.375    & 0.419    & 36   & 0.297   & 27  & -46   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{pd        }   & 0.001   & 0.002   & 0.004    & 0.006    & 0.009    & 0.015    & 0.024    & 217  & 0.061   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{pd        }   & 0.022   & 0.036   & 0.048    & 0.06     & 0.073    & 0.095    & 0.117    & 98   & 0.186   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{pd        }   & 0.102   & 0.13    & 0.152    & 0.167    & 0.191    & 0.223    & 0.277    & 56   & 0.154   & 32  & -36   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{pd        }   & 0.063   & 0.091   & 0.118    & 0.142    & 0.162    & 0.2      & 0.227    & 77   & 0.101   & 10  & -80   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{pd        }   & 0.065   & 0.086   & 0.1      & 0.111    & 0.119    & 0.13     & 0.143    & 40   & 0.183   & 100 & 100   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{pd        }   & 0.042   & 0.05    & 0.061    & 0.07     & 0.081    & 0.107    & 0.13     & 81   & 0.048   & 4   & -92   \\
+\textsc{rfr\_x\_early\_all} & \textsc{pland     }   & 0.864   & 1.182   & 1.375    & 1.64     & 1.871    & 2.178    & 2.629    & 61   & 1.343   & 23  & -54   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{pland     }   & 0       & 0.001   & 0.006    & 0.013    & 0.029    & 0.067    & 0.218    & 508  & 0.343   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{pland     }   & 0.031   & 0.077   & 0.177    & 0.254    & 0.344    & 0.48     & 0.594    & 159  & 0.768   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{pland     }   & 0.316   & 0.531   & 0.739    & 0.865    & 1.007    & 1.27     & 1.475    & 85   & 0.513   & 5   & -90   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{pland     }   & 0.113   & 0.203   & 0.328    & 0.434    & 0.589    & 0.83     & 1.079    & 144  & 0.43    & 50  & 0     \\
+\textsc{rfr\_x\_late\_mod } & \textsc{pland     }   & 0.203   & 0.35    & 0.457    & 0.536    & 0.611    & 0.694    & 0.85     & 64   & 0.604   & 74  & 48    \\
+\textsc{rfr\_x\_late\_op  } & \textsc{pland     }   & 0.127   & 0.169   & 0.241    & 0.305    & 0.38     & 0.531    & 0.713    & 119  & 0.128   & 1   & -98   \\
+\textsc{rfr\_x\_early\_all} & \textsc{shape\_am }   & 2.014   & 2.207   & 2.382    & 2.515    & 2.681    & 2.9      & 3.369    & 28   & 2.133   & 2   & -96   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{shape\_am }   & 1       & 1.175   & 1.376    & 1.579    & 1.871    & 2.458    & 3.928    & 81   & 2.07    & 86  & 72    \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{shape\_am }   & 1.394   & 1.589   & 1.803    & 1.991    & 2.333    & 2.971    & 3.771    & 69   & 2.197   & 68  & 36    \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{shape\_am }   & 1.702   & 1.855   & 2.069    & 2.292    & 2.465    & 2.678    & 3.06     & 36   & 1.905   & 9   & -82   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{shape\_am }   & 1.489   & 1.683   & 1.941    & 2.093    & 2.311    & 2.594    & 3.083    & 44   & 1.839   & 18  & -64   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{shape\_am }   & 1.602   & 1.841   & 2.028    & 2.171    & 2.359    & 2.69     & 3.014    & 39   & 1.923   & 13  & -74   \\
+\textsc{rfr\_x\_late\_op  } & \textsc{shape\_am }   & 1.615   & 1.686   & 1.892    & 2.029    & 2.192    & 2.617    & 2.899    & 46   & 1.653   & 3   & -94   \\
+\textsc{rfr\_x\_early\_all} & \textsc{shape\_mn }   & 1.387   & 1.412   & 1.432    & 1.443    & 1.457    & 1.48     & 1.5      & 5    & 1.428   & 19  & -62   \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{shape\_mn }   & 1       & 1.091   & 1.202    & 1.293    & 1.361    & 1.461    & 1.627    & 29   & 1.595   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{shape\_mn }   & 1.208   & 1.27    & 1.336    & 1.368    & 1.402    & 1.44     & 1.489    & 12   & 1.514   & 100 & 100   \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{shape\_mn }   & 1.347   & 1.378   & 1.407    & 1.424    & 1.441    & 1.458    & 1.482    & 6    & 1.51    & 100 & 100   \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{shape\_mn }   & 1.196   & 1.237   & 1.277    & 1.306    & 1.328    & 1.355    & 1.398    & 9    & 1.5     & 100 & 100   \\
+\textsc{rfr\_x\_late\_mod } & \textsc{shape\_mn }   & 1.327   & 1.356   & 1.378    & 1.395    & 1.413    & 1.44     & 1.492    & 6    & 1.446   & 97  & 94    \\
+\textsc{rfr\_x\_late\_op  } & \textsc{shape\_mn }   & 1.298   & 1.335   & 1.359    & 1.379    & 1.401    & 1.436    & 1.477    & 7    & 1.412   & 86  & 72    \\
+\textsc{rfr\_x\_early\_all} & \textsc{simi\_mn  }   & 810.239 & 932.449 & 1046.058 & 1147.936 & 1244.168 & 1516.073 & 1785.322 & 51   & 597.985 & 0   & -100  \\
+\textsc{rfr\_x\_mid\_cl   } & \textsc{simi\_mn  }   & 227.821 & 459.001 & 715.04   & 1034.024 & 1451.1   & 2378.881 & 4374.619 & 186  & 466.925 & 6   & -88   \\
+\textsc{rfr\_x\_mid\_mod  } & \textsc{simi\_mn  }   & 708.689 & 868.001 & 1035.573 & 1180.847 & 1356.28  & 1657.926 & 2306.975 & 67   & 415.603 & 0   & -100  \\
+\textsc{rfr\_x\_mid\_op   } & \textsc{simi\_mn  }   & 900.625 & 989.326 & 1104.491 & 1188.736 & 1292.241 & 1506.538 & 2015.831 & 44   & 531.867 & 0   & -100  \\
+\textsc{rfr\_x\_late\_cl  } & \textsc{simi\_mn  }   & 655.491 & 777.24  & 932.274  & 1110.801 & 1380.426 & 1652.019 & 2355.994 & 79   & 421.915 & 0   & -100  \\
+\textsc{rfr\_x\_late\_mod } & \textsc{simi\_mn  }   & 722.552 & 837.323 & 986.553  & 1083.958 & 1206.965 & 1400.893 & 2033.451 & 52   & 444.247 & 0   & -100  \\
+\textsc{rfr\_x\_late\_op  } & \textsc{simi\_mn  }   & 782.838 & 872.849 & 956.583  & 1056.567 & 1181.974 & 1399.523 & 1736.968 & 50   & 537.628 & 0   & -100  \\%
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{smc\_m} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{smc\_m\_early\_all} & \textsc{ai        }   & 78.744   & 80.334   & 81.486   & 82.349   & 83.288   & 84.515   & 85.804   & 5      & 79.656        & 2             & -96      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{ai        }   & 79.924   & 81.434   & 82.434   & 83.067   & 83.647   & 84.302   & 85.306   & 3      & 79.661        & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{ai        }   & 72.513   & 73.804   & 74.996   & 75.885   & 77.018   & 79.364   & 81.799   & 7      & 80.133        & 98            & 96       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{ai        }   & 74.536   & 76.795   & 78.178   & 79.098   & 80.228   & 82.08    & 84.177   & 7      & 80.403        & 80            & 60       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{ai        }   & 76.175   & 77.124   & 78.559   & 79.615   & 80.856   & 82.584   & 84.056   & 7      & 83.088        & 98            & 96       \\
+\textsc{smc\_m\_late\_mod } & \textsc{ai        }   & 72.426   & 73.248   & 74.457   & 75.137   & 76.043   & 76.984   & 78.135   & 5      & 81.421        & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{ai        }   & 66.599   & 69.46    & 71.497   & 72.827   & 74.235   & 76.374   & 77.94    & 9      & 77.793        & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{area\_am  }   & 22.974   & 44.54    & 73.783   & 116.582  & 173.681  & 337.737  & 600.653  & 251    & 28.587        & 1             & -98      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{area\_am  }   & 45.216   & 84.668   & 122.926  & 176.533  & 233.854  & 348.58   & 589.465  & 149    & 24.753        & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{area\_am  }   & 5.646    & 9.557    & 14.972   & 22.864   & 39.959   & 111.511  & 469.012  & 446    & 40.315        & 76            & 52       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{area\_am  }   & 10.185   & 16.054   & 26.747   & 40.736   & 73.098   & 155.661  & 517.348  & 343    & 61.287        & 69            & 38       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{area\_am  }   & 16.047   & 23.697   & 38.744   & 56.889   & 96.269   & 173.688  & 298.979  & 264    & 64.791        & 57            & 14       \\
+\textsc{smc\_m\_late\_mod } & \textsc{area\_am  }   & 4.019    & 5.519    & 7.63     & 9.818    & 13.791   & 21.795   & 43.207   & 166    & 53.663        & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{area\_am  }   & 1.96     & 2.795    & 3.929    & 5.489    & 8.345    & 17.956   & 42.881   & 276    & 11.076        & 85            & 70       \\
+\textsc{smc\_m\_early\_all} & \textsc{area\_mn  }   & 3.406    & 4.336    & 5.032    & 5.532    & 6.213    & 7.098    & 8.406    & 50     & 4.388         & 6             & -88      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{area\_mn  }   & 4.039    & 5.151    & 5.824    & 6.365    & 6.833    & 7.433    & 8.103    & 36     & 4.454         & 1             & -98      \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{area\_mn  }   & 1.96     & 2.207    & 2.452    & 2.638    & 2.923    & 3.43     & 4.238    & 46     & 5.593         & 100           & 100      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{area\_mn  }   & 2.108    & 2.65     & 3.085    & 3.395    & 3.708    & 4.352    & 5.044    & 50     & 5.486         & 100           & 100      \\
+\textsc{smc\_m\_late\_cl  } & \textsc{area\_mn  }   & 2.508    & 2.995    & 3.505    & 3.921    & 4.608    & 5.624    & 6.556    & 67     & 6.71          & 100           & 100      \\
+\textsc{smc\_m\_late\_mod } & \textsc{area\_mn  }   & 1.79     & 1.968    & 2.253    & 2.423    & 2.671    & 3.067    & 3.527    & 45     & 5.937         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{area\_mn  }   & 0.857    & 1.169    & 1.465    & 1.678    & 1.944    & 2.35     & 2.962    & 70     & 3.5           & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{cai\_am   }   & 93.629   & 94.189   & 94.666   & 95.01    & 95.343   & 96.004   & 96.623   & 2      & 96.461        & 99            & 98       \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{cai\_am   }   & 16.007   & 21.855   & 26.953   & 30.595   & 34.047   & 37.424   & 43.819   & 51     & 42.237        & 100           & 100      \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{cai\_am   }   & 34.232   & 41.273   & 47.223   & 50.691   & 54.578   & 60.216   & 65.064   & 37     & 60.034        & 95            & 90       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{cai\_am   }   & 62.758   & 65.062   & 69.359   & 71.802   & 74.922   & 78.335   & 80.506   & 18     & 80.096        & 100           & 100      \\
+\textsc{smc\_m\_late\_cl  } & \textsc{cai\_am   }   & 12.065   & 18.936   & 22.835   & 26.159   & 29.383   & 34.719   & 39.671   & 60     & 43.109        & 100           & 100      \\
+\textsc{smc\_m\_late\_mod } & \textsc{cai\_am   }   & 25.105   & 30.007   & 34.308   & 37.745   & 42.087   & 46.68    & 50.684   & 44     & 57.853        & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{cai\_am   }   & 16.123   & 21.712   & 25.981   & 29.222   & 33.186   & 39.779   & 47.219   & 62     & 57.995        & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{clumpy    }   & 0.778    & 0.789    & 0.802    & 0.81     & 0.817    & 0.832    & 0.844    & 5      & 0.786         & 3             & -94      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{clumpy    }   & 0.786    & 0.796    & 0.803    & 0.808    & 0.814    & 0.824    & 0.833    & 3      & 0.79          & 2             & -96      \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{clumpy    }   & 0.721    & 0.732    & 0.743    & 0.752    & 0.764    & 0.786    & 0.812    & 7      & 0.789         & 97            & 94       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{clumpy    }   & 0.741    & 0.762    & 0.775    & 0.784    & 0.796    & 0.816    & 0.837    & 7      & 0.793         & 71            & 42       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{clumpy    }   & 0.755    & 0.763    & 0.776    & 0.784    & 0.796    & 0.809    & 0.824    & 6      & 0.817         & 100           & 100      \\
+\textsc{smc\_m\_late\_mod } & \textsc{clumpy    }   & 0.721    & 0.729    & 0.741    & 0.748    & 0.756    & 0.764    & 0.778    & 5      & 0.805         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{clumpy    }   & 0.666    & 0.694    & 0.714    & 0.727    & 0.741    & 0.763    & 0.778    & 9      & 0.775         & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{core\_am  }   & 22.324   & 42.771   & 70.931   & 112.447  & 167.314  & 321.23   & 566.868  & 248    & 27.758        & 1             & -98      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{core\_am  }   & 16.409   & 33.742   & 57.43    & 91.439   & 120.394  & 187.484  & 310.596  & 168    & 13.032        & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{core\_am  }   & 2.672    & 5.678    & 9.945    & 15.878   & 28.936   & 81.864   & 369.612  & 480    & 27.273        & 73            & 46       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{core\_am  }   & 7.951    & 12.856   & 21.605   & 34.709   & 61.657   & 135.071  & 439.974  & 352    & 50.621        & 67            & 34       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{core\_am  }   & 4.05     & 8.518    & 17.386   & 26.318   & 47.356   & 91.44    & 162.974  & 315    & 35.675        & 64            & 28       \\
+\textsc{smc\_m\_late\_mod } & \textsc{core\_am  }   & 1.365    & 2.445    & 3.783    & 5.088    & 7.663    & 13.223   & 29.042   & 212    & 35.619        & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{core\_am  }   & 0.513    & 0.834    & 1.412    & 2.206    & 3.777    & 8.733    & 28.023   & 358    & 7.329         & 94            & 88       \\
+\textsc{smc\_m\_early\_all} & \textsc{core\_mn  }   & 3.251    & 4.136    & 4.793    & 5.263    & 5.915    & 6.714    & 7.94     & 49     & 4.232         & 6             & -88      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{core\_mn  }   & 0.647    & 1.165    & 1.589    & 1.961    & 2.321    & 2.707    & 3.224    & 79     & 1.881         & 45            & -10      \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{core\_mn  }   & 0.729    & 0.976    & 1.169    & 1.332    & 1.545    & 1.988    & 2.633    & 76     & 3.357         & 100           & 100      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{core\_mn  }   & 1.358    & 1.853    & 2.198    & 2.405    & 2.713    & 3.279    & 3.791    & 59     & 4.394         & 100           & 100      \\
+\textsc{smc\_m\_late\_cl  } & \textsc{core\_mn  }   & 0.321    & 0.539    & 0.808    & 1.008    & 1.349    & 1.961    & 2.531    & 141    & 2.893         & 100           & 100      \\
+\textsc{smc\_m\_late\_mod } & \textsc{core\_mn  }   & 0.503    & 0.609    & 0.779    & 0.923    & 1.077    & 1.387    & 1.606    & 84     & 3.435         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{core\_mn  }   & 0.218    & 0.293    & 0.401    & 0.489    & 0.611    & 0.822    & 1.118    & 108    & 2.03          & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{cpland    }   & 1.772    & 3.526    & 5.206    & 6.838    & 8.543    & 11.17    & 13.501   & 112    & 4.567         & 17            & -66      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{cpland    }   & 0.942    & 1.837    & 2.695    & 3.468    & 4.272    & 5.231    & 5.818    & 98     & 1.311         & 2             & -96      \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{cpland    }   & 0.597    & 0.929    & 1.214    & 1.434    & 1.679    & 2.195    & 3.372    & 88     & 3.443         & 100           & 100      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{cpland    }   & 0.843    & 1.101    & 1.665    & 2.144    & 2.618    & 3.404    & 5.156    & 107    & 4.11          & 99            & 98       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{cpland    }   & 0.256    & 0.507    & 0.927    & 1.32     & 1.975    & 2.933    & 3.931    & 184    & 3.217         & 97            & 94       \\
+\textsc{smc\_m\_late\_mod } & \textsc{cpland    }   & 0.201    & 0.318    & 0.453    & 0.564    & 0.732    & 1.009    & 1.283    & 123    & 2.641         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{cpland    }   & 0.016    & 0.032    & 0.061    & 0.092    & 0.133    & 0.219    & 0.434    & 203    & 0.658         & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{cwed      }   & 1.655    & 2.95     & 4.302    & 5.406    & 6.584    & 8.27     & 9.801    & 98     & 3.67          & 17            & -66      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{cwed      }   & 4.277    & 6.171    & 7.217    & 8.059    & 9.038    & 10.064   & 11.188   & 48     & 1.919         & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{cwed      }   & 1.245    & 1.543    & 1.883    & 2.272    & 2.553    & 3.072    & 3.978    & 67     & 3.336         & 99            & 98       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{cwed      }   & 0.803    & 1.108    & 1.573    & 1.999    & 2.475    & 3.15     & 4.664    & 102    & 2.89          & 88            & 76       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{cwed      }   & 1.483    & 2.692    & 3.615    & 4.408    & 5.43     & 6.343    & 7.193    & 83     & 4.36          & 49            & -2       \\
+\textsc{smc\_m\_late\_mod } & \textsc{cwed      }   & 0.696    & 0.897    & 1.193    & 1.486    & 1.779    & 2.143    & 2.711    & 84     & 2.795         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{cwed      }   & 0.072    & 0.126    & 0.21     & 0.301    & 0.438    & 0.682    & 1.401    & 185    & 0.854         & 98            & 96       \\
+\textsc{smc\_m\_early\_all} & \textsc{ed        }   & 5.109    & 9.079    & 13.257   & 16.872   & 21.075   & 26.207   & 32.383   & 102    & 12.896        & 23            & -54      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{ed        }   & 12.691   & 18.811   & 22.34    & 25.171   & 28.62    & 32.283   & 35.086   & 54     & 8.506         & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{ed        }   & 5.262    & 6.354    & 7.77     & 9.215    & 10.417   & 12.221   & 15.548   & 64     & 15.278        & 100           & 100      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{ed        }   & 3.341    & 4.634    & 6.419    & 8.209    & 10.116   & 12.825   & 19.454   & 100    & 13.462        & 97            & 94       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{ed        }   & 4.544    & 8.187    & 11.455   & 14.017   & 17.827   & 21.029   & 23.768   & 92     & 17.012        & 71            & 42       \\
+\textsc{smc\_m\_late\_mod } & \textsc{ed        }   & 2.564    & 3.236    & 4.16     & 5.092    & 6.187    & 7.547    & 9.102    & 85     & 11.444        & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{ed        }   & 0.257    & 0.456    & 0.795    & 1.124    & 1.631    & 2.456    & 4.933    & 178    & 3.432         & 99            & 98       \\
+\textsc{smc\_m\_early\_all} & \textsc{gyrate\_am}   & 197.787  & 267.978  & 346.058  & 420.325  & 505.939  & 708.887  & 1127.898 & 105    & 235.351       & 2             & -96      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{gyrate\_am}   & 280.61   & 374.747  & 449.394  & 536.102  & 613.735  & 777.012  & 1057.715 & 75     & 226.378       & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{gyrate\_am}   & 99.111   & 122.993  & 149.318  & 176.897  & 224.746  & 356.304  & 942.508  & 132    & 285.145       & 90            & 80       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{gyrate\_am}   & 129.428  & 161.165  & 200.985  & 241.882  & 307.371  & 446.01   & 1007.169 & 118    & 349.297       & 85            & 70       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{gyrate\_am}   & 167.176  & 202.279  & 249.951  & 300.22   & 390.517  & 516.389  & 748.368  & 105    & 375.073       & 71            & 42       \\
+\textsc{smc\_m\_late\_mod } & \textsc{gyrate\_am}   & 85.555   & 99.446   & 115.457  & 130.014  & 150.275  & 186.574  & 231.269  & 67     & 333.055       & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{gyrate\_am}   & 57.903   & 68.967   & 82.124   & 95.99    & 115.52   & 160.975  & 248.689  & 96     & 147.8         & 90            & 80       \\
+\textsc{smc\_m\_early\_all} & \textsc{iji       }   & 54.999   & 56.904   & 58.686   & 59.961   & 61.196   & 63.094   & 64.746   & 10     & 56.964        & 6             & -88      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{iji       }   & 57.199   & 58.806   & 60.042   & 60.908   & 61.827   & 62.915   & 64.29    & 7      & 58.408        & 3             & -94      \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{iji       }   & 50.373   & 52.142   & 53.732   & 54.702   & 55.74    & 57.248   & 60.207   & 9      & 58.347        & 99            & 98       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{iji       }   & 50.368   & 52.979   & 54.633   & 56.06    & 57.483   & 59.522   & 61.521   & 12     & 59.599        & 96            & 92       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{iji       }   & 52.774   & 55.992   & 57.942   & 59.423   & 60.594   & 62.392   & 63.937   & 11     & 55.973        & 5             & -90      \\
+\textsc{smc\_m\_late\_mod } & \textsc{iji       }   & 50.824   & 53.851   & 55.465   & 56.41    & 57.381   & 58.644   & 61.419   & 8      & 58.223        & 91            & 82       \\
+\textsc{smc\_m\_late\_op  } & \textsc{iji       }   & 43.987   & 47.935   & 50.666   & 52.323   & 53.875   & 55.952   & 58.82    & 15     & 60.641        & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{pd        }   & 0.513    & 0.74     & 1.027    & 1.288    & 1.543    & 1.894    & 2.325    & 90     & 1.079         & 30            & -40      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{pd        }   & 1.137    & 1.41     & 1.602    & 1.776    & 1.952    & 2.084    & 2.288    & 38     & 0.697         & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{pd        }   & 0.644    & 0.785    & 0.923    & 1.074    & 1.188    & 1.38     & 1.554    & 55     & 1.026         & 41            & -18      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{pd        }   & 0.349    & 0.529    & 0.698    & 0.858    & 1.042    & 1.296    & 1.707    & 89     & 0.935         & 60            & 20       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{pd        }   & 0.555    & 0.894    & 1.122    & 1.291    & 1.476    & 1.686    & 1.869    & 61     & 1.112         & 23            & -54      \\
+\textsc{smc\_m\_late\_mod } & \textsc{pd        }   & 0.366    & 0.433    & 0.536    & 0.636    & 0.716    & 0.838    & 1.025    & 64     & 0.769         & 85            & 70       \\
+\textsc{smc\_m\_late\_op  } & \textsc{pd        }   & 0.057    & 0.094    & 0.136    & 0.182    & 0.245    & 0.346    & 0.551    & 138    & 0.324         & 92            & 84       \\
+\textsc{smc\_m\_early\_all} & \textsc{pland     }   & 1.843    & 3.676    & 5.49     & 7.192    & 9.019    & 11.819   & 14.28    & 113    & 4.734         & 16            & -68      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{pland     }   & 4.827    & 7.759    & 9.727    & 11.076   & 12.781   & 14.628   & 15.964   & 62     & 3.103         & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{pland     }   & 1.556    & 1.903    & 2.396    & 2.878    & 3.28     & 3.931    & 5.493    & 70     & 5.736         & 100           & 100      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{pland     }   & 1.18     & 1.522    & 2.28     & 2.977    & 3.707    & 4.712    & 7.458    & 107    & 5.131         & 98            & 96       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{pland     }   & 1.42     & 2.687    & 4.023    & 5.136    & 6.897    & 8.514    & 10.325   & 113    & 7.462         & 83            & 66       \\
+\textsc{smc\_m\_late\_mod } & \textsc{pland     }   & 0.686    & 0.924    & 1.214    & 1.517    & 1.89     & 2.336    & 2.888    & 93     & 4.565         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{pland     }   & 0.058    & 0.11     & 0.211    & 0.303    & 0.452    & 0.719    & 1.608    & 201    & 1.134         & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{shape\_am }   & 2.067    & 2.389    & 2.738    & 3.087    & 3.404    & 3.995    & 5.448    & 52     & 2.295         & 3             & -94      \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{shape\_am }   & 2.441    & 2.957    & 3.3      & 3.677    & 3.986    & 4.56     & 5.798    & 44     & 2.186         & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{shape\_am }   & 1.603    & 1.738    & 1.879    & 2.02     & 2.26     & 2.756    & 4.968    & 50     & 2.701         & 94            & 88       \\
+\textsc{smc\_m\_mid\_op   } & \textsc{shape\_am }   & 1.712    & 1.878    & 2.047    & 2.233    & 2.477    & 2.974    & 4.915    & 49     & 2.995         & 96            & 92       \\
+\textsc{smc\_m\_late\_cl  } & \textsc{shape\_am }   & 1.957    & 2.164    & 2.425    & 2.711    & 3.122    & 3.661    & 4.302    & 55     & 2.84          & 60            & 20       \\
+\textsc{smc\_m\_late\_mod } & \textsc{shape\_am }   & 1.476    & 1.576    & 1.686    & 1.777    & 1.911    & 2.141    & 2.596    & 32     & 2.702         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{shape\_am }   & 1.244    & 1.366    & 1.46     & 1.551    & 1.659    & 1.975    & 2.369    & 39     & 1.781         & 86            & 72       \\
+\textsc{smc\_m\_early\_all} & \textsc{shape\_mn }   & 1.388    & 1.427    & 1.454    & 1.471    & 1.484    & 1.511    & 1.538    & 6      & 1.487         & 79            & 58       \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{shape\_mn }   & 1.414    & 1.453    & 1.474    & 1.488    & 1.503    & 1.52     & 1.547    & 5      & 1.506         & 80            & 60       \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{shape\_mn }   & 1.305    & 1.323    & 1.34     & 1.351    & 1.364    & 1.388    & 1.416    & 5      & 1.588         & 100           & 100      \\
+\textsc{smc\_m\_mid\_op   } & \textsc{shape\_mn }   & 1.296    & 1.325    & 1.345    & 1.362    & 1.376    & 1.402    & 1.422    & 6      & 1.557         & 100           & 100      \\
+\textsc{smc\_m\_late\_cl  } & \textsc{shape\_mn }   & 1.315    & 1.367    & 1.395    & 1.416    & 1.445    & 1.469    & 1.489    & 7      & 1.549         & 100           & 100      \\
+\textsc{smc\_m\_late\_mod } & \textsc{shape\_mn }   & 1.264    & 1.284    & 1.306    & 1.323    & 1.345    & 1.38     & 1.413    & 7      & 1.569         & 100           & 100      \\
+\textsc{smc\_m\_late\_op  } & \textsc{shape\_mn }   & 1.137    & 1.177    & 1.216    & 1.24     & 1.267    & 1.309    & 1.372    & 11     & 1.476         & 100           & 100      \\
+\textsc{smc\_m\_early\_all} & \textsc{simi\_mn  }   & 2666.529 & 3439.816 & 3903.696 & 4279.966 & 4717.501 & 5503.869 & 9022.677 & 48     & 2306.563      & 0             & -100     \\
+\textsc{smc\_m\_mid\_cl   } & \textsc{simi\_mn  }   & 2109.213 & 2253.58  & 2376.969 & 2484.378 & 2649.256 & 2930.477 & 4043.164 & 27     & 2036.063      & 0             & -100     \\
+\textsc{smc\_m\_mid\_mod  } & \textsc{simi\_mn  }   & 2128.737 & 2302.999 & 2504.631 & 2691.241 & 2920.973 & 3329.208 & 5100.297 & 38     & 2042.245      & 0             & -100     \\
+\textsc{smc\_m\_mid\_op   } & \textsc{simi\_mn  }   & 2349.719 & 2572.035 & 2835.744 & 3071.069 & 3379.317 & 4042.653 & 6518.735 & 48     & 2065.211      & 0             & -100     \\
+\textsc{smc\_m\_late\_cl  } & \textsc{simi\_mn  }   & 1686.435 & 1807.045 & 1978.686 & 2147.084 & 2355.77  & 2748.075 & 3740.08  & 44     & 1675.049      & 0             & -100     \\
+\textsc{smc\_m\_late\_mod } & \textsc{simi\_mn  }   & 1660.007 & 1825.336 & 1989.926 & 2108.078 & 2260.193 & 2580.238 & 3147.077 & 36     & 2094.397      & 48            & -4       \\
+\textsc{smc\_m\_late\_op  } & \textsc{simi\_mn  }   & 1361.097 & 1775.161 & 2110.079 & 2400.817 & 2695.696 & 3332.609 & 4738.454 & 65     & 3085.473      & 91            & 82       \\%
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{smc\_u} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{smc\_u\_early\_all} & \textsc{ai        }   80.099   & 81.6     & 82.874   & 83.638   & 84.545   & 87.358   & 88.389   & 7    & 90.77    & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{ai        }   68.132   & 73.367   & 76.72    & 79.558   & 82.393   & 86.909   & 91.667   & 17   & 82.364   & 75  & 50   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{ai        }   73.761   & 75.875   & 78.752   & 80.655   & 82.404   & 85.487   & 89.404   & 12   & 84.429   & 91  & 82   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{ai        }   79.788   & 80.919   & 82.302   & 83.659   & 85.013   & 86.809   & 88.966   & 7    & 80.079   & 1   & -98  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{ai        }   77.057   & 78.78    & 80.31    & 81.575   & 82.586   & 84.023   & 86.283   & 6    & 88.154   & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{ai        }   74.173   & 75.756   & 77.085   & 78.339   & 79.778   & 81.563   & 83.991   & 7    & 85.809   & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{ai        }   72.061   & 74.184   & 76.967   & 78.782   & 80.7     & 83.632   & 86.267   & 12   & 83.304   & 94  & 88   \\
+\textsc{smc\_u\_early\_all} & \textsc{area\_am  }   16.786   & 24.604   & 34.486   & 43.415   & 58.624   & 154.794  & 185.222  & 300  & 178.043  & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{area\_am  }   0.85     & 1.462    & 2.46     & 3.533    & 5.748    & 22.76    & 70.677   & 603  & 9.921    & 89  & 78   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{area\_am  }   2.74     & 4.763    & 7.578    & 11.168   & 21.023   & 48.861   & 269.025  & 395  & 15.779   & 64  & 28   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{area\_am  }   10.111   & 13.98    & 20.121   & 32.162   & 46.676   & 161.591  & 180.261  & 459  & 8.289    & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{area\_am  }   5.403    & 8.208    & 12.464   & 16.408   & 22.698   & 37.316   & 68.83    & 177  & 87.059   & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{area\_am  }   3.713    & 4.467    & 6.014    & 8.043    & 11.695   & 24.579   & 151.903  & 250  & 28.024   & 96  & 92   \\
+\textsc{smc\_u\_late\_op  } & \textsc{area\_am  }   1.997    & 3.429    & 4.985    & 6.697    & 10.171   & 24.492   & 78.773   & 315  & 8.763    & 67  & 34   \\
+\textsc{smc\_u\_early\_all} & \textsc{area\_mn  }   4.776    & 5.728    & 6.966    & 7.822    & 8.779    & 9.978    & 11.869   & 54   & 18.228   & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{area\_mn  }   0.75     & 1.17     & 1.785    & 2.304    & 3.127    & 5.742    & 36.315   & 198  & 4.375    & 89  & 78   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{area\_mn  }   1.883    & 2.459    & 3.12     & 3.797    & 4.983    & 6.789    & 11.708   & 114  & 5.782    & 87  & 74   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{area\_mn  }   4.153    & 4.654    & 5.415    & 6.078    & 7.143    & 8.956    & 13.31    & 71   & 4.498    & 3   & -94  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{area\_mn  }   2.768    & 3.376    & 4.048    & 4.599    & 5.207    & 6.301    & 9.06     & 64   & 14.89    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{area\_mn  }   2.01     & 2.39     & 2.723    & 3.047    & 3.412    & 4.284    & 6.044    & 62   & 7.672    & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{area\_mn  }   1.44     & 2.006    & 2.434    & 2.785    & 3.353    & 4.974    & 6.264    & 107  & 4.419    & 92  & 84   \\
+\textsc{smc\_u\_early\_all} & \textsc{cai\_am   }   91.006   & 91.97    & 93.191   & 93.8     & 94.435   & 95.233   & 95.992   & 3    & 90.974   & 0   & -10  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{cai\_am   }   0        & 0        & 1.685    & 8.333    & 17.846   & 29.478   & 50.899   & 354  & 36.37    & 98  & 96   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{cai\_am   }   15.086   & 27.349   & 36.443   & 42.679   & 49.157   & 59.709   & 68.428   & 76   & 73.184   & 100 & 100  \\
+\textsc{smc\_u\_mid\_op   } & \textsc{cai\_am   }   58.235   & 62.473   & 67.13    & 71.044   & 73.568   & 75.999   & 81.032   & 19   & 84.974   & 100 & 100  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{cai\_am   }   1.711    & 5.492    & 9.352    & 11.858   & 14.805   & 21.8     & 31.829   & 138  & 39.893   & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{cai\_am   }   24.03    & 27.055   & 31.706   & 35.292   & 40.425   & 51.082   & 60.664   & 68   & 60.877   & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{cai\_am   }   15.025   & 25.16    & 31.589   & 37.712   & 43.006   & 55.65    & 66.487   & 81   & 73.931   & 100 & 100  \\
+\textsc{smc\_u\_early\_all} & \textsc{clumpy    }   0.8      & 0.814    & 0.827    & 0.835    & 0.844    & 0.872    & 0.883    & 7    & 0.907    & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{clumpy    }   0.681    & 0.734    & 0.767    & 0.796    & 0.824    & 0.869    & 0.917    & 17   & 0.824    & 76  & 52   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{clumpy    }   0.738    & 0.759    & 0.787    & 0.806    & 0.824    & 0.855    & 0.894    & 12   & 0.844    & 91  & 82   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{clumpy    }   0.797    & 0.808    & 0.822    & 0.836    & 0.849    & 0.867    & 0.889    & 7    & 0.8      & 1   & -98  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{clumpy    }   0.77     & 0.787    & 0.802    & 0.815    & 0.825    & 0.84     & 0.862    & 7    & 0.881    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{clumpy    }   0.742    & 0.757    & 0.77     & 0.783    & 0.797    & 0.815    & 0.84     & 7    & 0.858    & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{clumpy    }   0.72     & 0.742    & 0.77     & 0.788    & 0.807    & 0.836    & 0.862    & 12   & 0.833    & 94  & 88   \\
+\textsc{smc\_u\_early\_all} & \textsc{core\_am  }   15.814   & 23.843   & 33.265   & 41.855   & 56.289   & 135.728  & 163.175  & 267  & 159.264  & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{core\_am  }   0        & 0        & 0.032    & 0.295    & 1.186    & 6.066    & 31.455   & 2056 & 3.615    & 92  & 84   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{core\_am  }   0.503    & 1.738    & 3.42     & 5.612    & 13.118   & 35.798   & 179.647  & 607  & 12.118   & 73  & 46   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{core\_am  }   6.895    & 10.446   & 14.504   & 25.255   & 38.52    & 119.092  & 135.887  & 430  & 7.34     & 1   & -98  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{core\_am  }   0.118    & 0.914    & 2.189    & 3.517    & 5.95     & 12.823   & 32.734   & 339  & 46.47    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{core\_am  }   1.179    & 1.666    & 2.531    & 3.792    & 5.854    & 16.695   & 64.731   & 396  & 17.985   & 96  & 92   \\
+\textsc{smc\_u\_late\_op  } & \textsc{core\_am  }   0.469    & 1.065    & 2.027    & 3.226    & 5.535    & 18.783   & 57.864   & 549  & 7.282    & 85  & 70   \\
+\textsc{smc\_u\_early\_all} & \textsc{core\_mn  }   4.431    & 5.424    & 6.561    & 7.367    & 8.264    & 9.345    & 11.04    & 53   & 16.583   & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{core\_mn  }   0        & 0        & 0.033    & 0.192    & 0.486    & 1.309    & 10.53    & 682  & 1.591    & 97  & 94   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{core\_mn  }   0.291    & 0.761    & 1.175    & 1.588    & 2.414    & 3.993    & 7.168    & 204  & 4.232    & 97  & 94   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{core\_mn  }   2.597    & 3.107    & 3.581    & 4.319    & 5.193    & 6.633    & 10.115   & 82   & 3.822    & 34  & -32  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{core\_mn  }   0.051    & 0.185    & 0.388    & 0.54     & 0.754    & 1.338    & 2.838    & 214  & 5.94     & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{core\_mn  }   0.483    & 0.676    & 0.879    & 1.071    & 1.332    & 2.172    & 3.499    & 140  & 4.67     & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{core\_mn  }   0.22     & 0.545    & 0.806    & 1.072    & 1.381    & 2.401    & 3.965    & 173  & 3.267    & 97  & 94   \\
+\textsc{smc\_u\_early\_all} & \textsc{cpland    }   0.548    & 0.692    & 0.834    & 0.933    & 1.029    & 1.137    & 1.22     & 48   & 1.005    & 71  & 42   \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{cpland    }   0        & 0        & 0        & 0.001    & 0.002    & 0.009    & 0.028    & 900  & 0.024    & 100 & 100  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{cpland    }   0.006    & 0.018    & 0.033    & 0.052    & 0.08     & 0.124    & 0.257    & 204  & 0.112    & 93  & 86   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{cpland    }   0.252    & 0.307    & 0.357    & 0.404    & 0.477    & 0.54     & 0.652    & 58   & 0.103    & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{cpland    }   0.004    & 0.012    & 0.027    & 0.035    & 0.054    & 0.089    & 0.172    & 220  & 0.222    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{cpland    }   0.022    & 0.03     & 0.041    & 0.05     & 0.068    & 0.107    & 0.168    & 154  & 0.118    & 97  & 94   \\
+\textsc{smc\_u\_late\_op  } & \textsc{cpland    }   0.003    & 0.013    & 0.022    & 0.028    & 0.038    & 0.062    & 0.166    & 175  & 0.054    & 92  & 84   \\
+\textsc{smc\_u\_early\_all} & \textsc{cwed      }   0.48     & 0.58     & 0.75     & 0.842    & 0.905    & 0.958    & 1.015    & 45   & 0.621    & 8   & -84  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{cwed      }   0.001    & 0.003    & 0.007    & 0.012    & 0.016    & 0.03     & 0.041    & 225  & 0.044    & 100 & 100  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{cwed      }   0.034    & 0.058    & 0.077    & 0.094    & 0.114    & 0.144    & 0.205    & 91   & 0.066    & 14  & -72  \\
+\textsc{smc\_u\_mid\_op   } & \textsc{cwed      }   0.24     & 0.29     & 0.335    & 0.371    & 0.396    & 0.425    & 0.495    & 36   & 0.084    & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{cwed      }   0.183    & 0.238    & 0.277    & 0.316    & 0.352    & 0.395    & 0.433    & 50   & 0.32     & 53  & 6    \\
+\textsc{smc\_u\_late\_mod } & \textsc{cwed      }   0.076    & 0.098    & 0.12     & 0.134    & 0.148    & 0.17     & 0.209    & 54   & 0.098    & 5   & -90  \\
+\textsc{smc\_u\_late\_op  } & \textsc{cwed      }   0.019    & 0.037    & 0.051    & 0.063    & 0.074    & 0.101    & 0.162    & 102  & 0.045    & 16  & -68  \\
+\textsc{smc\_u\_early\_all} & \textsc{ed        }   1.259    & 1.493    & 1.998    & 2.24     & 2.41     & 2.623    & 2.855    & 50   & 1.444    & 4   & -92  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{ed        }   0.003    & 0.01     & 0.023    & 0.035    & 0.054    & 0.108    & 0.141    & 280  & 0.179    & 100 & 100  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{ed        }   0.11     & 0.194    & 0.272    & 0.334    & 0.399    & 0.518    & 0.672    & 97   & 0.333    & 50  & 0    \\
+\textsc{smc\_u\_mid\_op   } & \textsc{ed        }   0.833    & 1.063    & 1.207    & 1.328    & 1.427    & 1.544    & 1.697    & 36   & 0.339    & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{ed        }   0.466    & 0.586    & 0.696    & 0.808    & 0.915    & 1.044    & 1.182    & 57   & 0.943    & 82  & 64   \\
+\textsc{smc\_u\_late\_mod } & \textsc{ed        }   0.258    & 0.336    & 0.397    & 0.452    & 0.498    & 0.605    & 0.687    & 60   & 0.395    & 25  & -50  \\
+\textsc{smc\_u\_late\_op  } & \textsc{ed        }   0.08     & 0.142    & 0.194    & 0.24     & 0.286    & 0.373    & 0.615    & 96   & 0.184    & 20  & -60  \\
+\textsc{smc\_u\_early\_all} & \textsc{gyrate\_am}   178.63   & 225.348  & 269.871  & 306.302  & 358.73   & 510.174  & 562.969  & 93   & 640.292  & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{gyrate\_am}   36.908   & 50.735   & 66.969   & 81.802   & 104.721  & 206.397  & 416.724  & 190  & 132.35   & 88  & 76   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{gyrate\_am}   69.642   & 95.091   & 115.513  & 140.37   & 201.658  & 300.151  & 757.241  & 146  & 170.304  & 66  & 32   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{gyrate\_am}   136.199  & 160.867  & 191.311  & 236.741  & 284.652  & 508.186  & 563.446  & 147  & 135.764  & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{gyrate\_am}   100.152  & 121.329  & 146.085  & 167.179  & 204.197  & 262.207  & 442.909  & 84   & 454.655  & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{gyrate\_am}   78.387   & 89.249   & 102.106  & 117.636  & 136.927  & 212.312  & 570.26   & 105  & 223.005  & 96  & 92   \\
+\textsc{smc\_u\_late\_op  } & \textsc{gyrate\_am}   59.032   & 77.247   & 91.136   & 105.486  & 130.048  & 199.724  & 377.585  & 116  & 125.479  & 72  & 44   \\
+\textsc{smc\_u\_early\_all} & \textsc{iji       }   54.51    & 55.695   & 57.133   & 58.066   & 59.315   & 61.369   & 63.847   & 10   & 70.354   & 100 & 100  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{iji       }   21.74    & 33.527   & 40.606   & 43.764   & 47.61    & 52.697   & 58.322   & 44   & 57.596   & 100 & 100  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{iji       }   41.157   & 44.68    & 47.15    & 48.685   & 50.477   & 56.679   & 61.901   & 25   & 55.788   & 95  & 90   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{iji       }   40.799   & 45.452   & 49.972   & 52.264   & 53.965   & 57.943   & 62.122   & 24   & 60.512   & 99  & 98   \\
+\textsc{smc\_u\_late\_cl  } & \textsc{iji       }   41.233   & 43.659   & 46.642   & 49.01    & 51.629   & 56.987   & 59.177   & 27   & 64.339   & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{iji       }   37.102   & 43.082   & 45.418   & 47.324   & 49.611   & 53.886   & 56.691   & 23   & 57.938   & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{iji       }   35.769   & 40.82    & 44.66    & 46.582   & 48.952   & 56.716   & 60.475   & 34   & 51.73    & 91  & 82   \\
+\textsc{smc\_u\_early\_all} & \textsc{pd        }   0.082    & 0.094    & 0.12     & 0.128    & 0.136    & 0.145    & 0.152    & 40   & 0.061    & 0   & -10  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{pd        }   0.001    & 0.002    & 0.003    & 0.004    & 0.006    & 0.009    & 0.014    & 175  & 0.015    & 100 & 100  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{pd        }   0.014    & 0.02     & 0.026    & 0.031    & 0.035    & 0.041    & 0.051    & 68   & 0.026    & 26  & -48  \\
+\textsc{smc\_u\_mid\_op   } & \textsc{pd        }   0.051    & 0.073    & 0.084    & 0.096    & 0.104    & 0.112    & 0.117    & 41   & 0.027    & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{pd        }   0.045    & 0.052    & 0.062    & 0.067    & 0.074    & 0.083    & 0.094    & 46   & 0.038    & 0   & -10  \\
+\textsc{smc\_u\_late\_mod } & \textsc{pd        }   0.031    & 0.038    & 0.044    & 0.048    & 0.052    & 0.058    & 0.065    & 42   & 0.025    & 0   & -10  \\
+\textsc{smc\_u\_late\_op  } & \textsc{pd        }   0.012    & 0.016    & 0.023    & 0.027    & 0.031    & 0.039    & 0.047    & 85   & 0.016    & 4   & -92  \\
+\textsc{smc\_u\_early\_all} & \textsc{pland     }   0.58     & 0.731    & 0.894    & 0.994    & 1.094    & 1.209    & 1.292    & 48   & 1.104    & 78  & 56   \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{pland     }   0.001    & 0.002    & 0.006    & 0.01     & 0.017    & 0.041    & 0.063    & 390  & 0.068    & 100 & 100  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{pland     }   0.031    & 0.06     & 0.091    & 0.12     & 0.161    & 0.226    & 0.419    & 138  & 0.153    & 71  & 42   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{pland     }   0.377    & 0.446    & 0.531    & 0.58     & 0.658    & 0.73     & 0.872    & 49   & 0.121    & 0   & -10  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{pland     }   0.151    & 0.211    & 0.261    & 0.31     & 0.368    & 0.442    & 0.549    & 75   & 0.558    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{pland     }   0.074    & 0.104    & 0.128    & 0.146    & 0.17     & 0.218    & 0.276    & 78   & 0.194    & 88  & 76   \\
+\textsc{smc\_u\_late\_op  } & \textsc{pland     }   0.02     & 0.045    & 0.061    & 0.077    & 0.096    & 0.133    & 0.262    & 114  & 0.073    & 44  & -12  \\
+\textsc{smc\_u\_early\_all} & \textsc{shape\_am }   1.98     & 2.149    & 2.342    & 2.503    & 2.668    & 2.943    & 3.476    & 32   & 2.741    & 83  & 66   \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{shape\_am }   1.098    & 1.209    & 1.331    & 1.418    & 1.578    & 1.986    & 3.613    & 55   & 1.576    & 75  & 50   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{shape\_am }   1.36     & 1.497    & 1.609    & 1.727    & 1.927    & 2.514    & 4.893    & 59   & 1.724    & 50  & 0    \\
+\textsc{smc\_u\_mid\_op   } & \textsc{shape\_am }   1.648    & 1.771    & 1.918    & 2.013    & 2.209    & 2.643    & 2.749    & 43   & 1.681    & 1   & -98  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{shape\_am }   1.5      & 1.607    & 1.73     & 1.84     & 2        & 2.245    & 2.687    & 35   & 2.695    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{shape\_am }   1.4      & 1.444    & 1.527    & 1.598    & 1.7      & 1.999    & 4.41     & 35   & 2.004    & 96  & 92   \\
+\textsc{smc\_u\_late\_op  } & \textsc{shape\_am }   1.3      & 1.374    & 1.442    & 1.512    & 1.623    & 1.935    & 2.555    & 37   & 1.444    & 26  & -48  \\
+\textsc{smc\_u\_early\_all} & \textsc{shape\_mn }   1.469    & 1.501    & 1.559    & 1.594    & 1.622    & 1.662    & 1.726    & 10   & 1.578    & 35  & -30  \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{shape\_mn }   1.062    & 1.174    & 1.258    & 1.318    & 1.393    & 1.514    & 2.325    & 26   & 1.451    & 89  & 78   \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{shape\_mn }   1.282    & 1.321    & 1.355    & 1.391    & 1.437    & 1.493    & 1.559    & 12   & 1.424    & 70  & 40   \\
+\textsc{smc\_u\_mid\_op   } & \textsc{shape\_mn }   1.392    & 1.421    & 1.452    & 1.472    & 1.489    & 1.539    & 1.603    & 8    & 1.536    & 95  & 90   \\
+\textsc{smc\_u\_late\_cl  } & \textsc{shape\_mn }   1.334    & 1.37     & 1.393    & 1.416    & 1.441    & 1.486    & 1.565    & 8    & 1.704    & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{shape\_mn }   1.276    & 1.304    & 1.331    & 1.353    & 1.375    & 1.437    & 1.499    & 10   & 1.511    & 100 & 100  \\
+\textsc{smc\_u\_late\_op  } & \textsc{shape\_mn }   1.242    & 1.263    & 1.299    & 1.33     & 1.368    & 1.435    & 1.516    & 13   & 1.404    & 91  & 82   \\
+\textsc{smc\_u\_early\_all} & \textsc{simi\_mn  }   3059.878 & 3751.799 & 4314.334 & 4812.744 & 5368.526 & 6384.109 & 9070.152 & 55   & 6879.449 & 97  & 94   \\
+\textsc{smc\_u\_mid\_cl   } & \textsc{simi\_mn  }   271.604  & 449.524  & 1187.069 & 2060.35  & 3275.03  & 5591.465 & 9384.982 & 250  & 1294.872 & 28  & -44  \\
+\textsc{smc\_u\_mid\_mod  } & \textsc{simi\_mn  }   1144.949 & 1678.043 & 2150.267 & 2503.708 & 3045.922 & 3910.567 & 5059.997 & 89   & 1519.229 & 4   & -92  \\
+\textsc{smc\_u\_mid\_op   } & \textsc{simi\_mn  }   2041.041 & 2794.069 & 3187.145 & 3495.422 & 3873.887 & 4277.027 & 5130.607 & 42   & 2995.686 & 13  & -74  \\
+\textsc{smc\_u\_late\_cl  } & \textsc{simi\_mn  }   1053.168 & 1175.803 & 1338.786 & 1462.272 & 1597.462 & 1831.123 & 2281.303 & 45   & 2521.58  & 100 & 100  \\
+\textsc{smc\_u\_late\_mod } & \textsc{simi\_mn  }   867.068  & 1232.357 & 1493.432 & 1690.711 & 1951.014 & 2327.026 & 2853.867 & 65   & 2029.212 & 82  & 64   \\
+\textsc{smc\_u\_late\_op  } & \textsc{simi\_mn  }   686.573  & 1377.766 & 1931.838 & 2272.822 & 2708.743 & 3525.17  & 4075.628 & 94   & 3101.898 & 90  & 80   \\%
+
+
+\end{longtable}
+\end{footnotesize}
+\end{center}
+\end{landscape}
+
+\restoregeometry
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\newgeometry{bottom=1cm}
+\begin{landscape}
+
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{lllllllllllll}
+\caption{Unabridged results for class-level metrics for \textsc{smc\_m} calculated with \textsc{Fragstats}. This table includes the full range of \\ calculated percentile values. \textsc{srv} = Simulated Range of Variability; \textsc{cv} = Coefficient of Variation.} \\
+
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endfirsthead
+
+\multicolumn{13}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+Cov-Cond Type & Metric     & \textsc{srv} 0\%  & \textsc{srv} 5\%  & \textsc{srv} 25\% & \textsc{srv} 50\% & \textsc{srv} 75\% & \textsc{srv} 95\% & \textsc{srv} 100\% & \textsc{srv} \textsc{cv} & \begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular} & \begin{tabular}[c]{@{}l@{}}Current\\ \% srv\end{tabular} & \begin{tabular}[c]{@{}l@{}}Departure \\ Index\end{tabular} \\  \\ \hline 
+\endhead
+
+\hline \multicolumn{13}{|l|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+\textsc{smc\_x\_early\_all} & \textsc{ai        }   & 84.101   & 84.61    & 85.449   & 85.858   & 86.239   & 86.752   & 87.31    & 2   & 82.258   & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{ai        }   & 68.074   & 71.607   & 76.237   & 78.341   & 80.24    & 83.192   & 85.757   & 15  & 80.5     & 77  & 54     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{ai        }   & 79.3     & 80.719   & 82.128   & 83.233   & 84.06    & 84.942   & 85.829   & 5   & 79.339   & 1   & -98    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{ai        }   & 82.938   & 83.846   & 84.738   & 85.16    & 85.535   & 85.978   & 86.422   & 3   & 77.215   & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{ai        }   & 72.718   & 75.425   & 77.083   & 78.114   & 79.142   & 80.462   & 82.607   & 6   & 82.938   & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{ai        }   & 74.977   & 76.134   & 77.56    & 78.661   & 79.721   & 81.151   & 82.038   & 6   & 80.414   & 86  & 72     \\
+\textsc{smc\_x\_late\_op  } & \textsc{ai        }   & 76.388   & 77.518   & 79.478   & 80.593   & 81.66    & 83.332   & 85.428   & 7   & 79.058   & 17  & -66    \\
+\textsc{smc\_x\_early\_all} & \textsc{area\_am  }   & 86.752   & 102.216  & 155.096  & 242.861  & 360.537  & 568.941  & 1331.928 & 192 & 75.911   & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{area\_am  }   & 2.163    & 3.661    & 8.341    & 14.274   & 22.103   & 54.746   & 170.254  & 358 & 20.393   & 71  & 42     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{area\_am  }   & 20.388   & 26.495   & 45.835   & 62.981   & 90.781   & 156.018  & 436.379  & 206 & 17.589   & 0   & -100   \\
+\textsc{smc\_x\_mid\_op   } & \textsc{area\_am  }   & 63.557   & 83.232   & 109.079  & 136.431  & 204.751  & 269.274  & 421.492  & 136 & 10.941   & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{area\_am  }   & 8.034    & 11.435   & 17.518   & 23.486   & 36.237   & 70.115   & 232.494  & 250 & 54.859   & 90  & 80     \\
+\textsc{smc\_x\_late\_mod } & \textsc{area\_am  }   & 7.667    & 12.376   & 18.166   & 26.703   & 39.011   & 78.661   & 263.849  & 248 & 22.15    & 40  & -20    \\
+\textsc{smc\_x\_late\_op  } & \textsc{area\_am  }   & 9.382    & 16.497   & 27.113   & 41.792   & 62.044   & 143.25   & 325.592  & 303 & 12.905   & 2   & -96    \\
+\textsc{smc\_x\_early\_all} & \textsc{area\_mn  }   & 6.581    & 6.97     & 7.587    & 8.235    & 8.682    & 9.616    & 10.225   & 32  & 5.481    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{area\_mn  }   & 0.706    & 1.245    & 2.053    & 2.65     & 3.346    & 4.612    & 5.911    & 127 & 4.938    & 97  & 94     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{area\_mn  }   & 2.616    & 3.643    & 4.299    & 5.03     & 5.609    & 6.488    & 8.024    & 57  & 4.249    & 24  & -52    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{area\_mn  }   & 5.089    & 6.002    & 6.638    & 7.135    & 7.681    & 8.198    & 8.642    & 31  & 3.446    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{area\_mn  }   & 1.709    & 2.181    & 2.598    & 2.905    & 3.154    & 3.695    & 4.636    & 52  & 6.612    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{area\_mn  }   & 2.335    & 2.578    & 2.872    & 3.198    & 3.535    & 4.061    & 4.712    & 46  & 4.902    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{area\_mn  }   & 2.463    & 2.836    & 3.377    & 3.815    & 4.28     & 5.215    & 7.487    & 62  & 3.77     & 47  & -6     \\
+\textsc{smc\_x\_early\_all} & \textsc{cai\_am   }   & 96.209   & 96.446   & 96.736   & 96.903   & 97.085   & 97.407   & 97.622   & 1   & 96.936   & 54  & 8      \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{cai\_am   }   & 7.143    & 21.235   & 35.787   & 43.303   & 51.192   & 61.068   & 69.341   & 92  & 42.849   & 50  & 0      \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{cai\_am   }   & 51.763   & 60.929   & 66.055   & 70.394   & 73.284   & 77.322   & 80.289   & 23  & 67.598   & 35  & -30    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{cai\_am   }   & 74.811   & 78.125   & 80.987   & 82.624   & 84.463   & 86.708   & 87.604   & 10  & 83.555   & 63  & 26     \\
+\textsc{smc\_x\_late\_cl  } & \textsc{cai\_am   }   & 11.172   & 18.945   & 24.051   & 27.468   & 31.107   & 35.985   & 48.828   & 62  & 43.422   & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{cai\_am   }   & 32.657   & 38.141   & 41.859   & 44.879   & 47.61    & 51.809   & 54.558   & 30  & 61.614   & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{cai\_am   }   & 32.973   & 37.665   & 42.131   & 44.631   & 47.728   & 52.978   & 56.428   & 34  & 58.946   & 100 & 100    \\
+\textsc{smc\_x\_early\_all} & \textsc{clumpy    }   & 0.822    & 0.83     & 0.835    & 0.838    & 0.842    & 0.847    & 0.851    & 2   & 0.812    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{clumpy    }   & 0.681    & 0.716    & 0.762    & 0.783    & 0.802    & 0.831    & 0.857    & 15  & 0.798    & 73  & 46     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{clumpy    }   & 0.791    & 0.804    & 0.818    & 0.828    & 0.836    & 0.844    & 0.855    & 5   & 0.784    & 0   & -100   \\
+\textsc{smc\_x\_mid\_op   } & \textsc{clumpy    }   & 0.818    & 0.825    & 0.834    & 0.837    & 0.84     & 0.844    & 0.851    & 2   & 0.764    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{clumpy    }   & 0.725    & 0.752    & 0.767    & 0.777    & 0.788    & 0.8      & 0.82     & 6   & 0.816    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{clumpy    }   & 0.746    & 0.758    & 0.772    & 0.783    & 0.794    & 0.806    & 0.817    & 6   & 0.796    & 80  & 60     \\
+\textsc{smc\_x\_late\_op  } & \textsc{clumpy    }   & 0.762    & 0.773    & 0.792    & 0.803    & 0.814    & 0.83     & 0.851    & 7   & 0.788    & 17  & -66    \\
+\textsc{smc\_x\_early\_all} & \textsc{core\_am  }   & 85.032   & 99.886   & 151.767  & 238.657  & 353.066  & 561.492  & 1311.293 & 193 & 75.189   & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{core\_am  }   & 0.052    & 1.028    & 3.244    & 7.289    & 13.251   & 38.588   & 141.58   & 515 & 11.435   & 72  & 44     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{core\_am  }   & 14.914   & 20.102   & 33.413   & 48.422   & 72.662   & 123.751  & 384.676  & 214 & 13.266   & 0   & -100   \\
+\textsc{smc\_x\_mid\_op   } & \textsc{core\_am  }   & 56.392   & 74.067   & 96.25    & 121.66   & 180.258  & 247.805  & 388.007  & 143 & 9.639    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{core\_am  }   & 1.425    & 3.679    & 6.87     & 10.41    & 17.694   & 40.089   & 155.477  & 350 & 28.765   & 91  & 82     \\
+\textsc{smc\_x\_late\_mod } & \textsc{core\_am  }   & 3.505    & 6.63     & 10.371   & 16.316   & 25.563   & 51.884   & 196.672  & 277 & 16.075   & 50  & 0      \\
+\textsc{smc\_x\_late\_op  } & \textsc{core\_am  }   & 4.093    & 9.429    & 15.594   & 25.741   & 36.575   & 92.536   & 231.473  & 323 & 9.04     & 5   & -90    \\
+\textsc{smc\_x\_early\_all} & \textsc{core\_mn  }   & 6.375    & 6.748    & 7.349    & 7.963    & 8.422    & 9.338    & 9.906    & 33  & 5.313    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{core\_mn  }   & 0.066    & 0.316    & 0.73     & 1.16     & 1.604    & 2.641    & 3.887    & 200 & 2.116    & 89  & 78     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{core\_mn  }   & 1.55     & 2.329    & 2.902    & 3.488    & 4.035    & 4.822    & 5.985    & 71  & 2.872    & 24  & -52    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{core\_mn  }   & 4.164    & 4.811    & 5.377    & 5.871    & 6.485    & 6.891    & 7.429    & 35  & 2.879    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{core\_mn  }   & 0.209    & 0.443    & 0.624    & 0.785    & 0.973    & 1.284    & 2.264    & 107 & 2.871    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{core\_mn  }   & 0.807    & 1.028    & 1.209    & 1.437    & 1.685    & 2.028    & 2.559    & 70  & 3.021    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{core\_mn  }   & 0.827    & 1.166    & 1.485    & 1.663    & 2.006    & 2.525    & 4.038    & 82  & 2.222    & 88  & 76     \\
+\textsc{smc\_x\_early\_all} & \textsc{cpland    }   & 7.318    & 8.674    & 10.005   & 12.226   & 13.433   & 14.9     & 16.029   & 51  & 5.466    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{cpland    }   & 0.001    & 0.006    & 0.026    & 0.054    & 0.101    & 0.24     & 0.593    & 433 & 1.483    & 100 & 100    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{cpland    }   & 0.272    & 0.62     & 1.01     & 1.423    & 1.862    & 2.77     & 3.618    & 151 & 2.902    & 97  & 94     \\
+\textsc{smc\_x\_mid\_op   } & \textsc{cpland    }   & 4.896    & 5.518    & 6.658    & 7.415    & 8.579    & 9.741    & 10.706   & 57  & 2.736    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{cpland    }   & 0.081    & 0.176    & 0.309    & 0.466    & 0.652    & 0.923    & 1.666    & 160 & 3.083    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{cpland    }   & 0.391    & 0.523    & 0.675    & 0.788    & 0.94     & 1.176    & 1.496    & 83  & 2.344    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{cpland    }   & 0.219    & 0.345    & 0.497    & 0.637    & 0.806    & 1.067    & 1.53     & 113 & 0.695    & 64  & 28     \\
+\textsc{smc\_x\_early\_all} & \textsc{cwed      }   & 5.927    & 6.753    & 7.704    & 8.753    & 9.509    & 10.664   & 11.441   & 45  & 4.014    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{cwed      }   & 0.013    & 0.029    & 0.063    & 0.103    & 0.155    & 0.294    & 0.514    & 257 & 1.951    & 100 & 100    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{cwed      }   & 0.392    & 0.713    & 1.037    & 1.298    & 1.724    & 2.304    & 2.746    & 123 & 2.292    & 95  & 90     \\
+\textsc{smc\_x\_mid\_op   } & \textsc{cwed      }   & 4.038    & 4.41     & 5.048    & 5.568    & 6.267    & 7.069    & 7.679    & 48  & 2.067    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{cwed      }   & 0.524    & 0.792    & 1.108    & 1.412    & 1.691    & 2.105    & 2.59     & 93  & 3.952    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{cwed      }   & 0.996    & 1.181    & 1.353    & 1.5      & 1.712    & 1.95     & 2.255    & 51  & 2.229    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{cwed      }   & 0.565    & 0.625    & 0.899    & 1.135    & 1.393    & 1.801    & 2.533    & 104 & 0.907    & 27  & -46    \\
+\textsc{smc\_x\_early\_all} & \textsc{ed        }   & 15.046   & 17.735   & 20.264   & 23.889   & 25.581   & 28.055   & 29.454   & 43  & 13.431   & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{ed        }   & 0.049    & 0.107    & 0.229    & 0.404    & 0.628    & 1.186    & 2.142    & 267 & 9.107    & 100 & 100    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{ed        }   & 1.298    & 2.415    & 3.539    & 4.498    & 5.949    & 8.083    & 9.797    & 126 & 11.853   & 100 & 100    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{ed        }   & 13.664   & 14.584   & 16.444   & 18.075   & 19.918   & 22.02    & 23.728   & 41  & 9.98     & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{ed        }   & 1.687    & 2.638    & 3.84     & 4.956    & 6.201    & 7.887    & 9.194    & 106 & 16.329   & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{ed        }   & 3.348    & 4.022    & 4.548    & 5.057    & 5.799    & 6.612    & 7.574    & 51  & 10.047   & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{ed        }   & 1.92     & 2.164    & 2.971    & 3.766    & 4.586    & 5.81     & 8.629    & 97  & 3.37     & 37  & -26    \\
+\textsc{smc\_x\_early\_all} & \textsc{gyrate\_am}   & 409.368  & 440.048  & 521.639  & 626.485  & 760.252  & 918.682  & 1607.825 & 76  & 327.449  & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{gyrate\_am}   & 59.949   & 84.355   & 125.262  & 164.072  & 203.25   & 318.264  & 572.727  & 143 & 205.707  & 76  & 52     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{gyrate\_am}   & 183.577  & 221.925  & 279.416  & 335.218  & 403.039  & 518.693  & 860.038  & 89  & 194.227  & 1   & -98    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{gyrate\_am}   & 332.872  & 373.661  & 438.643  & 485.349  & 570.057  & 656.944  & 805.465  & 58  & 149.195  & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{gyrate\_am}   & 118.446  & 139.702  & 172.658  & 199.234  & 237.28   & 315.747  & 540.709  & 88  & 337.094  & 99  & 98     \\
+\textsc{smc\_x\_late\_mod } & \textsc{gyrate\_am}   & 115.689  & 145.492  & 171.475  & 203.516  & 247.304  & 316.222  & 613.591  & 84  & 214.47   & 61  & 22     \\
+\textsc{smc\_x\_late\_op  } & \textsc{gyrate\_am}   & 126.777  & 162.191  & 211.302  & 253.438  & 310.39   & 445.923  & 717.368  & 112 & 157.814  & 5   & -90    \\
+\textsc{smc\_x\_early\_all} & \textsc{iji       }   & 57.488   & 60.133   & 61.232   & 61.896   & 62.495   & 63.37    & 64.177   & 5   & 58.922   & 1   & -98    \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{iji       }   & 48.358   & 51.579   & 54.215   & 56.211   & 57.914   & 60.198   & 63.258   & 15  & 59.361   & 91  & 82     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{iji       }   & 56.16    & 58.327   & 60.226   & 61.412   & 62.283   & 63.761   & 64.624   & 9   & 56.979   & 1   & -98    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{iji       }   & 58.266   & 59.606   & 60.572   & 61.395   & 62.069   & 62.759   & 63.523   & 5   & 58.653   & 1   & -98    \\
+\textsc{smc\_x\_late\_cl  } & \textsc{iji       }   & 54.922   & 56.515   & 57.735   & 58.595   & 59.611   & 61.549   & 64.351   & 9   & 54.806   & 0   & -100   \\
+\textsc{smc\_x\_late\_mod } & \textsc{iji       }   & 55.969   & 57.506   & 58.572   & 59.374   & 60.045   & 60.877   & 62.682   & 6   & 55.664   & 0   & -100   \\
+\textsc{smc\_x\_late\_op  } & \textsc{iji       }   & 51.074   & 53.799   & 55.357   & 56.473   & 57.692   & 59.66    & 61.12    & 10  & 62.566   & 100 & 100    \\
+\textsc{smc\_x\_early\_all} & \textsc{pd        }   & 1.061    & 1.186    & 1.362    & 1.52     & 1.613    & 1.769    & 1.9      & 38  & 1.029    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{pd        }   & 0.008    & 0.019    & 0.032    & 0.048    & 0.068    & 0.12     & 0.198    & 210 & 0.701    & 100 & 100    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{pd        }   & 0.172    & 0.248    & 0.323    & 0.399    & 0.508    & 0.62     & 0.723    & 93  & 1.01     & 100 & 100    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{pd        }   & 1.029    & 1.108    & 1.199    & 1.28     & 1.35     & 1.452    & 1.531    & 27  & 0.95     & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{pd        }   & 0.247    & 0.355    & 0.479    & 0.571    & 0.687    & 0.842    & 1.002    & 85  & 1.074    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{pd        }   & 0.4      & 0.455    & 0.506    & 0.554    & 0.607    & 0.679    & 0.771    & 40  & 0.776    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{pd        }   & 0.208    & 0.236    & 0.309    & 0.373    & 0.447    & 0.546    & 0.703    & 83  & 0.313    & 27  & -46    \\
+\textsc{smc\_x\_early\_all} & \textsc{pland     }   & 7.556    & 8.924    & 10.321   & 12.622   & 13.87    & 15.368   & 16.503   & 51  & 5.639    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{pland     }   & 0.01     & 0.028    & 0.07     & 0.128    & 0.212    & 0.436    & 0.923    & 319 & 3.46     & 100 & 100    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{pland     }   & 0.46     & 0.987    & 1.473    & 2.026    & 2.667    & 3.771    & 4.688    & 137 & 4.293    & 100 & 100    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{pland     }   & 6.105    & 7.004    & 8.166    & 9.048    & 10.155   & 11.435   & 12.391   & 49  & 3.274    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{pland     }   & 0.502    & 0.803    & 1.264    & 1.692    & 2.197    & 2.791    & 3.412    & 117 & 7.101    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{pland     }   & 1.042    & 1.305    & 1.568    & 1.751    & 2.057    & 2.406    & 2.993    & 63  & 3.804    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{pland     }   & 0.619    & 0.773    & 1.128    & 1.431    & 1.783    & 2.404    & 3.48     & 114 & 1.18     & 30  & -40    \\
+\textsc{smc\_x\_early\_all} & \textsc{shape\_am }   & 2.871    & 3.005    & 3.342    & 3.761    & 4.187    & 4.816    & 6.543    & 48  & 2.596    & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{shape\_am }   & 1.257    & 1.472    & 1.734    & 1.947    & 2.223    & 2.696    & 3.769    & 63  & 2.101    & 67  & 34     \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{shape\_am }   & 1.974    & 2.134    & 2.401    & 2.594    & 2.901    & 3.416    & 4.639    & 49  & 2.041    & 2   & -96    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{shape\_am }   & 2.593    & 2.786    & 3.012    & 3.2      & 3.543    & 3.847    & 4.405    & 33  & 1.877    & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{shape\_am }   & 1.684    & 1.83     & 1.974    & 2.103    & 2.286    & 2.638    & 3.247    & 38  & 2.679    & 97  & 94     \\
+\textsc{smc\_x\_late\_mod } & \textsc{shape\_am }   & 1.649    & 1.832    & 1.963    & 2.107    & 2.333    & 2.698    & 3.468    & 41  & 2.152    & 56  & 12     \\
+\textsc{smc\_x\_late\_op  } & \textsc{shape\_am }   & 1.703    & 1.884    & 2.114    & 2.332    & 2.579    & 3.243    & 4.018    & 58  & 1.807    & 2   & -96    \\
+\textsc{smc\_x\_early\_all} & \textsc{shape\_mn }   & 1.43     & 1.446    & 1.458    & 1.465    & 1.472    & 1.485    & 1.504    & 3   & 1.489    & 98  & 96     \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{shape\_mn }   & 1.128    & 1.203    & 1.275    & 1.327    & 1.363    & 1.408    & 1.451    & 15  & 1.502    & 100 & 100    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{shape\_mn }   & 1.277    & 1.345    & 1.371    & 1.391    & 1.409    & 1.441    & 1.471    & 7   & 1.474    & 100 & 100    \\
+\textsc{smc\_x\_mid\_op   } & \textsc{shape\_mn }   & 1.401    & 1.413    & 1.431    & 1.444    & 1.457    & 1.47     & 1.479    & 4   & 1.455    & 72  & 44     \\
+\textsc{smc\_x\_late\_cl  } & \textsc{shape\_mn }   & 1.255    & 1.283    & 1.312    & 1.332    & 1.347    & 1.367    & 1.404    & 6   & 1.533    & 100 & 100    \\
+\textsc{smc\_x\_late\_mod } & \textsc{shape\_mn }   & 1.304    & 1.319    & 1.337    & 1.349    & 1.364    & 1.382    & 1.41     & 5   & 1.504    & 100 & 100    \\
+\textsc{smc\_x\_late\_op  } & \textsc{shape\_mn }   & 1.302    & 1.326    & 1.354    & 1.371    & 1.386    & 1.41     & 1.438    & 6   & 1.439    & 100 & 100    \\
+\textsc{smc\_x\_early\_all} & \textsc{simi\_mn  }   & 2687.823 & 2876.68  & 3055.703 & 3195.58  & 3314.521 & 3509.165 & 3964.674 & 20  & 1595.569 & 0   & -100   \\
+\textsc{smc\_x\_mid\_cl   } & \textsc{simi\_mn  }   & 834.05   & 1779.455 & 2212.389 & 2583.783 & 2938.994 & 3468.336 & 5179.733 & 65  & 1352.943 & 2   & -96    \\
+\textsc{smc\_x\_mid\_mod  } & \textsc{simi\_mn  }   & 2062.323 & 2280.528 & 2593.031 & 2776.095 & 2981.565 & 3347.148 & 3794.941 & 38  & 1402.899 & 0   & -100   \\
+\textsc{smc\_x\_mid\_op   } & \textsc{simi\_mn  }   & 2496.209 & 2616.331 & 2802.836 & 2942.455 & 3083.76  & 3314.983 & 3929.438 & 24  & 1447.445 & 0   & -100   \\
+\textsc{smc\_x\_late\_cl  } & \textsc{simi\_mn  }   & 1261.332 & 1452.142 & 1625.058 & 1798.717 & 1999.877 & 2350.879 & 2848.611 & 50  & 1315.297 & 1   & -98    \\
+\textsc{smc\_x\_late\_mod } & \textsc{simi\_mn  }   & 1490.994 & 1620.91  & 1776.656 & 1897.483 & 2045.607 & 2403.275 & 3157.166 & 41  & 1554.033 & 2   & -96    \\
+\textsc{smc\_x\_late\_op  } & \textsc{simi\_mn  }   & 1374.242 & 1692.825 & 1924.17  & 2115.625 & 2377.336 & 2904.042 & 3686.173 & 57  & 2468.702 & 80  & 60     \\%
 
 \end{longtable}
 \end{footnotesize}
