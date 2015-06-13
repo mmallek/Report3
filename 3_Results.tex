@@ -16,16 +16,16 @@ Approximately 96\% of the landscape was eligible for wildfire disturbance (all c
 
 \begin{table}[!htbp]
 \centering
-\caption{Summary statistics for area disturbed by wildfire during the simulation. Values are expressed as percentage of the landscape eligible for disturbance that was actually disturbed.}
+\caption{Summary statistics for area disturbed by wildfire during the simulation. Values are expressed as percentage and areal extent (in hectares) of the landscape eligible for disturbance that was actually disturbed.}
 \label{tab:darea}
 \begin{tabular}{@{}llll@{}}
 \toprule
 \textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}}    & \textbf{Low Mortality}   & \textbf{High Mortality}    & \textbf{Any Mortality}   \\
 \midrule
-Minimum        &   0.22              & 0.03                &    0.26          \\
-Maximum        &   43.28             & 22.92                &   66.19           \\
- Median        &   9.24              & 3.98                &    13.12          \\
-   Mean        &   11.58             & 5.17                &    16.75          \\
+Minimum        &   0.22 (385)        & 0.03 (52)        &    0.26 (455)         \\
+Maximum        &   43.28 (75,666)    & 22.92 (40,071)   &    66.19 (115,720)          \\
+ Median        &   9.24 (16,154)     & 3.98 (6,958)     &    13.12 (22,938)         \\
+   Mean        &   11.58 (20,245)    & 5.17 (9,039)     &    16.75 (29,284)         \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -549,7 +549,8 @@ A few patterns emerge across the nine focal cover types. A numerical representat
   \label{fig:covcond_smcx}
 \end{figure}
 
-\begin{sidewaystable}[!htbp]
+\begin{landscape}
+\begin{table}[!htbp]
 \caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Mixed Evergreen - Mesic (\textsc{meg\_m}), Mixed Evergreen - Xeric (\textsc{meg\_x}), Oak-Conifer Forest and Woodland (\textsc{ocfw}), and Oak-Conifer Forest and Woodland - Ultramafic (\textsc{ocfw\_u}). For condition class abbreviations, see Table \ref{condtable}.}
 \label{tab:covcond1}
 \begin{tabular}{@{}lllllllllllll@{}}
@@ -584,10 +585,12 @@ A few patterns emerge across the nine focal cover types. A numerical representat
 \footnotesize \textsc{ocfw\_u}     & \footnotesize \textsc{late\_mod }                & \footnotesize 0.84            & \footnotesize 1.12            & \footnotesize 1.44             & \footnotesize 2.4              & \footnotesize 7.86             & \footnotesize 24.61            & \footnotesize 26.31      & \footnotesize 2.2      & \footnotesize 46     & \footnotesize -8       \\
 \footnotesize \textsc{ocfw\_u}     & \footnotesize \textsc{late\_op  }                & \footnotesize 32.9            & \footnotesize 46.29           & \footnotesize 81.2             & \footnotesize 89.44            & \footnotesize 91.76            & \footnotesize 93.26            & \footnotesize 93.85      & \footnotesize 0.34     & \footnotesize 0      & \footnotesize -100     \\
 \end{tabular}
-\end{sidewaystable}
+\end{table}
+\end{landscape}
 
 
-\begin{sidewaystable}[!htbp]
+\begin{landscape}
+\begin{table}[!htbp]
 \caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Red Fir - Mesic (\textsc{rfr\_m}), Red Fir - Xeric (\textsc{rfr\_x}), Sierran Mixed Conifer - Mesic (\textsc{smc\_m}), and Sierran Mixed Conifer - Ultramafic (\textsc{smc\_u}). For condition class abbreviations, see Table \ref{condtable}.}
 \label{tab:covcond2}
 \begin{tabular}{@{}lllllllllllll@{}}
@@ -622,10 +625,12 @@ A few patterns emerge across the nine focal cover types. A numerical representat
 \footnotesize \textsc{smc\_u}      & \footnotesize \textsc{late\_mod }               & \footnotesize 7.4             & \footnotesize 9.3             & \footnotesize 10.32            & \footnotesize 10.78            & \footnotesize 11.51            & \footnotesize 12.78            & \footnotesize 14.71       & \footnotesize 8.51     & \footnotesize 1      & \footnotesize -98      \\
 \footnotesize \textsc{smc\_u}      & \footnotesize \textsc{late\_op  }               & \footnotesize 3.41            & \footnotesize 5.43            & \footnotesize 6.61             & \footnotesize 7.63             & \footnotesize 8.43             & \footnotesize 9.81             & \footnotesize 14.37       & \footnotesize 3.27     & \footnotesize 0      & \footnotesize -100     \\
 \end{tabular}
-\end{sidewaystable}
+\end{table}
+\end{landscape}
 
 
-\begin{sidewaystable}[!htbp]
+\begin{landscape}
+\begin{table}[!htbp]
 \caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Sierran Mixed Conifer -~Xeric (\textsc{smc\_x}). For condition class abbreviations, see Table \ref{condtable}.}
 \label{tab:covcond3}
 \begin{tabular}{@{}lllllllllllll@{}}
@@ -639,7 +644,8 @@ A few patterns emerge across the nine focal cover types. A numerical representat
 \footnotesize \textsc{smc\_x}      & \footnotesize \textsc{late\_mod }     & \footnotesize 6.2             & \footnotesize 6.89            & \footnotesize 7.69             & \footnotesize 8.38             & \footnotesize 9.36             & \footnotesize 10.33            & \footnotesize 12.32         & \footnotesize 13.31    & \footnotesize 100    & \footnotesize 100      \\
 \footnotesize \textsc{smc\_x}      & \footnotesize \textsc{late\_op  }     & \footnotesize 3.84            & \footnotesize 4.62            & \footnotesize 6.06             & \footnotesize 7.51             & \footnotesize 8.77             & \footnotesize 10.89            & \footnotesize 14.07         & \footnotesize 4.13     & \footnotesize 1      & \footnotesize -98      \\ \bottomrule 
 \end{tabular}
-\end{sidewaystable}
+\end{table}
+\end{landscape}
 
 
 
@@ -655,7 +661,8 @@ One of the principal purposes of gaining a better quantitative understanding of 
 Several of the individual landscape metrics are redundant with one another. For example, \emph{Contagion} and \emph{Edge Density} are inversely related, so it is perhaps helpful, but not necessary, to examine both metrics. In Figures \ref{fig:fragland_areashape}, \ref{fig:fragland_contagsiei}, and \ref{fig:fragland_core} we highlight a subset of the metrics from Table \ref{tab:fragland} for the purposes of discussing the landscape under the simulated historic period as compared to the present day. Figures for all metrics are included in \todo{the appendix?}.
 
 
-\begin{sidewaystable}[!htbp]
+\begin{landscape}
+\begin{table}[!htbp]
 \caption{Range of variability during the simulation for a selected suite of landscape configuration metrics calculated using \textsc{Fragstats}. The landscape metrics listed here are described in detail in the 
 \textsc{Fragstats} methods section. 
 \textsc{pd} = patch density; 
@@ -697,7 +704,8 @@ Several of the individual landscape metrics are redundant with one another. For 
 \small \textsc{siei}            & 0.94            & 0.944           & 0.947            & 0.95             & 0.952            & 0.956            & 0.959             & 0.971         & 100                                                              & 100                                                                \\
 \small \textsc{ai}              & 81.664          & 81.871          & 82.142           & 82.324           & 82.493           & 82.791           & 83.061            & 80.963        & 0                                                                & -100                                                               \\ \bottomrule
 \end{tabular}
-\end{sidewaystable}
+\end{table}
+\end{landscape}
 
 
 \clearpage
