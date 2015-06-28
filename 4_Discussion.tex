@@ -40,52 +40,53 @@ Fourth, this report (and \textsc{RMLands}) focuses on the effects of one major n
 \clearpage
 \section{Overall Landscape Assessment}
 
-First, we note that during the HRV, the landscape was composed of larger and more extensive patches, as illustrated by Figure~\ref{fig:fragland_areashape}. This trend was heavily influenced by the presence of wildfires on the landscape, as high mortality fires in particular created large areas of early development (Figure~\ref{fig:patchmaps1-early}. However, we also observed large patches in the other condition classes, which were more likely to form long and/or convoluted patches that were nonetheless extensive. Some large patches have fairly simple shapes, as in the highlighted patch in the lower left of Figure~\ref{fig:patchmaps1-mid}, while other are more complex, as in the highlighted patch above it.
-
+First, we note that during the HRV, the landscape was composed of larger and more extensive patches, as illustrated by Figure~\ref{fig:fragland_areashape}). This trend was heavily influenced by the presence of wildfires on the landscape, as high mortality fires in particular created large areas of early development (Figure~\ref{fig:patchmaps1-early}). However, we also observed large patches in the other condition classes, which were more likely to form long and/or convoluted patches that were nonetheless extensive. Some large patches have fairly simple shapes, as in the highlighted patch in the lower right of Figure~\ref{fig:patchmaps1-mid}, while the one in the center is more complex, and the third to the left is somewhere in between.
+\todo{these figures have been redone}
+\todo{these are year 66x, not timestep}
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/695_large_ED.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/660_large_ED.png}
     \label{fig:patchmaps1-early}
     }%
   \subfloat[][]{
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/515_largeMD_2patches.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/675_largeM-LD_3patches.png}
     \label{fig:patchmaps1-mid}
     }
-  \caption{(a) A very large patch of Sierran Mixed Conifer - Mesic in Early Development during timestep 695. The patch highlighted with a dark black outline is 1,215 hectares, which is the second-largest patch during this timestep. (b) Two patches of Sierran Mixed Conifer - Mesic in Mid Development - Closed. These are two of the largest patches (in the top 25 out of over 40,000 patches) during timestep 515.} 
+  \caption{(a) A very large patch of Sierran Mixed Conifer - Mesic in Early Development during timestep 660. The patch highlighted with a dark black outline is 988 hectares, which is the second-largest patch during this timestep. (b) Two patches of Sierran Mixed Conifer - Mesic in Mid Development - Open and one patch of the same cover time in Late Development - Moderate. These are three of the largest patches (in the top 20 out of nearly 40,000 patches) during timestep 675.} 
   \label{fig:patchmaps1}
 \end{figure}
 
 In addition, we observe increased dominance by certain cover-condition types, as illustrated by smaller values for the \emph{Simpson's Evenness Index} during the HRV (Figure~\ref{fig:fragland_contagsiei}). For example, within the Sierran Mixed Conifer - Xeric cover type, Early Development and Mid Development - Open were much more widespread during the simulated HRV than in the current landscape (Figure~\ref{fig:patchmaps2}). Because Sierran Mixed Conifer - Xeric is so widespread, this shift would directly influence \emph{Simpson's Evenness}, lowering its value.
-
+\todo{these figures have been redone}
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/ts0_smcx_match570.png}
+    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/ts0_smcx_match1080.png}
     \label{fig:patchmaps2-ts0}
     }%
   \subfloat[][]{
-    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/570_smcx_largeEDMD.png}
+    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/1080_smcx_largeMD.png}
     \label{fig:patchmaps2-ts570}
     }
-  \caption{Cover-Condition map focused on patches from Sierran Mixed Conifer - Xeric, showing increased dominance by certain cover-condition types during the HRV. (a) The current landscape. (b) The same region of the map during timestep 570. Note the contrast between the two maps with respect to the condition classes and size of individual patches.} 
+  \caption{Cover-Condition map focused on patches from Sierran Mixed Conifer - Xeric, showing increased dominance by certain cover-condition types during the HRV. (a) The current landscape. (b) The same region of the map during timestep 660. Note the contrast between the two maps with respect to the condition classes and size of individual patches.} 
   \label{fig:patchmaps2}
 \end{figure}
 
 
 Third, we find that patches on the landscape were more aggregated at the cell-level during HRV, which is illustrated by the \emph{Contagion} metric. In general, patches have low levels of both dispersion and interspersion. Of course, there are many ``edgy'' areas on the landscape, but this metric indicates that across the full landscape aggregation is more typical, particularly in comparison to the current landscape. Again, the homogeneity of post-fire early development stands likely aids in increasing the contagion value (Figure~\ref{fig:patchmaps3}). 
-
+\todo{this figure has been redone}
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/615_ts0_contag.png}
+    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/1075_ts0_contag.png}
     \label{fig:patchmaps3-ts0}
     }%
   \subfloat[][]{
-    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/615_contag.png}
+    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/1075_contag.png}
     \label{fig:patchmaps3-ts615}
     }
   \caption{Cover-Condition map focused on patches from Sierran Mixed Conifer - Mesic. (a) The current landscape. (b) The same region of the map during timestep 615. Note the contrast between the two maps with respect to the contagion (at the cell level).} 
@@ -93,19 +94,19 @@ Third, we find that patches on the landscape were more aggregated at the cell-le
 \end{figure}
 
 However, despite being larger, more extensive, and aggregated, they do not show an associated increase in core area (Figure~\ref{fig:fragland_core}). This indicates that they are geometrically more complex, to the extent that little core area fits inside each patch. The results for the landscape metric \emph{Shape} confirm this analysis (Figure~\ref{fig:fragland_areashape}). Especially among the largest patches on the landscape, convoluted shapes are common. Again, this is not to say that large and simple shapes do not occur---they do---but in comparison to the current landscape, complex shapes were characteristic of the simulated HRV.
-
+\todo{this figure has been redone}
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/555_convoluted.png}
+    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/1070_convoluted.png}
     \label{fig:patchmaps4-ts555}
     }%
   \subfloat[][]{
-    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/690_less_convoluted.png}
+    \includegraphics[width=0.45\textwidth]{/Users/mmallek/Tahoe/Report2/images/1075_less_convoluted.png}
     \label{fig:patchmaps4-ts690}
     }
-  \caption{Cover-Condition map focused on patches from Sierran Mixed Conifer - Xeric. (a) A large patch (2059 ha) from timestep 555 has little room is available for cores due to its irregular shape. (b) A large patch (828 ha) from timestep 690 is less geometrically complex, and thus has relatively more \emph{core area}.} 
+  \caption{Cover-Condition map focused on patches from Sierran Mixed Conifer. (a) A large patch (731 ha) from timestep 1070 has little room is available for cores due to its irregular shape. (b) A large patch (670 ha) from timestep 1075 is less geometrically complex, and thus has relatively more \emph{core area}.} 
   \label{fig:patchmaps4}
 \end{figure}
 
@@ -162,31 +163,31 @@ Mesic mixed evergreen forests are thought to have burned with a fire rotation of
 \begin{figure}[!htbp]
   %\centering
   \subfloat[][]{
-    \centering
-    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots/MEGM_Early_AllStructures_srvplot.pdf}
+%    \centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots/MixedEvergreen-Mesic_Early-AllStructures_srvplot.pdf}
   }\\%
-  %\subfloat[][]{
-    \centering
+  \subfloat[][]{
+%    \centering
     \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots_nolegend/MixedEvergreen-Mesic_Mid-Closed_srvplot.pdf}
   }\\%
-  %  \subfloat[][]{
-    \centering
+    \subfloat[][]{
+%    \centering
     \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots_nolegend/MixedEvergreen-Mesic_Mid-Moderate_srvplot.pdf}
   }\\%
-  %  \subfloat[][]{
-    \centering
+    \subfloat[][]{
+%    \centering
     \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots_nolegend/MixedEvergreen-Mesic_Mid-Open_srvplot.pdf}
   }\\%
-  %  \subfloat[][]{
-    \centering
+    \subfloat[][]{
+%    \centering
     \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots_nolegend/MixedEvergreen-Mesic_Late-Closed_srvplot.pdf}
   }\\%
-  %  \subfloat[][]{
-    \centering
+    \subfloat[][]{
+%    \centering
     \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots_nolegend/MixedEvergreen-Mesic_Late-Moderate_srvplot.pdf}
   }\\%
-  %  \subfloat[][]{
-    \centering
+    \subfloat[][]{
+%    \centering
     \includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/CovcondHRVBarplots_nolegend/MixedEvergreen-Mesic_Late-Open_srvplot.pdf}
   }\\%
   \caption{Cover-condition barplots for Mixed Evergreen - Mesic dynamics. For each condition class, the color the bar represents the distance from the median value during the simulated HRV. Green represents the 25th-75th percentiles; yellow represents the 5th-25th and 75th to 95th percentiles; red represents the 0th-5th and 95th-100th percentiles. The blue vertical line marks the 50th percentile and the black vertical line indicates the current cover extent. To read the ``Early–All Structures'' barplot, for a given percentage of the cover type extent, the x-axis value indicates an observed proportion, and the color corresponding to that point indicates the percentile range that value falls within. In this example, the current percent of cover extent for this cover type and condition class falls within the 95th-100th percentile range during the simulated HRV.}
