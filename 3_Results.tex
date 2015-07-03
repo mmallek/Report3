@@ -151,14 +151,15 @@ As described in Section \ref{subsubsec:distparams}, we specified a target set of
 
 The topographic position index value for a given cell acts as an input into the susceptibility and mortality values otherwise defined for that cover type and condition class combination. In general, cells with smaller TPI values had reduced susceptibility and mortality. Early development and open canopy conditions tend to result from fire, and we predicted that an increase in fires and in the likelihood of high mortality fire would lead to a decrease in the average canopy cover values for cells with large TPI values. Table \ref{tab:tpi_cc} displays the results for this simulation for the nine focal cover types. All but one (\textsc{ocfw\_u}) show decreased average canopy cover as TPI increases, with the decrease ranging from 3.3\% in Mixed Evergreen - Mesic to 36.4\% in Sierran Mixed Conifer - Ultramafic. Figure \ref{fig:tpi_cc} shows the plotted data and fitted linear regression line for each of the nine focal types. Figure \ref{fig:averagecc} \todo{Smoothed version on Z Drive} is a map displaying average canopy cover across the landscape for the full simulated HRV timeframe, excluding the equilibration period. \todo{also have a faceted figure that shows all types on the same y axis/scale - for appendix?}
 
-%\begin{figure}[!htbp]
-%\centering
-%\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/averagecc.jpg}
-%\caption{Smoothed visualization of the average canopy cover across the project area over the course of the simulation. Higher percent cover is shown in blue, transitioning to red where average percent cover was low.}
-%\label{fig:averagecc}
-%\end{figure}
+\todo{figure redone}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/averagecc.jpg}
+\caption{Smoothed visualization of the average canopy cover across the project area over the course of the simulation. Higher percent cover is shown in blue, transitioning to red where average percent cover was low.}
+\label{fig:averagecc}
+\end{figure}
 
-
+\todo{table is updated}
 \begin{table}[!htbp]
 \caption{For each cover type on the landscape, the percent change in canopy cover from the minimum TPI value for that cover type to the maximum TPI value.}
 \label{tab:tpi_cc}
@@ -166,19 +167,27 @@ The topographic position index value for a given cell acts as an input into the 
 \begin{tabular}{@{}llllll@{}}
 \toprule
 \small \textbf{\begin{tabular}[c]{@{}l@{}}Cover \\ Name\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Minimum \\ TPI\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Maximum \\ TPI\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Average Canopy \\Cover at \\ Minimum TPI\end{tabular}} & \small \textbf{\begin{tabular}[c]{@{}l@{}}Average Canopy \\ Cover at \\ Maximum TPI\end{tabular}}  & \small \textbf{\begin{tabular}[c]{@{}l@{}}Percent \\ Change in \\ Canopy \\ Cover\end{tabular}} \\ \midrule
-MEG\_M       & -300                 & 300                  & 77.4         & 74.9              &  -3.3      \\
-MEG\_X       & -299                 & 300                  & 77.8         & 75.0              &  -3.6      \\
-OCFW         & -300                 & 300                  & 57.7         & 53.2              &  -7.8      \\
-OCFW\_U      & -300                 & 300                  & 21.3         & 22.0              &   2.9       \\
-RFR\_M       & -300                 & 300                  & 72.0         & 64.0              & -11.2     \\
-RFR\_X       & -259                 & 300                  & 40.9         & 29.1              & -28.8     \\
-SMC\_M       & -300                 & 300                  & 58.8         & 53.5              &  -9.1      \\
-SMC\_U       & -300                 & 300                  & 39.2         & 25.0              & -36.4     \\
-SMC\_X       & -300                 & 300                  & 30.8         & 24.4              & -20.9     \\ \bottomrule
+MEG\_M       & -300                 & 300                  & 66.5         & 67.5              &  1.5      \\
+MEG\_X       & -299                 & 300                  & 64.1         & 66.4              &  3.8      \\
+OCFW         & -300                 & 300                  & 49.6         & 46.5              &  -6.2      \\
+OCFW\_U      & -300                 & 300                  & 25.0         & 22.8              &  -9.0       \\
+RFR\_M       & -300                 & 300                  & 65.2         & 58.9              &  -9.7     \\
+RFR\_X       & -259                 & 300                  & 49.0         & 33.0              & -32.4     \\
+SMC\_M       & -300                 & 300                  & 48.8         & 42.6              & -12.6      \\
+SMC\_U       & -300                 & 300                  & 36.7         & 28.3              & -22.7     \\
+SMC\_X       & -300                 & 300                  & 35.9         & 26.9              & -24.9     \\ \bottomrule
 \end{tabular}
 %}
 \end{table}
 
+\todo{figure is redone}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{/Users/mmallek/Tahoe/Report2/images/TPI_cc_focaltypes.png}
+\label{fig:tpi_cc_focaltypes}
+\caption{Average canopy cover for the nine focal cover types during the simulated. Each blue point represents one pixel of an individual cover type on the landscape grid. The black line is the result of a linear regression fit to the data. Table \ref{tab:tpi_cc} provides the numerical representation of the shift from minimum to maximum TPI values for each cover type. (a) Mixed Evergreen - Mesic; (b) Mixed Evergreen - Xeric; (c) Oak-Conifer Forest and Woodland; (d) Oak-Conifer Forest and Woodland - Ultramafic; (e) Red Fir - Mesic; (f) Red Fir - Xeric; (g) Sierran Mixed Conifer - Mesic; (h) Sierran Mixed Conifer - Ultramafic; (i) Sierran Mixed Conifer - Xeric.}
+\label{fig:tpi_cc}
+\end{figure}
 
 
 %\begin{figure}[!htbp]
