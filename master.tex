@@ -7,7 +7,7 @@
 \usepackage{textcomp}
 \usepackage{sidecap}
 \usepackage{booktabs, colortbl}
-\usepackage[table,xcdraw]{xcolor}
+\usepackage[table,xcdraw,dvipsnames]{xcolor}
 \usepackage{multirow}
 \usepackage{changepage}
 \usepackage{amsmath}
@@ -15,7 +15,18 @@
 \usepackage{siunitx}\usepackage{hyperref}
 \usepackage{subfig}
 \usepackage[figuresright]{rotating}
+
 \usepackage{hyperref}
+%\usepackage{cleverref}
+\newcommand\myshade{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{Aquamarine}
+\colorlet{myurlcolor}{YellowOrange}
+
+\hypersetup{colorlinks=true, citecolor=mycitecolor!\myshade!black, linkcolor=mylinkcolor!\myshade!black, urlcolor = myurlcolor!\myshade!black}
+
+
+
 \usepackage{pdflscape}
 \usepackage{longtable}
 \usepackage{natbib}
@@ -56,8 +67,9 @@
 \include{2_Methods} 
 \include{3_Results} 
 \include{4_AnalysisbyCoverType}
-\include{4_Discussion} 
+\include{5_Discussion} 
 
+\include{Appendices}
 
 \backmatter 
 %\include{glossary} 
@@ -65,7 +77,8 @@
 \bibliographystyle{humannat}%amsalpha} %The style you want to use for references. 
 \bibliography{/Users/mmallek/Tahoe/Report2/bibliography.bib} %The files containing all the articles and books you ever referenced. 
 \setcitestyle{notesep={:},aysep={}} 
-\include{Appendices}  
+%\begin{Appendices}
+%\end{Appendices}  
 %\printindex %Make an index AUTOMATICALLY 
 
 \end{document} 
