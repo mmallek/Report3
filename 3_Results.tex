@@ -3,7 +3,7 @@
 
 \section{Disturbance Regime}
 
-This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire.\todo{Becky: is this true?} In the sections below, we describe the simulated disturbance regime in terms of its spatial extent and distribution, frequency, and temporal variability, for the landscape as a whole. Variations among vegetation types are described in Chapter~\ref{ch:covtype} and in Appendix~???.\todo{Review this after reading chapter again. Perhaps with appendices chapters 3 and 4 can be combined?} We also acknowledge that some results were used to evaluate whether the model was correctly calibrated; specifically, fire rotation values were used in model calibration, as described in Chapter~\ref{ch:methods}. These rotation values are also an outcome of the model, and are therefore reported here. While this may seem a bit circular, it was a necessary part of the process of simulating the historical range of variability. In addition to the disturbance regime, this chapter includes results for the seral stage dynamics and analysis of the landscape configuration metrics from \textsc{Fragstats}.
+This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire.\todo{Becky: is this true?} In the sections below, we describe the simulated disturbance regime in terms of its spatial extent and distribution, frequency, and temporal variability, for the landscape as a whole. Variations among vegetation types are described in Chapter~\ref{ch:covtype} and in Appendix~\ref{app:covtype_analysis}.\todo{Review this after reading chapter again. Perhaps with appendices chapters 3 and 4 can be combined?} We also acknowledge that some results were used to evaluate whether the model was correctly calibrated; specifically, fire rotation values were used in model calibration, as described in Chapter~\ref{ch:methods}. These rotation values are also an outcome of the model, and are therefore reported here. While this may seem a bit circular, it was a necessary part of the process of simulating the historical range of variability. In addition to the disturbance regime, this chapter includes results for the seral stage dynamics and analysis of the landscape configuration metrics from \textsc{Fragstats}.
 
 %Finally, it is important to realize that while the information below is presented as ``results,'' it could have easily been presented in the methods section as ``model calibration.'' Key spatial and temporal aspects of the disturbance regime were evaluated during preliminary calibration runs, and we subsequently adjusted model parameters to effect desired changes. Thus, while the information presented below does in fact represent results (output) of the simulation, it also represents a set of targets used to calibrate the model (i.e., adjust model parameters to achieve desired results). While this may seem a bit circular, it was a necessary process for a complex model such as \textsc{RMLands}. Moreover, our real emphasis was on quantifying the vegetation patterns and dynamics resulting from these disturbance processes. 
 
@@ -12,8 +12,9 @@ This report focuses on the effects of wildfire as a natural disturbance; the imp
 % 174830 eligible hectares
 % 181553 hectares in core
 % check math using Wildfire_darea_trajectory.csv
-Approximately 96\% of the landscape was eligible for wildfire disturbance (all cover types except Barren and Water)\footnote{In this section we report values based on percent of eligible landscape. There are 181,550 hectares in the core project area, and 174,830 remain after excluding Barren and Water.}. As expected, the frequency and extent of simulated wildfires varied across timesteps (Figure~\ref{fig:darea}). Also, given the rotation interval and percent mortality expected over time on this landscape, large proportions of the project area burned each (5-year) timestep. On average, at least 10\% of the landscape burned at some combination of low and high mortality every seven years. Timesteps with area burned of 20\% or less were the most frequently observed (Figure~\ref{fig:darea}. Fires covering at least 25\% of the landscape burned approximately every 21 years, and half or more of the landscape burned at a 256 year interval. The smallest area disturbed over the course of the simulation was less than 1\%, while the largest was 72\% (of which 22\% was high mortality). In general, within a given timestep about a third of the disturbed area burned as high mortality (Table~\ref{tab:darea}). High mortality fires do include the burning of early development vegetation, including chaparral, when it resets the successional process. Figures~\ref{fig:darea_min_map}--\ref{fig:darea_mean_map} depict wildfire disturbances during the minimum, maximum, median, and mean area burned timesteps.
+Approximately 96\% of the landscape was eligible for wildfire disturbance (all cover types except Barren and Water)\footnote{In this section we report values based on percent of eligible landscape. There are 181,550 hectares in the core project area, and 174,830 remain after excluding Barren and Water.}. As expected, the frequency and extent of simulated wildfires varied across timesteps (Figure~\ref{fig:darea}). Also, given the rotation interval and percent mortality expected over time on this landscape, large proportions of the project area burned each (5-year) timestep. On average, at least 10\% of the landscape burned at some combination of low and high mortality every seven years. Timesteps with area burned of 20\% or less were the most frequently observed (Figure~\ref{fig:darea}). Fires covering at least 25\% of the landscape burned approximately every 21 years, and half or more of the landscape burned at a 256 year interval. The smallest area disturbed over the course of the simulation was less than 1\%, while the largest was 67\% (of which 22\% was high mortality)\todo{look this up}. In general, within a given timestep about a third of the disturbed area burned as high mortality (Table~\ref{tab:darea}). High mortality fires do include the burning of early development vegetation, including chaparral, when it resets the successional process. Figures~\ref{fig:darea_min_map}--\ref{fig:darea_mean_map} depict wildfire disturbances during the minimum, maximum, median, and mean area burned timesteps.
 
+% redon 9/13
 \begin{table}[!htbp]
 \centering
 \caption{Summary statistics for area disturbed by wildfire during the simulation. Values are expressed as percentage and areal extent (in hectares) of the landscape eligible for disturbance that was actually disturbed.}
@@ -22,25 +23,26 @@ Approximately 96\% of the landscape was eligible for wildfire disturbance (all c
 \toprule
 \textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}}    & \textbf{Low Mortality}   & \textbf{High Mortality}    & \textbf{Any Mortality}   \\
 \midrule
-Minimum        &   0.50 (877)        & 0.06 (104)        &    0.72 (1,267)         \\
-Maximum        &   50.37 (88,068)    & 22.71 (39,696)   &    72.39 (126,556)          \\
- Median        &   9.97 (17,428)     & 3.96 (6,923)     &    14.28 (24,961)         \\
-   Mean        &   12.63 (22,078)    & 4.90 (8,567)     &    17.53 (30,645)         \\
+Minimum        &   0.60 (1089)        & 0.09 (163)        &    0.69 (1,252)         \\
+Maximum        &   46.09 (83,676)    & 21.43 (38,906)   &    67.47 (122,492)          \\
+ Median        &   10.47 (19,008)     & 3.75 (6,808)     &    14.04 (25,489)         \\
+   Mean        &   13.20 (23,964)    & 4.87 (8,841)     &    18.07 (32,806)         \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-
+%redone 9/13
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/darea.png}
+\includegraphics[width=0.9\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_all.png}
 \caption{Disturbance trajectory for wildfire during the simulation. The first timestep is 40 because we excluded earlier timesteps as equilibration. Dark blue values represent high mortality fire, while light blue values represent low mortality fire and are stacked on top of high mortality.}
 \label{fig:darea}
 \end{figure}
 
+%redone 9/13
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/Report2/images/darea_hist.png}
+\includegraphics[width=0.6\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_darea_hist.png}
 \caption{Histogram of percent of landscape disturbed by wildfire during the simulation. The distribution is substantially right-skewed, and most fires burn less than 20\% of the eligible landscape.}
 \label{fig:darea_hist}
 \end{figure}
@@ -113,17 +115,17 @@ Maximum        &   50.37 (88,068)    & 22.71 (39,696)   &    72.39 (126,556)    
 \subsection{Disturbance Size} 
 As described in Section \ref{subsubsec:distparams}, we specified a target set of disturbance sizes. Because wildfire has many stochastic components, we do not expect the model results to match these targets exactly. Figure \ref{fig:dsize} compares the observed and target disturbance size distribution.
 
-
+% updated 9/13
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.4\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/dsize.png}
-    \label{fig:fig:dsize}
+    \includegraphics[width=0.4\textwidth]{/Users/mmallek/Documents/Thesis/Plots/dsize/hrv.png}
+    \label{fig:dsize}
   }%
   \qquad
   \subfloat[][]{
-    \includegraphics[width=0.4\textwidth]{/Users/mmallek/Tahoe/Report2/images/climate_darea.png}
+    \includegraphics[width=0.4\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_climdarea.png}
     \label{fig:climate_darea}
   }
   \caption{(a) Side by side barplot of the observed and target wildfire size distribution for our 500-timestep long run of the model. (b) Plot of the climate parameter and disturbed area value for each timestep of the simulation (excluding the  equilibration period). A linear model has been fit to the data and is shown as a blue line; the grey shaded area represents  the 95\% confidence interval around the mean.}
@@ -136,10 +138,10 @@ Climate does have a positive relationship with disturbed area, as expected (Figu
 Fire size is also influenced by vegetation susceptibility and the specified disturbance size distribution. For this reason, large areas may burn in relatively ``wet'' years. Figure \ref{fig:compare_clim_darea} illustrates the climate parameter values and disturbed area proportion of the landscape for a subset of timesteps during the simulation.
 \todo{the dsize function has something wrong with it (and always did)}
 
-
+% updated 9/13
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report2/images/climate_darea_vert.png}
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/climate_darea_vert.png}
 \caption{Climate parameter and proportion of eligible landscape disturbed by wildfire for timesteps 250 to 310 of the simulation.}
 \label{fig:compare_clim_darea}
 \end{figure}
@@ -194,28 +196,30 @@ Land Cover Type                              & \begin{tabular}[c]{@{}l@{}}Low Mo
 \subsection{Population Return Interval}
 Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}). The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). The other seven focal cover types\todo{where is this established??} are included in Appendix~\ref{app:full-results}. We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Tables \ref{tab:covcond1} and \ref{tab:covcond2}.\todo{figure out how to update this with most info in appendix}
 
+% first plot redone 9/13
+% second plot not redone yet
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/R/Rplots/November2014/preturn_all.png}
+    \includegraphics[height=.4\textheight]{/Users/mmallek/Documents/Thesis/Plots/preturn/hrv-total.png}
     \label{fig:preturn_plot}
   }%
   \qquad
   \subfloat[][]{
-    \includegraphics[height=0.4\textheight]{/Users/mmallek/Tahoe/Report2/images/fri_all.png}
+    \includegraphics[height=.4\textheight]{/Users/mmallek/Tahoe/Report2/images/fri_all.png}
     \label{fig:preturn_map}
   }
   \caption{(a) Population return interval (average number of years between fires) distribution for the full landscape under study. The population return interval is the point-specific interval, sometimes described as the ``grand mean'' for a given point. (b) Spatial depiction of fire return intervals across the landscape, for all cover types, in terms of fire return interval. The value at any given cell is the point-specific return interval.}
   \label{fig:preturn}
 \end{figure}
 
-
+% first plot updated 9/13
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/preturn_smcm.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/preturn/hrv-smcm.png}
     }%
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_smcm.png}
@@ -224,11 +228,12 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
 \label{fig:preturn_smcm}
 \end{figure}
 
+%first plot redone 9/13
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/preturn_smcx.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/preturn/hrv-smcx.png}
     }%
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_smcx.png}
@@ -284,7 +289,7 @@ The distribution of area among seral stages within all cover types fluctuated ov
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_smcm.png}
+    \includegraphics[width=0.6\textwidth]{/Users/mmallek/Documents/Thesis/Plots/covcond-dynamics/hrv_covcond_smcm.png}
     }%
   \subfloat[][]{
     \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcm.png}
@@ -298,7 +303,7 @@ The distribution of area among seral stages within all cover types fluctuated ov
   \centering
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.6\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_smcx.png}
+    \includegraphics[width=0.6\textwidth]{/Users/mmallek/Documents/Thesis/Plots/covcond-dynamics/hrv_covcond_smcx.png}
     }%
   \subfloat[][]{
     \includegraphics[height=2.65in]{/Users/mmallek/Tahoe/R/Rplots/November2014/covcond_current_smcx.png}
@@ -324,7 +329,7 @@ The distribution of area among seral stages within all cover types fluctuated ov
 \footnotesize \textsc{smc\_m}      & \footnotesize \textsc{mid\_op   }               & \footnotesize 4.39           & \footnotesize  9.46           & \footnotesize 12.86            & \footnotesize 16.27            & \footnotesize 19.86            & \footnotesize 25.74            & \footnotesize 31.18       & \footnotesize 16.29    & \footnotesize 51      & \footnotesize 2    \\
 \footnotesize \textsc{smc\_m}      & \footnotesize \textsc{late\_cl  }               & \footnotesize 2.28           & \footnotesize  5.22           & \footnotesize 10.07            & \footnotesize 14.61            & \footnotesize 19.18            & \footnotesize 24.25            & \footnotesize 29.97       & \footnotesize 23.23    & \footnotesize 93      & \footnotesize 86    \\
 \footnotesize \textsc{smc\_m}      & \footnotesize \textsc{late\_mod }               & \footnotesize 8.06           & \footnotesize  9.53           & \footnotesize 11.04            & \footnotesize 12.3             & \footnotesize 14.08            & \footnotesize 17.26            & \footnotesize 23.44       & \footnotesize 14.18    & \footnotesize 77      & \footnotesize 54    \\
-\footnotesize \textsc{smc\_m}      & \footnotesize \textsc{late\_op  }               & \footnotesize 2.64           & \footnotesize  5.72           & \footnotesize 8.31             & \footnotesize 11.04            & \footnotesize 14.04            & \footnotesize 17.76            & \footnotesize 22.74       & \footnotesize 3.6      & \footnotesize 1       & \footnotesize -98    \\
+\footnotesize \textsc{smc\_m}      & \footnotesize \textsc{late\_op  }               & \footnotesize 2.64           & \footnotesize  5.72           & \footnotesize 8.31             & \footnotesize 11.04            & \footnotesize 14.04            & \footnotesize 17.76            & \footnotesize 22.74       & \footnotesize 3.6      & \footnotesize 1       & \footnotesize -98    \\  \hline
 \footnotesize \textsc{smc\_x}      & \footnotesize \textsc{early\_all}     & \footnotesize 19.96           & \footnotesize 23.94           & \footnotesize 29.41            & \footnotesize 34.33            & \footnotesize 40.07            & \footnotesize 44.49           & \footnotesize 47.42        & \footnotesize 19.48    & \footnotesize 0    & \footnotesize -100     \\
 \footnotesize \textsc{smc\_x}      & \footnotesize \textsc{mid\_cl   }     & \footnotesize 0.05           & \footnotesize 0.11           & \footnotesize 0.3            & \footnotesize 0.58            & \footnotesize 1.08            & \footnotesize 1.84           & \footnotesize 3.6        & \footnotesize 11.96    & \footnotesize 100    & \footnotesize 100     \\
 \footnotesize \textsc{smc\_x}      & \footnotesize \textsc{mid\_mod  }     & \footnotesize 2.28           & \footnotesize 4.2           & \footnotesize 6.35            & \footnotesize 8.36            & \footnotesize 10.39            & \footnotesize 13.79           & \footnotesize 18.2        & \footnotesize 14.92    & \footnotesize 98    & \footnotesize 96     \\
@@ -342,70 +347,57 @@ The distribution of area among seral stages within all cover types fluctuated ov
 \pagebreak[4]
 \subsection{Landscape Configuration}
 We summarize the structure and patterns in the landscape using a suite of statistical measures calculated using \textsc{Fragstats}. Table \ref{tab:fragland} shows the range of variability for the simulation period as well as the current value and depature index. Patch density and patch richness are within the simulated HRV, but the other fifteen metrics are outside the 5$^{\text{th}}$ to 95$^{\text{th}}$ percentile range of variability. See Section \ref{subsec:dataanalysis} for a detailed description of \textsc{Fragstats} metrics.
-\todo{this section of text updated}
+
 The departure index indicates the distance from the 50$^{\text{th}}$ percentile value for a given metric. It is computed by subtracting 50 from the current value's percentile (if that value is between 0 and 50) under the simulated range of variability (SRV) then dividing by 50 and multiplying by 100 (to ensure the departure index scales from 0 to 100). Thus, for the landscape metric \emph{Patch Density}, 19.507 is equivalent to the 32$^{\text{nd}}$ percentile of observations during the HRV simulation, and the departure index is $(39-50)/50*100 = -22$). This value is within the HRV for the landscape. However, the landscape metric \emph{Edge Density} is 100, because $128.875 > 125.316$, the largest value observed during the HRV simulation. Edge density at the landscape level is outside the HRV.
 
 One of the principal purposes of gaining a better quantitative understanding of the historic reference period is to know whether recent human activities have caused landscapes to move outside their historic range of variability (Landres et al.1999, Swetnam et al. 1999). As described above, we summarized the distribution of each metric calculated over the length of the simulation, minus the equilibration period. We computed the 0$^{\text{th}}$, 5$^{\text{th}}$, 25$^{\text{th}}$, 50$^{\text{th}}$, 75$^{\text{th}}$, 95$^{\text{th}}$ and 100$^{\text{th}}$ percentiles of the distribution of observed values. The current percentile for the statistical range of variability refers to the place within the 0--100$^{\text{th}}$ percentile of the observed, simulated HRV. If the current value is outside the HRV, it is given the appropriate maximum (100) or minimum (0) score. The index of departure from HRV measures the relative distance from the median HRV value to the 0$^{\text{th}}$ or 100$^{\text{th}}$ percentile. At the landscape-level, most computed metrics have values outside the HRV. 
 
 Several of the individual landscape metrics are redundant with one another. For example, \emph{Contagion} and \emph{Edge Density} are inversely related, so it is perhaps helpful, but not necessary, to examine both metrics. In Figures \ref{fig:fragland_areashape}, \ref{fig:fragland_contagsiei}, and \ref{fig:fragland_core} we highlight a subset of the metrics from Table \ref{tab:fragland} for the purposes of discussing the landscape under the simulated historic period as compared to the present day. Figures for all metrics are included in \todo{the appendix?}.
 
-\todo{this table updated}
+% repaired table 9/13
 \begin{landscape}
 \begin{table}[!htbp]
 \caption{NEW DEPARTURE INDEX! Range of variability during the simulation for a selected suite of landscape configuration metrics calculated using \textsc{Fragstats}. The landscape metrics listed here are described in detail in the 
 \textsc{Fragstats} methods section. 
-\textsc{pd} = patch density; 
-\textsc{ed} = edge density; 
+\textsc{te} = total edge;
 \textsc{area\_am} = area-weighted mean patch size; 
 \textsc{gyrate\_am} = area-weighted mean patch radius of gyration (correlation length); 
 \textsc{shape\_am} = area-weighted mean patch shape index; 
 \textsc{core\_am} = area-weighted mean patch core area; 
-\textsc{cai\_am} = area-weighted mean patch core area index; 
 \textsc{simi\_mn} = mean similarity; 
 \textsc{cwed} = contrast-weighted edge density; 
-\textsc{teci} = total edge contrast index; 
 \textsc{econ\_am} = area-weighted mean edge contrast; 
 \textsc{contag} = contagion; 
-\textsc{iji} = interspersion and juxtaposition index; 
-\textsc{pr} = patch richness; 
-\textsc{sidi} = Simpson's diversity index; 
 \textsc{siei} = Simpson's evenness index; 
 \textsc{ai} = aggregation index.}
 \label{tab:fragland}
 \begin{tabular}{@{}llllllll|lll@{}}
 \toprule
 \textbf{\begin{tabular}[c]{@{}l@{}}Landscape\\ Metric\end{tabular}} & \textbf{srv0\%} & \textbf{srv5\%} & \textbf{srv25\%} & \textbf{srv50\%} & \textbf{srv75\%} & \textbf{srv95\%} & \textbf{srv100\%}  & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Current\\ \%SRV\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Departure\\ Index\end{tabular}} \\ \midrule
-\small \textsc{pd}              & 18.308       & 18.823      & 19.206        & 19.463       & 19.684        & 20.017        & 20.47         & 19.507      & 55     & 4    \\
-\small \textsc{ed}              & 117.074       & 117.619      & 118.835        & 119.558       & 120.347        & 121.199        & 123.358         & 128.875      & 100     & 245    \\
-\small \textsc{area\_am}        & 158.508       & 167.738      & 177.762        & 188.395       & 199.899        & 212.94        & 231.284         & 119.985      & 0     & -229     \\
-\small \textsc{gyrate\_am}      & 703.538       & 714.365      & 727.305        & 740.046       & 754.819        & 773.62        & 808.962         & 620.951      & 0     & -326     \\
-\small \textsc{shape\_am}       & 3.614       & 3.648      & 3.707        & 3.751       & 3.812        & 3.874        & 4         & 3.243      & 0     & -371     \\
-\small \textsc{core\_am}        & 132.831       & 143.938      & 154.408        & 164.025       & 175.058        & 188.071        & 209.479         & 106.71      & 0     & -184     \\
-\small \textsc{cai\_am}         & 61.425       & 62.88      & 63.838        & 64.875       & 65.832        & 67.104        & 68.272         & 65.295      & 62     & 12   \\
-\small \textsc{simi\_mn}        & 2272.713       & 2434.457      & 2587.924        & 2691.305       & 2814.235        & 3013.224        & 3263.13         & 2095.764      & 0     & -142     \\
-\small \textsc{cwed}            & 37.992       & 38.503      & 38.91        & 39.3       & 39.71        & 40.405        & 41.416         & 36.092      & 0     & -245     \\
-\small \textsc{teci}            & 31.224       & 31.662      & 32.091        & 32.418       & 32.815        & 33.479        & 34.024         & 27.654      & 0     & -399     \\
-\small \textsc{econ\_am}        & 31.165       & 31.662      & 32.107        & 32.42       & 32.857        & 33.567        & 34.203         & 27.756      & 0     & -372     \\
-\small \textsc{contag}          & 52.273       & 52.95      & 53.407        & 53.775       & 54.154        & 54.797        & 55.593         & 51.172      & 0     & -173     \\
-\small \textsc{iji }            & 62.508       & 63.501      & 64.328        & 64.766       & 65.176        & 65.848        & 66.597         & 65.868      & 96     & 60    \\
-\small \textsc{pr}              & 109       & 114      & 117        & 118       & 120        & 122        & 124         & 117      & 24     & -11    \\
-\small \textsc{sidi}            & 0.94       & 0.946      & 0.95        & 0.953       & 0.955        & 0.958        & 0.96         & 0.962      & 100     & 129    \\
-\small \textsc{siei}            & 0.948       & 0.954      & 0.958        & 0.961       & 0.963        & 0.966        & 0.968         & 0.971      & 100     & 143    \\
-\small \textsc{ai}              & 81.755       & 82.081      & 82.211        & 82.329       & 82.439        & 82.614        & 82.707         & 80.963      & 0     & -238     \\ \bottomrule
+\small \textsc{te}              & $2.17 \times 10^7$  & $2.19 \times 10^7$ & $2.21 \times 10^7$ & $2.23 \times 10^7$ & $2.25 \times 10^7$ & $2.27 \times 10^7$ & $2.28 \times 10^7$   & $2.34 \times 10^7$      & 100      & 210  \\
+\small \textsc{area\_am}        & 4.53    & 4.67    & 4.77    & 4.85    & 4.93     & 5.06    & 5.18      & 5.17                & 99       & 84   \\
+\small \textsc{gyrate\_am}      & 678.57  & 693.36  & 705.32  & 715.92  & 730.82   & 758.92  & 788.30    & 620.95              & 0        & -254 \\
+\small \textsc{shape\_am}       & 1.41    & 1.42    & 1.42    & 1.43    & 1.43     & 1.44    & 1.44      & 1.51                & 100      & 560  \\
+\small \textsc{core\_am}        & 2.83    & 2.89    & 2.96    & 3.01    & 3.08     & 3.14    & 3.21      & 3.35                & 100      & 171  \\
+\small \textsc{simi\_mn}        & 2179.05 & 2333.72 & 2456.33 & 2531.91 & 2629.83  & 2794.67 & 3017.56   & 2095.76             & 0        & -124 \\
+\small \textsc{cwed}            & 40.09   & 40.61   & 41.11   & 41.51   & 41.95    & 42.56   & 43.15     & 36.09               & 0        & -381 \\
+\small \textsc{econ\_am}        & 32.00   & 32.56   & 32.85   & 33.12   & 33.47    & 33.95   & 34.52     & 26.58               & 0        & -586 \\
+\small \textsc{contag}          & 53.50   & 53.94   & 54.46   & 54.74   & 55.06    & 55.52   & 56.18     & 51.17               & 0        & -288 \\
+\small \textsc{siei}            & 0.94    & 0.95    & 0.95    & 0.95    & 0.95     & 0.96    & 0.96      & 0.97                & 100      & 250  \\
+\small \textsc{ai}              & 81.38   & 81.53   & 81.70   & 81.82   & 81.97    & 82.17   & 82.34     & 80.96               & 0        & -196 \\ \bottomrule
 \end{tabular}
 \end{table}
 \end{landscape}
-
 
 \clearpage
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
     \centering
-\includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/AREA_AM1.png}
+\includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragland-hrv/AREA_AM1.png}
     }%
   \subfloat[][]{
-\includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/SHAPE_AM1.png}
+\includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragland-hrv/SHAPE_AM1.png}
   }
 \caption{Landscape \textsc{Fragstats} Metrics. Left, Area-weighted Mean Patch Area. Right, Area-weighted Mean Shape. We use the area-weighted metrics to reduce the influence of the many extremely small patches. The average patch size is larger, and the average patch shape more complex, than the current landscape.} 
 \label{fig:fragland_areashape}
@@ -415,10 +407,10 @@ Several of the individual landscape metrics are redundant with one another. For 
   \centering
   \subfloat[][]{
     \centering
-\includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/CONTAG1.png}
+\includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragland-hrv/CONTAG1.png}
     }%
   \subfloat[][]{
-\includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/SIEI1.png}
+\includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragland-hrv/SIEI1.png}
   }
 \caption{Landscape \textsc{Fragstats} Metrics. (a) Contagion, a metric describing patch dispersion and interspersion. The landscape during the HRV is much more contagious than the current landscape. (b) Simpson's Evenness Index, which indicates the distance from maximum diversity, or evenness, in the landscape patches. Values for Simpson's Evenness are near 1 during the HRV and in the present landscape, but the HRV values are well below the current conditions.} 
 \label{fig:fragland_contagsiei}
@@ -426,7 +418,7 @@ Several of the individual landscape metrics are redundant with one another. For 
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/R/Rplots/November2014/CORE_AM1.png}
+  \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragland-hrv/CORE_AM1.png}
 \caption{Landscape \textsc{Fragstats} Metrics. Results for the Area-weighted Mean Core Area, a measure of interior habitat available at the patch level. During the HRV, the average patch contains more core area than in the current landscape.} 
 \label{fig:fragland_core}
 \end{figure}
