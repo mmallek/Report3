@@ -18,45 +18,46 @@ We defined 31 distinct land cover types in the Yuba River watershed and surround
 
 \section{Sierran Mixed Conifer - Mesic} 
 
-\begin{figure}[!htbp]
-  \centering
-  \subfloat[][]{
-    \centering
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_smcm.png}
-    }%
-  \subfloat[][]{
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_hist_smcm.png}
-    }
-  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Mesic. High mortality fire in dark blue; low mortality fire in light blue. (b) Histogram of disturbed hectares with density curve overlaid.} 
-  \label{fig:darea_smcm}
-\end{figure}
+%\begin{figure}[!htbp]
+%  \centering
+%  \subfloat[][]{
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_smcm.png}
+%    }%
+%  \subfloat[][]{
+%    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_hist_smcm.png}
+%    }
+%  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Mesic. High mortality fire in dark blue; low mortality fire in light blue. (b) Histogram of disturbed hectares with density curve overlaid.} 
+%  \label{fig:darea_smcm}
+%\end{figure}
 
 Sierran Mixed Conifer - Mesic (\textsc{smc\_m}) is the dominant cover type within the core project area, encompassing 57,853 ha and comprising roughly 32\% of the project area. The frequency and extent of simulated wildfires in sierran mixed conifer forests varied markedly across the landscape (Figure~\ref{fig:darea_smcm} and Table~\ref{tab:darea_smcm}). %
 %
-Wildfire was prevalent in this cover type. At least some area burned every five years, and at least 10\% of the cover type burned in 67\% of the simulated timesteps. The median amount of land burned during one timestep was 14\%. Over 25\% burned at a 19 year interval. Wildfires that extended across large extents of mesic mixed conifer forests were infrequent; at least 50\% of the cover type burned only once every 256 years. There was tremendous variability in the amount of area burned, from a minimum of 0.4\% to a maximum of 73\% (over 42,000 ha). Fires were three times more likely to have a low mortality effect on these forests as a high mortality effect. %
+
+%Wildfire was prevalent in this cover type. At least some area burned every five years, and at least 10\% of the cover type burned in 67\% of the simulated timesteps. The median amount of land burned during one timestep was 14\%. Over 25\% burned at a 19 year interval. Wildfires that extended across large extents of mesic mixed conifer forests were infrequent; at least 50\% of the cover type burned only once every 256 years. There was tremendous variability in the amount of area burned, from a minimum of 0.4\% to a maximum of 73\% (over 42,000 ha). Fires were three times more likely to have a low mortality effect on these forests as a high mortality effect. % This is also already in tables
 %
-Under this wildfire regime, the grand mean return interval between fires (of any mortality level) varied widely from 18 years to over 500 years, with a median of 28 years (Figure~\ref{fig:preturn_smcm}). Median return interval and rotation values tend to be shorter in mixed conifer forests than in red fir forests, because their lower elevation corresponds to warmer and drier conditions. Mesic mixed conifer forests had a low mortality fire rotation of 36 years and a high mortality fire rotation of 125 years (Table~\ref{tab:darea_smcm}).  %
+%Under this wildfire regime, the grand mean return interval between fires (of any mortality level) varied widely from 18 years to over 500 years, with a median of 28 years (Figure~\ref{fig:preturn_smcm}). Median return interval and rotation values tend to be shorter in mixed conifer forests than in red fir forests, because their lower elevation corresponds to warmer and drier conditions. Mesic mixed conifer forests had a low mortality fire rotation of 36 years and a high mortality fire rotation of 125 years (Table~\ref{tab:darea_smcm}).  % This is also redundant
 %
-In general, return intervals and canopy cover varied spatially across the forest and decreased with increasing TPI, reflecting our parameterization, which was based on the theory that higher, more southerly aspects are drier and more susceptible to fires. Canopy cover decreased by about 13\% when comparing minimum to maximum TPI, from an average of 49\% to an average of 43\% (Table~\ref{tab:tpi_cc})..  %
+%In general, return intervals and canopy cover varied spatially across the forest and decreased with increasing TPI, reflecting our parameterization, which was based on the theory that higher, more southerly aspects are drier and more susceptible to fires. Canopy cover decreased by about 13\% when comparing minimum to maximum TPI, from an average of 49\% to an average of 43\% (Table~\ref{tab:tpi_cc})..  % This is already reported
 %
-Finally, when stands of mesic sierran mixed conifer forests were adjacent to cover types with much shorter or longer return intervals, they also exhibited a directional shift in local return intervals towards that of the adjacent type, reflecting the importance of landscape context on fire regimes.
+Finally, when stands of mesic sierran mixed conifer forests were adjacent to cover types with much shorter or longer return intervals, they also exhibited a directional shift in local return intervals towards that of the adjacent type, reflecting the importance of landscape context on fire regimes. % could keep this
 
 
-\begin{table}[!htbp]
-\centering
-\caption{\small Disturbed area summary statistics for Sierran Mixed Conifer - Mesic. Proportions shown are relative to the total area of Sierran Mixed Conifer - Mesic.}
-\label{tab:darea_smcm}
-\begin{tabular}{@{}llll@{}}
-\toprule
-\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
-Minimum       & 0.31  & 0.03  & 0.37  \\
-Maximum       & 53.29 & 20.78 & 72.95 \\
-Median        & 10.96 & 3.18  & 14.48 \\
-Mean          & 14.00 & 3.98  & 18.03 \\
-\textbf{Fire Rotation} & 36       & 125       & 28   \\ \bottomrule
-\end{tabular}
-\end{table}
-%%%
+%\begin{table}[!htbp]
+%\centering
+%\caption{\small Disturbed area summary statistics for Sierran Mixed Conifer - Mesic. Proportions shown are relative to the total area of Sierran Mixed Conifer - Mesic.}
+%\label{tab:darea_smcm}
+%\begin{tabular}{@{}llll@{}}
+%\toprule
+%\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+%Minimum       & 0.31  & 0.03  & 0.37  \\
+%Maximum       & 53.29 & 20.78 & 72.95 \\
+%Median        & 10.96 & 3.18  & 14.48 \\
+%Mean          & 14.00 & 3.98  & 18.03 \\
+%\textbf{Fire Rotation} & 36       & 125       & 28   \\ \bottomrule
+%\end{tabular}
+%\end{table}
+%%%%
 The age structure and dynamics of mesic mixed conifer forests illustrates the interaction between disturbance and succession processes. We focus our analysis on the 5$^{\text{th}}$ to 95$^{\text{th}}$ percentile range of variability for our simulation (excluding the equilibration period). %
 %
 The distribution of area among stand conditions within mesic mixed conifer forests fluctuated over time, as expected (Figure~\ref{fig:covcond_smcm}). For example, the percentage of mesic mixed conifer forests in the Early Development condition varied from 7\%--21\%, reflecting the dynamic nature of this cover type (Table~\ref{tab:covcond2}). This condition is currently within the simulated HRV (56$^{\text{th}}$ percentile). Mid Development - Closed was typically the most extensive condition class (11\%-29\%), but most of the condition classes were common throughout the simulation. The shift towards closed canopies when stands reached the Late Development stage may be due to an increasing resilience to wildfire disturbances by stands of that age: wildfires may burn the understory without significantly affecting overstory canopy cover. %
@@ -223,18 +224,18 @@ The spatial configuration of stand conditions fluctuated markedly over time as w
 \clearpage
 \section{Sierran Mixed Conifer - Xeric} 
 
-\begin{figure}[!htbp]
-  \centering
-  \subfloat[][]{
-    \centering
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_smcx.png}
-    }%
-  \subfloat[][]{
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_hist_smcx.png}
-    }
-  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Xeric. High mortality fire in dark blue; low mortality fire in light blue. (b) Histogram of disturbed hectares with density curve overlaid.} 
-  \label{fig:darea_smcx}
-\end{figure}
+%\begin{figure}[!htbp]
+%  \centering
+%  \subfloat[][]{
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_smcx.png}
+%    }%
+%  \subfloat[][]{
+%    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_hist_smcx.png}
+%    }
+%  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Xeric. High mortality fire in dark blue; low mortality fire in light blue. (b) Histogram of disturbed hectares with density curve overlaid.} 
+%  \label{fig:darea_smcx}
+%\end{figure}
 
 Sierran Mixed Conifer - Xeric (\textsc{smc\_x}) is the second most dominant cover type within the core project area, encompassing 52,198 ha and comprising roughly 29\% of the project area. The frequency and extent of simulated wildfires in xeric sierran mixed conifer forests varied markedly across the landscape (Figure~\ref{fig:darea_smcx} and Table~\ref{tab:darea_smcx}).  %
 %
@@ -246,20 +247,20 @@ In general, return intervals and canopy cover varied spatially across the forest
 %
 Finally, when stands of xeric mixed conifer forests were adjacent to cover types with much shorter or longer return intervals, they also exhibited a directional shift in local return intervals towards that of the adjacent type, reflecting the importance of landscape context on fire regimes.
 
-\begin{table}[!htbp]
-\centering
-\caption{\small Disturbed area summary statistics for Sierran Mixed Conifer - Xeric. Proportions shown are relative to the total area of Sierran Mixed Conifer - Xeric.}
-\label{tab:darea_smcx}
-\begin{tabular}{@{}llll@{}}
-\toprule
-\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
-Minimum       & 0.65  & 0.07  & 0.93  \\
-Maximum       & 54.14 & 36.11 & 86.29 \\
-Median        & 10.93 & 5.99  & 17.94 \\
-Mean          & 13.78 & 7.84  & 21.71 \\
-\textbf{Fire Rotation} & 36       & 64        & 23 \\  \bottomrule
-\end{tabular}
-\end{table}
+%\begin{table}[!htbp]
+%\centering
+%\caption{\small Disturbed area summary statistics for Sierran Mixed Conifer - Xeric. Proportions shown are relative to the total area of Sierran Mixed Conifer - Xeric.}
+%\label{tab:darea_smcx}
+%\begin{tabular}{@{}llll@{}}
+%\toprule
+%\textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
+%Minimum       & 0.65  & 0.07  & 0.93  \\
+%Maximum       & 54.14 & 36.11 & 86.29 \\
+%Median        & 10.93 & 5.99  & 17.94 \\
+%Mean          & 13.78 & 7.84  & 21.71 \\
+%\textbf{Fire Rotation} & 36       & 64        & 23 \\  \bottomrule
+%\end{tabular}
+%\end{table}
 
 %%%
 The age structure and dynamics of xeric mixed conifer forests illustrates the interaction between disturbance and succession processes. We focus our analysis on the 5$^{\text{th}}$ to 95$^{\text{th}}$ percentile range of variability for our simulation (excluding the equilibration period). %
