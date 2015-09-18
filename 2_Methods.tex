@@ -33,7 +33,7 @@ Logging has been a major human impact on the Forest since European settlement. C
 \section{Modeling Framework}
 \label{sec:modelframe}
 
-\section{\textsc{RMLands}}
+\subsection{\textsc{RMLands}}
 \textsc{RMLands} is a spatially-explicit, stochastic, landscape-level disturbance and succession model capable of simulating fine-grained processes over large spatial and long temporal extents \citep{McGarigal2005}. It is grid-based but simulates disturbance and succession at the patch level, and employs a dichotomous high vs. low mortality effect of fire in place of the uniformly low, mixed, and high severity regimes used elsewhere \citep{McGarigal2012}. \textsc{RMLands} was originally developed to simulate Rocky Mountain Landscapes (hence the name), specifically the San Juan National Forest. Historical range of variability analyses were completed in 2005 for the San Juan National Forest and the Uncompaghre Plateau (McGarigal and Romme 2005a, McGarigal and Romme 2005b). \textsc{RMLands} has also been used to simulate wildfire and vegetation succession in northern Idaho \citep{Cushman2011}. Outputs from the model are readable by the landscape pattern analysis software \textsc{Fragstats}, which facilitates the landscape configuration analysis.
  
 
@@ -44,7 +44,7 @@ Logging has been a major human impact on the Forest since European settlement. C
 
 All input layers to \textsc{RMLands} must be custom-built to work with the software. For technical details on the data structure requirements of \textsc{RMLands}, see Appendix \ref{app:inputs}. A brief overview of each input layer is included below.
 
-\subsubsection{Cover} Cover represents land cover type. Typically, cover type is based on the potential or current natural vegetation of a site and may include both natural and anthropogenic cover types. For example, cover types include not only Lodgepole Pine, Sierran Mixed Conifer, and Red Fir, but also Barren and Agriculture. Succession pathways are defined uniquely for each cover type, susceptibility to natural disturbances varies among cover types, and suitability or eligibility for various vegetation treatments varies among cover types. Cover is a static/constant grid and therefore provides a fixed template upon which disturbance and succession processes play out over time. The source for the cover layer is the Region 5 Existing Vegetation Layer (``EVeg''), first mapped to the \textsc{calveg} classification developed by the Region's Ecology Program in 1978. The \textsc{calveg} types in the project area are specific to the North Sierra mapping Zone. Within the project area, the EVeg layer was developed based on three separate efforts: a satellite-based imagery analysis in 2000, and two orthoimagery analysis completed by contracting firms in 2005 \citetext{Alan\ Doerr,\ pers.\ comm.}. Generally, specific cover type names were derived from the California Fire Return Interval Departure (FRID) report by \citet{VandeWater2011}.
+\subsubsection{Cover} Cover type is based on the potential or current natural vegetation of a site and includes both natural and anthropogenic cover types. For example, cover types include not only Lodgepole Pine, Sierran Mixed Conifer, and Red Fir, but also Barren and Agriculture. Succession pathways are defined uniquely for each cover type, susceptibility to natural disturbances varies among cover types, and suitability or eligibility for various vegetation treatments varies among cover types. Cover is a static/constant grid and therefore provides a fixed template upon which disturbance and succession processes play out over time. The source for the cover layer is the Region 5 Existing Vegetation Layer (``EVeg''), first mapped to the \textsc{calveg} classification developed by the Region's Ecology Program in 1978. The \textsc{calveg} types in the project area are specific to the North Sierra mapping Zone. Within the project area, the EVeg layer was developed based on three separate efforts: a satellite-based imagery analysis in 2000, and two orthoimagery analysis completed by contracting firms in 2005 \citetext{Alan\ Doerr,\ pers.\ comm.}. Generally, specific cover type names were derived from the California Fire Return Interval Departure (FRID) report by \citet{VandeWater2011}.
 
 \paragraph{Alternative Cover Layers}
 The original intent of our team was to utilize two separate cover layers: one for the historical reference period, and one for the current period to be used in projections of future scenarios. Two layers were identified as potentially suitable for the historic analysis: a map created from forest survey and inventory efforts under Albert Wieslander conducted between 1928 and 1940 (``Wieslander'') \citep{Thorne2006}, and a map of Potential Natural Vegetation created by a Forest Service Enterprise Team for the Tahoe National Forest in the 2000s\todo{How can I cite this? Do I need to?}. Our intent was to use the PNV, Wieslander, or a combination thereof to derive the land cover layer for the HRV phase of the project. 
@@ -79,54 +79,38 @@ As Table~\ref{covertable} shows, most cover types occupy a small extent of the p
 \label{covertable}
 \begin{tabular}{@{}lllll@{}}
 \toprule
-\textbf{\begin{tabular}[c]{@{}l@{}}Land \\ Cover \\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Land Cover \\ Abbreviation\end{tabular}} & \textbf{Land Cover Name}                              & \textbf{\begin{tabular}[c]{@{}l@{}}Area \\ Core Only\\ (Hectares)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Area\\ Core+Buffer\\ (Hectares)\end{tabular}} \\ \midrule
-\rowcolor[HTML]{CAD6BA} 
-1                                                           & AGR                                                                & Agriculture                                  & 16                                                          & 5,416                                                      \\
-2                                                           & BAR                                                                & Barren                                       & 2665                                                        & 8,751                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-3                                                           & CMM                                                                & Curl-leaf Mountain Mahogany                  & 18                                                          & 41                                                         \\
-4                                                           & GRASS                                                              & Grassland                                    & 1379                                                        & 4,617                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-5                                                           & LPN                                                                & Lodgepole Pine                               & 837                                                         & 2,816                                                      \\
-6                                                           & LPN\_ASP                                                           & Lodgepole Pine with Aspen                    & 8                                                           & 31                                                         \\
-\rowcolor[HTML]{CAD6BA} 
-7                                                           & LSG                                                                & Black and Low Sagebrush                      & 0                                                           & 5                                                          \\
-8                                                           & MED                                                                & Meadow                                       & 1201                                                        & 3,435                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-9                                                           & MEG\_M                                                             & Mixed Evergreen - Mesic                      & 7273                                                        & 13,547                                                     \\
-10                                                          & MEG\_U                                                             & Mixed Evergreen - Ultramafic                 & 604                                                         & 1,655                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-11                                                          & MEG\_X                                                             & Mixed Evergreen - Xeric                      & 6768                                                        & 13,771                                                     \\
-12                                                          & MRIP                                                               & Montane Riparian                             & 732                                                         & 2,216                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-13                                                          & OAK                                                                & Oak Woodland                                 & 19                                                          & 4,186                                                      \\
-14                                                          & OCFW                                                               & Oak-Conifer Forest and Woodland              & 23729                                                       & 56,941                                                     \\
-\rowcolor[HTML]{CAD6BA} 
-15                                                          & OCFW\_U                                                            & \begin{tabular}[c]{@{}l@{}}Oak-Conifer Forest and \\ Woodland -  Ultramafic\end{tabular} & 1060                                                   & 2,185                                                      \\
-16                                                          & RFR\_ASP                                                           & Red Fir with Aspen                           & 0     		                                              & 34                                                         \\
-\rowcolor[HTML]{CAD6BA} 
-17                                                          & RFR\_M                                                             & Red Fir - Mesic                              & 8563  		                                              & 19,626                                                     \\
-18                                                          & RFR\_U                                                             & Red Fir - Ultramafic                         & 294   		                                              & 321                                                        \\
-\rowcolor[HTML]{CAD6BA} 
-19                                                          & RFR\_X                                                             & Red Fir - Xeric                              & 7493  		                                              & 9,989                                                      \\
-20                                                          & SAGE                                                               & Big Safebrush                                & 0     		                                              & 1,600                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-21                                                          & SCN                                                                & Subalpine Conifer                            & 638   		                                              & 12,543                                                     \\
-22                                                          & SCN\_ASP                                                           & Subalpine Conifer with Aspen                 & 0     		                                              & 6                                                          \\
-\rowcolor[HTML]{CAD6BA} 
-23                                                          & SMC\_ASP                                                           & Sierran Mixed Conifer with Aspen             & 58    		                                              & 121                                                        \\
-24                                                          & SMC\_M                                                             & Sierran Mixed Conifer - Mesic                & 57853 		                                              & 133,920                                                    \\
-\rowcolor[HTML]{CAD6BA} 
-25                                                          & SMC\_U                                                             & Sierran Mixed Conifer - Ultramafic           & 4124  		                                              & 9,774                                                      \\
-26                                                          & SMC\_X                                                             & Sierran Mixed Conifer - Xeric                & 52198 		                                              & 91,443                                                     \\
-\rowcolor[HTML]{CAD6BA} 
-27                                                          & URB                                                                & Urban                                        & 114   		                                              & 782                                                        \\
-28                                                          & WAT                                                                & Water                                        & 4058  		                                              & 8,212                                                      \\
-\rowcolor[HTML]{CAD6BA} 
-29                                                          & WWP                                                                & Western White Pine                           & 273   		                                              & 510                                                        \\
-30                                                          & YPN                                                                & Yellow Pine                                  & 0     		                                              & 10,499                                                     \\
-\rowcolor[HTML]{CAD6BA} 
-31                                                          & YPN\_ASP                                                           & Yellow Pine with Aspen                       & 0     		                                              & 3                                                          \\ \bottomrule
+\textbf{\begin{tabular}[c]{@{}l@{}}Land \\ Cover \\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Land Cover \\ Abbreviation\end{tabular}} & \textbf{Land Cover Name}    & \textbf{\begin{tabular}[c]{@{}l@{}}Area \\ Core Only\\ (Hectares)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Area\\ Core+Buffer\\ (Hectares)\end{tabular}} \\ \midrule
+\rowcolor[HTML]{CAD6BA} 1    & \textsc{agr     }     & Agriculture                                  & 16          & 5,416     \\
+2                            & \textsc{bar     }     & Barren                                       & 2665        & 8,751     \\
+\rowcolor[HTML]{CAD6BA} 3    & \textsc{cmm     }     & Curl-leaf Mountain Mahogany                  & 18          & 41        \\
+4                            & \textsc{grass   }     & Grassland                                    & 1379        & 4,617     \\\rowcolor[HTML]{CAD6BA} 
+5                            & \textsc{lpn     }     & Lodgepole Pine                               & 837         & 2,816     \\
+6                            & \textsc{lpn\_asp}     & Lodgepole Pine with Aspen      & 8             & 31   \\
+\rowcolor[HTML]{CAD6BA} 7    & \textsc{lsg     }     & Black and Low Sagebrush                      & 0           & 5         \\
+8                            & \textsc{med     }     & Meadow                                       & 1201        & 3,435     \\
+\rowcolor[HTML]{CAD6BA} 9    & \textsc{meg\_m  }     & Mixed Evergreen - Mesic                      & 7273        & 13,547    \\
+10                           & \textsc{meg\_u  }     & Mixed Evergreen - Ultramafic                 & 604         & 1,655     \\
+\rowcolor[HTML]{CAD6BA} 11   & \textsc{meg\_x  }     & Mixed Evergreen - Xeric                      & 6768        & 13,771    \\
+12                           & \textsc{mrip    }     & Montane Riparian                             & 732         & 2,216     \\
+\rowcolor[HTML]{CAD6BA} 13   & \textsc{oak     }     & Oak Woodland                                 & 19          & 4,186     \\
+14                           & \textsc{ocfw    }     & Oak-Conifer Forest and Woodland              & 23729       & 56,941    \\
+\rowcolor[HTML]{CAD6BA} 15   & \textsc{ocfw\_u }     & \begin{tabular}[c]{@{}l@{}}Oak-Conifer Forest and \\ Woodland -  Ultramafic\end{tabular} & 1060   & 2,185   \\
+16                           & \textsc{rfr\_asp}     & Red Fir with Aspen                           & 0     		    & 34             \\
+\rowcolor[HTML]{CAD6BA} 17   & \textsc{rfr\_m  }     & Red Fir - Mesic                              & 8,563  	      & 19,626         \\
+18                           & \textsc{rfr\_u  }     & Red Fir - Ultramafic                         & 294   		    & 321            \\
+\rowcolor[HTML]{CAD6BA} 19   & \textsc{rfr\_x  }     & Red Fir - Xeric                              & 7,493  	      & 9,989          \\
+20                           & \textsc{sage    }     & Big Safebrush                                & 0     		    & 1,600          \\
+\rowcolor[HTML]{CAD6BA} 21   & \textsc{scn     }     & Subalpine Conifer                            & 638   		    & 12,543         \\
+22                           & \textsc{scn\_asp}     & Subalpine Conifer with Aspen                 & 0     		    & 6              \\
+\rowcolor[HTML]{CAD6BA} 23   & \textsc{smc\_asp}     & Sierran Mixed Conifer with Aspen             & 58    		    & 121            \\
+24                           & \textsc{smc\_m  }     & Sierran Mixed Conifer - Mesic                & 57,853 	      & 133,920        \\
+\rowcolor[HTML]{CAD6BA} 25   & \textsc{smc\_u  }     & Sierran Mixed Conifer - Ultramafic           & 4,124  	      & 9,774          \\
+26                           & \textsc{smc\_x  }     & Sierran Mixed Conifer - Xeric                & 52,198 	      & 91,443         \\
+\rowcolor[HTML]{CAD6BA} 27   & \textsc{urb     }     & Urban                                        & 114   		    & 782            \\
+28                           & \textsc{wat     }     & Water                                        & 4,058  	      & 8,212          \\
+\rowcolor[HTML]{CAD6BA} 29   & \textsc{wwp     }     & Western White Pine                           & 273   		    & 510            \\
+30                           & \textsc{ypn     }     & Yellow Pine                                  & 0     		    & 10,499         \\
+\rowcolor[HTML]{CAD6BA} 31   & \textsc{ypn\_asp}     & Yellow Pine with Aspen                       & 0     		    & 3              \\ \bottomrule
 \end{tabular}
 \end{table}
 \normalsize
@@ -150,23 +134,23 @@ Extensive geoprocessing was required to prepare this layer for \textsc{RMLands}.
 \toprule
 \textbf{\begin{tabular}[c]{@{}l@{}}Condition Class \\ Value\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Condition Class \\ Abbreviation\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Condition Class  \\ Name\end{tabular}} \\ \midrule
 \rowcolor[HTML]{CAD6BA} 
-0                              & NS                                    & Non-Seral                     				 \\
-10                             & EARLY\_ALL                            & Early Development - All                   	 \\
+0                              & \textsc{ns}                                    & Non-Seral                     				 \\
+10                             & \textsc{early\_all }                           & Early Development - All                   	 \\
 \rowcolor[HTML]{CAD6BA} 
-20                             & MID\_CL                               & Mid Development - Closed                    \\
-21                             & MID\_MOD                              & Mid Development - Moderate                  \\
+20                             & \textsc{mid\_cl    }                           & Mid Development - Closed                    \\
+21                             & \textsc{mid\_mod   }                           & Mid Development - Moderate                  \\
 \rowcolor[HTML]{CAD6BA} 
-22                             & MID\_OP                               & Mid Development - Open                      \\
-30                             & LATE\_CL                              & Late Development - Closed                   \\
+22                             & \textsc{mid\_op    }                           & Mid Development - Open                      \\
+30                             & \textsc{late\_cl   }                           & Late Development - Closed                   \\
 \rowcolor[HTML]{CAD6BA} 
-31                             & LATE\_MOD                             & Late Development - Moderate                 \\
-32                             & LATE\_CL                              & Late Development - Open                     \\
+31                             & \textsc{late\_mod   }                          & Late Development - Moderate                 \\
+32                             & \textsc{late\_cl     }                         & Late Development - Open                     \\
 \rowcolor[HTML]{CAD6BA} 
-40                             & EARLY\_ASP                            & Early Development - Aspen                   \\
-41                             & MID\_ASP                              & Mid Development - Aspen                     \\
+40                             & \textsc{early\_asp  }                          & Early Development - Aspen                   \\
+41                             & \textsc{mid\_asp   }                           & Mid Development - Aspen                     \\
 \rowcolor[HTML]{CAD6BA} 
-42                             & MID\_AC                               & Mid Development - Aspen Conifer             \\
-43                             & LATE\_CA                              & Late Development - Conifer Aspen            \\ \bottomrule
+42                             & \textsc{mid\_ac    }                           & Mid Development - Aspen Conifer             \\
+43                             & \textsc{late\_ca    }                          & Late Development - Conifer Aspen            \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -278,11 +262,11 @@ We have created a detailed cover type description document for each cover type i
 
 To illustrate the parameterization, in the following tables we present values for the Sierran Mixed Conifer - Mesic cover type model. The target fire return interval for this cover type is 29 years. Specific FRIs and probabilities of high mortality fire are specified for each seral stage (Table~\ref{smcm_fri_phm}). In addition, we specified transition probabilities for natural succession between the early, middle, and late stages of development, as well as between closed, moderate, and open canopy cover. This type of succession also depends on the time in the current seral stage both in terms of the early-middle-late sequence (\emph{Development-Age}) and the specific stage-canopy cover combination (\emph{Seral Stage-Age}) (Table~\ref{smcm_vegtrans}). Finally, probabilities are specified for vegetation transitions after wildfire (Table~\ref{smcm_firetrans}). We calculated these values using the VDDT models associated with the LandFire project, modifying some based on local expert opinion. From the VDDT models, we used the probabilities of a transition to early seral conditions, a more open canopy condition, or of no transition. We ignored the classified type of fire (as replacement, mixed, or low severity), focusing instead on the outcome from fire in terms of the seral stage, if any, to which a cell transitioned after wildfire.
 
-
+% edited 2015-9
 \begin{table}[htbp]
 \small
 \centering
-\caption{Fire return interval and percent high mortality fire probabilities for Sierran Mixed Conifer - Mesic.}
+\caption{Relative susceptibility to fire and percent high mortality fire probabilities for Sierran Mixed Conifer - Mesic.}
 \label{smcm_fri_phm}
 \begin{tabular}{lcc}
 \hline
@@ -343,7 +327,7 @@ Transitions between Early and Middle Development, and between Middle and Late De
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.3\textheight]{/Users/mmallek/Tahoe/Report3/Images/pdsi_hrv.png}
+\includegraphics[height=0.3\textheight]{/Users/mmallek/Tahoe/Report3/Images/pdsi_hrv.png}
 \caption{Palmer Drought Severity Index, rescaled, inverted, and presented as a 5-year average for the ``historic'' period in this study (1550-1850).} 
 \label{pdsi}
 \end{figure}
@@ -468,6 +452,17 @@ Calibrating the model was done by manipulating the ignition calibration coeffici
 
 We then modified the ``fire return interval'' values for all seral stages (under a given cover type), manipulating them as a set by multiplying by a constant. We then evaluated the simulation results at the cover type (rather than seral stage) level. Adjustments were made to the set of seral stages as necessary to produce more or less fire. For example, the target rotation for Sierran Mixed Conifer - Mesic was 29 years. As part of calibration, we adjusted the input condition class-based mean fire return interval up or down, eventually arriving at an increase by a factor of 24 from the original calculated ratio values. That is, each initial scale parameter value was multiplied by 24 in order to modify the susceptibility of Sierran Mixed Conifer - Mesic to fire without changing the relative susceptibility among Sierran Mixed Conifer - Mesic condition classes. We came very close to achieving our target cover type rotation values through several iterations of this method, and as a final step made a small modification to the ignitition calibration coefficient.
 
+As described in Section \ref{subsubsec:distparams}, we specified a target set of disturbance sizes. Because wildfire has many stochastic components, we did not expect the model results to match these targets exactly. Figure \ref{fig:dsize} compares the observed and target disturbance size distribution, and was used to evaluate whether the model was functioning correctly. We analyzed the difference between the first and second bins, and determined that the difference can be attributed primarily to ``spillover'' effects. Although fires have a size potential drawn from a distribution, they can grow somewhat larger than that potential size due to the fact that the fire size is evaluated after each iteration of fire growth. If a fire has a maximum potential size of 25 hectares, and is at 24 hectares after an iteration of growth, then it may grow to 27 hectares (for example) in one iteration, and thus be put into the bin for 25-125 ha fires.\todo{This section should be shorter. I'm also wondering if I should delete it entirely.}
+
+% updated 9/13
+\begin{figure}[!htbp]
+  \centering
+    \centering
+    \includegraphics[width=0.4\textwidth]{/Users/mmallek/Documents/Thesis/Plots/dsize/hrv.png}
+  \caption{(a) Side by side barplot of the observed and target wildfire size distribution for our 500-timestep long run of the model.}
+  \label{fig:dsize}
+\end{figure}
+
 \subsection{Model Execution}
 During the calibration phase of the model, a typical simulation would be three runs of 200 timesteps each. The equilibration period of 40 timesteps was chosen based on visual analysis of the disturbed area and rotation plots from the combined runs. Once calibration was complete, we conducted one 500 timestep-long run in order to capture multiple disturbance and succession cycles across the most common cover types. Each timestep represents five years. The five-year timestep was chosen based on the short fire return intervals recorded from dendrochronology analysis in the literature and our desire to capture these very short return intervals in the simulation.
 
@@ -489,6 +484,8 @@ During the calibration phase of the model, a typical simulation would be three r
 \item \emph{Landscape Composition:} We quantified the distribution and dynamics of landscape composition by cover type. For our single 2500 year simulation (with 200 year equilibration period), we summarize the results in a table and in stacked bar plots. For the tabular results, we present the mean, median, minimum, maximum, 5th, 25th, 75th and 95th percentiles of the distribution. We compared the current landscape condition (i.e., proportion of cover type in each condition class) to this simulated historic range of variability to determine whether the current landscape deviates, and to what degree, from the HRV. In the body of this report we present results for the two most extensive cover types, Sierran Mixed Conifer Mesic and Xeric; others are available in Appendix~\ref{app:full-results}. We visualize the proportion of the total area of a given cover type occurring as each seral stage, for each timestep in the model. In addition, we show a simple plot of the current seral stage distribution, allowing a visual comparison between current conditions and the historical range of variability in the distribution of the seral stages.
 
 \item \emph{Landscape Structure and Patterns:} We used \textsc{Fragstats} \citep{McGarigal2012} to compute several landscape-level and class-level metrics that summarize landscape structure over the course of the simulation. We present the results in a series of tables and figures. The descriptions in Appendix~\ref{app:metricdescriptions} are intended as a general introduction to the \textsc{Fragstats} metrics; for a much more detailed and mathematical description of all \textsc{Fragstats} metrics, see the \href{http://www.umass.edu/landeco/research/fragstats/documents/fragstats.help.4.2.pdf}{documentation}. Each metric is computed on the study area for a single timestep and the results are displayed in tabular format by quantiles and in graphical format with line graphs. \todo{also as histograms?}
+
+\item We also quantified the departure from the HRV conditions by calculating a departure index for each cover-seral stage type and each \textsc{Fragstats} metric. We summarized the distribution of each metric calculated over the length of the simulation, minus the equilibration period. We computed the 5$^{\text{th}}$, 25$^{\text{th}}$, 50$^{\text{th}}$, 75$^{\text{th}}$, and 95$^{\text{th}}$ percentiles of the distribution of observed values. The current percentile for the statistical range of variability refers to the place within the 0--100$^{\text{th}}$ percentile of the observed, simulated HRV. If the current landscape is outside of the HRV, its current \%SRV value is noted as either 0 or 100. The departure index indicates the distance from the 50$^{\text{th}}$ percentile value for a given metric. It is computed based on the Current SRV Percentile, which is the percentile value under the SRV that the current metric value is equivalent to. A value of 0 means that the current value is identical to the median from the simulated HRV, and a value of either less than -95 or greater than 95 means that the current value is below or above and outside the simulated HRV. The departure index is computed by subtracting 50 from the current value's percentile under the simulated range of variability (SRV) then dividing by 50 and multiplying by 100. Thus, for the landscape metric \emph{Patch Density}, 19.507 is equivalent to the 32$^{\text{nd}}$ percentile of observations during the HRV simulation, and the departure index is $(39-50)/50*100 = -22$). This value is within the HRV for the landscape. However, the landscape metric \emph{Edge Density} is 100, because $128.875 > 125.316$, the largest value observed during the HRV simulation. Edge density at the landscape level is outside the HRV.
 
 % moved descriptions to appendix
 
