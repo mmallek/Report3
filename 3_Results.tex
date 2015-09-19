@@ -207,10 +207,10 @@ Mean          & 13.78 & 7.84  & 21.71 \\
 \label{tab:darea_atleast_smcx}
 \begin{tabular}{@{}lllll@{}}
                         & at least 1\% & at least 10\% & at least 25\% & at least 50\% \\ \midrule
-Number of timesteps     461          & 347           & 148           & 27            \\
-Proportion of timesteps 1.00         & 0.75          & 0.32          & 0.06          \\
-Interval (timesteps)    1.00         & 1.33          & 3.11          & 17.07         \\
-Interval (years)        5.00         & 6.64          & 15.57         & 85.37         \\ \bottomrule
+Number of timesteps     & 461          & 347           & 148           & 27            \\
+Proportion of timesteps & 1.00         & 0.75          & 0.32          & 0.06          \\
+Interval (timesteps)    & 1.00         & 1.33          & 3.11          & 17.07         \\
+Interval (years)        & 5.00         & 6.64          & 15.57         & 85.37         \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -233,7 +233,7 @@ Fire size is also influenced by vegetation susceptibility and the specified dist
 % updated 9/13
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/climate_darea_vert.png}
+\includegraphics[width=0.6\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/climate_darea_vert.png}
 \caption{Climate parameter and proportion of eligible landscape disturbed by wildfire for timesteps 250 to 310 of the simulation, illustrating the wide variability in both climate parameter values and disturbed area per timestep. Purple lines are intended to aid in visualization of the climate paramter value and proportion of landscape burned during a particular timestep.}
 \label{fig:compare_clim_darea}
 \end{figure}
@@ -243,7 +243,7 @@ Fire size is also influenced by vegetation susceptibility and the specified dist
 
 \subsection{Effect of Topographic Position}
 
-The topographic position index value for a given cell acts as an input into the susceptibility and mortality values otherwise defined for that cover type and condition class combination. In general, cells with smaller TPI values had reduced susceptibility and mortality. Early development and open canopy conditions tend to result from fire, and we predicted that an increase in fires and in the likelihood of high mortality fire would lead to a decrease in the average canopy cover values for cells with large TPI values. Table~\ref{tab:tpi_cc} in Appendix \ref{app:full-results} displays the results for this simulation for the nine most common cover types. All  show decreased average canopy cover as TPI increases, with the decrease ranging from 5.7\% in xeric mixed evergreen forest to 28.8\% in ultramafic oak-conifer forests. Figure \ref{fig:tpi_cc_smc} shows the plotted data and fitted linear regression line for mesic and xeric sierran mixed conifer forests. Figure \ref{fig:averagecc} is a map displaying average canopy cover across the landscape for the full simulated HRV timeframe, excluding the equilibration period. 
+The topographic position index value for a given cell acts as an input into the susceptibility and mortality values otherwise defined for that cover type and condition class combination. In general, cells with smaller TPI values had reduced susceptibility and mortality. Early development and open canopy conditions tend to result from fire, and we predicted that an increase in fires and in the likelihood of high mortality fire would lead to a decrease in the average canopy cover values for cells with large TPI values. Table~\ref{tab:tpi_cc} in Appendix \ref{app:full-results} displays the results for this simulation for the nine most common cover types. All  show decreased average canopy cover as TPI increases, with the decrease ranging from 5.7\% in xeric mixed evergreen forest to 28.8\% in ultramafic oak-conifer forests. Figure \ref{fig:tpi_cc_smc} shows the plotted data and fitted linear regression line for mesic and xeric sierran mixed conifer forests. Figure \ref{fig:averagecc} is a map displaying average canopy cover across the landscape for the full simulated HRV timeframe, excluding the equilibration period. In general, return intervals and canopy cover varied spatially across the forest and decreased with increasing TPI, reflecting our parameterization, which was based on the theory that higher, more southerly aspects are drier and more susceptible to fires. In mesic mixed conifer forests, canopy cover decreased by about 13\% when comparing minimum to maximum TPI, from an average of 49\% to an average of 43\%. In xeric mixed conifer forests, canopy cover decreased by about 25\% when comparing minimum to maximum TPI, from an average of 36\% to an average of 27\% (Table~\ref{tab:tpi_cc_smc}).
 
 % figure redone
 \begin{figure}[!htbp]
@@ -277,7 +277,7 @@ The topographic position index value for a given cell acts as an input into the 
 
 \newpage
 \subsection{Fire Rotation} 
-We present here the results for Sierran Mixed Conifer Mesic and Xeric. Full results are presented in Appendix \ref{app:full-results}.
+As described in Chapter \ref{ch:methods}, we calibrated the model by adjusting seral stage-specific susceptibility values until the nine cover types with more than 1000 ha extent across the study area were within about 10\% of their target fire rotation. We present here the results for Sierran Mixed Conifer Mesic and Xeric. Full results are presented in Appendix \ref{app:full-results}. 
 
 \begin{table}[!htbp]
 \centering
@@ -293,7 +293,10 @@ We present here the results for Sierran Mixed Conifer Mesic and Xeric. Full resu
 
 
 \subsection{Population Return Interval}
-Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}). The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). The other seven focal cover types\todo{where is this established??} are included in Appendix~\ref{app:full-results}. We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Tables \ref{tab:covcond1} and \ref{tab:covcond2}.\todo{figure out how to update this with most info in appendix}
+Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}). The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). Under this wildfire regime, the grand mean return interval between fires (of any mortality level) for both of these mixed conifer forest types varied widely from about 17 years to over 500 years, with medians of 28 years (for mesic) and 23 years (for xeric) (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). The other seven focal cover types\todo{where is this established??} are included in Appendix~\ref{app:full-results}. 
+
+
+
 
 % first plot redone 9/13
 % second plot not redone yet
@@ -323,7 +326,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/fri_smcm.png}
     }
-  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Mesic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 18 years to \textgreater 500 years.}
+  \caption{(a) Population return interval (average number of years between fires) distribution for Sierran Mixed Conifer - Mesic.  (b) Spatial depiction of fire return intervals across the landscape. Cover types other than Sierran Mixed Conifer - Mesic are partially obscured in grey. The value at any given cell is the point-specific return interval, which ranges from 17 years to \textgreater 500 years.}
 \label{fig:preturn_smcm}
 \end{figure}
 
@@ -355,35 +358,30 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
 \subsection{Landscape Composition} \todo{when I redid the plots I did them starting at year 40. should i redo them with the line added in? can probably modify rmlstats call to do this.}
 
 
-The seral stage distribution for each cover type varied over time. Evidence of both high mortality fire, which triggers a transition to early development conditions for all cover types, and low mortality fire, which can thin a stand and cause a transition to a more open canopy condition (within the same developmental stage), are visible in examining the output grids. Figure \ref{fig:covcondmaps} illustrates these changes for a sequence of four timesteps during the simulation.
+The seral stage distribution for each cover type varied over time, but did appear to be in dynamic equilibrium. Evidence of both high mortality fire, which triggers a transition to early development conditions for all cover types, and low mortality fire, which can thin a stand and cause a transition to a more open canopy condition (within the same developmental stage), are visible in examining the output grids. Figure \ref{fig:covcondmaps} illustrates these changes for a sequence of four timesteps during the simulation. The exception is the Oak-Conifer Forest and Woodland cover type, which did not appear to reach equilibrium until around timestep 220.\todo{review} The seral stage dynamics and current seral stage distribution plots specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:covcond_smcm} and \ref{fig:covcond_smcx}).  We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Figures~\ref{fig:covcond_smcm_boxplots} and \ref{fig:covcond_smcx_boxplots} and in Tables \ref{tab:covcond1} and \ref{tab:covcond2}. Plots and tabular results for the other seven focal types are included in Appendix~\ref{app:full-results}, section~\ref{app:sec:seraldynamics}.
 
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/covcond660.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/maps/hrv-covcondseq-5.pdf}
   }%
   \subfloat[][]{
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/covcond665.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/maps/hrv-covcondseq-6.pdf}
   }\\%
   \subfloat[][]{
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/covcond670.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/maps/hrv-covcondseq-7.pdf}
     }
   \subfloat[][]{
     \centering
-    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Tahoe/Report2/images/covcond675.png}
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/maps/hrv-covcondseq-8.pdf}
   }%
-  \caption{A sequence of four timesteps during the simulation, showing changes in condition classes over time. Here we highlight the dominant cover type, Sierran Mixed Conifer - Mesic, and its classes, in order to illustrate the dynamics that play out over many years. (a) Timestep 660 (b) Timestep 665 (c) Timestep 670 (d) Timestep 675.}
+  \caption{A sequence of four timesteps during the middle of the simulation, showing changes in condition classes over time. Here we highlight the dominant cover type, Sierran Mixed Conifer - Mesic, and its classes, in order to illustrate the dynamics that play out over many years. (a) Timestep 1 (b) Timestep 2 (c) Timestep 3 (d) Timestep 4.}
   \label{fig:covcondmaps}
 \end{figure}
 
-In general, the seral stage distribution appeared to be in dynamic equilibrium, despite considerable variability from timestep to timestep. The exception is the Oak-Conifer Forest and Woodland cover type, which did not appear to reach equilibrium until around timestep 220.\todo{review} The seral stage dynamics and current seral stage distribution plots specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:covcond_smcm} and \ref{fig:covcond_smcx}). Plots and tabular results for the other seven focal types are included in Appendix~\ref{app:full-results}, section~\ref{app:sec:seraldynamics}.
+
 
 \subsubsection{Sierran Mixed Conifer - Mesic}
-The age structure and dynamics of mesic mixed conifer forests illustrates the interaction between disturbance and succession processes. We focus our analysis on the 5$^{\text{th}}$ to 95$^{\text{th}}$ percentile range of variability for our simulation (excluding the equilibration period). %
-
-The distribution of area among stand conditions within mesic mixed conifer forests fluctuated over time, as expected (Figure~\ref{fig:covcond_smcm}). For example, the percentage of mesic mixed conifer forests in the Early Development condition varied from 7\%--21\%, reflecting the dynamic nature of this cover type (Table~\ref{tab:covcond2}). This condition is currently within the simulated HRV (56$^{\text{th}}$ percentile). Mid Development - Closed was typically the most extensive condition class (11\%-29\%), but most of the condition classes were common throughout the simulation. The shift towards closed canopies when stands reached the Late Development stage may be due to an increasing resilience to wildfire disturbances by stands of that age: wildfires may burn the understory without significantly affecting overstory canopy cover. %
-
-The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the percentage in each stand condition varied about a stable mean). Our calculated current seral-stage distribution was never observed under the simulated HRV (Table~\ref{tab:covcond2}). The most notable departure was an increase in Mid Development - Closed and Late Development - Open extent, and a decrease in Mid Development - Moderate extent during the simulated HRV. These condition classes are currently all outside of the simulated HRV. In fact, Late Development - Open is rare on the current landscape (3.6\%), but present in similar proportions to the other classes during the HRV. The other two Late Development classes are within the HRV, with the closed canopy and moderate canopy conditions currently in the $86^{\text{th}}$ and $54^{\text{th}}$ percentiles, respectively. 
 
 \begin{figure}[!htbp]
   \centering
@@ -397,6 +395,11 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
   \caption{(a) Cover-Condition dynamics for Sierran Mixed Conifer - Mesic. The black vertical line at 40 timesteps marks the end of the equilibration period used in this study. (b) Current seral stage distribution for Sierran Mixed Conifer - Mesic.} 
   \label{fig:covcond_smcm}
 \end{figure}
+
+The distribution of area among stand conditions within mesic mixed conifer forests fluctuated over time, as expected (Figure~\ref{fig:covcond_smcm}). For example, the percentage of mesic mixed conifer forests in the Early Development condition varied from 8\%--25\%, reflecting the dynamic nature of this cover type (Table~\ref{tab:covcond_smcm}). This condition is currently within the simulated HRV (48$^{\text{th}}$ percentile). Mid Development - Closed was typically the most extensive condition class (22\%-37\%), but most of the condition classes were common throughout the simulation. % for later note dominance of closed canopies
+
+The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the percentage in each stand condition varied about a stable mean). The current seral-stage distribution was never observed under the simulated HRV (Table~\ref{tab:covcond_smcm}). The most notable departures were an increase in Mid Development - Closed and Late Development - Open extent, and a decrease in Mid Development - Moderate extent during the simulated HRV. These condition classes are currently all outside of the simulated HRV. In fact, Late Development - Open is rare on the current landscape (3.6\%), but present in similar proportions to  other classes during the HRV. 
+
 
 %\begin{landscape}
 
@@ -426,7 +429,12 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
 \end{tabular}
 \end{table}
 
+
+
+
+
 %\end{landscape}
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Sierran Mixed Conifer - Xeric}
 
@@ -444,12 +452,9 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
   \label{fig:covcond_smcx}
 \end{figure}
 
-The\todo{rewrite this section to just point out what is interesting} age structure and dynamics of xeric mixed conifer forests illustrates the interaction between disturbance and succession processes. We focus our analysis on the 5$^{\text{th}}$ to 95$^{\text{th}}$ percentile range of variability for our simulation (excluding the equilibration period). %
+The distribution of area among stand conditions within xeric mixed conifer forests fluctuated over time, as expected (Figure~\ref{fig:covcond_smcx}). For example, the percentage of xeric mixed conifer forests in the Early Development varied from 25\% to 43\%, reflecting the dynamic nature of this cover type (Table~\ref{tab:covcond_smcx}). During the simulation, Early Development (which includes post-fire chaparral fields) and Mid Development - Open conditions dominated, in contrast to the current distribution, which is somewhat even across classes (although late development, open canopy stands are currently quite rare).  %
 
-The distribution of area among stand conditions within xeric mixed conifer forests fluctuated over time, as expected (Figure~\ref{fig:covcond_smcx}). For example, the percentage of xeric mixed conifer forests in the Early Development varied from 24\% to 44\%, reflecting the dynamic nature of this cover type (Table~\ref{tab:covcond3}). During the simulation, Early Development (which includes post-fire chaparral fields) and Mid Development - Open conditions dominated, in contrast to the current distribution, which is somewhat even across classes (although late development, open canopy stands are currently quite rare).  %
-
-The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the percentage in each stand condition varied about a stable mean). Our calculated current seral-stage distribution was never observed under the simulated HRV (Table~\ref{tab:covcond3}). In fact, none of the condition classes had a distribution within the simulated HRV. The most dramatic departure was the increase in Early Development and Mid Development - Open during the simulated HRV compared to the current landscape (currently at 19\% and 11\%, respectively). We also observed a much lower proportion of xeric mixed conifer forest in Late Development - Closed during the simulation than in the current landscape (25\%). The decline in the extent of Late Development forests is primarily due to the frequency of high mortality fire, which inhibits stands from succeeding to those stages. As stated above, this cover type experienced the most fire during the simulated HRV. High mortality fire directly led to the increase in Early Development conditions, and the dominance of open canopies within the middle and late development stages is explained by the high frequency of low mortality fire.
-
+The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the percentage in each stand condition varied about a stable mean). The current seral-stage distribution was never observed under the simulated HRV (Table~\ref{tab:covcond_smcx}). In fact, only Late Development - Moderate had a distribution within the simulated HRV (at the $94^{\text{th}}$ percentile). The most dramatic departure was the increase in Early Development and Mid Development - Open during the simulated HRV compared to the current landscape (currently at 19\% and 11\%, respectively). We also observed a much lower proportion of xeric mixed conifer forest in Late Development - Closed during the simulation than in the current landscape (25\%). 
 
 
 \begin{figure}[!htbp]
@@ -475,6 +480,8 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
 \footnotesize \textsc{late\_op  }      & \footnotesize 9.39          & \footnotesize 12.4     & \footnotesize 15       & \footnotesize 17.42    & \footnotesize 22.45     & \footnotesize 4.13        & \footnotesize  0     & \footnotesize  -100  \\ \bottomrule 
 \end{tabular}
 \end{table}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -560,3 +567,6 @@ One of the principal purposes of gaining a better quantitative understanding of 
 \caption{Landscape \textsc{Fragstats} Metrics. Results for the Area-weighted Mean Core Area, a measure of interior habitat available at the patch level. During the HRV, the average patch contains more core area than in the current landscape.} 
 \label{fig:fragland_core}
 \end{figure}
+
+
+\todo{Include class-level metrics?}[SMC] The spatial configuration of stand conditions fluctuated markedly over time as well, although there was considerable variation in the magnitude of variability among configuration metrics (Appendix \ref{sec:full-class-results}). Area-weighted patch and core area, as well as edge density, exhibited the greatest variability over time. Four of the seven condition classes consistently fell near or beyond the HRV for the focal metrics. Early development, middle development moderate and open canopy, and late development open canopy cover are currently characterized by smaller, less aggregated, and less geometrically complex patches with less core area than the same condition classes during the simulated HRV. Late development, closed canopy patches trend weakly in the opposite direction, while the remaining conditions typically fall within the HRV.
