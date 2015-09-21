@@ -294,7 +294,7 @@ As described in Chapter \ref{ch:methods}, we calibrated the model by adjusting s
 
 
 \subsection{Population Return Interval}
-Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}). The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). Under this wildfire regime, the grand mean return interval between fires (of any mortality level) for both of these mixed conifer forest types varied widely from about 17 years to over 500 years, with medians of 28 years (for mesic) and 23 years (for xeric) (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). The other seven focal cover types\todo{where is this established??} are included in Appendix~\ref{app:full-results}. 
+Overall, the point-specific return interval (grand mean) for all eligible cells ranged from 17 years to \textgreater 2500 years (cells that never burned during the simulation) for both classes of wildfire mortality (Figure \ref{fig:preturn}). The median return interval across all cover types was 42 years for low mortality fire, 111 year for high mortality fire, and 29 years for any fire. The population return interval plots and maps specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). Under this wildfire regime, the grand mean return interval between fires (of any mortality level) for both of these mixed conifer forest types varied widely from about 17 years to over 500 years, with medians of 28 years (for mesic) and 23 years (for xeric) (Figures~\ref{fig:preturn_smcm} and \ref{fig:preturn_smcx}). The other seven focal cover types are included in Appendix~\ref{app:full-results}. 
 
 
 
@@ -356,10 +356,10 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
 \section{Vegetation Response}
 \label{subsec:HRVvegresponse}
 
-\subsection{Landscape Composition} \todo{when I redid the plots I did them starting at year 40. should i redo them with the line added in? can probably modify rmlstats call to do this.}
+\subsection{Landscape Composition} 
 
-
-The seral stage distribution for each cover type varied over time, but did appear to be in dynamic equilibrium. Evidence of both high mortality fire, which triggers a transition to early development conditions for all cover types, and low mortality fire, which can thin a stand and cause a transition to a more open canopy condition (within the same developmental stage), are visible in examining the output grids. Figure \ref{fig:covcondmaps} illustrates these changes for a sequence of four timesteps during the simulation. The exception is the Oak-Conifer Forest and Woodland cover type, which did not appear to reach equilibrium until around timestep 220.\todo{review} The seral stage dynamics and current seral stage distribution plots specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:covcond_smcm} and \ref{fig:covcond_smcx}).  We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Figures~\ref{fig:covcond_smcm_boxplots} and \ref{fig:covcond_smcx_boxplots} and in Tables \ref{tab:covcond1} and \ref{tab:covcond2}. Plots and tabular results for the other seven focal types are included in Appendix~\ref{app:full-results}, section~\ref{app:sec:seraldynamics}.
+% fixed plots - equilibration line is hard coded in. ocfwu calibration changed; now seems okay by ts 40. potentially could even have cut off equilibration at ts 20 but it's arbitrary. good to keep in mind for future stuff though.
+The seral stage distribution for each cover type varied over time, but did appear to be in dynamic equilibrium. Evidence of both high mortality fire, which triggers a transition to early development conditions for all cover types, and low mortality fire, which can thin a stand and cause a transition to a more open canopy condition (within the same developmental stage), are visible in examining the output grids. Figure \ref{fig:covcondmaps} illustrates these changes for a sequence of four timesteps during the simulation. The seral stage dynamics and current seral stage distribution plots specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:covcond_smcm} and \ref{fig:covcond_smcx}).  We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Figures~\ref{fig:covcond_smcm_boxplots} and \ref{fig:covcond_smcx_boxplots} and in Tables \ref{tab:covcond1} and \ref{tab:covcond2}. Plots and tabular results for the other seven focal types are included in Appendix~\ref{app:full-results}, section~\ref{app:sec:seraldynamics}.
 
 \begin{figure}[!htbp]
   \centering
@@ -569,5 +569,88 @@ One of the principal purposes of gaining a better quantitative understanding of 
 \label{fig:fragland_core}
 \end{figure}
 
+\clearpage
 
-\todo{Include class-level metrics?}[SMC] The spatial configuration of stand conditions fluctuated markedly over time as well, although there was considerable variation in the magnitude of variability among configuration metrics (Appendix \ref{sec:full-class-results}). Area-weighted patch and core area, as well as edge density, exhibited the greatest variability over time. Four of the seven condition classes consistently fell near or beyond the HRV for the focal metrics. Early development, middle development moderate and open canopy, and late development open canopy cover are currently characterized by smaller, less aggregated, and less geometrically complex patches with less core area than the same condition classes during the simulated HRV. Late development, closed canopy patches trend weakly in the opposite direction, while the remaining conditions typically fall within the HRV.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Class-level Results}
+
+In addition to the landscape-level results, we also summarized structure and patterns at the cover type level using \textsc{Fragstats}. We show here a subset of metrics most useful to understanding patch characteristics at the cover type - seral stage level for the two most prevalent cover types, Sierran Mixed Conifer - Mesic and Sierran Mixed Conifer - Xeric. Again, we display the range of variability for the simulation period as well as the current value, SRV percentile for the current value (``Current SRV Percentile''), and the departure index (Tables~). In addition, we include boxplots for a further subset of the metrics included in Table for the purposes of discussing the landscape under the simulated historic period as compared to the present day (Figures~). See Appendix~\ref{app:metricdescriptions} for a detailed description of \textsc{Fragstats} metrics and Appendix~ for full tabular results for the other seven focal cover types.
+
+
+\paragraph{Sierran Mixed Conifer - Mesic} %updated analysis 2015-09-20
+The spatial configuration of stand conditions fluctuated markedly over time, although there was considerable variation in the magnitude of variability among configuration metrics. Early seral and mid development patches in this cover type tended to have wide ranges of variability in metric outcomes, and were larger, more aggregated, more geometrically complex, and had more core area during the HRV than during the current conditions. Metric values for these seral stages tended to be completely or nearly outside the simulated HRV. 
+
+In contrast, the other seral stages all fall within the simulated HRV in terms of patch size and core area. Results for geometric complexity and aggregation were less consistent across the other seral stages. While late open stands were more geometrically complex during the HRV than on the current landscape, mid moderate, mid late, and late moderate patches were all less geometrically complex. Late closed patches currently fall within the simulated HRV. Meanwhile, the open canopy seral stages are currently within the HRV in terms of aggregation, while the mid moderate, late closed, and late moderate stages are all currently outside the range of variability and less aggregated today than during the simulated HRV.  
+
+% figures updated 2015-09-20
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_M-AREA_AM-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Mesic and area-weighted mean patch area. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcm_areaam}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_M-CORE_AM-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Mesic and area-weighted mean core area. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcm_coream}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_M-SHAPE_AM-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Mesic and area-weighted mean shape index. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcm_shapeam}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_M-CLUMPY-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Mesic and clumpiness. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcm_clumpy}
+\end{figure}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\paragraph{Sierran Mixed Conifer - Xeric}
+The spatial configuration of stand conditions fluctuated markedly over time as well, although there was considerable variation in the magnitude of variability among configuration metrics. Early seral and mid open had wide ranges of variability in patch and core area size, while mid closed had a wide range of variability in geometric complexity and aggregation. In contrast to the mesic mixed conifer forests, results in this cover type were consistent across different metrics. Mid closed, mid moderate, and late moderate stages currently fall within the simulated HRV in terms of area-weighted mean patch size and core area, as well as for the shape and clumpiness indices. However, the other stages were generally currently outside or nearly outside the simulated HRV. Early seral and open canopy stands are currently smaller, less aggregated, less geometrically complex, and have less core area than during the simulated HRV, while the opposite is true for late closed patches.
+
+
+% figures updated 2015-09-20
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_X-AREA_AM-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Xeric and area-weighted mean patch area. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcx_areaam}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_X-CORE_AM-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Xeric and area-weighted mean core area. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcx_coream}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_X-SHAPE_AM-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Xeric and area-weighted mean shape index. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcx_shapeam}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/Plots/fragclass-bymetrics/SMC_X-CLUMPY-boxplots.png}
+  \caption{Fragstats class-level results for Sierran Mixed Conifer - Xeric and clumpiness. Boxplot whiskers extend to the 5th and 95th percentile of the observed distribution. The thick grey bar denotes the metric value on the current landscape.}
+  \label{fig:smcx_clumpy}
+\end{figure}
