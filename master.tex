@@ -17,6 +17,7 @@
 \usepackage[figuresright]{rotating}
 \usepackage[format=hang,labelfont=bf,size=small]{caption}
 %\setlength{\textfloatsep}{40pt plus 2.0pt minus 4.0pt}
+\usepackage[modulo]{lineno}
 
 \usepackage{hyperref}
 %\usepackage{cleverref}
@@ -27,14 +28,13 @@
 
 \hypersetup{colorlinks=true, citecolor=mycitecolor!\myshade!black, linkcolor=mylinkcolor!\myshade!black, urlcolor = myurlcolor!\myshade!black}
 
-
-
 \usepackage{pdflscape}
 \usepackage{longtable}
 \usepackage{natbib}
 
 
 \setlength{\marginparwidth}{2cm}
+\linenumbers
 
 \begin{document}
 
@@ -42,19 +42,7 @@
 \title{Modeling Historical Range of Variability and Future Climate Change in the Yuba River Watershed, Tahoe National Forest}
 \date{September 2015}
 
-%\section*{Outline}
-%\subsection*{Spatial Data Preparation}
-%Xeric/Mesic Gradient preparation\\
-%YHR Type Selection\\
-%Eveg Layer Selection\\
-%Scale and Extent\\sdfg
-%Scripts and tools used for spatial data prep\\
-%some of this will be redundant with the rmlands spatial data pdf\\
-%Age
-%
-%\subsection*{general notes}
-%may be worth it to include general description of how and when we involved FS folks\\
-%District vs. Ecology Group vs. Hugh vs. other advisors\\
+
 
 \maketitle
 \frontmatter 
@@ -71,12 +59,12 @@
 %\include{4_AnalysisbyCoverType}
 \include{5_Discussion} 
 
-%\include{Appendices}
+\include{Appendices}
 \include{Appendix-CoverTypeResults}
-%\include{Appendix-DistSeralResults}
-%\include{Appendix-FragDescriptions}
-%\include{Appendix-FragLandResults}
-%\include{Appendix-FragClassResults}
+\include{Appendix-DistSeralResults}
+\include{Appendix-FragDescriptions}
+\include{Appendix-FragLandResults}
+\include{Appendix-FragClassResults}
 
 \backmatter 
 %\include{glossary} 

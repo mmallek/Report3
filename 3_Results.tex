@@ -1,8 +1,11 @@
-
+% !TEX root = master.tex
 \chapter{Historical Range of Variability Results}
+\label{ch:results}
 \section{Disturbance Regime}
 
-This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire.\todo{Becky: is this true?} In the sections below, we describe the simulated disturbance regime in terms of its spatial extent and distribution, frequency, and temporal variability, for the landscape as a whole. Variations among vegetation types are described in Chapter~\ref{ch:covtype} and in Appendix~\ref{app:covtype_analysis}. We also acknowledge that some results were used to evaluate whether the model was correctly calibrated; specifically, fire rotation values were used in model calibration, as described in Chapter~\ref{ch:methods}. These rotation values are also an outcome of the model, and are therefore reported here. While this may seem a bit circular, it was a necessary part of the process of simulating the historical range of variability. In addition to the disturbance regime, this chapter includes results for the seral stage dynamics and analysis of the landscape configuration metrics from \textsc{Fragstats}.
+This report focuses on the effects of wildfire as a natural disturbance; the impacts of other natural disturbances during the reference period were likely localized in time or space and therefore probably had far less impact on vegetation patterns over broad spatial and temporal scales than did fire.\todo{Becky: is this true?} In the sections below, we describe the simulated disturbance regime in terms of its spatial extent and distribution, frequency, and temporal variability, for the landscape as a whole. Variations among vegetation types are described in Chapter~\ref{ch:covtype} and in Appendix~\ref{app:covtype_analysis}. We also acknowledge that some results were used to evaluate whether the model was correctly calibrated; specifically, fire rotation values were used in model calibration, as described in Chapter~\ref{ch:methods}. These rotation values are also an outcome of the model, and are therefore reported here. While this may seem a bit circular, it was a necessary part of the process of simulating the historical range of variability.\todo{add management context} 
+
+In addition to the disturbance regime, this chapter includes results for the seral stage dynamics and analysis of the landscape configuration metrics from \textsc{Fragstats}.
 
 %Finally, it is important to realize that while the information below is presented as ``results,'' it could have easily been presented in the methods section as ``model calibration.'' Key spatial and temporal aspects of the disturbance regime were evaluated during preliminary calibration runs, and we subsequently adjusted model parameters to effect desired changes. Thus, while the information presented below does in fact represent results (output) of the simulation, it also represents a set of targets used to calibrate the model (i.e., adjust model parameters to achieve desired results). While this may seem a bit circular, it was a necessary process for a complex model such as \textsc{RMLands}. Moreover, our real emphasis was on quantifying the vegetation patterns and dynamics resulting from these disturbance processes. 
 
@@ -47,14 +50,19 @@ $95^{th}$ percentile        &   31.29 (54,703)      & 21.43 (37,461)   &    45.8
 \end{table}
 
 %redone 9/13
+
 \begin{figure}[!htbp]
-\centering
-\includegraphics[height=0.3\textheight]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_all.png}
-\caption{Disturbance trajectory for wildfire during the simulation. The first timestep is 40 because we excluded earlier timesteps as equilibration. Dark blue values represent high mortality fire, while light blue values represent low mortality fire and are stacked on top of high mortality.}
-\label{fig:darea}
+  \centering
+  \subfloat[][]{
+    \centering
+\includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_all.png}
+    }%
+  \subfloat[][]{
+    \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_darea_hist.png}
+    }
+  \caption{\small (a) Disturbance trajectory for wildfire during the simulation. The first timestep is 40 because we excluded earlier timesteps as equilibration. Dark blue values represent high mortality fire, while dark green values represent low mortality fire and are stacked on top of high mortality. (b) Histogram of disturbed hectares.} 
+  \label{fig:darea}
 \end{figure}
-
-
 \clearpage
 
 % background color 24, 15, 41, 0
@@ -125,7 +133,7 @@ $95^{th}$ percentile        &   31.29 (54,703)      & 21.43 (37,461)   &    45.8
 \subsubsection{Sierran Mixed Conifer - Mesic}
 Sierran Mixed Conifer - Mesic (\textsc{smc\_m}) is the dominant cover type within the core project area, encompassing 57,853 ha and comprising roughly 32\% of the project area. Wildfire was prevalent in this cover type. The frequency and extent of burned area is similar to that for the landscape as a whole (Figure \ref{fig:darea_smcm}). We summarize the disturbance regime in Tables \ref{tab:darea_smcm} and \ref{tab:darea_atleast_smcm}.
 
-
+% plots redone
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
@@ -135,22 +143,23 @@ Sierran Mixed Conifer - Mesic (\textsc{smc\_m}) is the dominant cover type withi
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_hist_smcm.png}
     }
-  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Mesic. High mortality fire in dark blue; low mortality fire in light blue. (b) Histogram of disturbed hectares with density curve overlaid.} 
+  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Mesic. High mortality fire in dark blue; low mortality fire in dark green. (b) Histogram of disturbed hectares with density curve overlaid.} 
   \label{fig:darea_smcm}
 \end{figure}
 
+% updated 2015-09-21
 \begin{table}[!htbp]
 \centering
 \caption{\small Disturbed area summary statistics for Sierran Mixed Conifer - Mesic. Proportions shown are relative to the total area of Sierran Mixed Conifer - Mesic.}
 \label{tab:darea_smcm}
-\begin{tabular}{@{}llll@{}}
+\begin{tabular}{@{}lrrr@{}}
 \toprule
 \textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
-Minimum       & 0.31  & 0.03  & 0.37  \\
-Maximum       & 53.29 & 20.78 & 72.95 \\
-Median        & 10.96 & 3.18  & 14.48 \\
-Mean          & 14.00 & 3.98  & 18.03 \\
-\textbf{Fire Rotation} & 36       & 125       & 28   \\ \bottomrule
+$5^{\text{th}}$ percentile        & 2.60  & 0.47  & 3.17  \\
+$50^{\text{th}}$ percentile       & 11.45 & 3.35  & 14.89 \\
+$95^{\text{th}}$ percentile       & 34.17 & 11.57 & 45.27 \\
+Mean                              & 14.42 & 4.42  & 18.83 \\
+\textbf{Fire Rotation}            & 35       & 113       & 27   \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -174,6 +183,7 @@ Interval (years)        & 5.03         & 7.41          & 18.29         & 153.67 
 \subsubsection{Sierran Mixed Conifer - Xeric}
 Sierran Mixed Conifer - Xeric (\textsc{smc\_x}) is the second most dominant cover type within the core project area, encompassing 52,198 ha and comprising roughly 29\% of the project area. Wildfire was prevalent in this cover type. The frequency and extent of burned area is similar to that for the landscape as a whole (Figure \ref{fig:darea_smcx}). We summarize the disturbance regime in Tables \ref{tab:darea_smcx} and \ref{tab:darea_atleast_smcx}
 
+% updated 2015-09
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
@@ -183,10 +193,11 @@ Sierran Mixed Conifer - Xeric (\textsc{smc\_x}) is the second most dominant cove
   \subfloat[][]{
     \includegraphics[width=0.5\textwidth]{/Users/mmallek/Documents/Thesis/Plots/darea/hrv_hist_smcx.png}
     }
-  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Xeric. High mortality fire in dark blue; low mortality fire in light blue. (b) Histogram of disturbed hectares with density curve overlaid.} 
+  \caption{\small (a) Disturbance trajectory for Sierran Mixed Conifer - Xeric. High mortality fire in dark blue; low mortality fire in dark green. (b) Histogram of disturbed hectares with density curve overlaid.} 
   \label{fig:darea_smcx}
 \end{figure}
 
+% updated 2015-09-21
 \begin{table}[!htbp]
 \centering
 \caption{\small Disturbed area summary statistics for Sierran Mixed Conifer - Xeric. Proportions shown are relative to the total area of Sierran Mixed Conifer - Xeric.}
@@ -194,13 +205,14 @@ Sierran Mixed Conifer - Xeric (\textsc{smc\_x}) is the second most dominant cove
 \begin{tabular}{@{}llll@{}}
 \toprule
 \textbf{\begin{tabular}[c]{@{}l@{}}Summary Statistic \\ (disturbed area/timestep)\end{tabular}} & \textbf{Low Mortality} & \textbf{High Mortality} & \textbf{Any Mortality} \\ \midrule
-Minimum       & 0.65  & 0.07  & 0.93  \\
-Maximum       & 54.14 & 36.11 & 86.29 \\
-Median        & 10.93 & 5.99  & 17.94 \\
-Mean          & 13.78 & 7.84  & 21.71 \\
-\textbf{Fire Rotation} & 36       & 64        & 23 \\  \bottomrule
+$5^{\text{th}}$ percentile    & 3.30  & 1.00  & 4.50  \\
+$50^{\text{th}}$ percentile   & 11.92 & 5.17  & 17.55 \\
+$95^{\text{th}}$ percentile   & 36.02 & 18.20 & 54.28 \\
+Mean                          & 14.88 & 6.95  & 21.83 \\
+\textbf{Fire Rotation}        & 34       & 72        & 23 \\  \bottomrule
 \end{tabular}
 \end{table}
+
 
 \begin{table}[!htbp]
 \centering
@@ -280,6 +292,7 @@ The topographic position index value for a given cell acts as an input into the 
 \subsection{Fire Rotation} 
 As described in Chapter \ref{ch:methods}, we calibrated the model by adjusting seral stage-specific susceptibility values until the nine cover types with more than 1000 ha extent across the study area were within about 10\% of their target fire rotation. We present here the results for Sierran Mixed Conifer Mesic and Xeric. Full results are presented in Appendix \ref{app:full-results}. 
 
+% updated 2015-09
 \begin{table}[!htbp]
 \centering
 \caption{Fire rotation for Sierran Mixed Conifer Mesic and Xeric.}
@@ -361,6 +374,7 @@ Overall, the point-specific return interval (grand mean) for all eligible cells 
 % fixed plots - equilibration line is hard coded in. ocfwu calibration changed; now seems okay by ts 40. potentially could even have cut off equilibration at ts 20 but it's arbitrary. good to keep in mind for future stuff though.
 The seral stage distribution for each cover type varied over time, but did appear to be in dynamic equilibrium. Evidence of both high mortality fire, which triggers a transition to early development conditions for all cover types, and low mortality fire, which can thin a stand and cause a transition to a more open canopy condition (within the same developmental stage), are visible in examining the output grids. Figure \ref{fig:covcondmaps} illustrates these changes for a sequence of four timesteps during the simulation. The seral stage dynamics and current seral stage distribution plots specific to Sierran Mixed Conifer Mesic and Xeric follow (Figures~\ref{fig:covcond_smcm} and \ref{fig:covcond_smcx}).  We compare the current landscape's seral stage distribution to the simulated distribution and compute the HRV departure index in Figures~\ref{fig:covcond_smcm_boxplots} and \ref{fig:covcond_smcx_boxplots} and in Tables \ref{tab:covcond1} and \ref{tab:covcond2}. Plots and tabular results for the other seven focal types are included in Appendix~\ref{app:full-results}, section~\ref{app:sec:seraldynamics}.
 
+% new plots 2015-09-18
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
@@ -384,6 +398,7 @@ The seral stage distribution for each cover type varied over time, but did appea
 
 \subsubsection{Sierran Mixed Conifer - Mesic}
 
+% hrv plot updated 2015-09
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
@@ -404,6 +419,7 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
 
 %\begin{landscape}
 
+% plot updated 2015-09
 \begin{figure}[!htbp]
   \centering
     \includegraphics[width=\textwidth]{/Users/mmallek/Documents/Thesis/Plots/covcond-bycover/SMCM-HRV-boxplots-.png}
@@ -411,7 +427,7 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
   \label{fig:covcond_smcm_boxplots}
 \end{figure}
 
-
+% table updated 2015-09
 \begin{table}[!htbp]
 \centering
 \caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Sierran Mixed Conifer - Mesic (\textsc{smc\_m}). For condition class abbreviations, see Table \ref{condtable}.}
@@ -439,7 +455,7 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Sierran Mixed Conifer - Xeric}
 
-
+% plot updated 2015-09
 \begin{figure}[!htbp]
   \centering
   \subfloat[][]{
@@ -457,7 +473,7 @@ The distribution of area among stand conditions within xeric mixed conifer fores
 
 The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the percentage in each stand condition varied about a stable mean). The current seral-stage distribution was never observed under the simulated HRV (Table~\ref{tab:covcond_smcx}). In fact, only Late Development - Moderate had a distribution within the simulated HRV (at the $94^{\text{th}}$ percentile). The most dramatic departure was the increase in Early Development and Mid Development - Open during the simulated HRV compared to the current landscape (currently at 19\% and 11\%, respectively). We also observed a much lower proportion of xeric mixed conifer forest in Late Development - Closed during the simulation than in the current landscape (25\%). 
 
-
+% plot updated 2015-09
 \begin{figure}[!htbp]
   \centering
     \includegraphics[width=\textwidth]{/Users/mmallek/Documents/Thesis/Plots/covcond-bycover/SMCX-HRV-boxplots-.png}
@@ -465,6 +481,7 @@ The seral-stage distribution appeared to be in dynamic equilibrium (i.e., the pe
   \label{fig:covcond_smcx_boxplots}
 \end{figure}
 
+% table updated 2015-09
 \begin{table}[!htbp]
 \centering
 \caption{Range of variation in landscape structure, illustrating the cover-condition class dynamics for Sierran Mixed Conifer - Xeric (\textsc{smc\_x}). For condition class abbreviations, see Table \ref{condtable}.}
@@ -535,6 +552,7 @@ One of the principal purposes of gaining a better quantitative understanding of 
 \end{table}
 %\end{landscape}
 
+% plots updated 2015-09
 \clearpage
 \begin{figure}[!htbp]
   \centering
@@ -575,7 +593,7 @@ One of the principal purposes of gaining a better quantitative understanding of 
 
 \subsubsection{Class-level Results}
 
-In addition to the landscape-level results, we also summarized structure and patterns at the cover type level using \textsc{Fragstats}. We show here a subset of metrics most useful to understanding patch characteristics at the cover type - seral stage level for the two most prevalent cover types, Sierran Mixed Conifer - Mesic and Sierran Mixed Conifer - Xeric. Again, we display the range of variability for the simulation period as well as the current value, SRV percentile for the current value (``Current SRV Percentile''), and the departure index (Tables~). In addition, we include boxplots for a further subset of the metrics included in Table for the purposes of discussing the landscape under the simulated historic period as compared to the present day (Figures~). See Appendix~\ref{app:metricdescriptions} for a detailed description of \textsc{Fragstats} metrics and Appendix~ for full tabular results for the other seven focal cover types.
+In addition to the landscape-level results, we also summarized structure and patterns at the cover type level using \textsc{Fragstats}. We show here a subset of metrics most useful to understanding patch characteristics at the cover type - seral stage level for the two most prevalent cover types, Sierran Mixed Conifer - Mesic and Sierran Mixed Conifer - Xeric. Again, we display the range of variability for the simulation period as well as the current value, SRV percentile for the current value (``Current SRV Percentile''), and the departure index (Tables~). In addition, we include boxplots for a further subset of the metrics included in Table for the purposes of discussing the landscape under the simulated historic period as compared to the present day (Figures~). See Appendix~\ref{app:metricdescriptions} for a detailed description of \textsc{Fragstats} metrics and Appendix~\ref{app:full-class-results} for full tabular results for the other seven focal cover types.
 
 
 \paragraph{Sierran Mixed Conifer - Mesic} %updated analysis 2015-09-20
