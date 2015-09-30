@@ -17,6 +17,8 @@
 \usepackage[format=hang,labelfont=bf,size=small]{caption}
 %\setlength{\textfloatsep}{40pt plus 2.0pt minus 4.0pt}
 \usepackage[modulo]{lineno}
+\usepackage{hanging}
+\usepackage{changepage}
 
 \usepackage{hyperref}
 %\usepackage{cleverref}
@@ -24,6 +26,7 @@
 \colorlet{mylinkcolor}{violet}
 \colorlet{mycitecolor}{Aquamarine}
 \colorlet{myurlcolor}{YellowOrange}
+\usepackage{breakurl}
 
 \hypersetup{colorlinks=true, citecolor=mycitecolor!\myshade!black, linkcolor=mylinkcolor!\myshade!black, urlcolor = myurlcolor!\myshade!black}
 
@@ -54,17 +57,17 @@
 
 \include{1_Intro} 
 \include{2_Methods} 
-\include{3_Results} 
+%\include{3_Results} 
 %\include{4_AnalysisbyCoverType}
-\include{5_Discussion} 
+%\include{5_Discussion} 
 
 \include{Appendices}
 
-\include{Appendix-CoverTypeResults}
-\include{Appendix-DistSeralResults}
-\include{Appendix-FragDescriptions}
-\include{Appendix-FragLandResults}
-\include{Appendix-FragClassResults}
+%\include{Appendix-CoverTypeResults}
+%\include{Appendix-DistSeralResults}
+%\include{Appendix-FragDescriptions}
+%\include{Appendix-FragLandResults}
+%\include{Appendix-FragClassResults}
 
 \backmatter 
 %\include{glossary} 
