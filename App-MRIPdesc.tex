@@ -64,9 +64,9 @@ Estimates of fire rotations are available from the LandFire project and a review
 \toprule
 \textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Probability of \\ High Mortality\end{tabular}}} \\ \midrule
 Target                     & 53  & n/a      \\
-Early Development – All    & 50  & 1        \\
-Mid Development – Open & 50  & 0.5        \\
-Late Development – Closed  & 50  & 0.5      \\ \bottomrule
+Early Development - All    & 50  & 1        \\
+Mid Development - Open & 50  & 0.5        \\
+Late Development - Closed  & 50  & 0.5      \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -74,7 +74,7 @@ Late Development – Closed  & 50  & 0.5      \\ \bottomrule
 Other disturbances are not currently modeled, but may, depending on the seral stage affected and mortality levels, reset patches to early development, maintain existing stages, or shift/accelerate succession to a more open stage. 
 
 \subsection*{Vegetation Seral Stages}
-We recognize three separate seral stages for MRIP: Early Development (ED), Mid Development – Open Canopy Cover (MDO), and Late Development – Open Canopy Cover (LDO). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+We recognize three separate seral stages for MRIP: Early Development (ED), Mid Development - Open Canopy Cover (MDO), and Late Development - Open Canopy Cover (LDO). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
 
 
 \paragraph{Early Development (ED)}
@@ -88,7 +88,7 @@ We recognize three separate seral stages for MRIP: Early Development (ED), Mid D
 \hrulefill
 
 
-\paragraph{Mid Development – Open Canopy Cover (MDO)}
+\paragraph{Mid Development - Open Canopy Cover (MDO)}
 
 \paragraph{Description} Vegetation composition in this seral stage includes tall trees and shrubs. \emph{Salix}, \emph{Populus}, and \emph{Alnus} are common. Patches in MDO are more susceptible to fire than the early seral stage (LandFire 2007).
 
@@ -99,7 +99,7 @@ We recognize three separate seral stages for MRIP: Early Development (ED), Mid D
 \hrulefill
 
 
-\paragraph{Late Development – Open Canopy Cover (LDO)}
+\paragraph{Late Development - Open Canopy Cover (LDO)}
 
 \paragraph{Description} This class represents the mature, large \emph{Populus}, \emph{Alnus}, etc. woodlands (LandFire 2007).
 
@@ -117,7 +117,7 @@ We recognize three separate seral stages for MRIP: Early Development (ED), Mid D
 \begin{table}[]
 \small
 \centering
-\caption{Classification of seral stage for MEG. Diameter at Breast Height (DBH) and Cover From Above (CFA) values taken from EVeg polygons. DBH categories are: null, 0-0.9'', 1-4.9'', 5-9.9'', 10-19.9'', 20-29.9'', 30''+. CFA categories are null, 0-10\%, 10-20\%, … , 90-100\%. Each row in the table below should be read with a boolean AND across each column.}
+\caption{Classification of seral stage for MEG. Diameter at Breast Height (DBH) and Cover From Above (CFA) values taken from EVeg polygons. DBH categories are: null, 0-0.9'', 1-4.9'', 5-9.9'', 10-19.9'', 20-29.9'', 30''+. CFA categories are null, 0-10\%, 10-20\%, \dots , 90-100\%. Each row in the table below should be read with a boolean AND across each column.}
 \label{meg_classification}
 \begin{tabular}{@{}lrrrrr@{}}
 \toprule
@@ -132,8 +132,8 @@ Late Open        & 20-30''+        & any & any & any & any \\ \bottomrule
 \subsection{Draft Model}
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report3/images/state_trans_model.pdf}
-\caption{State and Transition Model for Montane Riparian Forest. Each dark grey box represents one of the seven seral stages for this landcover type. Each column of boxes represents a stage of development: early, middle, and late. Each row of boxes represents a different level of canopy cover: closed (70-100\%), moderate (40-70\%), and open (0-40\%). Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession} 
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/mrip.png}
+\caption{State and Transition Model for Montane Riparian Forest. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by open canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
 \label{mrip_transmodel}
 \end{figure}
 

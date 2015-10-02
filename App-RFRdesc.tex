@@ -447,7 +447,7 @@ Following disturbance, succession proceeds rapidly from an herbaceous layer to s
 \begin{table}[]
 \small
 \centering
-\caption{Classification of cover seral stage for RFR. Diameter at Breast Height (DBH) and Cover From Above (CFA) values taken from EVeg polygons. DBH categories are: null, 0-0.9'', 1-4.9'', 5-9.9'', 10-19.9'', 20-29.9'', 30''+. CFA categories are null, 0-10\%, 10-20\%, … , 90-100\%. Each row in the table below should be read with a boolean AND across each column of a row.}
+\caption{Classification of cover seral stage for RFR. Diameter at Breast Height (DBH) and Cover From Above (CFA) values taken from EVeg polygons. DBH categories are: null, 0-0.9'', 1-4.9'', 5-9.9'', 10-19.9'', 20-29.9'', 30''+. CFA categories are null, 0-10\%, 10-20\%, \dots , 90-100\%. Each row in the table below should be read with a boolean AND across each column of a row.}
 \label{rfr_classification}
 \begin{tabular}{@{}lrrrrr@{}}
 \toprule
@@ -476,10 +476,18 @@ RFR-ASP seral stages were assigned manually using NAIP 2010 Color IR imagery to 
 \subsection*{Draft Model}
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report3/images/state_trans_model.pdf}
-\caption{State and Transition Model for Red Fir Forest. Each dark grey box represents one of the seven seral stages for this landcover type. Each column of boxes represents a stage of development: early, middle, and late. Each row of boxes represents a different level of canopy cover: closed (70-100\%), moderate (40-70\%), and open (0-40\%). Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
-\label{transmodel}
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/7class.png}
+\caption{State and Transition Model for Red Fir Forest (not inclusive of the aspen variant). Each dark grey box represents one of the seven seral stages for this landcover type. Each column of boxes represents a stage of development: early, middle, and late. Each row of boxes represents a different level of canopy cover: closed (70-100\%), moderate (40-70\%), and open (0-40\%). Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
+\label{transmodel_rfr}
 \end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/5class-asp.png}
+\caption{State and Transition Model for Red Fir Forest - Aspen variant. Each dark grey box represents one of the seven seral stages for this landcover type. Each column of boxes represents a stage of development: early, middle, and late. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
+\label{transmodel_rfr-asp}
+\end{figure}
+
 
 \subsection*{References}
 \begin{hangparas}{.25in}{1} 

@@ -55,9 +55,9 @@ Estimates of fire rotations are available from the LandFire project and a review
 \toprule
 \textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Probability of \\ High Mortality\end{tabular}}} \\ \midrule
 Target                     & 76  & n/a      \\
-Early Development – All    & 83  & 0.17        \\
-Mid Development – Moderate & 17  & 0.67        \\
-Late Development – Closed  & 500  & 1      \\ \bottomrule
+Early Development - All    & 83  & 0.17        \\
+Mid Development - Moderate & 17  & 0.67        \\
+Late Development - Closed  & 500  & 1      \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -65,7 +65,7 @@ Late Development – Closed  & 500  & 1      \\ \bottomrule
 Other disturbances are not currently modeled, but may, depending on the seral stage affected and mortality levels, reset patches to early development, maintain existing seral stages, or shift/accelerate succession to a more open seral stage. 
 
 \subsection*{Vegetation Seral Stages}
-We recognize three separate seral stages for CMM: Early Development (ED), Mid Development – Moderate Canopy Cover (MDM), and Late Development – Closed Canopy Cover (LDC). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+We recognize three separate seral stages for CMM: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
 
 \subsubsection{Early Development (ED)}
 
@@ -78,7 +78,7 @@ We recognize three separate seral stages for CMM: Early Development (ED), Mid De
 \noindent\hrulefill
 
 
-\subsubsection{Mid Development – Moderate Canopy Cover (MDM)}
+\subsubsection{Mid Development - Moderate Canopy Cover (MDM)}
 
 \paragraph{Description} \emph{C. ledifolius} may co-dominate with mature \emph{Artemisia}, \emph{Purshia}, \emph{Symphoricarpos}, or \emph{Ericameria}. Few \emph{C. ledifolius} seedlings are present. Canopy cover is variable (LandFire 2007).
 
@@ -89,7 +89,7 @@ We recognize three separate seral stages for CMM: Early Development (ED), Mid De
 \noindent\hrulefill
 
 
-\subsubsection{Late Development – Closed Canopy Cover (LDC)}
+\subsubsection{Late Development - Closed Canopy Cover (LDC)}
 
 \paragraph{Description} Moderate to high cover of large shrub- or tree-like \emph{C. ledifolius}. When low mortality fire is relatively frequent, late-successional \emph{C. ledifolius} may exhibit evidence of infrequent fire scars on older trees. Patches may consist of open savanna-like woodlands with an herbaceous-dominated understory. Other shrub species may be abundant, but decadent. When low mortality fire is absent, very few other shrubs are present, and herbaceous cover is low. Duff may be very deep, and scattered trees may occur. \emph{C. ledifolius} trees reach very old age in the absence of stand-replacing fire, potentially living over 1000 years (LandFire 2007).
 
@@ -105,8 +105,8 @@ To create the initial cover and seral stage layer (2010), polygons were randomly
 \subsection*{Draft Model}
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Tahoe/Report3/images/state_trans_model.pdf}
-\caption{Generic state and transition model for all non-shrub seral cover types. Boxes show seven seral stages and arrows depict transitions due to vegetation succession and high or low mortality fire.} 
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
+\caption{State and Transition Model for Curl-leaf Mountain Mahogany. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
 \label{cmm_transmodel}
 \end{figure}
 
