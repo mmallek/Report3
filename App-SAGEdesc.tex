@@ -62,7 +62,7 @@ Other disturbances are not currently modeled, but may, depending on the seral st
 \label{tab:sagedesc_fire}
 \begin{tabular}{@{}lcc@{}}
 \toprule
-\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Probability of \\ High Mortality\end{tabular}}} \\ \midrule
+\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Proportion \\ High Mortality\end{tabular}}} \\ \midrule
 Target                     & 115      & n/a       \\
 Early Development - All    & 200      & 0         \\
 Mid Development - Moderate & 125      & 1         \\
@@ -73,7 +73,14 @@ Late Development - Closed  & 100      & 0.9       \\ \bottomrule
 
 
 \subsection*{Vegetation Seral Stages}
-We recognize three separate seral stages for SAGE: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+We recognize three separate seral stages for SAGE: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC) (Figure~\ref{sage_transmodel}). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
+\caption{State and Transition Model for Big Sagebrush. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
+\label{sage_transmodel}
+\end{figure}
 
 \subsubsection{Early Development (ED)}
 
@@ -110,13 +117,7 @@ We recognize three separate seral stages for SAGE: Early Development (ED), Mid D
 \subsection*{Condition Classification}
 Because seral stage classification was done through orthophoto analysis, no polygons are assigned to the LDC seral stage, which is actually not an \emph{Artemisia}-dominated seral stage. Polygons with a cover value (not Null) are assigned to the MDM stage. Polygons with a Null value for shrub cover are assigned to ED.
 
-\subsection*{Draft Model}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
-\caption{State and Transition Model for Big Sagebrush. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
-\label{sage_transmodel}
-\end{figure}
+
 
 \clearpage
 \subsection*{References}

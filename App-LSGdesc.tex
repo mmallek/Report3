@@ -48,7 +48,7 @@ Wildfires tend to be high mortality, stand-replacing fires that initiate a proce
 
 Although it is not included in this iteration of the model, scientists have noted that \emph{Bromus tectorum} has invaded most of these communities, altering successional pathways and disturbance regimes. It burns readily and is an early-season post-fire colonizer (Verner 1988).
 
-Estimates of fire rotations are available from the LandFire project and a review paper (LandFire 2007, Van de Water and Safford 2011). The LandFire project’s published fire return intervals are based on a series of associated models created using the Vegetation Dynamics Development Tool (VDDT). In VDDT, fires are specified concurrently with the transition that follows them. For example, a replacement fire causes a transition to the early development stage. In the RMLands model, such fires are classified as high mortality. However, in VDDT mixed severity fires may cause a transition to early development, a transition to a more open seral stage, or no transition at all. In this case, we categorize the first example as a high mortality fire, and the second and third examples as a low mortality fire. Based on this approach, we calculated fire rotations and the probability of high mortality fire for each of the three LSG seral stages (Table 1). We computed the overall target fire rotation of 82 years based on values from Van de Water and Safford (2011). 
+Estimates of fire rotations are available from the LandFire project and a review paper (LandFire 2007, Van de Water and Safford 2011). The LandFire project’s published fire return intervals are based on a series of associated models created using the Vegetation Dynamics Development Tool (VDDT). In VDDT, fires are specified concurrently with the transition that follows them. For example, a replacement fire causes a transition to the early development stage. In the RMLands model, such fires are classified as high mortality. However, in VDDT mixed severity fires may cause a transition to early development, a transition to a more open seral stage, or no transition at all. In this case, we categorize the first example as a high mortality fire, and the second and third examples as a low mortality fire. Based on this approach, we calculated fire rotations and the probability of high mortality fire for each of the three LSG seral stages (Table~\ref{tab:lsgdesc_fire}). We computed the overall target fire rotation of 82 years based on values from Van de Water and Safford (2011). 
 
 
 
@@ -60,7 +60,7 @@ Estimates of fire rotations are available from the LandFire project and a review
 \label{tab:lsgdesc_fire}
 \begin{tabular}{@{}lcc@{}}
 \toprule
-\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Probability of \\ High Mortality\end{tabular}}} \\ \midrule
+\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Proportion \\ High Mortality\end{tabular}}} \\ \midrule
 Target                     & 82     & n/a    \\
 Early Development - All    & 250     & 1      \\
 Mid Development - Moderate & 149     & 1      \\
@@ -72,7 +72,15 @@ Late Development - Closed  & 63     & 0.31    \\ \bottomrule
 Other disturbances are not currently modeled, but may, depending on the seral stage affected and mortality levels, reset patches to early development, maintain existing seral stages, or shift/accelerate succession to a more open seral stage. 
 
 \subsection*{Vegetation Seral Stages}
-We recognize three separate seral stages for LSG: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+We recognize three separate seral stages for LSG: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC) (Figure~\ref{lsg_transmodel}). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
+\caption{State and Transition Model for Black and Low Sagebrush. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
+\label{lsg_transmodel}
+\end{figure}
 
 \subsubsection{Early Development (ED)} 
 
@@ -109,13 +117,7 @@ We recognize three separate seral stages for LSG: Early Development (ED), Mid De
 \subsection*{Condition Classification}
 Because seral stageification was done through orthophoto analysis, no polygons will be assigned to the LDC seral stage, which is actually not an \emph{Artemisia}-dominated seral stage. Only 3 polygons were assigned to LSG. Typical fields used to assign early-mid-late seral stage (overstory tree diameter) are null for shrubs. Cover is available. Polygons with cover less than 50\% were assigned to MDM and polygons with cover greater than 50\% were assigned to LDC.
 
-\subsection*{Draft Model}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
-\caption{State and Transition Model for Black and Low Sagebrush. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
-\label{lsg_transmodel}
-\end{figure}
+
 
 \clearpage
 \subsection*{References}

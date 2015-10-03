@@ -50,7 +50,7 @@ Fire frequency is highly variable within the riparian zone. Factors that include
 
 In some forested riparian areas, pre-fire suppression fire return intervals were likely lower than adjacent uplands, while in others, fire frequency appears to have been comparable in riparian and upland areas. FRI values are shorter for riparian zones bordering narrow streams compared to zones around wider and deeper streams. In arid ecosystems, FRIs may be shorter than the surrounding areas in part because the increased productivity of these sites results in more fuels to carry fire. Lower elevation and adjacency to fire-tolerant vegetation also contribute to shorter FRIs for some riparian areas (Sawyer 2013).
 
-Estimates of fire rotations are available from the LandFire project and a review paper (LandFire 2007, Van de Water and Safford (2011). The LandFire project’s published fire return intervals are based on a series of associated models created using the Vegetation Dynamics Development Tool (VDDT). In VDDT, fires are specified concurrently with the transition that follows them. For example, a replacement fire causes a transition to the early development stage. In the RMLands model, such fires are classified as high mortality. However, in VDDT mixed severity fires may cause a transition to early development, a transition to a more open seral stage, or no transition at all. In this case, we categorize the first example as a high mortality fire, and the second and third examples as a low mortality fire. Based on this approach, we calculated fire rotations and the probability of high mortality fire for each of the three MRIP seral stages (Table 1). We computed the overall target fire rotation of 53 years based on values from Van de Water and Safford (2011). 
+Estimates of fire rotations are available from the LandFire project and a review paper (LandFire 2007, Van de Water and Safford (2011). The LandFire project’s published fire return intervals are based on a series of associated models created using the Vegetation Dynamics Development Tool (VDDT). In VDDT, fires are specified concurrently with the transition that follows them. For example, a replacement fire causes a transition to the early development stage. In the RMLands model, such fires are classified as high mortality. However, in VDDT mixed severity fires may cause a transition to early development, a transition to a more open seral stage, or no transition at all. In this case, we categorize the first example as a high mortality fire, and the second and third examples as a low mortality fire. Based on this approach, we calculated fire rotations and the probability of high mortality fire for each of the three MRIP seral stages (Table~\ref{tab:mripdesc_fire}). We computed the overall target fire rotation of 53 years based on values from Van de Water and Safford (2011). 
 
 
 
@@ -62,7 +62,7 @@ Estimates of fire rotations are available from the LandFire project and a review
 \label{tab:mripdesc_fire}
 \begin{tabular}{@{}lcc@{}}
 \toprule
-\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Probability of \\ High Mortality\end{tabular}}} \\ \midrule
+\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Proportion \\ High Mortality\end{tabular}}} \\ \midrule
 Target                     & 53  & n/a      \\
 Early Development - All    & 50  & 1        \\
 Mid Development - Open & 50  & 0.5        \\
@@ -74,7 +74,15 @@ Late Development - Closed  & 50  & 0.5      \\ \bottomrule
 Other disturbances are not currently modeled, but may, depending on the seral stage affected and mortality levels, reset patches to early development, maintain existing stages, or shift/accelerate succession to a more open stage. 
 
 \subsection*{Vegetation Seral Stages}
-We recognize three separate seral stages for MRIP: Early Development (ED), Mid Development - Open Canopy Cover (MDO), and Late Development - Open Canopy Cover (LDO). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+We recognize three separate seral stages for MRIP: Early Development (ED), Mid Development - Open Canopy Cover (MDO), and Late Development - Open Canopy Cover (LDO) (Figure~\ref{mrip_transmodel}). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/mrip.png}
+\caption{State and Transition Model for Montane Riparian Forest. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by open canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
+\label{mrip_transmodel}
+\end{figure}
+
 
 
 \paragraph{Early Development (ED)}
@@ -85,7 +93,7 @@ We recognize three separate seral stages for MRIP: Early Development (ED), Mid D
 
 \paragraph{Wildfire Transition} High mortality wildfire (100\% of fires in this seral stage) recycles the patch through the ED seral stage. Low mortality wildfire is not modeled for this seral stage.
 
-\hrulefill
+\noindent\hrulefill
 
 
 \paragraph{Mid Development - Open Canopy Cover (MDO)}
@@ -96,7 +104,7 @@ We recognize three separate seral stages for MRIP: Early Development (ED), Mid D
 
 \paragraph{Wildfire Transition} High mortality wildfire (50\% of fires in this seral stage) recycles the patch through the ED seral stage. Low mortality wildfire (50\%) does not effect a change in the MDO seral stage.
 
-\hrulefill
+\noindent\hrulefill
 
 
 \paragraph{Late Development - Open Canopy Cover (LDO)}
@@ -107,18 +115,18 @@ We recognize three separate seral stages for MRIP: Early Development (ED), Mid D
 
 \paragraph{Wildfire Transition} High mortality wildfire (50\% of fires) recycles the patch through the ED seral stage. Low mortality wildfire (50\%) does not effect a change in the LDO seral stage.
 
-\hrulefill
+\noindent\hrulefill
 
 
 
 
 
 \subsection*{Seral Stage Classification}
-\begin{table}[]
+\begin{table}[hbp]
 \small
 \centering
 \caption{Classification of seral stage for MEG. Diameter at Breast Height (DBH) and Cover From Above (CFA) values taken from EVeg polygons. DBH categories are: null, 0-0.9'', 1-4.9'', 5-9.9'', 10-19.9'', 20-29.9'', 30''+. CFA categories are null, 0-10\%, 10-20\%, \dots , 90-100\%. Each row in the table below should be read with a boolean AND across each column.}
-\label{meg_classification}
+\label{mrip_classification}
 \begin{tabular}{@{}lrrrrr@{}}
 \toprule
 \textbf{\begin{tabular}[l]{@{}l@{}}Cover \\ Condition\end{tabular}} & \textbf{\begin{tabular}[r]{@{}r@{}}Overstory Tree \\ Diameter 1 \\ (DBH)\end{tabular}} & \textbf{\begin{tabular}[r]{@{}r@{}}Overstory Tree \\ Diameter 2 \\ (DBH)\end{tabular}} & \textbf{\begin{tabular}[r]{@{}r@{}}Total Tree\\ CFA (\%)\end{tabular}} & \textbf{\begin{tabular}[r]{@{}r@{}}Conifer \\ CFA (\%)\end{tabular}} & \textbf{\begin{tabular}[r]{@{}r@{}}Hardwood \\ CFA (\%)\end{tabular}} \\ \midrule
@@ -129,13 +137,6 @@ Late Open        & 20-30''+        & any & any & any & any \\ \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Draft Model}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/mrip.png}
-\caption{State and Transition Model for Montane Riparian Forest. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by open canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
-\label{mrip_transmodel}
-\end{figure}
 
 \subsection*{References}
 \begin{hangparas}{.25in}{1} 

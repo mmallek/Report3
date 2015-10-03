@@ -41,7 +41,7 @@ Wildfires tend to be high mortality, stand-replacing fires that initiate a proce
 
 \emph{C. ledifolius} is easily killed by fire and does not resprout. However, it is a primary early successional colonizer, rapidly invading bare mineral soils after disturbance. Fires are not common in early seral stages, when there is little fuel, except in chaparral-dominated stands. Stand-replacing fires are more common in mid-seral stands, where herbs and smaller shrubs provide ladder fuels. When surface fire is relatively common, stands will adopt a savanna-like woodland structure with an understory characterized by \emph{Ribes}, \emph{L. pungens}, and various grasses. Trees can become very old and will rarely show fire scars. In late, closed stands, the absence of herbs and small forbs makes fire uncommon, requiring extreme winds and drought conditions. However, stands that do burn often experience high mortality fire (LandFire 2007).
 
-Estimates of fire rotations are available from the LandFire project and a review paper (LandFire 2007, Van de Water and Safford 2011). The LandFire project's published fire return intervals are based on a series of associated models created using the Vegetation Dynamics Development Tool (VDDT). In VDDT, fires are specified concurrently with the transition that follows them. For example, a replacement fire causes a transition to the early development stage. In the RMLands model, such fires are classified as high mortality. However, in VDDT mixed severity fires may cause a transition to early development, a transition to a more open seral stage, or no transition at all. In this case, we categorize the first example as a high mortality fire, and the second and third examples as a low mortality fire. Based on this approach, we calculated fire rotations and the probability of high mortality fire for each of the three CMM seral stages (Table 1). We computed the overall target fire rotation of 76 years based on values from Van de Water and Safford (2011). 
+Estimates of fire rotations are available from the LandFire project and a review paper (LandFire 2007, Van de Water and Safford 2011). The LandFire project's published fire return intervals are based on a series of associated models created using the Vegetation Dynamics Development Tool (VDDT). In VDDT, fires are specified concurrently with the transition that follows them. For example, a replacement fire causes a transition to the early development stage. In the RMLands model, such fires are classified as high mortality. However, in VDDT mixed severity fires may cause a transition to early development, a transition to a more open seral stage, or no transition at all. In this case, we categorize the first example as a high mortality fire, and the second and third examples as a low mortality fire. Based on this approach, we calculated fire rotations and the probability of high mortality fire for each of the three CMM seral stages (Table~\ref{tab:cmmdesc_fire}). We computed the overall target fire rotation of 76 years based on values from Van de Water and Safford (2011). 
 
 
 
@@ -53,7 +53,7 @@ Estimates of fire rotations are available from the LandFire project and a review
 \label{tab:cmmdesc_fire}
 \begin{tabular}{@{}lcc@{}}
 \toprule
-\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Probability of \\ High Mortality\end{tabular}}} \\ \midrule
+\textbf{Condition}         & \multicolumn{1}{l}{\textbf{Fire Rotation}} & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Proportion \\ High Mortality\end{tabular}}} \\ \midrule
 Target                     & 76  & n/a      \\
 Early Development - All    & 83  & 0.17        \\
 Mid Development - Moderate & 17  & 0.67        \\
@@ -65,7 +65,14 @@ Late Development - Closed  & 500  & 1      \\ \bottomrule
 Other disturbances are not currently modeled, but may, depending on the seral stage affected and mortality levels, reset patches to early development, maintain existing seral stages, or shift/accelerate succession to a more open seral stage. 
 
 \subsection*{Vegetation Seral Stages}
-We recognize three separate seral stages for CMM: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+We recognize three separate seral stages for CMM: Early Development (ED), Mid Development - Moderate Canopy Cover (MDM), and Late Development - Closed Canopy Cover (LDC) (Figure~\ref{cmm_transmodel}). Our seral stages are an alternative to ``successional'' classes that imply a linear progression of states and tend not to incorporate disturbance. The seral stages identified here are derived from a combination of successional processes and anthropogenic and natural disturbance, and are intended to represent a composition and structural condition that can be arrived at from multiple other conditions described for that landcover type. Thus our seral stages incorporate age, size, canopy cover, and vegetation composition. In general, the delineation of stages has originated from the LandFire biophysical setting model descriptive of a given landcover type; however, seral stages are not necessarily identical to the classes identified in those models.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
+\caption{State and Transition Model for Curl-leaf Mountain Mahogany. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
+\label{cmm_transmodel}
+\end{figure}
 
 \subsubsection{Early Development (ED)}
 
@@ -102,13 +109,7 @@ We recognize three separate seral stages for CMM: Early Development (ED), Mid De
 \subsection*{Condition Classification}
 To create the initial cover and seral stage layer (2010), polygons were randomly assigned to seral stages based on a 20:10:70 distribution for early/mid/late development (based on an analysis of past fire in the project area). Random numbers between 0 and 1 were generated using numpy for Python and used to assign each CMM polygon to a seral stage.
 
-\subsection*{Draft Model}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{/Users/mmallek/Documents/Thesis/statetransmodel/StateTransitionModel/shrub.png}
-\caption{State and Transition Model for Curl-leaf Mountain Mahogany. Each dark grey box represents one of the three seral stages for this landcover type. Three stages of development are represented: early, middle, and late. We describe the middle development stage as characterized by moderate canopy cover and the late development stage as characterized by closed canopy cover, but these are not hard and fast rules. Transitions between states/seral stages may occur as a result of high mortality fire, low mortality fire, or succession. Specific pathways for each are denoted by the appropriate color line and arrow: red lines relate to high mortality fire, orange lines relate to low mortality fire, and green lines relate to natural succession.} 
-\label{cmm_transmodel}
-\end{figure}
+
 
 \clearpage
 \subsection*{References}
